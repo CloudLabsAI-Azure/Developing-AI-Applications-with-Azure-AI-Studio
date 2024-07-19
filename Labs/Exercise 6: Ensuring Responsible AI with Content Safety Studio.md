@@ -33,3 +33,24 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
    ![](./media/image-10.png)
 
 ## Task 2: Monitor and Analyze Content for Compliance
+
+1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
+
+     ![](./media/image-11.png)
+
+1. On **Moderate image content** select **Run a bulk test** tab then click on **Browse for a file**.
+
+     ![](./media/image-12.png)
+
+1. Within file explorer select and open **image_sample_dataset.zip**.
+
+     ![](./media/image-13.png)
+
+1. Under Test section review **Dataset preview** then select **Configure filters** tab review **Category** and **Threshold level** then click on **Run test**.
+
+     ![](./media/image-14.png)
+
+1. Review the result.
+
+   ![](./media/image-15.png)
+       
