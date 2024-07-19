@@ -24,3 +24,7 @@
 1. Select Run to run the flow.
 
 1. The flow run status is shown as Running.
+
+1. Once the flow run is completed, select View outputs to view the flow results.
+
+1. You can view the flow run status and output in the Outputs section.
