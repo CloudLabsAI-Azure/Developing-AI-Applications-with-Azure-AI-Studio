@@ -16,3 +16,11 @@
 ## Task 2 : Develop a Flow with LLM and Prompt Tools
 
 1. The prompt flow authoring page opens. You can start authoring your flow now. By default you see a sample flow. This example flow has nodes for the LLM and Python tools.
+
+1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
+
+1. Select a connection and deployment in the LLM tool editor.
+
+1. Select Run to run the flow.
+
+1. The flow run status is shown as Running.
