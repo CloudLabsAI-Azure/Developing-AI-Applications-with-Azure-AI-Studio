@@ -41,3 +41,29 @@ Tools are the fundamental building blocks of a flow.
 Each tool is a simple, executable unit with a specific function. By combining different tools, you can create a flow that accomplishes a wide range of goals. For example, you can use the LLM tool to generate text or summarize an article and the Python tool to process the text to inform the next flow component or result.
 
 One of the key benefit of Prompt flow tools is their seamless integration with third-party APIs and python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
+
+## Task 2: Initialize a Prompt Flow Project
+
+1. Go to the Home page of [Azure AI Studio](https://ai.azure.com/).
+
+1. Select + New project.
+
+1. Enter a name for the project.
+
+1. Select a hub from the dropdown to host your project. If you don't have access to a hub yet, select Create a new hub.
+
+1. If you're creating a new hub, enter a name.
+
+1. Select your Azure subscription from the Subscription dropdown. Choose a specific Azure subscription for your project for billing, access, or administrative reasons. For example, this grants users and service principals with subscription-level access to your project.
+
+1. Leave the Resource group as the default to create a new resource group. Alternatively, you can select an existing resource group from the dropdown.
+
+1. Enter the Location for the hub and then select Next. The location is the region where the hub is hosted. The location of the hub is also the location of the project. Azure AI services availability differs per region. For example, certain models might not be available in certain regions.
+
+1. Select an existing Azure AI services resource (including Azure OpenAI) from the dropdown or create a new one.
+
+1. On the Review and finish page, you see the Azure AI services resource name and other settings to review.
+
+1. Review the project details and then select Create a project. You see progress of resource creation and the project is created when the process is complete.
+
+Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
