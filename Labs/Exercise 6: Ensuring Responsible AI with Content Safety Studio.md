@@ -53,4 +53,6 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 1. Review the result.
 
    ![](./media/image-15.png)
+
+   ![](./media/image-16.png)
        
