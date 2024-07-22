@@ -29,4 +29,8 @@
 
 1. Once the flow run is completed, select View outputs to view the flow results.
 
+     ![](./media/image-30.png)
+
 1. You can view the flow run status and output in the Outputs section.
+
+    ![](./media/image-31.png)
