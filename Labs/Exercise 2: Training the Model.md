@@ -21,8 +21,10 @@
 
 1. Select a connection and deployment in the LLM tool editor.
 
-1. Select Run to run the flow.
+   ![](./media/image-28.png)
 
+1. Scroll up for Input enter any fruit name as per your wish and Select Run to run the flow.
+    
 1. The flow run status is shown as Running.
 
 1. Once the flow run is completed, select View outputs to view the flow results.
