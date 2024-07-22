@@ -1,12 +1,5 @@
 # Evaluation Flow Setup
 
-
-### Prerequisites 
-
-Create an AI hub and project in the Azure AI Studio
-
-Deploy a GPT model
-
 ## Task 1: Set Up Evaluation Metrics
 
 You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
