@@ -18,8 +18,10 @@
 
    ```
 
-   
-   
+1. Review the output.
+
+   ![](./media/image-34.png)
+    
 ## Deploy the finetuned model
 
 When finetuning has successfully completed, you can deploy the model.
