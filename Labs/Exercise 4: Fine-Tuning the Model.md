@@ -1,11 +1,5 @@
 # Fine-Tuning the Model 
 
-### Prerequisites 
-
-Create an AI hub and project in the Azure AI Studio
-
-Deploy a GPT model
-
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
 Before you can finetune a model, you need a dataset.
