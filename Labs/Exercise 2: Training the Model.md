@@ -1,11 +1,5 @@
 # Training the Model
 
-### Prerequisites 
-
-Create an AI hub and project in the Azure AI Studio
-
-Deploy a GPT model
-
 ## Task 1 : Create and Customize Prompts
 
 ## Build with the Prompt tool
