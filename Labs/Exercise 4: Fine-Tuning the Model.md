@@ -2,21 +2,24 @@
 
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
-Before you can finetune a model, you need a dataset.
+1. Open the sample flow and remove the prepare_examples node as a start.
+1. Under Tools select Prompt flow.
+1. Select Create to open the flow creation wizard.
+1. In the flow gallery under Explore gallery in the "Web Classification" box select Clone.
+1. Use the following prompt as a baseline prompt in the classify_with_llm node.
 
-1. Save the training dataset as JSONL file locally: https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-finetune.jsonl
-1. Navigate to the **Model catalog** page under the **Get started** section, using the menu on the left.
-1. Search for and select the `gpt-35-turbo` model, don't deploy the model yet!
-1. From the model overview, **Finetune** the model using the following configuration:
-    - **Model version**: *Select the default version*
-    - **Model suffix**: `ft-travel`
-    - **Azure OpenAI connection**: *Select the connection that was created when you created your hub*
-    - **Training data**: Upload files
-    - **Upload file**: Select the JSONL file you downloaded in a previous step.
-    - **Validation data**: None
-    - **Task parameters**: *Keep the default settings*
-1. Finetuning will start and may take some time to complete.
+   ```
+   Your task is to classify a given url into one of the following types:
+   Movie, App, Academic, Channel, Profile, PDF or None based on the text content information.
+   The classification will be based on the url, the webpage text content summary, or both.
 
+   For a given URL : https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw, and text content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.
+   Classify above url to complete the category and indicate evidence.
+
+   ```
+
+   
+   
 ## Deploy the finetuned model
 
 When finetuning has successfully completed, you can deploy the model.
