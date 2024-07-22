@@ -55,3 +55,5 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. Explore the **Metric dashboard** and **Detailed metrics result**.
     ![](./media/image-26.png)
+
+    ![](./media/image-27.png)
