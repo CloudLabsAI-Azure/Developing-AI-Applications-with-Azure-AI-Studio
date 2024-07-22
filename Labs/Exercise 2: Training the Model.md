@@ -2,7 +2,6 @@
 
 ## Task 1 : Create and Customize Prompts
 
-## Build with the Prompt tool
 1. Create or open a flow in [Azure AI Studio](https://ai.azure.com/). 
 
 1. Select **Prompt flow** > **+ Create** to add the Prompt tool to your flow.
