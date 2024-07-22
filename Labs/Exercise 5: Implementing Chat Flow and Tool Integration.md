@@ -30,7 +30,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Select Chat to test the flow.
 
-1. Enter the query: I have one day in London, what should I do? and review the output.
+1. Enter the query: **I have one day in London, what should I do?** and review the output.
 
 1. When you’re satisfied with the behavior of the flow you created, you can deploy the flow.
 
