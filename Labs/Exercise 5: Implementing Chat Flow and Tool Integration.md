@@ -49,7 +49,15 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 1. In Azure AI Studio, in your project, in the navigation pane on the left, under Components, select the Deployments page.
 
 1. Note that by default the Model deployments are listed, including your deployed language model.
+
 1. Select the App deployments tab to find your deployed flow. It may take some time before the deployment is listed and successfully created.
+
 1. When the deployment has succeeded, select it. Then, on its Test page, enter the prompt **What is there to do in San Francisco?** and review the response.
+
+     ![](./media/image-32.png)
+
 1. Enter the prompt **Where else could I go?** and review the response.
+
+     ![](./media/image-33.png)
+
 1. View the Consume page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint - enabling you to integrate the prompt flow solution into an application as a custom copilot.
