@@ -46,24 +46,7 @@ Text content: Visual ChatGPT is a system that enables users to interact with Cha
 
    ![](./media/image-34.png)
     
-## Deploy the finetuned model
-
-When finetuning has successfully completed, you can deploy the model.
-
-1. Select the finetuned model. Select the **Metrics** tab and explore the finetune metrics.
-1. Deploy the finetuned model with the following configurations:
-    - **Deployment name**: *A unique name for your model, you can use the default*
-    - **Deployment type**: Standard
-    - **Tokens per Minute Rate Limit (thousands)**: 5K
-    - **Content filter**: Default
 
 ## Task 2: Optimize Flow Performance for Production 
 
-## Test the finetuned model
-
-Now that you deployed your finetuned model, you can test the model like you can test any other deployed model.
-
-1. When the deployment is ready, navigate to the finetuned model and select **Open in playground**.
-1. In the chat window, enter the query `What can you do?`
-    Notice that even though you didn't specify the system message to instruct your model to answer travel-related questions, the model already understands what it should focus on.
-1. Try with another query like `Where should I go on holiday for my 30th birthday?`
+No content found yet
