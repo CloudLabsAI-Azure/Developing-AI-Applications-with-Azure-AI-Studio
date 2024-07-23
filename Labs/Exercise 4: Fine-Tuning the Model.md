@@ -130,13 +130,20 @@
 
 ## Task 2: Optimize Flow Performance for Production 
 
+
+1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**.
+
+    ![](./media/image-44.png)
+
+1. Click on **Save**.
+
 1. Select **Evaluate** > **Custom Evaluation**.
 
 1. On the Batch run & Evaluate give Run display name as classify- then under variants select **classify_with_llm** click on **Next**.
 
 1. On the Batch run settings select **+ Add new data**.
 
-1. Add new data window open enter name  classify_with_llm_data_set select **Upload from local file and click on browser then select classify.jsonl file and click on **Add**.
+1. Add new data window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file and click on **Add**.
 
 1. On the Select evaluation page select **Classification Accuarancy Evaluation** and click on **Next**.
 
