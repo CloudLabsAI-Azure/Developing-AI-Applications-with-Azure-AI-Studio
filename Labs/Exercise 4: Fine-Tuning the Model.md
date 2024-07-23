@@ -13,8 +13,10 @@
 1. On the **Clone Flow** page, enter name Web Classification-<inject key="DeploymentID" enableCopy="false"/> and click on **Clone**.
 
       ![](./media/image-36.png)
+
+1. Scroll down to **classify_with_llm** node
    
-1. Use the following prompt as a baseline prompt in the classify_with_llm node.
+1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
    ```
    Your task is to classify a given url into one of the following types:
