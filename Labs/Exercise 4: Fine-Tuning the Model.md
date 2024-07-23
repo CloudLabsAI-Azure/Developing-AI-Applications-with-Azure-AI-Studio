@@ -146,3 +146,9 @@ and prediction as ${run.outputs.category} and click on **Review + submit**.
 1. On **Review** page review the settings and click on **Submit**
 
 1. Back on Prompt flow page and from top click on **View run list** link.
+
+1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select Visualize outputs. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
+
+1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+
+1. You can repeat the above steps to evaluate the variants of summarize_text_content node as well.
