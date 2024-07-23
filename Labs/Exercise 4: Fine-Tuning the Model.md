@@ -23,78 +23,106 @@
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
    ```
-   Your task is to classify a given url into one of the following types:
-   Movie, App, Academic, Channel, Profile, PDF or None based on the text content information.
-   The classification will be based on the url, the webpage text content summary, or both.
+   system:
+   Your task is to classify a given URL into one of the following types:
+   Movie, App, Academic, Channel, Profile, PDF, or None based on the text content information.
+   The classification will be based on the URL, the webpage text content summary, or both.
 
-   For a given URL : https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw, and text content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.
-   Classify above url to complete the category and indicate evidence.
-
+   user:
+   For a given URL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw, and text content: Youtude channel.
+   Classify the above URL to complete the category and indicate evidence.
+   
    ```
 
 1. Select Show variants button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 1. On the variant_1 replace the existing prompt with the following prompt:
 
-    
-   ```
-   Your task is to classify a given url into one of the following types:
-   Movie, App, Academic, Channel, Profile, PDF or None based on the text content information.
-   The classification will be based on the url, the webpage text content summary, or both.
+  ```  
+  system:  
+  Your task is to classify a given URL into one of the following types:
+  Movie, App, Academic, Channel, Profile, PDF, or None based on the text content information.
+  The classification will be based on the URL, the webpage text content summary, or both.
 
-   For a given URL: https://arxiv.org/abs/2303.04671 
-   Text content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or 
-   visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show 
-   that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.
-   Classify above url to complete the category and indicate evidence.
+  user:
+  For a given URL: https://play.google.com/store/apps/details?id=com.spotify.music, and text content: Google play.
+  Classify the above URL to complete the category and indicate evidence.
 
-   ```
+  ```
 
-1. Create a another variant and replace the following prompt :
-
-   ```
-   Your task is to classify a given url into one of the following types:
-   Movie, App, Academic, Channel, Profile, PDF or None based on the text content information.
-   The classification will be based on the url, the webpage text content summary, or both.
-     
-   For a given URL: https://play.google.com/store/apps/details?id=com.spotify.music 
-   Text content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of 
-   stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium 
-   subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose 
-   from.
-   Classify above url to complete the category and indicate evidence.
-     
-   ```
 1. Select Hide variants to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
-1. For summarize_text_content node, based on variant_0, you can create variant_1 where 100 words is changed to 300 words in prompt.  
-     
-     
-     
-     
-     
-     - Create variant_1 where the temperature is changed from 1 to 0.
-     - Create variant_2 where temperature is 0 and you can use the following prompt including few-shots examples.
+1. Scroll up to **summarize_text_content** node and Select the following 
 
-    Examples
+     Connection : 
 
-      - URL: https://play.google.com/store/apps/details?id=com.spotify.music 
-Text content: Spotify is a free music and podcast streaming app with millions of songs, albums, and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is available on all devices and has a variety of genres and artists to choose from. 
+     deployment_name : 
 
-     - URL: https://arxiv.org/abs/2303.04671 
-Text content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.
+1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
+     
+   ```  
+   system:
+   Please summarize the following text in one paragraph. 100 words.
+   Do not add any information that is not in the text.
+
+   user:
+   Text: The history of the internet dates back to the early 1960s, when the idea of a global network of computers was first proposed. In the late 1960s, the Advanced Research Projects 
+   Agency Network (ARPANET) was developed by the United States Department of Defense. It was the first operational packet-switching network and the precursor to the modern internet. The 
+   1970s and 1980s saw the development of various protocols and standards, such as TCP/IP, which allowed different networks to communicate with each other. In the 1990s, the invention 
+   of the World Wide Web by Tim Berners-Lee revolutionized the internet, making it accessible to the general public. Since then, the internet has grown exponentially, becoming an 
+   integral part of daily life for billions of people around the world.
+
+   assistant:
+   Summary:
+   ```
+
+1. Select Show variants button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
+1. On the variant_1 replace the existing prompt with the following prompt:
+
+   ```
+   system:
+   Please summarize the following text in one paragraph. 100 words.
+   Do not add any information that is not in the text.
+
+   user:
+   Text: Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn. AI has various applications in today's society, 
+   including robotics, natural language processing, and decision-making systems. AI can be categorized into narrow AI, which is designed for specific tasks, and general AI, which can 
+   perform any intellectual task that a human can. Despite its benefits, AI also poses ethical concerns, such as privacy invasion and job displacement.
+
+   assistant:
+   Summary:
+
+   ```
+1. Select **Save** button from top menu and click on **Start Compute session running** 
+1. Select the Run button on the top right.
+1. On the Submit flow run window open under **Select the LLM node with variants that you wnat to run** choose **Select a node to run variants** then select **summarize_text_content** 
+   and click on **Submit**. 
+
+   ![](./media/image-41.png)
+   
+1. Once session runned successfully review the output by select each variant.
+
+1. In top menu select **Variant 0 (1)** from the drop down and select **view full output**
+
+   ![](./media/image-39.png)
+
+1. Review the output  
+
+   ![](./media/image-40.png)
 
 
 1. Select the Run button on the top right.
-1. Select an LLM node with variants. The other LLM nodes use the default variant.
-1. Submit the flow run.
-1. After the flow run is completed, you can check the corresponding result for each variant.
-1. Submit another flow run with the other LLM node with variants, and check the outputs.
-1. You can change another input data (for example, use a Wikipedia page URL) and repeat the steps above to test variants for different data.
-1. Review the output.
+1. On the Submit flow run window open under **Select the LLM node with variants that you wnat to run** choose **Select a node to run variants** then select **** 
+   and click on **Submit**. 
 
-   ![](./media/image-34.png)
-    
+    ![](./media/image-42.png)
+
+1. Once session runned successfully review the output by select each variant.
+
+1. In top menu select **Variant 0 (1)** from the drop down and select **view full output**
+
+1. Review the output.  
 
 ## Task 2: Optimize Flow Performance for Production 
 
