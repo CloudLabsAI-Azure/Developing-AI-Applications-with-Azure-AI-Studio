@@ -2,9 +2,18 @@
 
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
-1. On the Azure AI Studio, under Tools select Prompt flow.
+1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Tools** section select **Prompt flow**.
+
 1. Select **+ Create** to open the flow creation wizard.
-1. In the flow gallery under Explore gallery in the "Web Classification" box select Clone.
+
+1. In the **Create a new flow** under **Explore gallery** in the **Web Classification** box select **Clone**.
+
+     ![](./media/image-35.png)
+
+1. On the **Clone Flow** page, enter name Web Classification-<inject key="DeploymentID" enableCopy="false"/> and click on **Clone**.
+
+      ![](./media/image-36.png)
+   
 1. Use the following prompt as a baseline prompt in the classify_with_llm node.
 
    ```
