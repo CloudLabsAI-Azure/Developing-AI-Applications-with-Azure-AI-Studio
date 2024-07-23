@@ -29,7 +29,7 @@ In Azure AI Studio, you can start a new flow by selecting a flow type or a templ
 - **Chat flow**: Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug their applications within a conversational context.
 - **Evaluation flow**: Designed for evaluation scenarios, the evaluation flow enables you to create a flow that takes the outputs of previous flow runs as inputs. This flow type allows you to evaluate the performance of previous run results and output relevant metrics, facilitating the assessment and improvement of their models or applications.
 
-  ![](./media/image-47.png)
+  ![](./media/image-48.png)
 
 ### Understand a flow
 
