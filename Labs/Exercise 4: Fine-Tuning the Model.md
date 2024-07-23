@@ -130,4 +130,19 @@
 
 ## Task 2: Optimize Flow Performance for Production 
 
-No content found yet
+1. Select **Evaluate** > **Custom Evaluation**.
+
+1. On the Batch run & Evaluate give Run display name as classify- then under variants select **classify_with_llm** click on **Next**.
+
+1. On the Batch run settings select **+ Add new data**.
+
+1. Add new data window open enter name  classify_with_llm_data_set select **Upload from local file and click on browser then select classify.jsonl file and click on **Add**.
+
+1. On the Select evaluation page select **Classification Accuarancy Evaluation** and click on **Next**.
+
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for groundtruth data source is select as ${data.url}
+and prediction as ${run.outputs.category} and click on **Review + submit**.
+
+1. On **Review** page review the settings and click on **Submit**
+
+1. Back on Prompt flow page and from top click on **View run list** link.
