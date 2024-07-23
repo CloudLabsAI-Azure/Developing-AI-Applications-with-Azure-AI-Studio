@@ -23,7 +23,9 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 
 ### Task 1.1: Understand the types of flows
 
-In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
+In this task, you will explore different flow types in Azure AI Studio
+
+1. In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
 
 - **Standard flow**: Designed for general application development, the standard flow allows you to create a flow using a wide range of built-in tools for developing LLM-based applications. It provides flexibility and versatility for developing applications across different domains.
 - **Chat flow**: Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug their applications within a conversational context.
