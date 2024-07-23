@@ -147,8 +147,8 @@
 
 1. On the Select evaluation page select **Classification Accuarancy Evaluation** and click on **Next**.
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for groundtruth data source is select as ${data.url}
-and prediction as ${run.outputs.category} and click on **Review + submit**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url}**
+and **prediction** as **${run.outputs.category}** and click on **Review + submit**.
 
 1. On **Review** page review the settings and click on **Submit**
 
@@ -178,8 +178,8 @@ and prediction as ${run.outputs.category} and click on **Review + submit**.
 
 1. On the Select evaluation page select **Classification Accuarancy Evaluation** and click on **Next**.
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for groundtruth data source is select as ${data.url}
-and prediction as ${run.outputs.category} and click on **Review + submit**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url}**
+and **prediction** as **${run.outputs.category}** and click on **Review + submit**.
 
 1. On **Review** page review the settings and click on **Submit**
 
