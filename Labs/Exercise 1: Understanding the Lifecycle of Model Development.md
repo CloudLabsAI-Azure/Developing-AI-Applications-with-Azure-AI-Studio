@@ -21,7 +21,7 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 
   >**Note**: By following this structured and methodical approach, prompt flow empowers you to develop, rigorously test, fine-tune, and deploy flows with confidence, resulting in the creation of robust and sophisticated AI applications.
 
-### Task 1.1: Flow types
+### Task 1.1: Understand the types of flows
 
 In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
 
@@ -31,23 +31,37 @@ In Azure AI Studio, you can start a new flow by selecting a flow type or a templ
 
   ![](./media/image-47.png)
 
-### Flows
-A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
+### Understand a flow
 
-Within a flow, nodes take center stage, representing specific tools with unique capabilities. These nodes handle data processing, task execution, and algorithmic operations, with inputs and outputs. By connecting nodes, you establish a seamless chain of operations that guides the flow of data through your application.
+1. A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
 
-To facilitate node configuration and fine-tuning, a visual representation of the workflow structure is provided through a DAG (Directed Acyclic Graph) graph. This graph showcases the connectivity and dependencies between nodes, providing a clear overview of the entire workflow.
+1. Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows often consist of three parts:
 
-![](./media/image-02.png)
+    - **Inputs**: Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
+    - **Nodes**: Represent tools that perform data processing, task execution, or algorithmic operations.
+    - **Outputs**: Represent the data produced by the flow.
 
-### Prompt flow tools
-Tools are the fundamental building blocks of a flow.
+      ![](./media/image-49.png)
+      
+1. Within a flow, nodes take center stage, representing specific tools with unique capabilities. These nodes handle data processing, task execution, and algorithmic operations, with inputs and outputs. By connecting nodes, you establish a seamless chain of operations that guides the flow of data through your application.
 
-![](./media/image-03.png)
+1. To facilitate node configuration and fine-tuning, a visual representation of the workflow structure is provided through a DAG (Directed Acyclic Graph) graph. This graph showcases the connectivity and dependencies between nodes, providing a clear overview of the entire workflow.
 
-Each tool is a simple, executable unit with a specific function. By combining different tools, you can create a flow that accomplishes a wide range of goals. For example, you can use the LLM tool to generate text or summarize an article and the Python tool to process the text to inform the next flow component or result.
+### Explore the tools available in prompt flow
 
-One of the key benefit of Prompt flow tools is their seamless integration with third-party APIs and python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
+1. Tools are the fundamental building blocks of a flow.
+
+1. Three common tools are:
+
+    - **LLM tool**: Enables custom prompt creation utilizing Large Language Models.
+    - **Python tool**: Allows the execution of custom Python scripts.
+    - **Prompt tool**: Prepares prompts as strings for complex scenarios or integration with other tools.
+
+    ![](./media/image-50.png)
+   
+1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text, or making an API call. You can use multiple tools within one flow and use a tool multiple times.
+
+1. One of the key benefit of Prompt flow tools is their seamless integration with third-party APIs and python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
 
 ## Task 2: Initialize a Prompt Flow Project
 
