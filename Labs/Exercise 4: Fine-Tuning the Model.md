@@ -14,7 +14,11 @@
 
       ![](./media/image-36.png)
 
-1. Scroll down to **classify_with_llm** node
+1. Scroll down to **classify_with_llm** node and Select the following 
+
+     Connection : 
+
+     deployment_name : 
    
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
@@ -29,8 +33,28 @@
    ```
 
 1. Select Show variants button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
-1. Select the Clone button on variant_0 to generate variant_1, then you can configure parameters to different values or update the prompt on variant_1.
+1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
+1. On the variant_1 replace the existing prompt with the following prompt:
+
+    
+     ```
+   Your task is to classify a given url into one of the following types:
+   Movie, App, Academic, Channel, Profile, PDF or None based on the text content information.
+   The classification will be based on the url, the webpage text content summary, or both.
+
+   For a given URL: https://arxiv.org/abs/2303.04671 
+   Text content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or 
+   visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show 
+   that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models.
+   Classify above url to complete the category and indicate evidence.
+
+   ```
+
+
 1. Repeat the step to create more variants.
+
+
+
 1. Select Hide variants to stop adding more variants. All variants are folded. The default variant is shown for the node.
 
    For classify_with_llm node, based on variant_0:
