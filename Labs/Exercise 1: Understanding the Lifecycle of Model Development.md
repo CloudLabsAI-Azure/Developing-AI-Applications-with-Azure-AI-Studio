@@ -31,7 +31,7 @@ In Azure AI Studio, you can start a new flow by selecting a flow type or a templ
 
   ![](./media/image-48.png)
 
-### Understand a flow
+### Task 1.2: Understand a flow
 
 1. A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
 
@@ -47,7 +47,7 @@ In Azure AI Studio, you can start a new flow by selecting a flow type or a templ
 
 1. To facilitate node configuration and fine-tuning, a visual representation of the workflow structure is provided through a DAG (Directed Acyclic Graph) graph. This graph showcases the connectivity and dependencies between nodes, providing a clear overview of the entire workflow.
 
-### Explore the tools available in prompt flow
+### Task 1.3: Explore the tools available in prompt flow
 
 1. Tools are the fundamental building blocks of a flow.
 
