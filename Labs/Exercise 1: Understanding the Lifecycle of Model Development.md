@@ -1,8 +1,10 @@
-# Understanding the Lifecycle of Model Development 
+# Lab 01: Comprehend the Flow Development Lifecycle
 
-## Task 1: Comprehend the Flow Development Lifecycle
+## Lab scenario
 
-## Flow development lifecycle
+## Lab objectives
+
+### Task 01: Comprehend the Flow Development Lifecycle
 
 Prompt flow offers a well-defined process that facilitates the seamless development of AI applications. By using it, you can effectively progress through the stages of developing, testing, tuning, and deploying flows, ultimately resulting in the creation of fully fledged AI applications.
 
@@ -14,7 +16,7 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 - Production: Optimize the flow for efficiency and effectiveness, deploy it, monitor performance in a production environment, and gather usage data and feedback. Use this information to improve the flow and contribute to earlier stages for further iterations.
 - By following this structured and methodical approach, prompt flow empowers you to develop, rigorously test, fine-tune, and deploy flows with confidence, resulting in the creation of robust and sophisticated AI applications.
 
-### Flow types
+#### Task 1.1: Flow types
 
 In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
 
@@ -44,26 +46,25 @@ One of the key benefit of Prompt flow tools is their seamless integration with t
 
 ## Task 2: Initialize a Prompt Flow Project
 
-1. Go to the Home page of [Azure AI Studio](https://ai.azure.com/).
+1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f).
 
-1. Select + New project.
+1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
-1. Enter a name for the project.
+   ![](./media/newproject.png)
 
-1. Select a hub from the dropdown to host your project. If you don't have access to a hub yet, select Create a new hub.
+1. On the **Create a project** page, and follow these instructions to fill out the properties:
 
-1. If you're creating a new hub, enter a name.
+   - Project name: **Modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+   - Hub: Create a new hub
+   - Select **Next**.
+   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
+   - Subscription: Set as default
+   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
+   - Location: **<inject key="Region" enableCopy="false"/>**
+   - Connect Azure AI Services or Azure OpenAI: Keep it as default
+   - Connect Azure AI Search: Keep it as default
+   - Select **Next**
 
-1. Select your Azure subscription from the Subscription dropdown. Choose a specific Azure subscription for your project for billing, access, or administrative reasons. For example, this grants users and service principals with subscription-level access to your project.
+1. On the **Review and finish** page, select **Create a Project**.
 
-1. Leave the Resource group as the default to create a new resource group. Alternatively, you can select an existing resource group from the dropdown.
-
-1. Enter the Location for the hub and then select Next. The location is the region where the hub is hosted. The location of the hub is also the location of the project. Azure AI services availability differs per region. For example, certain models might not be available in certain regions.
-
-1. Select an existing Azure AI services resource (including Azure OpenAI) from the dropdown or create a new one.
-
-1. On the Review and finish page, you see the Azure AI services resource name and other settings to review.
-
-1. Review the project details and then select Create a project. You see progress of resource creation and the project is created when the process is complete.
-
-Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
