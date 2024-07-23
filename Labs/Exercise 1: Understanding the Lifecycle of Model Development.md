@@ -4,7 +4,7 @@
 
 ## Lab objectives
 
-### Task 01: Comprehend the Flow Development Lifecycle
+### Task 1: Comprehend the Flow Development Lifecycle
 
 Prompt flow offers a well-defined process that facilitates the seamless development of AI applications. By using it, you can effectively progress through the stages of developing, testing, tuning, and deploying flows, ultimately resulting in the creation of fully fledged AI applications.
 
@@ -16,7 +16,7 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 - Production: Optimize the flow for efficiency and effectiveness, deploy it, monitor performance in a production environment, and gather usage data and feedback. Use this information to improve the flow and contribute to earlier stages for further iterations.
 - By following this structured and methodical approach, prompt flow empowers you to develop, rigorously test, fine-tune, and deploy flows with confidence, resulting in the creation of robust and sophisticated AI applications.
 
-#### Task 1.1: Flow types
+### Flow types
 
 In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
 
