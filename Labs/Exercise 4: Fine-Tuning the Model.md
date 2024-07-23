@@ -158,4 +158,33 @@ and prediction as ${run.outputs.category} and click on **Review + submit**.
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
-1. You can repeat the above steps to evaluate the variants of summarize_text_content node as well.
+1. Now will evaluate the variants of summarize_text_content node as well.
+
+1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest imput and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**.
+
+   ![](./media/image-45.png)
+
+1. Click on **Save**.
+
+1. Select **Evaluate** > **Custom Evaluation**.
+
+1. On the Batch run & Evaluate give Run display name as summarize_text_content -  then under variants select **summarize_text_content** click on **Next**.
+
+1. On the Batch run settings select **+ Add new data**.
+
+1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file and click on **Add**.
+
+1. On the Select evaluation page select **Classification Accuarancy Evaluation** and click on **Next**.
+
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for groundtruth data source is select as ${data.url}
+and prediction as ${run.outputs.category} and click on **Review + submit**.
+
+1. On **Review** page review the settings and click on **Submit**
+
+1. Back on Prompt flow page and from top click on **View run list** link.
+
+1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select Visualize outputs. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
+
+1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+
+
