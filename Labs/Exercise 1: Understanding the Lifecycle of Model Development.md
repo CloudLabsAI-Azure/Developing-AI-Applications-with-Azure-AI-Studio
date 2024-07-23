@@ -1,9 +1,13 @@
 # Lab 01: Comprehend the Flow Development Lifecycle
 
 ## Lab scenario
+In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution. Finally, you'll initialize a Prompt Flow project in Azure AI Studio, setting up the necessary environment to begin developing, testing, and refining AI applications.
 
 ## Lab objectives
-
+In this lab, you will perform the following:
+- Task 1: Comprehend the Flow Development Lifecycle
+- Task 2: Initialize a Prompt Flow Project
+  
 ### Task 1: Comprehend the Flow Development Lifecycle
 
 Prompt flow offers a well-defined process that facilitates the seamless development of AI applications. By using it, you can effectively progress through the stages of developing, testing, tuning, and deploying flows, ultimately resulting in the creation of fully fledged AI applications.
@@ -68,3 +72,8 @@ One of the key benefit of Prompt flow tools is their seamless integration with t
 1. On the **Review and finish** page, select **Create a Project**.
 
 1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+
+## Review
+In this lab you have completed the following tasks:
+- Comprehended the Flow Development Lifecycle
+- Initialized a Prompt Flow Project
