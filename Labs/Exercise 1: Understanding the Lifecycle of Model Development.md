@@ -50,7 +50,7 @@ One of the key benefit of Prompt flow tools is their seamless integration with t
 
 ## Task 2: Initialize a Prompt Flow Project
 
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f).
+1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/).
 
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
