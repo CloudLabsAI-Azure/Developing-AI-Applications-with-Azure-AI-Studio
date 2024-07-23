@@ -34,6 +34,7 @@ In this task, you will explore different flow types in Azure AI Studio
   ![](./media/image-48.png)
 
 ### Task 1.2: Understand a flow
+In this task, you will explore **Prompt flow** a feature within the Azure AI Studio.
 
 1. A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
 
@@ -50,6 +51,8 @@ In this task, you will explore different flow types in Azure AI Studio
 1. To facilitate node configuration and fine-tuning, a visual representation of the workflow structure is provided through a DAG (Directed Acyclic Graph) graph. This graph showcases the connectivity and dependencies between nodes, providing a clear overview of the entire workflow.
 
 ### Task 1.3: Explore the tools available in prompt flow
+
+In this task, you will explore the tools available in Prompt Flow within Azure AI Studio.
 
 1. Tools are the fundamental building blocks of a flow.
 
