@@ -1,7 +1,7 @@
 # Ensuring Responsible AI with Content Safety Studio 
 
 
-The Content Safety Resource is an Azure AI service. This service consists of machine learning assisted moderation APIs which detect material that is potentially offensive, risky, or otherwise undesirable, to assure the contents in community is safe. Follow the steps below to create a Content Safety Resource.
+In this lab, you will learn about the Content Safety Resource, a powerful Azure AI service designed to help maintain a safe and respectful online environment. This service uses advanced machine learning algorithms to assist in moderating content by identifying material that may be offensive, risky, or otherwise undesirable.
 
 
 ## Task 1: Implement Content Safety Measures
