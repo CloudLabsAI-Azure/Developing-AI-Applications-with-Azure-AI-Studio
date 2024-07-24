@@ -144,13 +144,13 @@ We could leverage an AI model to detect whether the text input from our customer
 
 1. In the Test box, enter the following:
 
-   - I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!
+     - I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!
 
-   - Set all Threshold levels to Medium.
+     - Set all Threshold levels to Medium.
 
-   - Select Run test.
+     - Select Run test.
 
-     ![](./media/image-72.png)
+       ![](./media/image-72.png)
      
 1. Review the result.
 
@@ -161,30 +161,30 @@ We could leverage an AI model to detect whether the text input from our customer
 
 1. Harmful content
 
-But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or degrading statements.
+   But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or 
+   degrading statements.
 
 1. In the Test box, enter the following:
 
-   - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.
+    - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.
 
-  - Set all Threshold levels to Medium.
+   - Set all Threshold levels to Medium.
 
-  - Select Run test.
+   - Select Run test.
 
       ![](./media/image-75.png)
  
-  - Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+   - Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
 
-  - Set the Threshold level for Hate to Low.
+   - Set the Threshold level for Hate to Low.
 
-  - Select Run test.
+   - Select Run test.
 
      ![](./media/image-76.png)
     
-  - The content is now Blocked and was rejected by the filter in the Hate category.
+   - The content is now Blocked and was rejected by the filter in the Hate category.
 
-     ![](./media/image-77.png)
-
+      ![](./media/image-77.png)
 
 1. Violent content with misspelling
 
@@ -203,3 +203,22 @@ But what would happen if we tested a harmful statement? Let’s test with negati
     - Select Run test.
 
     - Although the content is Allowed, the Severity level for Violence is should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+  
+
+1. Run a bulk test
+   So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based 
+   on the model’s performance.
+
+1. We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
+
+1. Switch to the Run a bulk test tab.
+
+1. Select Browse for a file and upload the bulk-image-moderation-dataset.zip file.
+
+1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content).
+
+1. Set all Threshold levels to Medium.
+
+1. Select Run test.
+
+1. Based on the results, is there room for improvement? If so, adjust the Threshold levels until the Precision, Recall, and F1 Score metrics are closer to 1.
