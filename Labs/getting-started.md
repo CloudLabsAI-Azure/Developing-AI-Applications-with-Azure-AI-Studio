@@ -20,15 +20,15 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 ## Utilizing the Split Window Feature
  
- 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-     ![Use the Split Window Feature](./media/spl.png)
+   ![Use the Split Window Feature](./media/spl.png)
  
 ## Managing Your Virtual Machine
  
- 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-     ![Manage Your Virtual Machine](./media/res.png)
+   ![Manage Your Virtual Machine](./media/res.png)
 
 ## **Lab Duration Extension**
 
