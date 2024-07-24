@@ -206,19 +206,29 @@ We could leverage an AI model to detect whether the text input from our customer
   
 
 1. Run a bulk test
-   So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based 
-   on the model’s performance.
 
-1. We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
+  - So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
+     based on the model’s performance.
+
+  - We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
+    dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
 
 1. Switch to the Run a bulk test tab.
 
-1. Select Browse for a file and upload the bulk-image-moderation-dataset.zip file.
+1. Select Browse for a file and upload the **bulk-image-moderation-dataset.csv** file.
 
 1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content).
 
 1. Set all Threshold levels to Medium.
 
 1. Select Run test.
+   
+    ![](./media/image-78.png)
 
-1. Based on the results, is there room for improvement? If so, adjust the Threshold levels until the Precision, Recall, and F1 Score metrics are closer to 1.
+1. Review the result.
+
+    ![](./media/image-79.png)
+
+    ![](./media/image-80.png)
+   
+
