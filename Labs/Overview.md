@@ -27,6 +27,15 @@ This lab is designed to equip participants with hands-on experience in model eva
 
 ## Prerequisites 
 
+Participants should have: 
+Basic knowledge and understanding of the following
+ 
+ - Azure Portal
+ 
+ - Azure AI Studio
+ 
+ - Content Safety Studio. 
+
 ## Architecture 
 
 ## Architecture Diagram: 
