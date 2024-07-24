@@ -1,5 +1,6 @@
 # Developing AI Applications with Azure AI Studio
  
+Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
