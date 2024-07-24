@@ -166,9 +166,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Now will evaluate the variants of summarize_text_content node as well.
 
-1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest imput and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**.
+1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest imput and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
 
-   ![](./media/image-45.png)
+   ![](./media/webclassifications.png)
 
 1. Click on **Save**.
 
