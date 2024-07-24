@@ -134,7 +134,13 @@ We could leverage an AI model to detect whether the text input from our customer
 
     - Let’s first test some positive customer feedback.
 
-    - In Content Safety Studio, select Moderate text content.
+    - In Content Safety Studio, select **Moderate text content**.
+
+       ![](./media/image-70.png)
+
+    - On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under s**elect a sample or type your own** section.
+
+        ![](./media/image-71.png)
 
 1. In the Test box, enter the following:
 
@@ -144,5 +150,11 @@ We could leverage an AI model to detect whether the text input from our customer
 
    - Select Run test.
 
-   - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
+     ![](./media/image-72.png)
+     
+1. Review the result.
+
+   ![](./media/image-73.png)
+
+    - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
