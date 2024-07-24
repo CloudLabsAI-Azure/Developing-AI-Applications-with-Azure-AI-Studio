@@ -64,10 +64,38 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
-   
+
+
+## Task 2. 1 : Moderate image content for singular isolated images.
+
 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
 
      ![](./media/image-11.png)
+
+
+1. On **Moderate image content** select **Run a simple test** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**.
+
+1. Simply by selecting any of the content we can use smaple image to test.
+
+     ![](./media/image-65.png)
+
+1. Review the image and click on **Run test**.
+
+     ![](./media/image-66.png)
+
+    > **Note**: The image used for testing contains a graphic detection of a bear attack. The image will be blurred by default in the Image preview. However, you’re welcome to use the Blur image toggle to change this setting.
+   
+1. Review the result and in same way we can test for rest content.
+
+   ![](./media/image-67.png)
+
+1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
+
+    ![](./media/image-61.png)
+
+1. Within **file explorer** select any file and review the image and click on **Run test**.
+
+1. Review the result. As expected, this image content is Allowed, and the Severity level is Safe across all categories. 
 
 1. On **Moderate image content** select **Run a bulk test** tab then click on **Browse for a file**.
 
