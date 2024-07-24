@@ -234,5 +234,5 @@ We could leverage an AI model to detect whether the text input from our customer
    
 In this lab you have completed the following tasks:
 
-Implement Content Safety Measures
-Monitor and Analyze Content for Compliance
+- Implement Content Safety Measures
+- Monitor and Analyze Content for Compliance
