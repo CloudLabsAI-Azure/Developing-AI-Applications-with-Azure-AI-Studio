@@ -78,7 +78,6 @@ In this task, you will implement and evaluate content moderation for both images
 
      ![](./media/image-11.png)
 
-
 1. On **Moderate image content** select **Run a simple test** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**.
 
 #### Safe content
@@ -101,7 +100,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 #### Self harmed content
 
-    We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
+We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
 1. Select Browse for a file and upload the bear-attack-blood.JPG file.
 
@@ -110,7 +109,7 @@ In this task, you will implement and evaluate content moderation for both images
 
    >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
 
-### Task 2. 2: Run a bulk test
+### Task 2.2: Run a bulk test
 
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -138,15 +137,15 @@ We could leverage an AI model to detect whether the text input from our customer
 
 #### Safe content
 
-    - Let’s first test some positive customer feedback.
+Let’s first test some positive customer feedback.
 
-    - In Content Safety Studio, select **Moderate text content**.
+1. In Content Safety Studio, select **Moderate text content**.
 
-       ![](./media/image-70.png)
+   ![](./media/image-70.png)
 
-    - On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under s**elect a sample or type your own** section.
+1. On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under s**elect a sample or type your own** section.
 
-        ![](./media/image-71.png)
+   ![](./media/image-71.png)
 
 1. In the Test box, enter the following:
 
@@ -162,17 +161,17 @@ We could leverage an AI model to detect whether the text input from our customer
 
    ![](./media/image-73.png)
 
-    - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
+   >**Note**: The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
 
 #### Harmful content
 
-   But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or 
-   degrading statements.
+But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or degrading statements.
 
 1. In the Test box, enter the following:
 
-    - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.
+    - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a 
+       high-end tent. You all suck and are a sorry excuse for a brand.
 
    - Set all Threshold levels to Medium.
 
@@ -194,7 +193,7 @@ We could leverage an AI model to detect whether the text input from our customer
 
 #### Violent content with misspelling
 
-   We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
+We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
 
 1. Select Violent content with misspelling
 
@@ -211,12 +210,11 @@ We could leverage an AI model to detect whether the text input from our customer
     - Although the content is Allowed, the Severity level for Violence is should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
   
 #### Run a bulk test
+So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
+based on the model’s performance.
 
-  - So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
-     based on the model’s performance.
-
-  - We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
-    dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
+We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
+dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
 
 1. Switch to the Run a bulk test tab.
 
