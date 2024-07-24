@@ -73,19 +73,7 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 1. On **Moderate image content** select **Run a simple test** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**.
 
-1. Simply by selecting any of the content we can use smaple image to test.
-
-     ![](./media/image-65.png)
-
-1. Review the image and click on **Run test**.
-
-     ![](./media/image-66.png)
-
-    > **Note**: The image used for testing contains a graphic detection of a bear attack. The image will be blurred by default in the Image preview. However, you’re welcome to use the Blur image toggle to change this setting.
-   
-1. Review the result and in same way we can test for rest content.
-
-   ![](./media/image-67.png)
+1. Safe content
 
 1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
 
@@ -101,8 +89,18 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
    ![](./media/image-69.png)
 
+   >**Note**: So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
-So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+1. Violent content
+
+    We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
+
+1. Select Browse for a file and upload the bear-attack-blood.JPG file.
+
+1. Set all Threshold levels to Medium.
+1. Select Run test.
+
+   >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
 
 ### Task 2. 2: Run a bulk test
 
