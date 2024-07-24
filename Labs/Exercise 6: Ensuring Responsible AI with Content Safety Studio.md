@@ -6,6 +6,8 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 ## Task 1: Implement Content Safety Measures
 
+Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
+
 1. Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
 
    ![](./media/image-51.png)
