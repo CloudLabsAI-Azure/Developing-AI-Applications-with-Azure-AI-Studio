@@ -171,14 +171,16 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
   - Select Run test.
 
+      ![](./media/image-75.png)
+ 
+  - Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
 
+  - Set the Threshold level for Hate to Low.
 
+  - Select Run test.
 
+     ![](./media/image-76.png)
+    
+  - The content is now Blocked and was rejected by the filter in the Hate category.
 
-Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
-
-Set the Threshold level for Hate to Low.
-
-Select Run test.
-
-The content is now Blocked and was rejected by the filter in the Hate category.
+     ![](./media/image-77.png)
