@@ -81,7 +81,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 1. On **Moderate image content** select **Run a simple test** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**.
 
-1. Safe content
+#### Safe content
 
 1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
 
@@ -99,7 +99,7 @@ In this task, you will implement and evaluate content moderation for both images
 
    >**Note**: So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
-1. Violent content
+#### Self harmed content
 
     We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
@@ -136,7 +136,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
-1. Safe content
+#### Safe content
 
     - Let’s first test some positive customer feedback.
 
@@ -165,7 +165,7 @@ We could leverage an AI model to detect whether the text input from our customer
     - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
 
-1. Harmful content
+#### Harmful content
 
    But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or 
    degrading statements.
@@ -192,7 +192,7 @@ We could leverage an AI model to detect whether the text input from our customer
 
       ![](./media/image-77.png)
 
-1. Violent content with misspelling
+#### Violent content with misspelling
 
    We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
 
@@ -210,7 +210,7 @@ We could leverage an AI model to detect whether the text input from our customer
 
     - Although the content is Allowed, the Severity level for Violence is should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
   
-1. Run a bulk test
+#### Run a bulk test
 
   - So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
      based on the model’s performance.
