@@ -93,9 +93,15 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
     ![](./media/image-61.png)
 
-1. Within **file explorer** select any file and review the image and click on **Run test**.
+1. Within **file explorer** select and open **family-builds-campfire.jpg**
 
+1. Review the image and click on **Run test**.
+
+   ![](./media/image-68.png)
+   
 1. Review the result. As expected, this image content is Allowed, and the Severity level is Safe across all categories. 
+
+   ![](./media/image-69.png)
 
 1. On **Moderate image content** select **Run a bulk test** tab then click on **Browse for a file**.
 
