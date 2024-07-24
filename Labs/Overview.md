@@ -42,18 +42,12 @@ Basic knowledge and understanding of the following
 
 ## Explanation of Components 
 
-1. Understanding the Lifecycle of Model Development:
-
+- Understanding the Lifecycle of Model Development:
    - Prompt Flow Stages: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
    - Flow Types: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Studio.
-
-1. Training the Model: Prompt and LLM Tools: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Studio.
-
-1. Evaluation Flow Setup: Automated Evaluation: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
-
-1. Fine-Tuning the Model: Iterative Tuning: Fine-tune models through iterative prompt tuning, variant comparison, and performance optimization to enhance accuracy and efficiency.
-
-1. Implementing Chat Flow and Tool Integration: Chat Flow Design: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Studio.
-
-1. Ensuring Responsible AI with Content Safety Studio: Content Moderation: Utilize Text Moderation to filter harmful text and Image Moderation to block unsafe images, ensuring safe and appropriate user-generated content.
+- Training the Model: Prompt and LLM Tools: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Studio.
+- Evaluation Flow Setup: Automated Evaluation: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
+- Fine-Tuning the Model: Iterative Tuning: Fine-tune models through iterative prompt tuning, variant comparison, and performance optimization to enhance accuracy and efficiency.
+- Implementing Chat Flow and Tool Integration: Chat Flow Design: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Studio.
+- Ensuring Responsible AI with Content Safety Studio: Content Moderation: Utilize Text Moderation to filter harmful text and Image Moderation to block unsafe images, ensuring safe and appropriate user-generated content.
 
