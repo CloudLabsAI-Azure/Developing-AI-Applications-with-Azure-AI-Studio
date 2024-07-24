@@ -6,34 +6,43 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 ## Task 1: Implement Content Safety Measures
 
-1. Within [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the Settings icon in the top navigation menu.
+1. Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
 
-   ![](./media/image-08.png)
+   ![](./media/image-51.png)
 
-1. In the All resources section, select + Create a new resource.
+1. In the All resources section, select **+ Create a new resource**.
 
-    ![](./media/image-09.png)
+    ![](./media/image-52.png)
 
-1. Complete the following fields:
+1. You will be directed to the **Azure portal**, and on the **Create Content Safety** page, specify the following and click on **Review + Create**.
 
-   -  Subscription – select your Azure subscription that has access to Azure OpenAI Service
+   - Subscription – select your **Azure subscription**
 
-   -  Resource group – select the Resource Group that was previously created
+   - Resource group – select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
   
-   - Region – East US
+   - Region – **East US**
 
-   - Name – provide name for your resource
+   - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
 
-   - Pricing tier – Free or Standard S0
+   - Pricing tier – Free
 
-   - Click Review + create.
+     ![](./media/image-53.png)
 
-   - Click Create.
+1. Review the settings and click **Create**.
 
-   ![](./media/image-10.png)
+     ![](./media/image-54.png)
+
+1. Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
+
+    ![](./media/image-51.png)
+
+1. Make sure Content Safety resources is created.
+
+      ![](./media/image-55.png)
 
 ## Task 2: Monitor and Analyze Content for Compliance
 
+   
 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
 
      ![](./media/image-11.png)
