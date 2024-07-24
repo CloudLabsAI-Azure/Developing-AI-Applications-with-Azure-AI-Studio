@@ -184,3 +184,22 @@ But what would happen if we tested a harmful statement? Let’s test with negati
   - The content is now Blocked and was rejected by the filter in the Hate category.
 
      ![](./media/image-77.png)
+
+
+1. Violent content with misspelling
+
+   We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
+
+1. Select Violent content with misspelling
+
+    ![](./media/image-74.png)
+
+1. In the Test box, enter the following:
+
+    - I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker?
+
+    - Set all Threshold levels to Medium.
+
+    - Select Run test.
+
+    - Although the content is Allowed, the Severity level for Violence is should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
