@@ -22,7 +22,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![Use the Split Window Feature](./media/spl.png)
+   ![](./media/spl.png)
  
 ## Managing Your Virtual Machine
 
