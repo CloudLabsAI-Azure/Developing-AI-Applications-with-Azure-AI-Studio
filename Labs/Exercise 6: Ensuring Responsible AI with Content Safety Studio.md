@@ -32,7 +32,25 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
      ![](./media/image-54.png)
 
-1. Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
+1. Once deployement is successful click on **Go to resource**.
+
+    ![](./media/image-57.png)
+
+1. On **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page from the left navigation pane, select  **Access Control (IAM) (1)** > **+ Add (2)** then choose **Add Role assignment (3)**
+
+   ![](./media/image-58.png)
+
+1. On **Add role assignment** page search and select  **Cognitive Services User** then click on **Next**.
+
+1. On **Member** tab, make sure **User, group, or service principal** is selected then click on **+ Select members**  and search  then click **Select** 
+
+1. Click on **Next** > **Review + assign**.
+
+1. Back on **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page,  from the left navigation pane, select  **Overview** and review the settings then click on Content Safety Studio link.
+
+     ![](./media/image-59.png)
+   
+1. Your navigated to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
 
     ![](./media/image-51.png)
 
@@ -40,6 +58,10 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
       ![](./media/image-55.png)
 
+1. Select **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** and click on **Use resource**.
+
+     ![](./media/image-60.png)
+   
 ## Task 2: Monitor and Analyze Content for Compliance
 
    
