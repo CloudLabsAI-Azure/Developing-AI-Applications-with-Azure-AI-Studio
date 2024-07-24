@@ -125,4 +125,24 @@ So far, we’ve tested image content for singular isolated images. However, if w
    ![](./media/image-15.png)
 
    ![](./media/image-16.png)
-       
+
+### Task 2.3 : Text moderation using Moderate text content 
+
+We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
+
+1. Safe content
+
+    - Let’s first test some positive customer feedback.
+
+    - In Content Safety Studio, select Moderate text content.
+
+1. In the Test box, enter the following:
+
+   - I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!
+
+   - Set all Threshold levels to Medium.
+
+   - Select Run test.
+
+   - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
+
