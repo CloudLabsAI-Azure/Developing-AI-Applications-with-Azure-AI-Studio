@@ -66,6 +66,8 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
+In this task, you will implement and evaluate content moderation for both images and text using Azure's Content Safety Studio. The goal is to ensure that content uploaded by users complies with safety standards by testing for harmful content and analyzing moderation results.
+
 ## Task 2. 1 : Moderate image content for singular isolated images.
 
 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
