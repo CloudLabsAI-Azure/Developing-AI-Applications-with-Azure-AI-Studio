@@ -33,7 +33,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
    ![Manage Your Virtual Machine](./media/gext.png)
 
-   >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
 2. Click **OK** to extend your lab duration.
  
@@ -41,6 +41,6 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. 
 
-4. Click "Next" from the bottom right corner to embark on your Lab journey!
+4. Click **"Next"** from the bottom right corner to embark on your Lab journey!
  
 ### Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
