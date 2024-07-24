@@ -60,7 +60,7 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 1. Select **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** and click on **Use resource**.
 
-     ![](./media/image-60.png)
+     ![](./media/image-(60).png)
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
