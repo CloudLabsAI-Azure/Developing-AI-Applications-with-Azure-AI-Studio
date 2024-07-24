@@ -14,35 +14,16 @@ This lab is intended for AI developers and data scientists aiming to enhance the
 - Ensuring Responsible AI with Content Safety Studio: Gain experience on Content Safety Studio for Text Moderation to filter harmful text and Image Moderation to block unsafe images, 
   ensuring safe user-generated content.
 
-
-
-
-- Evaluate Performance: Learn to set up and analyze performance metrics to gauge model effectiveness.
-- Refine Models: Apply iterative fine-tuning techniques to enhance model performance.
-- Integrate Chat Flows and Tools: Practice integrating chat flows and essential tools to improve conversational AI systems.
-- Ensure Responsible AI Practices: Implement content safety measures to promote ethical AI use.
-
-
-
-
-
-
 ## Objective 
 
 This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. By completing this lab, participants will learn to: 
 
-- Understand the lifecycle of model development. 
-
-- Train and customize AI models using prompt flows. 
-
-- Set up and analyse evaluation metrics. 
-
-- Perform iterative fine-tuning for optimal performance. 
-
-- Implement chat flows and integrate essential tools. 
-
-- Ensure responsible AI practices using Content Safety Studio. 
-
+- Understand Model Development Lifecycle: Be familiar with the stages of AI application development through Prompt Flow, including Standard, Chat, and Evaluation flows.
+- Create and Train Models: Gain hands-on experience in creating, configuring, and running AI models using Prompt and LLM tools in Azure AI Studio.
+- Set Up and Automate Evaluations: Effectively set up and automate evaluation flows to assess AI model performance with metrics like coherence and fluency.
+- Fine-Tune Models: Master iterative prompt tuning, variant comparison, and performance optimization techniques to enhance model accuracy.
+- Implement and Test Chat Flows: Design, deploy, and test functional chat flows, integrating various inputs and LLM nodes.
+- Ensure Responsible AI Practices: Utilize Content Safety Studio to moderate text and images, ensuring the safety and appropriateness of user-generated content.
 
 ## Prerequisites 
 
