@@ -1,9 +1,13 @@
-# Ensuring Responsible AI with Content Safety Studio 
+# Lab 06: Ensuring Responsible AI with Content Safety Studio 
 
-
+## Lab scenario
 In this lab, you will learn about the Content Safety Resource, a powerful Azure AI service designed to help maintain a safe and respectful online environment. This service uses advanced machine learning algorithms to assist in moderating content by identifying material that may be offensive, risky, or otherwise undesirable.
 
-
+## Lab objectives
+In this lab, you will perform the following:
+- Task 1: Implement Content Safety Measures
+- Task 2: Monitor and Analyze Content for Compliance
+  
 ## Task 1: Implement Content Safety Measures
 
 Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
@@ -231,8 +235,8 @@ We could leverage an AI model to detect whether the text input from our customer
     ![](./media/image-79.png)
 
     ![](./media/image-80.png)
-   
-In this lab you have completed the following tasks:
 
-- Implement Content Safety Measures
+## Review
+In this lab you have completed the following tasks:
+- Implemented Content Safety Measures
 - Monitor and Analyze Content for Compliance
