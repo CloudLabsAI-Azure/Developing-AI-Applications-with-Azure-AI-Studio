@@ -64,8 +64,6 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
-
-
 ## Task 2. 1 : Moderate image content for singular isolated images.
 
 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
@@ -102,6 +100,13 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 1. Review the result. As expected, this image content is Allowed, and the Severity level is Safe across all categories. 
 
    ![](./media/image-69.png)
+
+
+So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+
+### Task 2. 2: Run a bulk test
+
+So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
 1. On **Moderate image content** select **Run a bulk test** tab then click on **Browse for a file**.
 
