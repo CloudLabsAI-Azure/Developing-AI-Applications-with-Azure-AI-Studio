@@ -158,3 +158,27 @@ We could leverage an AI model to detect whether the text input from our customer
 
     - The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
+
+1. Harmful content
+
+But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or degrading statements.
+
+1. In the Test box, enter the following:
+
+   - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.
+
+  - Set all Threshold levels to Medium.
+
+  - Select Run test.
+
+
+
+
+
+Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+
+Set the Threshold level for Hate to Low.
+
+Select Run test.
+
+The content is now Blocked and was rejected by the filter in the Hate category.
