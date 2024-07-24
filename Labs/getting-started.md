@@ -22,13 +22,13 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![Use the Split Window Feature](./media/spl.png)
+     ![Use the Split Window Feature](./media/spl.png)
  
 ## Managing Your Virtual Machine
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](./media/res.png)
+    ![Manage Your Virtual Machine](./media/res.png)
 
 ## **Lab Duration Extension**
 
@@ -36,14 +36,14 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
    ![Manage Your Virtual Machine](./media/gext.png)
 
->**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+   >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
 2. Click **OK** to extend your lab duration.
  
-   ![Manage Your Virtual Machine](./media/gext2.png)
+    ![Manage Your Virtual Machine](./media/gext2.png)
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. 
 
 4. Click "Next" from the bottom right corner to embark on your Lab journey!
  
-<br>Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+### Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
