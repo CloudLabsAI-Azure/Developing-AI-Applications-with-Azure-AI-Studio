@@ -232,4 +232,7 @@ We could leverage an AI model to detect whether the text input from our customer
 
     ![](./media/image-80.png)
    
+In this lab you have completed the following tasks:
 
+Implement Content Safety Measures
+Monitor and Analyze Content for Compliance
