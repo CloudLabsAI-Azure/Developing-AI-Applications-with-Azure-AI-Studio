@@ -49,6 +49,7 @@ You can manually review model responses based on test data. Manually reviewing a
    ![](./media/manualevaluation.png)
 
 ## Task 2: Run and Analyze Evaluation Flows
+It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
 1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
 
