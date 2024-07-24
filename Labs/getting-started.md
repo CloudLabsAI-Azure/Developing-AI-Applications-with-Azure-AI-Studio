@@ -45,6 +45,4 @@
 
 4. Click "Next" from the bottom right corner to embark on your Lab journey!
  
-   ![Start Your Azure Journey](./media/sc900-image(3).png)
- 
 <br>Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
