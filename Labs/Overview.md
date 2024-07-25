@@ -32,7 +32,7 @@ Basic knowledge and understanding of the following
  
  - Azure Portal
  - Azure AI Studio
- - Content Safety Studio. 
+ - Content Safety Studio
 
 ## Architecture 
 
