@@ -1,4 +1,4 @@
-# Developing AI Applications with Azure AI Studio
+# Get Start with Developing AI Applications with Azure AI Studio
  
 Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
@@ -6,7 +6,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-    ![Access Your VM and Lab Guide](./media/labguide-1.png)
+   ![Access Your VM and Lab Guide](./media/labguide-1.png)
 
  ### Virtual Machine & Lab Guide
  
@@ -16,7 +16,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
  
-    ![Explore Lab Resources](./media/env-1.png)
+   ![Explore Lab Resources](./media/env-1.png)
  
 ## Utilizing the Split Window Feature
  
