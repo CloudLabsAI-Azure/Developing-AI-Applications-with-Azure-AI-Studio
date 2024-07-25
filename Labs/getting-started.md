@@ -5,8 +5,9 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 ## Accessing Your Lab Environment
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
- 
-   ![Access Your VM and Lab Guide](./media/labguide-1.png)
+
+
+   ![](./media/labguide-1.png)
 
  ### Virtual Machine & Lab Guide
  
@@ -15,8 +16,9 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 ## Exploring Your Lab Resources
  
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+
  
-   ![Explore Lab Resources](./media/env-1.png)
+   ![](./media/env-1.png)
  
 ## Utilizing the Split Window Feature
  
