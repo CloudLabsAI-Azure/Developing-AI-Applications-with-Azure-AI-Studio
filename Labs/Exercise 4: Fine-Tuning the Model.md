@@ -21,7 +21,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. On the **Clone Flow** page, enter name **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
 
-      ![](./media/image-36.png)
+      ![](./media/image-366.png)
 
 1. Scroll down to **classify_with_llm** node and Select the following:
 
