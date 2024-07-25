@@ -5,7 +5,7 @@
 This lab is intended for AI developers and data scientists aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures. This comprehensive hands-on approach prepares participants to deploy robust, ethical AI solutions in real-world scenarios
 
 
-- ​Understanding the Lifecycle of Model Development: Gain experience by exploring AI application development through Prompt Flow’s lifecycle stages, including Standard, Chat, and 
+- ​Understanding the Lifecycle of Model Development: Gain experience by exploring AI application development through Prompt Flow’s lifecycle stages, including Standard, Chat, and Evaluation flows.
 - ​Training the Model: Gain hands-on experience creating, configuring, and running flows with Prompt and LLM tools in Azure AI Studio.
 - ​​Evaluation Flow Setup: Set up and automate evaluation flows in Azure AI Studio to assess AI model performance with metrics like coherence and fluency.
 - Fine-Tuning the Model: Gain hands-on experience in Fine-tune models in Azure AI Studio with iterative prompt tuning, variant comparison, and performance optimization.
