@@ -15,11 +15,13 @@ In this lab, you will perform the following:
 
 It involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/).
+1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?reloadCount=1).
 
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
    ![](./media/newproject.png)
+
+   >**Note:** Select **Sign in**, if you are not signed in.
 
 1. On the **Create a project** page, and follow these instructions to fill out the properties:
 
@@ -48,7 +50,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploybasemodel.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (2)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
    ![](./media/selectmodel.png)
 
