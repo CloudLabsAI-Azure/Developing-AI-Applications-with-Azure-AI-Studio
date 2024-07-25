@@ -1,12 +1,11 @@
 # Lab 01: Comprehend the Flow Development Lifecycle
 
 ## Lab scenario
-In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution. Finally, you'll initialize a Prompt Flow project in Azure AI Studio, setting up the necessary environment to begin developing, testing, and refining AI applications.
+In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
 
 ## Lab objectives
 In this lab, you will perform the following:
 - Task 1: Comprehend the Flow Development Lifecycle
-- Task 2: Initialize a Prompt Flow Project
   
 ### Task 1: Comprehend the Flow Development Lifecycle (READ ONLY)
 
@@ -67,35 +66,7 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text, or making an API call. You can use multiple tools within one flow and use a tool multiple times.
 
 1. One of the key benefit of Prompt flow tools is their seamless integration with third-party APIs and python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
-
-## Task 2: Initialize a Prompt Flow Project
-
-It involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
-
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/).
-
-1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
-
-   ![](./media/newproject.png)
-
-1. On the **Create a project** page, and follow these instructions to fill out the properties:
-
-   - Project name: **Modelproject-<inject key="DeploymentID" enableCopy="false"/>**
-   - Hub: Create a new hub
-   - Select **Next**.
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
-   - Subscription: Set as default
-   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
-   - Location: **<inject key="Region" enableCopy="false"/>**
-   - Connect Azure AI Services or Azure OpenAI: Keep it as default
-   - Connect Azure AI Search: Keep it as default
-   - Select **Next**
-
-1. On the **Review and finish** page, select **Create a Project**.
-
-1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
-
+   
 ## Review
 In this lab you have completed the following tasks:
 - Comprehended the Flow Development Lifecycle
-- Initialized a Prompt Flow Project
