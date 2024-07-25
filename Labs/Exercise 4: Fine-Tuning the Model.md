@@ -134,6 +134,8 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
     ![](./media/image-44.png)
 
+   >**Note:** In the Output section, if the outputs are already added, please ignore and select **Save**.
+   
 1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
 
    ![](./media/evaluation(3).png)
@@ -176,19 +178,31 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/evaluation(3).png)
 
-1. On the Batch run & Evaluate give **Run display name** as **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/>**, then under variants select **Use default variants for all nodes**, and select **summarize_text_content** click on **Next**.
+1. On the Batch run & Evaluate give **Run display name** as **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under variants select **Use default variants for all nodes (2)**, and select **summarize_text_content (3)** click on **Next (4)**.
 
-1. On the Batch run settings, under **Data** select **summarize_text_content (version 3)**, and then select **+ Add new data**.
+   ![](./media/summarizetextcontent.png)
+
+1. On the Batch run settings, under **Data** enter **summarize_text_content (1)**, and then select **+ Add new data (2)**.
+
+   ![](./media/version1.png)
 
 1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file and click on **Add**.
 
-1. Under **Input mapping** for **url** select **${data.text}**, and for **text** select **${data.text}**. Select **Next**
+1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
 
-1. On the **Select evaluation** page select **Classification Accuarancy Evaluation** and click on **Next**.
+   ![](./media/inputmapping.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url}** and **prediction** as **${run.outputs.category}** and click on **Review + submit**.
+1. On the **Select evaluation** page select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
-1. On **Review** page review the settings and click on **Submit**
+   ![](./media/classification.png)
+
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${run.outputs.category} (2)** and click on **Review + submit (3)**.
+
+   ![](./media/classification(2).png)
+
+1. On **Review** page review the settings and click on **Submit**.
+
+   ![](./media/submit(1).png)
 
 1. Back on Prompt flow page and from top click on **View run list** link.
 
