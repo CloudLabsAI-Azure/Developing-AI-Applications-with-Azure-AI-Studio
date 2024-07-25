@@ -71,7 +71,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **Promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/image-05.png)
+   ![](./media/image-055.png)
 
    >**Note:** If you encounter any errors, wait for 5 minutes and recreate the prompt flow with a unique name. Once it is created, rename the flow on the newly created prompt flow page to **Promptflow-<inject key="DeploymentID" enableCopy="false"/>**.
 
