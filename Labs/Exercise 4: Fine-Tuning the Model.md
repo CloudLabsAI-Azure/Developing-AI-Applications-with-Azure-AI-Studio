@@ -217,3 +217,4 @@ In this lab you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production
 
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
