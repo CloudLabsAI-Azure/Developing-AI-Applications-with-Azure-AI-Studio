@@ -145,3 +145,5 @@ In this lab you have completed the following tasks:
 - Initialize a Prompt Flow Project
 - Created and Customized Prompts
 - Developed a Flow with LLM and Prompt Tools
+
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
