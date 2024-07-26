@@ -53,3 +53,4 @@ Basic knowledge and understanding of the following
 - **Implementing Chat Flow and Tool Integration**: Chat Flow Design: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Studio.
 - **Ensuring Responsible AI with Content Safety Studio**: Content Moderation: Utilize Text Moderation to filter harmful text and Image Moderation to block unsafe images, ensuring safe and appropriate user-generated content.
 
+### Click "Next" from the bottom right corner to move next page
