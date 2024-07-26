@@ -146,7 +146,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On the Batch run settings select **+ Add new data**.
 
-1. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file and click on **Add**. Select **Next**.
+1. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**. Select **Next**.
 
    ![](./media/batchrunevaluate.png)
 
@@ -186,7 +186,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/version1.png)
 
-1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file and click on **Add**.
+1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**.
 
 1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
 
