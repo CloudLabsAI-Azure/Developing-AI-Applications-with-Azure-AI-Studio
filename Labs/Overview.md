@@ -45,7 +45,6 @@ Basic knowledge and understanding of the following
 ## Explanation of Components 
 
 - **Understanding the Lifecycle of Model Development**:
-   
    - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
    - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Studio.
 
