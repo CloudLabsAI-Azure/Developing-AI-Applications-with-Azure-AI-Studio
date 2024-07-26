@@ -153,3 +153,5 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 In this lab you have completed the following tasks:
 - Designed and Implement a Chat Flow
 - Used LLM and Prompt Tools in Flows
+
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
