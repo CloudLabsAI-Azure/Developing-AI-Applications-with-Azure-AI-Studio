@@ -11,27 +11,27 @@
       "Order": 2
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%201%3A%20Understanding%20the%20Lifecycle%20of%20Model%20Development.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-01.md",
       "Order": 3
      },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%202%3A%20Training%20the%20Model.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-02.md",
       "Order": 4
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%203%3A%20Evaluation%20Flow%20Setup.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-03.md",
       "Order": 5
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%204%3A%20Fine-Tuning%20the%20Model.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-04.md",
       "Order": 6
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%205%3A%20Implementing%20Chat%20Flow%20and%20Tool%20Integration.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-05.md",
       "Order": 7
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise%206%3A%20Ensuring%20Responsible%20AI%20with%20Content%20Safety%20Studio.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Model-Evaluation-and-Model-Tunning/main/Labs/Exercise-06.md",
       "Order": 8
     }
   ]
