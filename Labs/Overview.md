@@ -125,7 +125,4 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
 2. Now, click on Next from the lower right corner to move on to the next page.
  
-
-This hands-on lab demonstrates how GitHub Copilot and GitHub Codespaces enhance development through real-time code suggestions and consistent cloud environments.
-
 ### Happy Learning!!
