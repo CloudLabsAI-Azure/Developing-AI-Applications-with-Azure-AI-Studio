@@ -228,3 +228,5 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 In this lab you have completed the following tasks:
 - Implemented Content Safety Measures
 - Monitor and Analyze Content for Compliance
+
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
