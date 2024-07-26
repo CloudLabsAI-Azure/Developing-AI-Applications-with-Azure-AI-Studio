@@ -91,3 +91,5 @@ It systematically assesses the performance and effectiveness of various processe
 In this lab you have completed the following tasks:
 - Set Up Evaluation Metrics
 - Ran and Analyzed Evaluation Flows
+
+### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
