@@ -52,6 +52,8 @@ Basic knowledge and understanding of the following
 
 ## Architecture Diagram: 
 
+  ![](./media/arc-diagram.png)
+
 ## Explanation of Components 
 
 - **Understanding the Lifecycle of Model Development**:
