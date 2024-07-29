@@ -17,11 +17,11 @@ It involves setting up a structured environment to manage and streamline prompt-
 
 1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?reloadCount=1).
 
+   >**Note:** Select **Sign in**, if you are not signed in.
+
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
    ![](./media/newproject.png)
-
-   >**Note:** Select **Sign in**, if you are not signed in.
 
 1. On the **Create a project** page, and follow these instructions to fill out the properties:
 
@@ -39,6 +39,12 @@ It involves setting up a structured environment to manage and streamline prompt-
 1. On the **Review and finish** page, select **Create a Project**.
 
 1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="85914800-05d0-40dd-80ca-292f5415040a" />
 
 ### Task 2 : Create and Customize Prompts
 
@@ -76,6 +82,12 @@ Creating and customizing prompts involves designing specific, targeted questions
    ![](./media/image-055.png)
 
    >**Note:** If you encounter any errors, wait for 5 minutes and recreate the prompt flow with a unique name. Once it is created, rename the flow on the newly created prompt flow page to **Promptflow-<inject key="DeploymentID" enableCopy="false"/>**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="97dc69b4-95e6-4d6b-9b64-b143ebe6290b" />
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 
