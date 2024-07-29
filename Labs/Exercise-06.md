@@ -12,7 +12,8 @@ In this lab, you will perform the following:
 
 Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
 
-1. Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
+1.  Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), If the user is not logged in, Click on Sign in from the top right corner and select the user. Then select 
+    the **Settings** icon in the top navigation menu.
 
    ![](./media/image-51.png)
 
@@ -139,7 +140,7 @@ Let’s first test some positive customer feedback.
 
    ![](./media/image-70.png)
 
-1. On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under s**elect a sample or type your own** section.
+1. On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under **select a sample or type your own** section.
 
    ![](./media/image-71.png)
 
