@@ -12,7 +12,7 @@ In this lab, you will perform the following tasks:
 
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 
-It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
+It refines model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
 1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f) dashboard, under the **Tools** section, select **Prompt flow (1)**. Then click on **+ Create (2)** to open the flow creation wizard.
 
@@ -28,7 +28,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Scroll down to the **classify_with_llm** node and select the following:
 
-     Connection: Select the connection that is created.
+     Connection: **Select the connection that is created**.
 
      deployment_name: **gpt-35-turbo**
    
@@ -49,7 +49,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Select the **Show variants** button on the top right of the **LLM node**. The existing LLM node is **variant_0** and is the default variant.
 
-1. Select the **Clone** button on **variant_0** to generate **variant_1**, then we can configure parameters to different values on **variant_1**
+1. Select the **Clone** button on **variant_0** to generate **variant_1**. Then we can configure parameters to different values on **variant_1**.
 
 1. On **variant_1**, replace the existing prompt with the following prompt:
 
@@ -72,7 +72,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Scroll up to the **summarize_text_content** node and select the following 
 
-     Connection: Select the connection that is created.
+     Connection: **Select the connection that is created**.
 
      deployment_name: **gpt-35-turbo**
 
@@ -96,7 +96,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Click on the **Show variants** button on the top right of the **LLM node**. The existing **LLM node** is **variant_0** and is the default variant.
 
-1. Select the **Clone** button on **variant_0** to generate **variant_1.** Then we can configure parameters to different values on **variant_1.**
+1. Select the **Clone** button on **variant_0** to generate **variant_1.** Then we can configure parameters to different values on **variant_1**.
 
 1. On **variant_1,** replace the existing prompt with the following prompt:
 
@@ -118,13 +118,13 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
     ![](./media/webclassfication.png)
 
-1. On the **Submit flow run** window click on **Select the LLM node with variants that you want to run** and choose **Select a node to run variants.** Then select **summarize_text_content (1)**, and click on **Submit (2)**. 
+1. On the **Submit flow run** window, under **Select the LLM node with variants that you want to run** choose **Select a node to run variants.** Then select **summarize_text_content (1)**, and click on **Submit (2)**. 
 
    ![](./media/image-41.png)
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
-1. In the top menu, select **Variant 0 (1)** from the drop-down and select **View full output**. Now, review the output of the variant, that you selected.
+1. In the top menu, select **Variant 0 (1)** from the drop-down and select **View full output**. Now, review the output of the variant that you selected.
 
    ![](./media/image-39.png)
 
@@ -160,9 +160,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On the **Configure evaluation** page, expand **Classification Accuarancy Evaluation** and for **groundtruth** data source, enter **${data.url}** and **prediction.** Moving on, select **category**, and click on **Next**.
 
-1. On **Review** page, double check the settings and click on **Submit.**
+1. On the **Review** page, double check the settings and click on **Submit.**
 
-1. Back on the **Prompt flow** page, click on the **View run list** link, from the top.
+1. Back on the **Prompt flow** page, click on the **View run list** link from the top.
 
     ![](./media/image-43.png)
    
