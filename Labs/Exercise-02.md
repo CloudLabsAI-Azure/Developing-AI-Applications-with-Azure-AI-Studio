@@ -28,7 +28,7 @@ It involves setting up a structured environment to manage and streamline prompt-
 1. On the **Create a project** page, follow these instructions to fill out the properties:
 
    - Project name: **Modelproject-<inject key="DeploymentID" enableCopy="false"/>**
-   - Hub: Create a new hub
+   - Hub: Create a new hub.
    - Select **Next**.
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
    - Subscription: Set as default
@@ -62,7 +62,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/selectmodel.png)
 
-1. On the **Deploy model gpt-35-turbo,** page follow these instructions to create the deployment:
+1. On the **Deploy model gpt-35-turbo** page, follow these instructions to create the deployment:
 
    - Deployment name: **gpt-35-turbo (1)**
    - Model version: **Keep it as default (2)**
@@ -99,7 +99,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection from the **drop-down menu**, and for the **deployment_name**, select the newly created deployment, **gpt-35-turbo**, in the **LLM tool editor**.
+1. From the **graph**, select **joke**. Choose an existing connection from the **drop-down menu**, and for the **deployment_name**, select the newly created deployment, **gpt-35-turbo**, in the **LLM tool editor**.
 
      ![](./media/joke.png)
 
@@ -138,7 +138,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    3. Browse available products
    4. Contact customer support
    ```
-1. In the **Input section** add the following values. Select **Save and Run**.
+1. In the **Input section,** add the following values. Select **Save and Run**.
 
    - user_name: Jane
    - website_name: Microsoft
