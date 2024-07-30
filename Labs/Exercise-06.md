@@ -115,8 +115,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
      ![](./media/image-12.png)
 
 1. Within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and open **image_sample_dataset.zip** folder.
-
-    
+  
 1. Under Test section review **Dataset preview** then select **Configure filters** tab review **Category** and **Threshold level** then click on **Run test**.
 
      ![](./media/image-14.png)
@@ -215,7 +214,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Switch to the Run a bulk test tab.
 
-1. Select Browse for a file and upload the **bulk-image-moderation-dataset.csv** file.
+1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and upload**bulk-image-moderation-dataset.csv** file.
 
 1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
    content).
