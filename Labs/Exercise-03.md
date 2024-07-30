@@ -15,7 +15,7 @@ In this lab, you will perform the following tasks:
 
 You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
 
-1. From the left navigation menu, under the **Tools** section, select **Evaluation (1)**. Under the **Assess and compare AI application performance,** space select the **Manual evaluations (2)** tab. Then, select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Tools** section, select **Evaluation (1)**. Under the **Assess and compare AI application performance** space, select the **Manual evaluations (2)** tab. Then, select **+ New manual evaluation (3)**.
 
    ![](./media/modelevluation.png)
 
@@ -54,22 +54,22 @@ You can manually review model responses based on test data. Manually reviewing a
 ## Task 2: Run and Analyze Evaluation Flows
 It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
-1. Select **Prompt flow** from the left navigation pane and select the prompt flow you created.
+1. Select **Prompt flow (1)** from the left navigation pane and select the **prompt flow you created (2)**.
 
    ![](./media/promptflow(1).png)
 
-1. From the top menu bar select **Evaluate (1)**, and from the **drop-down**, select **Automate Evaluation (2)**.
+1. From the top menu bar, select **Evaluate (1)**, and from the **drop-down**, select **Automate Evaluation (2)**.
 
    ![](./media/evaluations(1).png)
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
+    - **What kind of scenario are you evaluating?**: Select the **Question and answer with context (2)** option, and click on **Next (3)**.
   
          ![](./media/modelevaluation(1).png)
 
     - Open a new tab and **download** the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSON file. Press **Ctrl + A** and **Ctrl + S** to select all and save the file.
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
+    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**. Select the file that you downloaded.
   
          ![](./media/image-22.png)
 
@@ -84,7 +84,7 @@ It systematically assesses the performance and effectiveness of various processe
 
 1. Select the **evaluation run** you just created.
 
-1. Explore the **Metric dashboard** and **Detailed metrics result**.
+1. Explore the **Metric dashboard** and **Detailed metrics result** page.
 
     ![](./media/image-26.png)
 
