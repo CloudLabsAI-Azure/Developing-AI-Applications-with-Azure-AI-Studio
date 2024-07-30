@@ -83,7 +83,7 @@ In this task, you will implement and evaluate content moderation for both images
 
     ![](./media/image-61.png)
 
-1. Within **file explorer** select and open **family-builds-campfire.jpg**
+1. Within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
 
 1. Review the image and click on **Run test**.
 
@@ -99,7 +99,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
-1. Select Browse for a file and upload the bear-attack-blood.JPG file.
+1. Select Browse for a file and upload the **bear-attack-blood.JPG** file.
 
 1. Set all Threshold levels to Medium.
 1. Select Run test.
@@ -114,10 +114,9 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
      ![](./media/image-12.png)
 
-1. Within file explorer select and open **image_sample_dataset.zip**.
+1. Within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and open **image_sample_dataset** folder.
 
-     ![](./media/image-13.png)
-
+    
 1. Under Test section review **Dataset preview** then select **Configure filters** tab review **Category** and **Threshold level** then click on **Run test**.
 
      ![](./media/image-14.png)
