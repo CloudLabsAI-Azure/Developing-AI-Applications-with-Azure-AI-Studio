@@ -1,9 +1,9 @@
 # Lab 01: Understanding the Lifecycle of Model Development
 
-## Lab scenario
-In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
+## Lab Scenario
+In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's prompt flow. You will start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. Learn about different flow types, such as standard, chat, and evaluation, and how they cater to various application needs. You will also delve into the concept of flows and nodes within Prompt Flow, which enables seamless data processing and task execution.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Comprehend the Flow Development Lifecycle
   
@@ -22,7 +22,7 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 
 ### Task 1.1: Understand the types of flows
 
-In this task, you will explore different flow types in Azure AI Studio
+In this task, you will explore different flow types in Azure AI Studio.
 
 1. In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
 
@@ -33,15 +33,15 @@ In this task, you will explore different flow types in Azure AI Studio
   ![](./media/image-48.png)
 
 ### Task 1.2: Understand a flow
-In this task, you will explore **Prompt flow** a feature within the Azure AI Studio.
+In this task, you will explore **prompt flow,** a feature within the Azure AI Studio.
 
-1. A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
+1. A flow in prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
 
-1. Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows often consist of three parts:
+1. Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows that often consist of three parts:
 
-    - **Inputs**: Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
-    - **Nodes**: Represent tools that perform data processing, task execution, or algorithmic operations.
-    - **Outputs**: Represent the data produced by the flow.
+    - **Inputs**: Inputs stand for the data passed into the flow. It can be different data types like strings, integers, or boolean.
+    - **Nodes**: Nodes represent tools that perform data processing, task execution, or algorithmic operations.
+    - **Outputs**: Outputs is all about the data produced by the flow.
 
       ![](./media/image-49.png)
       
@@ -51,7 +51,7 @@ In this task, you will explore **Prompt flow** a feature within the Azure AI Stu
 
 ### Task 1.3: Explore the tools available in prompt flow
 
-In this task, you will explore the tools available in Prompt Flow within Azure AI Studio.
+In this task, you will explore the tools available in prompt flow within Azure AI Studio.
 
 1. Tools are the fundamental building blocks of a flow.
 
@@ -63,12 +63,12 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 
     ![](./media/image-50.png)
    
-1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text, or making an API call. You can use multiple tools within one flow and use a tool multiple times.
+1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text or making an API call. You can use multiple tools within one flow and use a tool multiple times.
 
-1. One of the key benefit of Prompt flow tools is their seamless integration with third-party APIs and python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
+1. One of the key benefits of prompt flow tools is their seamless integration with third-party APIs and Python open-source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
    
 ## Review
-In this lab you have completed the following tasks:
-- Comprehended the Flow Development Lifecycle
+In this lab, you have completed the following tasks:
+- Comprehended the flow development lifecycle.
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
