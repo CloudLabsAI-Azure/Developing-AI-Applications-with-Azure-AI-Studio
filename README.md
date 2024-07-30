@@ -1,1 +1,1 @@
-# Model Evaluation and Model Tunning Hands-on Lab
+# Developing-AI-Applications-with-Azure-AI-Studio
