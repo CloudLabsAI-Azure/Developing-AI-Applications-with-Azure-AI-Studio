@@ -15,25 +15,25 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 1.  Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), If the user is not logged in, Click on Sign in from the top right corner and select the user. Then select 
     the **Settings** icon in the top navigation menu.
 
-   ![](./media/image-51.png)
+     ![](./media/image-51.png)
 
 1. In the All resources section, select **+ Create a new resource**.
 
-    ![](./media/image-52.png)
+     ![](./media/image-52.png)
 
 1. You will be directed to the **Azure portal**, and on the **Create Content Safety** page, specify the following and click on **Review + Create**.
 
-   - Subscription – select your **Azure subscription**
-
-   - Resource group – select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
+     - Subscription – select your **Azure subscription**
   
-   - Region – **East US**
-
-   - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
-
-   - Pricing tier – Free
-
-     ![](./media/image-53.png)
+     - Resource group – select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
+    
+     - Region – **East US**
+  
+     - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
+  
+     - Pricing tier – Free
+  
+       ![](./media/image-53.png)
 
 1. Review the settings and click **Create**.
 
@@ -41,15 +41,15 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 
 1. Once deployement is successful click on **Go to resource**.
 
-    ![](./media/image-57.png)
+     ![](./media/image-57.png)
 
 1. Back on **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page,  from the left navigation pane, select  **Overview** and review the settings then click on Content Safety Studio link.
 
-     ![](./media/image-59.png)
+      ![](./media/image-59.png)
    
 1. Your navigated to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
 
-    ![](./media/image-51.png)
+     ![](./media/image-51.png)
 
 1. Make sure Content Safety resources is created.
 
@@ -81,17 +81,17 @@ In this task, you will implement and evaluate content moderation for both images
 
 1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
 
-    ![](./media/image-61.png)
+     ![](./media/image-61.png)
 
 1. Within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
 
 1. Review the image and click on **Run test**.
 
-   ![](./media/image-68.png)
+    ![](./media/image-68.png)
    
 1. Review the result. As expected, this image content is Allowed, and the Severity level is Safe across all categories. 
 
-   ![](./media/image-69.png)
+    ![](./media/image-69.png)
 
    >**Note**: So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -104,7 +104,7 @@ We should also anticipate customers potentially posting harmful image content. T
 1. Set all Threshold levels to Medium.
 1. Select Run test.
 
-   >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
+    >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
 
 ### Task 2.2: Run a bulk test
 
@@ -155,9 +155,9 @@ Let’s first test some positive customer feedback.
      
 1. Review the result.
 
-   ![](./media/image-73.png)
+    ![](./media/image-73.png)
 
-   >**Note**: The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
+    >**Note**: The content is allowed, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
 
 #### Harmful content
@@ -169,13 +169,14 @@ But what would happen if we tested a harmful statement? Let’s test with negati
     - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a 
        high-end tent. You all suck and are a sorry excuse for a brand.
 
-   - Set all Threshold levels to Medium.
+    - Set all Threshold levels to Medium.
 
-   - Select Run test.
+    - Select Run test.
 
       ![](./media/image-75.png)
  
-   - Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+   - Although the content is Allowed, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for Hate. A lower Threshold level would block any content 
+     that’s a low, medium, or high severity. There’s no room for exceptions!
 
    - Set the Threshold level for Hate to Low.
 
@@ -216,7 +217,8 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Select Browse for a file and upload the **bulk-image-moderation-dataset.csv** file.
 
-1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content).
+1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
+   content).
 
 1. Set all Threshold levels to Medium.
 
