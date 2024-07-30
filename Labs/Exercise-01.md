@@ -39,7 +39,7 @@ In this task, you will explore **prompt flow,** a feature within the Azure AI St
 
 1. Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows that often consist of three parts:
 
-    - **Inputs**: Inputs stand for the data passed into the flow. It can be different data types like strings, integers, or boolean.
+    - **Inputs**: Inputs stand for the data passed into the flow. It can be different data types, like strings, integers, or boolean.
     - **Nodes**: Nodes represent tools that perform data processing, task execution, or algorithmic operations.
     - **Outputs**: Outputs is all about the data produced by the flow.
 
