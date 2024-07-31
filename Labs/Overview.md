@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures. This comprehensive hands-on approach prepares participants to deploy robust, ethical AI solutions in real-world scenarios
+This lab is intended for AI Developers, Data Scientists, AI Enthusiasts, Cloud Engineers, and AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Studio's prompt flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures. This comprehensive hands-on approach prepares participants to deploy robust, ethical AI solutions in real-world scenarios.
 
 
 - **​Understanding the Lifecycle of Model Development**: Gain experience by exploring AI application development through Prompt Flow’s lifecycle stages, including Standard, Chat, and Evaluation flows.
@@ -11,7 +11,7 @@ This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud E
 
 - **​​Evaluation Flow Setup**: Set up and automate evaluation flows in Azure AI Studio to assess AI model performance with metrics like coherence and fluency.
 
-- **Fine-Tuning the Model**: Gain hands-on experience in Fine-tune models in Azure AI Studio with iterative prompt tuning, variant comparison, and performance optimization.
+- **Fine-Tuning the Model**: Gain hands-on experience in fine-tuning models in Azure AI Studio with iterative prompt tuning, variant comparison, and performance optimization.
 
 - **Implementing Chat Flow and Tool Integration**: Design and implement a chat flow in Azure AI Studio, integrating inputs, LLM nodes, and output configurations, then deploy and test the 
   flow.
@@ -37,8 +37,7 @@ This lab is designed to equip participants with hands-on experience in model eva
 
 ## Prerequisites 
 
-Participants should have: 
-Basic knowledge and understanding of the following
+Participants should have basic knowledge and understanding of the following:
  
  - Azure Portal
  - Azure AI Studio
@@ -46,9 +45,9 @@ Basic knowledge and understanding of the following
 
 ## Architecture 
 
-- **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
-- **Azure AI Studio** : Azure AI Studio is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
-- **Content Safety Studio** : Content Safety Studio is a suite of tools within Azure that provides capabilities for moderating and filtering content to ensure it meets safety and compliance standards. It includes text moderation and image moderation services.
+- **Azure Portal**: The Azure portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
+- **Azure AI Studio**: Azure AI Studio is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+- **Content Safety Studio**: Content Safety Studio is a suite of tools within Azure that provides capabilities for moderating and filtering content to ensure it meets safety and compliance standards. It includes text moderation and image moderation services.
 
 ## Architecture Diagram: 
 
@@ -58,9 +57,9 @@ Basic knowledge and understanding of the following
 
 - **Understanding the Lifecycle of Model Development**:
    - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Studio.
+   - **Flow Types**: Understand different types of flows (Standard, Chat, and Evaluation) within Azure AI Studio.
 
-- **Training the Model**: Prompt and LLM Tools: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Studio.
+- **Training the Model**: Prompt and LLM Tools: Create, configure, and run flows using prompt and Large Language Model (LLM) tools in Azure AI Studio.
 - **Evaluation Flow Setup**: Automated Evaluation: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
 - **Fine-Tuning the Model**: Iterative Tuning: Fine-tune models through iterative prompt tuning, variant comparison, and performance optimization to enhance accuracy and efficiency.
 - **Implementing Chat Flow and Tool Integration**: Chat Flow Design: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Studio.
@@ -69,11 +68,11 @@ Basic knowledge and understanding of the following
 
 ## Getting Started with the Lab
  
-Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You will develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+1. Once you are ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
      ![](./media/labguide-1.png)
 
@@ -90,7 +89,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 ## Utilizing the Split Window Feature
  
-1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
    ![](./media/spl.png)
  
