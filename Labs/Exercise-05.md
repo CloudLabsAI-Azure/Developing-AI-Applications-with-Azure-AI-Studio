@@ -1,7 +1,7 @@
 # Lab 05: Implementing Chat Flow and Tool Integration
 
 ## Lab scenario
-In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
+In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs and an LLM node and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
 ## Lab Objectives
 In this lab, you will perform the following tasks:
@@ -12,11 +12,11 @@ In this lab, you will perform the following tasks:
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. On the [Azure AI Studio] dashboard (https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f) dashboard, under **Components**, select **Deployments (1)**. Under the **Model deployments** tab, select **gpt-35-turbo (2)**.
 
    ![](./media/deployments(1).png)
 
-1. On the **gpt-35-turbo** page, select the **Open in playground** option, under the **Details** tab.
+1. On the **gpt-35-turbo** page, select the **Open in playground** option under the **Details** tab.
 
    ![](./media/openinplayground.png)
 
@@ -55,7 +55,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/whatcanyoudo.png)
 
-1. Under the **Chat playground** option, select **Prompt flow** from the top bar. Enter **Travel-Chat** as the folder name, and click on **Open**.
+1. On the **Chat playground** page, select the **Prompt flow** option from the top bar. Enter **Travel-Chat** as the folder name, and click on **Open**.
 
    ![](./media/promptflow(3).png)
 
@@ -112,7 +112,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 Now that you have developed the flow, you can use the chat window to test the flow.
 
-1. Ensure the compute session is running. Select **Save (1)**. Select **Chat (2)** to test the flow.
+1. Ensure the compute session is running. Select **Save (1)** and click on the **Chat (2)** option to test the flow.
 
    ![](./media/chatflow.png)
 
@@ -130,11 +130,11 @@ Now that you have developed the flow, you can use the chat window to test the fl
      - Select **Review + Create**
      - Select **Create**
 
-1. In Azure AI Studio, from the left navigation pane, under **Components**, select **Deployments**.
+1. In Azure AI Studio's dashboard, select **Deployments** under **Components** from the left navigation pane.
 
    >**Note:** Select **Save** if your flow is not saved.
 
-1. Click on the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
+1. Click on the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the **newly created deployment (2)**.
 
    ![](./media/modeldeployments(1).png)
 
