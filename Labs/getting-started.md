@@ -58,4 +58,4 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
 2. Click **"Next"** from the bottom right corner to embark on your lab journey!
  
-### Now you are all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+### Now, you are all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
