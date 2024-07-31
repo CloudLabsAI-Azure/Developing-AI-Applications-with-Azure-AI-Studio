@@ -12,27 +12,27 @@ In this lab, you will perform the following tasks:
   
 ## Task 1: Implement Content Safety Measures
 
-Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
+Content Safety resource in Azure to detect and manage harmful content. You will create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
 
-1.  Open a new tab and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/). If the user is not logged in, click on the **Sign in** option from the top right corner and select the **user**. Then click on the **Settings** icon in the top navigation menu.
+1.  Open a new tab and navigate to the [Azure AI | Content Safety Studio](https://contentsafety.cognitive.azure.com/) page. If you are not logged in, click on the **Sign in** option from the top right corner and select the **user**. Then click on the **Settings** icon in the top navigation menu.
 
      ![](./media/image-51.png)
 
-1. In the **All resources** section, select **+ Create a new resource**.
+1. In the **Resource** section, select **+ Create a new resource**.
 
      ![](./media/image-52.png)
 
-1. You will be directed to the **Azure portal**. Specify the following on the the **Create Content Safety** page and click on **Review + Create**.
+1. You will be directed to the **Azure portal**. Specify the following on the the **Create Content Safety** page and click on **Review + create (6)**.
 
-     - Subscription: Select your **Azure subscription**
+     - Subscription: Select your **Azure subscription (1)**
   
-     - Resource group: Select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
+     - Resource group: Select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (2)**
     
-     - Region: **East US**
+     - Region: **East US (3)**
   
-     - Name: **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
+     - Name: **Content-Safety-<inject key="DeploymentID" enableCopy="false"/> (4)**
   
-     - Pricing tier: Free
+     - Pricing tier: Free **(5)**
   
        ![](./media/image-53.png)
 
@@ -48,11 +48,11 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 
       ![](./media/image-59.png)
    
-1. You are navigated to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/). Select the **Settings** icon in the top navigation menu.
+1. You will be navigated to the [Azure AI | Content Safety Studio](https://contentsafety.cognitive.azure.com/) page. Select the **Settings** icon located in the top navigation menu.
 
      ![](./media/image-51.png)
 
-1. Make sure the Content Safety resources are created.
+1. Make sure the **Content Safety resources** are created.
 
       ![](./media/image-55.png)
 
@@ -72,7 +72,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 ## Task 2. 1: Moderate image content for singular isolated images.
 
-1. On the **Azure AI | Content Safety Studio** page, select **Moderate image content** under **Safeguard your image content with built-in-features**.
+1. On the **Azure AI | Content Safety Studio** page, select **Moderate image content** under **Safeguard your image content with built-in features**.
 
      ![](./media/image-11.png)
 
@@ -80,7 +80,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 #### Safe content
 
-1. Now let's use our image and then check the result. In the **Moderate image content** page, select the **Run a simple test** tab, and then click on the **Browse for a file** option. 
+1. Now let's use our image and then check the result. In the **Moderate image content** page, click on the **Browse for a file (1)** option and then choose **Safe content (2)** under the **Run a simple test** tab. 
 
      ![](./media/image-61.png)
 
@@ -90,7 +90,7 @@ In this task, you will implement and evaluate content moderation for both images
 
     ![](./media/image-68.png)
    
-1. Review the result. As expected, this image content is **Allowed**, and the Severity level is **Safe** across all categories. 
+1. Review the result. As expected, this image content is **Allowed**, and the **Severity level** is **Safe** across all categories. 
 
     ![](./media/image-69.png)
 
