@@ -2,7 +2,7 @@
 
 ## Lab Scenario
 
-In this lab, you will gain hands-on experience in initializing a prompt flow project in Azure AI Studio and setting up the necessary environment to begin developing, testing, and refining AI applications. You will also create and customize prompts within Azure AI Studio's prompt flow. Starting with the creation of a new flow, you will add and configure the prompt tool and develop a flow incorporating LLM (Large Language Model) and prompt tools. further, by authoring a sample flow and running it with custom inputs, you will learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
+In this lab, you will gain hands-on experience in initializing a prompt flow project in Azure AI Studio and setting up the necessary environment to begin developing, testing, and refining AI applications. You will also create and customize prompts within Azure AI Studio's prompt flow. Starting with the creation of a new flow, you will add and configure the prompt tool and develop a flow incorporating LLM (Large Language Model) and prompt tools. Further, by authoring a sample flow and running it with custom inputs, you will learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
 
 ## Lab Objectives
 
@@ -58,7 +58,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploybasemodel.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1) & (2)**. Finally select **Confirm (3)** under **gpt-35-turbo**.
+1. On the **Select a model** page, search and select **gpt-35-turbo (1) & (2)**. Finally, select **Confirm (3)** under **gpt-35-turbo**.
 
    ![](./media/selectmodel.png)
 
