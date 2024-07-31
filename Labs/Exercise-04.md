@@ -154,11 +154,11 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunevaluate.png)
 
-1. On the **Select evaluation** page, select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
+1. On the **Select evaluation** page, select **Classification Accuracy Evaluation (1)** and click on **Next (2)**.
 
    ![](./media/batchrunclassifiation.png)
 
-1. On the **Configure evaluation** page, expand **Classification Accuarancy Evaluation** and for **groundtruth** data source, enter **${data.url}** and **prediction.** Moving on, select **category**, and click on **Next**.
+1. On the **Configure evaluation** page, expand **Classification Accuarancy Evaluation**, and for **groundtruth** data source, enter **${data.url}** and **prediction.** Moving on, select **category**, and click on **Next**.
 
 1. On the **Review** page, double check the settings and click on **Submit.**
 
@@ -172,7 +172,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Now, you will evaluate the variants of the **summarize_text_content** node as well.
 
-1. Back on the **Prompt flow** page, under **Input** section, apart from the **URL,** remove the rest of the input and click on **+ Add input,** then enter the **text**. Under **outputs** delete the existing outputs and click on **+ Add output,** then add **Summary**. Select the value as **${inputs.Text}**, and add a **URL**. Finally, select the value as **${inputs.url}**.
+1. Back on the **Prompt flow** page, under the **Input** section, apart from the **URL,** remove the rest of the input and click on **+ Add input,** then enter the **text**. Under **outputs**, delete the existing outputs and click on **+ Add output,** then add **Summary**. Select the value as **${inputs.Text}**, and add a **URL**. Finally, select the value as **${inputs.url}**.
 
    ![](./media/webclassifications.png)
 
@@ -190,7 +190,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/version1.png)
 
-1. As the add new data window opens, enter the name **summarize_text_content_data_set,** select **Upload from local file** and click on the browser. Then select **summarize.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**.
+1. As the add new data window opens, enter the name **summarize_text_content_data_set,** select **Upload from local file**, and click on the browser. Then select the **summarize.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**.
 
 1. Under **Input mapping**, for **URL** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Moving on, click on **Next (3)**.
 
@@ -208,7 +208,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/submit(1).png)
 
-1. Back on the Prompt flow page, click on the **View run list** link from the top.
+1. Back on the **Prompt flow** page, click on the **View run list** link from the top.
 
    ![](./media/viewrunlist.png)
    
