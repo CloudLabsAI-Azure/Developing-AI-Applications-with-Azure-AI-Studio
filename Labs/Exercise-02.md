@@ -36,6 +36,9 @@ It involves setting up a structured environment to manage and streamline prompt-
    - Connect Azure AI Search: Keep it as default
    - Select **Next**
 
+      ![](./media/image-84.png)
+      ![](./media/image-85.png)
+     
 1. On the **Review and finish** page, select **Create a Project**.
 
 1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
