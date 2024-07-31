@@ -22,7 +22,7 @@ Content Safety resource in Azure to detect and manage harmful content. You will 
 
      ![](./media/image-52.png)
 
-1. You will be directed to the **Azure portal**. Specify the following on the the **Create Content Safety** page and click on **Review + create (6)**.
+1. You will be directed to the **Azure portal**. Specify the following on the **Create Content Safety** page and click on **Review + create (6)**.
 
      - Subscription: Select your **Azure subscription (1)**
   
@@ -44,7 +44,7 @@ Content Safety resource in Azure to detect and manage harmful content. You will 
 
      ![](./media/image-57.png)
 
-1. Back on the **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page,  from the left navigation pane, select **Overview** and review the settings. Then click on the **Content Safety Studio** link.
+1. Back on the **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page,  from the left navigation pane, select **Overview (1)** and review the settings. Then click on the **Content Safety Studio (2)** link.
 
       ![](./media/image-59.png)
    
@@ -100,25 +100,25 @@ In this task, you will implement and evaluate content moderation for both images
 
 We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
-1. Select Browse for a file and upload the **bear-attack-blood.JPG** file.
-1. Set all threshold levels to **Medium**.
+1. Select **Browse for a file** and upload the **bear-attack-blood.JPG** file.
+1. Set all **threshold levels** to **Medium**.
 1. Select **Run test**.
 
-    >**Note**: Rightfully so, the content is blocked and was rejected by the **Violence** filter, which has a Severity level of **High**.
+    >**Note**: Rightfully so, the content is blocked and was rejected by the **Violence** filter, which has a **Severity level** of **High**.
 
 ### Task 2.2: Run a bulk test
 
 So far, we have tested image content for singular, isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
-1. On the **Moderate image content** page, click on the **Run a bulk test** tab and then choose **Browse for a file**.
+1. On the **Moderate image content** page, click on the **Run a bulk test (1)** tab and then choose **Browse for a file (2)**.
 
      ![](./media/image-12.png)
 
-1. Within file explorer, navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**. Select and open the **image_sample_dataset.zip** folder.
+1. Within **file explorer**, navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**. **Select (1)** and **open (2)** the **image_sample_dataset.zip** folder.
 
     ![](./media/image-81.png)
    
-1. Under the **Test** section, review **Dataset preview**, then select the **Configure filters** tab. Review **Category** and **Threshold level**, then click on **Run test**.
+1. Under the **Test** section, review the **Dataset preview (4 records) (1)**. Moving on, review **Category** and **Threshold level** under the **Configure filters (2)** tab. Finally, click on **Run test (3)**.
 
      ![](./media/image-14.png)
 
@@ -136,21 +136,21 @@ We could leverage an AI model to detect whether the text input from our customer
 
 Let us first test some positive customer feedback.
 
-1. In **Content Safety Studio**, select **Moderate text content**.
+1. In **Azure AI | Content Safety Studio** page, select **Moderate text content**.
 
    ![](./media/image-70.png)
 
-1. On the **Moderate text content** page, select **Run a simple test** and choose **Safe content** under the **Select a sample or type your own** section.
+1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under the **Select a sample or type your own** section.
 
    ![](./media/image-71.png)
 
-1. In the **Test box**, enter the following:
+1. In the **Test box (1)**, enter the following:
 
      - I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!
 
-     - Set all **Threshold** levels to **Medium**.
+     - Set all **Threshold** levels to **Medium (2)**.
 
-     - Select **Run** **test**.
+     - Select **Run test (3)**.
 
        ![](./media/image-72.png)
      
@@ -158,53 +158,53 @@ Let us first test some positive customer feedback.
 
     ![](./media/image-73.png)
 
-    >**Note**: The content is allowed, and the severity level is safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
+    >**Note**: The content is Allowed, and the Severity Level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
 
 #### Harmful content
 
-But what would happen if we tested a harmful statement? Let's test with negative customer feedback. While it is OK to dislike a product, we don't want to condone any name calling or degrading statements.
+But what would happen if we tested a harmful statement? Let's test with negative customer feedback. While it is OK to dislike a product, we don't want to condone any name-calling or degrading statements.
 
-1. In the **Test box**, enter the following:
+1. In the **Test box (1)**, enter the following:
 
     - I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a 
        high-end tent. You all suck and are a sorry excuse for a brand.
 
-    - Set all Threshold levels to **Medium**.
+    - Set all **Threshold levels** to **Medium (2)**.
 
-    - Select **Run test**.
+    - Select **Run test (3)**.
 
       ![](./media/image-75.png)
  
    - Although the content is allowed, the Severity level for hate is low. To guide our model to block such content, we would need to adjust the **Threshold level** for **Hate**. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
 
-   - Set the **Threshold level** for **Hate** to **Low**.
+   - Set the **Threshold level** for **Hate** to **Low (2)**.
 
-   - Select **Run test**.
+   - Select **Run test (3)**.
 
      ![](./media/image-76.png)
     
-   - The content is now **blocked** and was rejected by the filter in the **Hate** category.
+   - The content is now **Blocked** and was rejected by the filter in the **Hate** category.
 
       ![](./media/image-77.png)
 
 #### Violent content with misspelling
 
-We can not anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
+We cannot anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
 
-1. Select Violent content with misspelling
+1. Select **Violent content with misspelling**.
 
     ![](./media/image-74.png)
 
-1. In the Test box, enter the following:
+1. In the **Test box (1)**, enter the following:
 
     - I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker?
 
-    - Set all **Threshold levels** to **Medium**.
+    - Set all **Threshold levels** to **Medium (2)**.
 
-    - Select **Run test**.
+    - Select **Run test (3)**.
 
-    - Although the content is sllowed, the severity level for violence is should be Low. You could adjust the Threshold level for Violence to try and block such content. However, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+    - Although the content is allowed, the severity level for violence should be Low. You could adjust the Threshold level for Violence to try and block such content. However, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
   
 #### Run a bulk test
 So far, we have tested image content for singular, isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
@@ -215,11 +215,11 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Switch to the **Run a bulk test** tab.
 
-1. Select **Browse for a file**, and within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**. Select and upload **bulk-image-moderation-dataset.csv** file.
+1. Select **Browse for a file**, and within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**. **Select (1)** and **upload (2)** **bulk-image-moderation-dataset.csv** file.
 
      ![](./media/image-82.png)
      
-1. In the Dataset preview section, browse through the Records and their corresponding labels. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
+1. In the **Dataset preview** section, browse through the **Records** and their corresponding **labels**. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
    content).
 
 1. Set all **Threshold levels** to **Medium**.
