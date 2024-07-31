@@ -41,7 +41,7 @@ It involves setting up a structured environment to manage and streamline prompt-
      
 1. On the **Review and finish** page, select **Create a Project**.
 
-1. You see progress of resource creation and the project is created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
