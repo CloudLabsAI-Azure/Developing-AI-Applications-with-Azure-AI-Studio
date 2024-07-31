@@ -106,6 +106,8 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Scroll up for Input enter any fruit name as per your wish, select **Save**, and select **Start compute session**.
 
+    ![](./media/image-87.png)
+
    >**Note:** It will take 1 - 3 minutes to start the session.
     
 1. The flow run status is shown as Running, select **Run**.
