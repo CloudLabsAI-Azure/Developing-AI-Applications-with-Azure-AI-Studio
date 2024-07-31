@@ -3,19 +3,20 @@
 ## Lab scenario
 In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
-## Lab objectives
-In this lab, you will perform the following:
-- Task 1: Design and Implement a Chat Flow
-- Task 2: Use LLM and Prompt Tools in Flows
+## Lab Objectives
+In this lab, you will perform the following tasks:
+
+- **Task 1:** Design and Implement a Chat Flow
+- **Task 2:** Use LLM and Prompt Tools in Flows
 
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI Studio] dashboard (https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
 
    ![](./media/deployments(1).png)
 
-1. On the **gpt-35-turbo** page, select **Open in playground**, under **Details** tab.
+1. On the **gpt-35-turbo** page, select the **Open in playground** option, under the **Details** tab.
 
    ![](./media/openinplayground.png)
 
@@ -25,7 +26,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/modelonboarding.png)
 
-1. Update the **System message (1)** to the following:-
+1. Update the **System message (1)** to the following:
 
    ```
    **Objective**: Assist users with travel-related inquiries, offering tips, advice, and recommendations as a knowledgeable travel agent.
@@ -46,15 +47,15 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ```
    
-1. Select **Apply changes (2)**, and select **continue**.
+1. Select **Apply changes (2)**, and click on **continue**.
 
    ![](./media/modelapply.png)
 
-1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
+1. In the **chat** window, enter the same query as before: **What can you do?** Note the change in response.
 
    ![](./media/whatcanyoudo.png)
 
-1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
+1. Under the **Chat playground** option, select **Prompt flow** from the top bar. Enter **Travel-Chat** as the folder name, and click on **Open**.
 
    ![](./media/promptflow(3).png)
 
@@ -62,7 +63,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/travelchat.png)
 
-1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
+1. To be able to test your flow, you need to compute and select **Start compute session** from the top bar.
 
    ![](./media/startcompute.png)
    
@@ -109,7 +110,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
    
 ## Task 2: Use LLM and Prompt Tools in Flows
 
-Now that you’ve developed the flow, you can use the chat window to test the flow.
+Now that you have developed the flow, you can use the chat window to test the flow.
 
 1. Ensure the compute session is running. Select **Save (1)**. Select **Chat (2)** to test the flow.
 
@@ -129,35 +130,36 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Select **Review + Create**
      - Select **Create**
 
-1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
+1. In Azure AI Studio, from the left navigation pane, under **Components**, select **Deployments**.
 
    >**Note:** Select **Save** if your flow is not saved.
 
-1. Select the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
+1. Click on the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
 
    ![](./media/modeldeployments(1).png)
 
-1. Then, on its **Test** page, enter the prompt **What is there to do in San Francisco?** and review the response.
+1. Then, on the **Test** page, enter the prompt: **What is there to do in San Francisco?** Review the response.
 
      ![](./media/testdeploy.png)
 
-1. Enter the prompt **Where else could I go?** and review the response.
+1. Enter the prompt: **Where else could I go?** Review the response.
 
      ![](./media/image-33.png)
 
-1. View the **Consume** page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint - enabling you to integrate the prompt flow solution into an application as a custom copilot.
+1. View the **Consume** page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint, enabling you to integrate the prompt flow solution into an application as a custom copilot.
 
    ![](./media/modelendpoints.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> **Congratulations** on completing the task! Now, it is time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at **labs-support@spektrasystems.com**. We are available 24/7 to help you out.
 <validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
 
 ## Review
-In this lab you have completed the following tasks:
-- Designed and Implement a Chat Flow
-- Used LLM and Prompt Tools in Flows
+In this lab, you have completed the following tasks:
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+- Designed and implemented a chat flow.
+- Used LLM and prompt tools in flows. 
+
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
