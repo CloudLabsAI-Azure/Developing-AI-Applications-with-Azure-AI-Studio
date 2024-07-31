@@ -200,7 +200,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On the **Configure evaluation** page, expand **Classification Accuarancy Evaluation** and make sure the **groundtruth** data source is selected as **${data.url} (1)** and **prediction** as **${run.outputs.category} (2)**. Finally, click on **Review + submit (3)**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation** and make sure the **groundtruth** data source is selected as **${data.url} (1)** and **prediction** as **${run.outputs.category} (2)**. Finally, click on **Review + submit (3)**.
 
    ![](./media/classification(2).png)
 
