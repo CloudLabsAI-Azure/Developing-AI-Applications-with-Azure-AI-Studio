@@ -1,10 +1,10 @@
 # Getting Started
  
-Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You will develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+1. Once you are ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
      ![](./media/labguide-1.png)
 
@@ -21,7 +21,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
  
 ## Utilizing the Split Window Feature
  
-1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
    ![](./media/spl.png)
  
@@ -56,6 +56,6 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
     - Live Chat Support: https://cloudlabs.ai/labs-support
 
 
-2. Click **"Next"** from the bottom right corner to embark on your Lab journey!
+2. Click **"Next"** from the bottom right corner to embark on your lab journey!
  
-### Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+### Now you are all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
