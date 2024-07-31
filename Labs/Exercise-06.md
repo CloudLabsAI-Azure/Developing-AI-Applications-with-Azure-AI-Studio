@@ -24,7 +24,7 @@ Content Safety resource in Azure to detect and manage harmful content. You will 
 
 1. You will be directed to the **Azure portal**. Specify the following on the **Create Content Safety** page and click on **Review + create (6)**.
 
-     - Subscription: Select your **Azure subscription (1)**
+     - Subscription: Select your **Azure subscription (1)**.
   
      - Resource group: Select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (2)**
     
@@ -118,7 +118,7 @@ So far, we have tested image content for singular, isolated images. However, if 
 
     ![](./media/image-81.png)
    
-1. Under the **Test** section, review the **Dataset preview (4 records) (1)**. Moving on, review **Category** and **Threshold level** under the **Configure filters (2)** tab. Finally, click on **Run test (3)**.
+1. Under the **Test** section, review the **Dataset preview (4 records) (1)**. Moving on, review **Category** and **Threshold level** options under the **Configure filters (2)** tab. Finally, click on **Run test (3)**.
 
      ![](./media/image-14.png)
 
@@ -136,7 +136,7 @@ We could leverage an AI model to detect whether the text input from our customer
 
 Let us first test some positive customer feedback.
 
-1. In **Azure AI | Content Safety Studio** page, select **Moderate text content**.
+1. In the **Azure AI | Content Safety Studio** page, select **Moderate text content**.
 
    ![](./media/image-70.png)
 
@@ -176,7 +176,7 @@ But what would happen if we tested a harmful statement? Let's test with negative
 
       ![](./media/image-75.png)
  
-   - Although the content is allowed, the Severity level for hate is low. To guide our model to block such content, we would need to adjust the **Threshold level** for **Hate**. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+   - Although the content is allowed, the Severity level for hate is low. To guide our model to block such content, we would need to adjust the **Threshold level** for **Hate**. A lower Threshold level would block any content that is low, medium, or high severity. There’s no room for exceptions!
 
    - Set the **Threshold level** for **Hate** to **Low (2)**.
 
