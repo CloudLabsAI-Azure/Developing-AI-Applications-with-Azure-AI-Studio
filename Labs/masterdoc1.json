@@ -1,0 +1,14 @@
+[ {
+  "Name": "Developing AI Applications with Azure AI Studio",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/suraj-only-git/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/getting-started.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/Exercise-02.md",
+      "Order": 2
+    }
+  ]
+} ]
