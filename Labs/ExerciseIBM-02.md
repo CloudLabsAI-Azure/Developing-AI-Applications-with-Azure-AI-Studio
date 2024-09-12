@@ -60,7 +60,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploybasemodel.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo** and click on **Customize** to update the settings of deployment.
 
    ![](./media/selectmodel.png)
 
