@@ -56,7 +56,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. From the left navigation menu, under **Components**, select **Deployments (1)**.
 
-1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy base model (2)**.
+1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy model (2)** and click on **Deploy a base model**.
 
    ![](./media/deploybasemodel.png)
 
@@ -101,9 +101,11 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection from the drop-down menu, and for deployment, select the newly created deployment, **gpt-35-turbo**, in the LLM tool editor.
+1. From the **Graph**, select **joke**. Choose an existing connection from the drop-down menu, and for deployment, select the newly created deployment, **gpt-35-turbo**, in the LLM tool editor. also do provide any **value** to Inputs flow to get the joke flow work. 
 
      ![](./media/joke.png)
+
+     ![](./media/Ai-input-value.png)
 
 1. Scroll up for Input enter any fruit name as per your wish, select **Save**, and select **Start compute session**.
 
