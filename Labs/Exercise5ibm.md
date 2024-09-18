@@ -12,11 +12,11 @@ In this lab, you will perform the following:
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-4 (2)**.
 
    ![](./media/deployments(1).png)
 
-1. On the **gpt-35-turbo** page, select **Open in playground**, under **Details** tab.
+1. On the **gpt-4** page, select **Open in playground**, under **Details** tab.
 
    ![](./media/openinplayground.png)
 

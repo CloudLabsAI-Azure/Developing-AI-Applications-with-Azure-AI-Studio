@@ -55,13 +55,13 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploybasemodel.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo** and click on **Customize** to update the settings of deployment.
+1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (3)** under the **gpt-4** and click on **Customize** to update the settings of deployment.
 
    ![](./media/selectmodel.png)
 
-1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
+1. On **Deploy model gpt-4** follow these instructions to create the deployment:
 
-   - Deployment name: **gpt-35-turbo (1)**
+   - Deployment name: **gpt-4 (1)**
    - Model version: Keep it as default (2)
    - Deployment type: **Standard (3)**
    - Connected Azure OpenAI resource: Select your OpenAI resource (4)
