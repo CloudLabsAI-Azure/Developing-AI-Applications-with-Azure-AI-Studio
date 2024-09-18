@@ -18,8 +18,6 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 1. On the **gpt-4** page, select **Open in playground**, under **Details** tab.
 
-   ![](./media/openinplayground.png)
-
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
