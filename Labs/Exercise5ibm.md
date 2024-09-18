@@ -73,7 +73,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/chatllm.png)
 
-1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-35-turbo** model you deployed. For **response_format**, select **{“type”:”text”}**.
+1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-4** model you deployed. For **response_format**, select **{“type”:”text”}**.
 
    ![](./media/travelchat(1).png)
 
