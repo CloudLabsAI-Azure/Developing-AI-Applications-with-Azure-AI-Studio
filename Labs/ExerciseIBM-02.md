@@ -57,7 +57,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (3)** under the **gpt-4** and click on **Customize** to update the settings of deployment.
 
-   ![](./media/selectmodel.png)
+   ![](./media/2.png)
 
 1. On **Deploy model gpt-4** follow these instructions to create the deployment:
 
@@ -70,7 +70,7 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Enable dynamic quota: **Enabled (7)**
    - Select **Deploy (8)**
 
-     ![](./media/deploymodel.png)
+     ![](./media/3.png)
      
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
