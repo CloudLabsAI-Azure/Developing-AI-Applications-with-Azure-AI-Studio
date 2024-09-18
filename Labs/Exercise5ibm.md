@@ -49,7 +49,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
    
 1. Select **Apply changes (2)**, and select **continue**.
 
-   ![](./media/modelapply.png)
+   ![](./media/L2T1S5.png)
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
