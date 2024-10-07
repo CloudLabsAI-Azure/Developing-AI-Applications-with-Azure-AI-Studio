@@ -53,7 +53,7 @@ It systematically assesses the performance and effectiveness of various processe
 
 1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
 
-   ![](./media/promptflow(1).png)
+   ![](./media/gpt-4-demo1.png)
 
 1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
 
