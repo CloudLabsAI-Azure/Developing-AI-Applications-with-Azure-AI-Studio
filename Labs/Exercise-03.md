@@ -73,7 +73,7 @@ It systematically assesses the performance and effectiveness of various processe
     - **Dataset mapping for prompt flow**: Select **${data.answer}**, and select **Next** 
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: **Your AI Services connection**
-    - **Deployment name/Model**: **Your deployed gpt-35-turbo model**
+    - **Deployment name/Model**: **Your deployed gpt-4 model**
     - Select **Next**
     - Select **Submit**
 
