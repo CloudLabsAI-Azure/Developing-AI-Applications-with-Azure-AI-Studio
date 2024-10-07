@@ -67,6 +67,7 @@ It systematically assesses the performance and effectiveness of various processe
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** and **Ctrl S** to select all and Save the file.
     - Go to the file location where you have saved the file. Select **View** from the toolbaar and then select **File name extensions**. Then rename the file and remove **.txt** from the file name.
+
        ![](./media/new-develop-lab3-3.png)
     
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
