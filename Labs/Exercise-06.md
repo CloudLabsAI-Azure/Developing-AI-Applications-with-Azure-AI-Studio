@@ -58,12 +58,6 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 1. Select **Content-Safety-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Use resource (2)**.
 
      ![](./media/image-(60).png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" />
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
@@ -234,6 +228,13 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
     ![](./media/image-79.png)
 
     ![](./media/image-80.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  - If you receive a success message, you can proceed to the next task.
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" />
 
 ## Review
 In this lab you have completed the following tasks:
