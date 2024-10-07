@@ -63,18 +63,17 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/selectmodel.png)
 
+1. On **Deploy model gpt-35-turbo** select **Customize**
+
+   ![](./media/cus.png)
+
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
-   - Deployment name: **gpt-35-turbo (1)**
-   - Model version: Keep it as default (2)
-   - Deployment type: **Standard (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
-   - Tokens per Minute Rate Limit (thousands): **5K (5)**
-   - Content filter: Set as default (6)
-   - Enable dynamic quota: **Enabled (7)**
-   - Select **Deploy (8)**
+   - Tokens per Minute Rate Limit (thousands): **5K**
+   - Select **Deploy**
 
-     ![](./media/deploymodel.png)
+     ![](./media/cus1.png)
+
      
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
@@ -104,7 +103,11 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
      ![](./media/joke.png)
 
-1. Scroll up for Input enter any fruit name as per your wish, select **Save**, and select **Start compute session**.
+1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
+
+    ![](./media/apple.png)
+
+1. Select **Save**, and select **Start compute session**.
 
     ![](./media/image-87.png)
 
