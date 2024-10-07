@@ -18,7 +18,7 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. A new window opens with your previous system message already populated and your deployed model selected.
 
-   ![](./media/systemmessage.png)
+   ![](./media/gpt-4-demo.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
 
