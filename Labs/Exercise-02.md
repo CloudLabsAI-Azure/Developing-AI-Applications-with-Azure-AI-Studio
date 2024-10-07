@@ -46,7 +46,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="85914800-05d0-40dd-80ca-292f5415040a" />
 
 ### Task 2 : Create and Customize Prompts
@@ -87,7 +87,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="97dc69b4-95e6-4d6b-9b64-b143ebe6290b" />
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
