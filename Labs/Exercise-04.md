@@ -27,7 +27,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
      Connection : Select the connection that is created.
 
-     deployment_name : **gpt-35-turbo**
+     deployment_name : **gpt-4**
    
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
@@ -71,7 +71,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
      Connection : Select the connection that is created.
 
-     deployment_name : **gpt-35-turbo**
+     deployment_name : **gpt-4**
 
 1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
      
@@ -115,13 +115,13 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
     ![](./media/webclassfication.png)
 
-1. On the Submit flow run window open under **Select the LLM node with variants that you wnat to run** choose **Select a node to run variants** then select **summarize_text_content (1)**, and click on **Submit (2)**. 
+1. On the Submit flow run window open under **Select the LLM node with variants that you want to run** choose **Select a node to run variants** then select **summarize_text_content (1)**, and click on **Submit (2)**. 
 
    ![](./media/image-41.png)
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
-1. In top menu select **Variant 0 (1)** from the drop down and select **view full output**. Now, review the output of the variant, that you selected.
+1. In top menu select **Variant 0 (1)** from the drop down and select **view full output** for **summarize_text_content** for variant 0. Now, review the output of the variant, that you selected.
 
    ![](./media/image-39.png)
 
@@ -169,7 +169,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Now will evaluate the variants of summarize_text_content node as well.
 
-1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest imput and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
+1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest input and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
 
    ![](./media/webclassifications.png)
 
@@ -197,9 +197,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${run.outputs.category} (2)** and click on **Review + submit (3)**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${data.category} (2)** and click on **Review + submit (3)**.
 
-   ![](./media/classification(2).png)
+   ![](./media/new-develop-lab3-2.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
