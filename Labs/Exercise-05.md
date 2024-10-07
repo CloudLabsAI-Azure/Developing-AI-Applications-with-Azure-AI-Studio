@@ -13,9 +13,9 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 1. From the left navigation menu, under **Components**, select **Deployments (1)**.
 
-1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy base model (2)**.
+1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
 
-   ![](./media/deploybasemodel.png)
+   ![](./media/new-develop-issue-1.png)
 
 1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
