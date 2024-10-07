@@ -55,35 +55,34 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. From the left navigation menu, under **Components**, select **Deployments (1)**.
 
-1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy base model (2)**.
+1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
 
-   ![](./media/deploybasemodel.png)
+   ![](./media/new-develop-issue-1.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
-   ![](./media/selectmodel.png)
+   ![](./media/new-develop-issue-2.png)
 
-1. On **Deploy model gpt-35-turbo** select **Customize**
+1. On **Deploy model gpt-4** select **Customize**
 
-   ![](./media/cus.png)
+   ![](./media/new-develop-issue-3.png)
 
-1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
+1. On **Deploy model gpt-4** follow these instructions to create the deployment:
 
    - Tokens per Minute Rate Limit (thousands): **5K**
    - Select **Deploy**
 
-     ![](./media/cus1.png)
+     ![](./media/new-develop-issue-4.png)
 
-     
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
    ![](./media/image-04.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **Promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/image-055.png)
+   ![](./media/new-develop-issue-5.png)
 
-   >**Note:** If you encounter any errors, wait for 5 minutes and recreate the prompt flow with a unique name. Once it is created, rename the flow on the newly created prompt flow page to **Promptflow-<inject key="DeploymentID" enableCopy="false"/>**.
+   >**Note:** If you encounter any errors, wait for 5 minutes and recreate the prompt flow with a unique name. Once it is created, rename the flow on the newly created prompt flow page to **promptflow-<inject key="DeploymentID" enableCopy="false"/>**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -101,7 +100,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. From the **Graph**, select **joke**. Choose an existing connection from the drop-down menu, and for deployment, select the newly created deployment, **gpt-35-turbo**, in the LLM tool editor.
 
-     ![](./media/joke.png)
+     ![](./media/new-develop-issue-6.png)
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
@@ -111,7 +110,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
     ![](./media/image-87.png)
 
-   >**Note:** It will take 1 - 3 minutes to start the session.
+   >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
 1. The flow run status is shown as Running, select **Run**.
 
