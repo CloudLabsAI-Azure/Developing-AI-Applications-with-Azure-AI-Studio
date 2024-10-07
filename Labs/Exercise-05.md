@@ -11,9 +11,32 @@ In this lab, you will perform the following:
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
 
+1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+
+1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy base model (2)**.
+
+   ![](./media/deploybasemodel.png)
+
+1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
+
+   ![](./media/selectmodel.png)
+
+1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
+
+   - Deployment name: **gpt-35-turbo (1)**
+   - Model version: Keep it as default (2)
+   - Deployment type: **Standard (3)**
+   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
+   - Tokens per Minute Rate Limit (thousands): **5K (5)**
+   - Content filter: Set as default (6)
+   - Enable dynamic quota: **Enabled (7)**
+   - Select **Deploy (8)**
+
+     ![](./media/deploymodel.png)
+
 1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
 
-   ![](./media/deployments(1).png)
+   ![](./media/new-deployments(1).png)
 
 1. On the **gpt-35-turbo** page, select **Open in playground**, under **Details** tab.
 
@@ -74,7 +97,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-35-turbo** model you deployed. For **response_format**, select **{“type”:”text”}**.
 
-   ![](./media/travelchat(1).png)
+   ![](./media/new-travelchat(1).png)
 
 1. Review the prompt field and ensure it looks like the following:
 
