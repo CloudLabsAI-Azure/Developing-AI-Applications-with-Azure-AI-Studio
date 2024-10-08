@@ -68,8 +68,8 @@ It systematically assesses the performance and effectiveness of various processe
          ![](./media/modelevaluation(1).png)
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl S** to select all and Save the file within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** and click on 
-      **Save**
+      and **Ctrl S** to select all and **Save** the file then within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** 
+      from the file name travel-qa.jsonl.txt and click on **Save**.
 
         ![](./media/gpt-4-demo20.png)
    
