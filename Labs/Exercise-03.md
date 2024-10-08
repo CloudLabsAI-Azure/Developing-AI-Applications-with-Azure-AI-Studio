@@ -66,13 +66,11 @@ It systematically assesses the performance and effectiveness of various processe
          ![](./media/modelevaluation(1).png)
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl S** to select all and Save the file.
-    
-    - Go to the file location where you have saved the file. Select **View** from the toolbaar and then select **File name extensions**. Then rename the file and remove 
-      **.txt** from the file name.
+      and **Ctrl S** to select all and Save the file within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** and click on 
+      **Save**
 
-       ![](./media/new-develop-lab3-3.png)
-    
+        ![](./media/gpt-4-demo20.png)
+   
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
   
          ![](./media/image-22.png)
@@ -81,6 +79,7 @@ It systematically assesses the performance and effectiveness of various processe
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: **Your AI Services connection**
     - **Deployment name/Model**: **Your deployed gpt-4 model**
+    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.answer}** from the drop-down.
     - Select **Next**
     - Select **Submit**
 
