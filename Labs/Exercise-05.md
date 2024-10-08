@@ -13,7 +13,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 1. From the left navigation menu, under **Components**, select **Deployments (1)**.
 
-1. On the **Define an endpoint to deploy your model**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
 
    ![](./media/new-develop-issue-1.png)
 
