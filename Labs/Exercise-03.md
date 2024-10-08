@@ -42,11 +42,13 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. Select **Save results** from the top bar. Enter **manual_evaluation_results** as the name for the results, and select **Save**.
 
+   ![](./media/gpt-4-demo18.png)
+   
 1. Using the menu on the left, navigate to **Evaluations**.
 
 1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-   ![](./media/manualevaluation.png)
+   ![](./media/gpt-4-demo19.png)
 
 ## Task 2: Run and Analyze Evaluation Flows
 It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
