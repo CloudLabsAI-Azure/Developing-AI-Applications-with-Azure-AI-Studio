@@ -25,9 +25,11 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, and follow these instructions to fill out the properties:
 
-   - Project name: **Modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+   - Project name: **modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+     >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
    - Hub: Create a new hub
    - Select **Next**.
+     >**Note**: If you're not able to see the Hub: Create a new hub option, kindly click on Customize.
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
    - Subscription: Set as default
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
