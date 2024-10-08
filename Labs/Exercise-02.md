@@ -147,6 +147,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
 
     ![](./media/image-300.png)
+    ![](./media/gpt-4-demo15.png)
 
 1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
 
@@ -163,12 +164,15 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    3. Browse available products
    4. Contact customer support
    ```
+
+   ![](./media/gpt-4-demo16.png)
+   
 1. In the input section add these following value, select **Save** and **Run**.
 
    - user_name: Jane
    - website_name: Microsoft
 
-     ![](./media/modelflow.png)
+     ![](./media/gpt-4-demo14.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
