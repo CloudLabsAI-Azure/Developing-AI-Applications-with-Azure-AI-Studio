@@ -69,7 +69,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Scroll up to **summarize_text_content** node and Select the following 
 
-     Connection : Select the connection that is created.
+     Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
 
      deployment_name : **gpt-4**
 
