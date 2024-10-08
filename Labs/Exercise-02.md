@@ -118,9 +118,9 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
+1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
 
-     ![](./media/new-develop-issue-6.png)
+     ![](./media/gpt-4-demo13.png)
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
