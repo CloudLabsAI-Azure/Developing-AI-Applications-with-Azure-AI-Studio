@@ -38,17 +38,19 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Subscription: Set as default
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
    - Location: **<inject key="Region" enableCopy="false"/>**
-   - Connect Azure AI Services or Azure OpenAI: Keep it as default
+   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>**
    - Connect Azure AI Search: Keep it as default
    - Select **Next**
 
-      ![](./media/image-86.png)
-      ![](./media/image-85.png)
+      ![](./media/gpt-4-demo3.png)
+      ![](./media/gpt-4-demo5.png)
      
 1. On the **Review and finish** page, select **Create a Project**.
 
+     ![](./media/gpt-4-demo6.png)
+   
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
-
+    
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -63,7 +65,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
 
-   ![](./media/new-develop-issue-1.png)
+   ![](./media/gpt-4-demo8.png)
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
