@@ -25,7 +25,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, and follow these instructions to fill out the properties:
 
-   - Project name: **Modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+   - Project name: **modelproject-<inject key="DeploymentID" enableCopy="false"/>**
    - Hub: Create a new hub
    - Select **Next**.
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
