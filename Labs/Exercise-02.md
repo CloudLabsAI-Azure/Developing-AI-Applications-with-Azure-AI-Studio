@@ -22,6 +22,7 @@ As involves setting up a structured environment to manage and streamline prompt-
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
+
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
    ![](./media/newproject.png)
@@ -68,16 +69,26 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/new-develop-issue-2.png)
 
-1. On **Deploy model gpt-4** select **Customize**
+1. On **Deploy model gpt-4** page :
 
-   ![](./media/new-develop-issue-3.png)
+    - Deployment name : gpt-4
 
-1. On **Deploy model gpt-4** follow these instructions to create the deployment:
+    - select **Customize**
 
+      ![](./media/gpt-4-demo9.png)
+
+1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
+
+   - Deployment name : gpt-4
+   - Deployment type : Standard
+   - Model version : 0613 (Default)
+   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
    - Tokens per Minute Rate Limit (thousands): **5K**
+   - Content filter : DefaultV2
+   - Enable dynamic quota : Enabled 
    - Select **Deploy**
 
-     ![](./media/new-develop-issue-4.png)
+     ![](./media/gpt-4-demo10.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
