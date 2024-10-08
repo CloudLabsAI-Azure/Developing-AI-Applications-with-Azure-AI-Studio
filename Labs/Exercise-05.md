@@ -21,6 +21,8 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/selectmodel.png)
 
+1. On **Deploy model gpt-35-turbo** enter Deployment name: **gpt-35-turbo** and click on **Customize**.
+
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
    - Deployment name: **gpt-35-turbo (1)**
