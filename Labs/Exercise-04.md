@@ -48,6 +48,8 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
+     ![](./media/gpt-4-demo21.png)
+   
 1. On the variant_1 replace the existing prompt with the following prompt:
 
     ```  
@@ -65,6 +67,8 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
     ```
 
+    ![](./media/gpt-4-demo22.png)
+     
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
 1. Scroll up to **summarize_text_content** node and Select the following 
@@ -93,6 +97,8 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
+    ![](./media/gpt-4-demo23.png)
+   
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
 1. On the variant_1 replace the existing prompt with the following prompt:
