@@ -1,13 +1,13 @@
 [ {
-    "Name": " AI Applications with ADevelopingzure AI Studio",
+    "Name": " Developing AI Applications with Azure AI Studio",
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/Overview.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Labs/Overview.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/Exercise-01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Labs/Exercise-01.md",
         "Order": 2
        }
     ]
