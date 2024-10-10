@@ -1,1 +1,14 @@
-
+[ {
+    "Name": "Training the Model",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/Overview.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/Exercise-02.md",
+        "Order": 2
+      }
+    ]
+  } ]
