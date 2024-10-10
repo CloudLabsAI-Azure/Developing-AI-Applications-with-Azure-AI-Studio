@@ -1,4 +1,4 @@
-# Lab 06: Ensuring Responsible AI with Content Safety Studio 
+# Lab 05: Ensuring Responsible AI with Content Safety Studio 
 
 ## Lab scenario
 In this lab, you will learn about the Content Safety Studio is a powerful tool for managing user-generated content. It features Text Moderation to detect and filter harmful text, such as hate speech and violence, and Image Moderation to analyze and block unsafe or offensive images. This comprehensive solution ensures that all user contributions are safe and appropriate across platforms.
