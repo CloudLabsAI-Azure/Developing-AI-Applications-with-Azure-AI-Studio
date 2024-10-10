@@ -1,4 +1,4 @@
-# Lab 02: Training the Model
+# Lab 01: Training the Model
 
 ## Lab scenario
 
