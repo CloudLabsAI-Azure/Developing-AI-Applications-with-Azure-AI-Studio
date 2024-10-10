@@ -1,0 +1,20 @@
+[ {
+    "Name": "Ensuring Responsible AI with Content Safety Studio",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Labs/Overview.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Exercise-02.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Exercise-06.md",
+        "Order": 3
+      }
+    ]
+  } ]
+  
+  
