@@ -1,4 +1,4 @@
-# Lab 03: Fine-Tuning the Model 
+# Lab 02: Fine-Tuning the Model 
 
 ## Lab scenario
 In this lab, you will be fine-tuning a model by performing iterative prompt tuning and variant comparison to enhance its performance and accuracy. You will leverage Azure AI Studio to systematically refine prompts, evaluate different model variants, and determine the best configurations. Additionally, you will optimize the flow performance for production, ensuring that the workflow processes are efficient and effective. This will involve identifying and addressing bottlenecks, implementing best practices, and leveraging advanced tools to improve overall productivity and operational efficiency.
