@@ -1,4 +1,4 @@
-# Lab 04: Implementing Chat Flow and Tool Integration
+# Lab 02: Implementing Chat Flow and Tool Integration
 
 ## Lab scenario
 In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
