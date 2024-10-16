@@ -1,0 +1,20 @@
+[ {
+    "Name": "Fine-Tuning the Model",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Labs/Overview.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Exercise-02.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/guided-labs/Exercise-04.md",
+        "Order": 3
+      }
+    ]
+  } ]
+  
+  
