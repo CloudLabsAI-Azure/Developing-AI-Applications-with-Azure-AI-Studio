@@ -21,6 +21,7 @@ You can manually review model responses based on test data. Manually reviewing a
    ![](./media/gpt-4-demo.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
+   ![](./media/Ex3.1.3.png)
 
    `Can you provide a list of the top-rated budget hotels in Rome?`
 
