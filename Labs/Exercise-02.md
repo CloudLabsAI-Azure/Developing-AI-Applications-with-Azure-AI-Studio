@@ -50,12 +50,13 @@ As involves setting up a structured environment to manage and streamline prompt-
      ![](./media/gpt-4-demo6.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+
+<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="85914800-05d0-40dd-80ca-292f5415040a" />
 
 ### Task 2 : Create and Customize Prompts
 
@@ -104,11 +105,12 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/gpt-4-demo11.png) 
 
+<validation step="72202d41-82ea-4bdd-a001-1efce3ff528f" />
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="97dc69b4-95e6-4d6b-9b64-b143ebe6290b" />
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 

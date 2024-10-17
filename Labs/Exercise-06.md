@@ -229,12 +229,12 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/image-80.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-  - If you receive a success message, you can proceed to the next task.
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="860e4b2d-a797-40cc-87d1-6b513638a58f" />
 
-<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Review
 In this lab you have completed the following tasks:
