@@ -31,7 +31,7 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
   
      - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
   
-     - Pricing tier – Free
+     - Pricing tier – Free F0
   
        ![](./media/image-53.png)
 
@@ -74,10 +74,10 @@ In this task, you will implement and evaluate content moderation for both images
 #### Safe content
 
 1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
-
+  
      ![](./media/image-61.png)
 
-1. Within **file explorer** navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
+1. Within **file explorer** navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
 
 1. Review the image and click on **Run test**.
 
@@ -108,7 +108,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
      ![](./media/image-12.png)
 
-1. Within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset**  select and open **image_sample_dataset.zip** folder.
+1. Within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset**  select and open **image_sample_dataset.zip** folder.
 
     ![](./media/image-81.png)
    
@@ -208,9 +208,9 @@ based on the model’s performance.
 We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
 dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
 
-1. Switch to the Run a bulk test tab.
+1. Switch to the Run a bulk test tab.  
 
-1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset**  select and upload**bulk-image-moderation-dataset.csv** file.
+1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\bulk-text-moderation-data**  select and upload **bulk-text-moderation-data.csv** file.
 
      ![](./media/image-82.png)
      
