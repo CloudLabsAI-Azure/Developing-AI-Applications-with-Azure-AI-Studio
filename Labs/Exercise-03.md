@@ -82,7 +82,7 @@ It systematically assesses the performance and effectiveness of various processe
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
     - **Deployment name/Model**: **gpt-4 model**
-    - •	Scroll down under How does your dataset map to your evaluation input for question select ${data.question} and for answer select ${data.answer} from the drop-down.
+    - Scroll down under How does your dataset map to your evaluation input for question select ${data.question} and for answer select ${data.answer} from the drop-down.
     - Select **Next**
     - Select **Submit**
 

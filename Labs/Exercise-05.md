@@ -151,10 +151,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Virtual machine: **Standard_DS3_v2**
      - Instance count: **3**
      - Inferencing data collection: **Enabled**
-     - Select **Review + Create**
-     - Select **Create**
-       
-          ![](./media/modelendpoint.png)
+     - Select **Review + Create** and then Select **Create**
+        ![](./media/modelendpoint.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
