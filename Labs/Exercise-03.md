@@ -1,4 +1,4 @@
-# Lab 02: Evaluation Flow Setup
+# Lab 03: Evaluation Flow Setup
 
 ## Lab scenario
 In this lab, you will set up and analyze evaluation flows for an AI model using Azure AI Studio. You will manually review model responses to various inputs, providing a detailed evaluation of the model's performance. By setting up specific evaluation metrics, such as coherence and fluency, you will automate the evaluation process using a provided dataset. This hands-on experience will help you understand how to critically assess and refine AI model outputs, ensuring the model meets desired performance standards.
@@ -63,7 +63,8 @@ It systematically assesses the performance and effectiveness of various processe
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
+    - **Evaluation Description**: You can leave blank (2)
+    - **What kind of scenario are you evaluating?**: **Question and answer with context (3)**, and click on **Next (4)**.
   
          ![](./media/modelevaluation(1).png)
 
