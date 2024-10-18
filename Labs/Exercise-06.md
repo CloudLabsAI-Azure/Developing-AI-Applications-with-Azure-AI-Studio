@@ -31,7 +31,7 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
   
      - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>**
   
-     - Pricing tier – Free
+     - Pricing tier – Free F0
   
        ![](./media/image-53.png)
 
