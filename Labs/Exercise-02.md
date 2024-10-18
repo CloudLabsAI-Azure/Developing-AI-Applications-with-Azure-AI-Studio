@@ -1,4 +1,4 @@
-# Lab 01: Training the Model
+# Lab 02: Training the Model
 
 ## Lab scenario
 
@@ -15,7 +15,7 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
+1. In order to navigate to Azure AI Studio, right-click [Azure AI Studio](https://ai.azure.com/?reloadCount=1) and select 'Copy Link' Then, open a new tab, paste the link into the address bar, and press Enter .Select Sign in. When prompted, enter the following Azure credentials.
 
       ![](./media/gpt-4-demo2.png)
 
@@ -83,12 +83,11 @@ Creating and customizing prompts involves designing specific, targeted questions
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
    - Deployment name : gpt-4
-   - Deployment type : Standard
-   - Model version : 0613 (Default)
+   - Deployment type : Global Standard
+   - Model version : turbo-2024-04-09
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **5K**
+   - Tokens per Minute Rate Limit (thousands): **10K**
    - Content filter : DefaultV2
-   - Enable dynamic quota : Enabled 
    - Select **Deploy**
 
      ![](./media/gpt-4-demo10.png)
