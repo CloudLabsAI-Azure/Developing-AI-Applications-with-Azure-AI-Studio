@@ -1,4 +1,4 @@
-# Lab 02: Ensuring Responsible AI with Content Safety Studio 
+# Lab 06: Ensuring Responsible AI with Content Safety Studio 
 
 ## Lab scenario
 In this lab, you will learn about the Content Safety Studio is a powerful tool for managing user-generated content. It features Text Moderation to detect and filter harmful text, such as hate speech and violence, and Image Moderation to analyze and block unsafe or offensive images. This comprehensive solution ensures that all user contributions are safe and appropriate across platforms.
@@ -12,7 +12,7 @@ In this lab, you will perform the following:
 
 Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
 
-1.  Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), If the user is not logged in, Click on Sign in from the top right corner and select the user. Then select 
+1.  To Access Content Safety Studio, right-click on [Content Safety Studio](https://contentsafety.cognitive.azure.com/) select 'Copy Link', open a new tab, paste the link into the address bar, and press Enter. If the user is not logged in, Click on Sign in from the top right corner and select the user. Then select 
     the **Settings** icon in the top navigation menu.
 
      ![](./media/image-51.png)
@@ -77,7 +77,7 @@ In this task, you will implement and evaluate content moderation for both images
 
      ![](./media/image-61.png)
 
-1. Within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
+1. Within **file explorer** navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset** select and open **family-builds-campfire.jpg**
 
 1. Review the image and click on **Run test**.
 
@@ -108,7 +108,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
      ![](./media/image-12.png)
 
-1. Within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and open **image_sample_dataset.zip** folder.
+1. Within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset**  select and open **image_sample_dataset.zip** folder.
 
     ![](./media/image-81.png)
    
@@ -210,7 +210,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Switch to the Run a bulk test tab.
 
-1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and upload**bulk-image-moderation-dataset.csv** file.
+1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data \Labs\data\image_sample_dataset**  select and upload**bulk-image-moderation-dataset.csv** file.
 
      ![](./media/image-82.png)
      
@@ -229,12 +229,12 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/image-80.png)
 
-<validation step="860e4b2d-a797-40cc-87d1-6b513638a58f" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="860e4b2d-a797-40cc-87d1-6b513638a58f" />
 
 ## Review
 In this lab you have completed the following tasks:
