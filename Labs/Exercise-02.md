@@ -51,12 +51,12 @@ As involves setting up a structured environment to manage and streamline prompt-
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
 
-<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
 
 ### Task 2 : Create and Customize Prompts
 
