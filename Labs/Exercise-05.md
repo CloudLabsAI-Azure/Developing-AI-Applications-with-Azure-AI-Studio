@@ -153,7 +153,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Inferencing data collection: **Enabled**
      - Select **Review + Create**
      - Select **Create**
-       ![](./media/modelendpoint.png)
+       
+          ![](./media/modelendpoint.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
