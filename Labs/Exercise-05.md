@@ -1,4 +1,4 @@
-# Lab 02: Implementing Chat Flow and Tool Integration
+# Lab 05: Implementing Chat Flow and Tool Integration
 
 ## Lab scenario
 In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
@@ -26,8 +26,8 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
    - Deployment name: **gpt-35-turbo (1)**
-   - Model version: Keep it as default (2)
-   - Deployment type: **Standard (3)**
+   - Deployment type: **Standard (2)**
+   - Model version: Keep it as default (3)
    - Connected Azure OpenAI resource: Select your OpenAI resource (4)
    - Tokens per Minute Rate Limit (thousands): **5K (5)**
    - Content filter: Set as default (6)
@@ -71,7 +71,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ```
    
-1. Select **Apply changes (2)**, and select **continue**.
+1. After Updating System Message, Select **Save(2)**.
 
    ![](./media/modelapply.png)
 
@@ -153,6 +153,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Inferencing data collection: **Enabled**
      - Select **Review + Create**
      - Select **Create**
+       ![](./media/modelendpoint.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
@@ -174,12 +175,12 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
    ![](./media/modelendpoints.png)
 
-<validation step="157c6872-a66d-4125-babc-7975ad31603b" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="157c6872-a66d-4125-babc-7975ad31603b" />
 
 ## Review
 In this lab you have completed the following tasks:

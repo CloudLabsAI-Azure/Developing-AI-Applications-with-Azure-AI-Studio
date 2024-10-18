@@ -1,4 +1,4 @@
-# Lab 02: Fine-Tuning the Model 
+# Lab 04: Fine-Tuning the Model 
 
 ## Lab scenario
 In this lab, you will be fine-tuning a model by performing iterative prompt tuning and variant comparison to enhance its performance and accuracy. You will leverage Azure AI Studio to systematically refine prompts, evaluate different model variants, and determine the best configurations. Additionally, you will optimize the flow performance for production, ensuring that the workflow processes are efficient and effective. This will involve identifying and addressing bottlenecks, implementing best practices, and leveraging advanced tools to improve overall productivity and operational efficiency.
@@ -152,7 +152,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On the Batch run settings select **+ Add new data**.
 
-1. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**. Select **Next**.
+1. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**. Select **Next**.
 
    ![](./media/batchrunevaluate.png)
 
@@ -194,7 +194,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/version1.png)
 
-1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**.
+1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**.
 
 1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
 
@@ -204,7 +204,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${data.category} (2)** and click on **Review + submit (3)**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${run.outputs.Summary} (1)** and **prediction** as **${run.outputs.Summary} (2)** and click on **Review + submit (3)**.
 
    ![](./media/new-develop-lab3-2.png)
 
@@ -216,7 +216,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/viewrunlist.png)
    
-1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
+1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the summarize_text_content node and LLM predicted outputs for each record of data.
 
    ![](./media/new-develop-lab3-4.png)
 

@@ -1,4 +1,4 @@
-# Lab 01: Training the Model
+# Lab 02: Training the Model
 
 ## Lab scenario
 
@@ -15,7 +15,7 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
+1. In order to navigate to Azure AI Studio, right-click [Azure AI Studio](https://ai.azure.com/?reloadCount=1) and select 'Copy Link' Then, open a new tab, paste the link into the address bar, and press Enter .Select Sign in. When prompted, enter the following Azure credentials.
 
       ![](./media/gpt-4-demo2.png)
 
@@ -51,12 +51,12 @@ As involves setting up a structured environment to manage and streamline prompt-
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
 
-<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
 
 ### Task 2 : Create and Customize Prompts
 
@@ -83,12 +83,11 @@ Creating and customizing prompts involves designing specific, targeted questions
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
    - Deployment name : gpt-4
-   - Deployment type : Standard
-   - Model version : 0613 (Default)
+   - Deployment type : Global Standard
+   - Model version : turbo-2024-04-09
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **5K**
+   - Tokens per Minute Rate Limit (thousands): **10K**
    - Content filter : DefaultV2
-   - Enable dynamic quota : Enabled 
    - Select **Deploy**
 
      ![](./media/gpt-4-demo10.png)
