@@ -26,8 +26,8 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
    - Deployment name: **gpt-35-turbo (1)**
-   - Model version: Keep it as default (2)
-   - Deployment type: **Standard (3)**
+   - Deployment type: **Standard (2)**
+   - Model version: Keep it as default (3)
    - Connected Azure OpenAI resource: Select your OpenAI resource (4)
    - Tokens per Minute Rate Limit (thousands): **5K (5)**
    - Content filter: Set as default (6)
@@ -153,6 +153,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Inferencing data collection: **Enabled**
      - Select **Review + Create**
      - Select **Create**
+       ![](./media/modelendpoint.png)
+       
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
