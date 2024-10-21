@@ -118,7 +118,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. The prompt flow authoring page opens. You can start authoring your flow now. By default you see a sample flow. This example flow has nodes for the LLM and Python tools.
 
-1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
+1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**.
 
 1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
 
