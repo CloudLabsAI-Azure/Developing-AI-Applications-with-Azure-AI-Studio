@@ -124,9 +124,9 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
      ![](./media/gpt-4-demo13.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
+1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Mango').
 
-    ![](./media/apple.png)
+    ![](./media/msid-image20.png)
 
 1. Select **Save**, and select **Start compute session**.
 
@@ -144,7 +144,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. You can view the flow run status and output in the Outputs section.
 
-    ![](./media/image-31.png)
+    ![](./media/msid-image21.png)
 
 1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
 
