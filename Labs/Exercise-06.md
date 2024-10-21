@@ -35,6 +35,8 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
   
        ![](./media/image-53.png)
 
+       >**Note**: In case if you're not able to select Pricing tier – **Free F0**, please select **Standard S0** and procced with next step. 
+
 1. Review the settings and click **Create**.
 
      ![](./media/image-54.png)
