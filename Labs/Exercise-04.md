@@ -177,6 +177,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
 
+
+    >**Note**: If you're not able to select **URL** please refresh the page and wait for 2- 5 mins then try re-performing the lab.
+     
 1. On **Review** page review the settings and click on **Submit**
 
 1. Back on Prompt flow page and from top click on **View run list** link.
