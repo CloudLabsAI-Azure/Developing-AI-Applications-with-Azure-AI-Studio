@@ -75,13 +75,15 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ![](./media/modelapply.png)
 
+   >**Note**: When **Update system message?** prompted click on **Continue**.
+
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
    ![](./media/whatcanyoudo.png)
 
 1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
 
-   ![](./media/promptflow(3).png)
+   ![](./media/msid-image16.png)
 
 1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
 
@@ -152,7 +154,14 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Instance count: **3**
      - Inferencing data collection: **Enabled**
      - Select **Review + Create** and then Select **Create**
-        ![](./media/modelendpoint.png)
+    
+       ![](./media/msid-image17.png)
+
+       ![](./media/msid-image18.png)
+
+1. Wait for the deployments get successfully you can monitor the deployment by clicking on **Notification** icon from top menu.
+
+    ![](./media/msid-image19.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
