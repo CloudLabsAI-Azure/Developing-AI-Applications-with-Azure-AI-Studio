@@ -69,9 +69,9 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/gpt-4-demo8.png)
 
-1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
+1. On the **Select a model** page, search and select **gpt-4 (1) (2)**, select **Confirm (2)** under the **gpt-4**.
 
-   ![](./media/new-develop-issue-2.png)
+   ![](./media/msid-image2.png)
 
 1. On **Deploy model gpt-4** page :
 
@@ -91,7 +91,7 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Content filter : DefaultV2
    - Select **Deploy**
 
-     ![](./media/gpt-4-demo10.png)
+     ![](./media/msid-image3.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
