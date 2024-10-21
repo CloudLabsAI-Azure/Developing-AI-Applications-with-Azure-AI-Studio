@@ -23,7 +23,6 @@ As involves setting up a structured environment to manage and streamline prompt-
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
    ![](./media/newproject.png)
