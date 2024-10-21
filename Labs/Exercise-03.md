@@ -69,11 +69,18 @@ It systematically assesses the performance and effectiveness of various processe
          ![](./media/msid-image5.png)
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl S** to select all and **Save** the file then within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** 
-      from the file name travel-qa.jsonl.txt and click on **Save**.
+      and **Ctrl S** to select all and **Save** the file then within **File Explorer** ensure **File name** travel-qa.jsonl.txt then select **Save as type** as **All 
+      files** and click on **Save**.
 
-        ![](./media/gpt-4-demo20.png)
-   
+        ![](./media/msid-image7.png)
+     
+     - Go to the file location where you have saved the file. Select **View** from the toolbaar and then select **File name extensions**. Then rename the file and remove 
+       **.txt** from the file name. When **Rename** window prompted click on **Yes**.
+
+         ![](./media/msid-image8.png)
+
+         ![](./media/msid-image9.png)
+       
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
   
          ![](./media/image-22.png)
