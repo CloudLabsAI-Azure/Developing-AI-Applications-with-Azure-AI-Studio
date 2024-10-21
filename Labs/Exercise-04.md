@@ -175,10 +175,10 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select 
+   **category**, and select **Next**.
 
-
-    >**Note**: If you're not able to select **URL** please refresh the page and wait for 2- 5 mins then try re-performing the lab.
+    >**Note**: If you're not able to select **URL** please refresh the page and wait for 2- 5 mins then try re-performing this task.
      
 1. On **Review** page review the settings and click on **Submit**
 
