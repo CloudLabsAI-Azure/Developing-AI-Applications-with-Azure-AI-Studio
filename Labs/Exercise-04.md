@@ -121,10 +121,16 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
 
    ```
-1. Select **Save** button from the top menu, and click on **Start compute session**. Select the **Run** button on the top right.
+1. Select **Save** button from the top menu, and click on **Start compute session**.
+
+    ![](./media/image-87.png)
+
+     >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
+     
+1. Select the **Run** button on the top right.
 
     ![](./media/webclassfication.png)
-
+     
 1. On the Submit flow run window open under **Select the LLM node with variants that you want to run** choose **Select a node to run variants** then select **summarize_text_content (1)**, and click on **Submit (2)**. 
 
    ![](./media/image-41.png)
