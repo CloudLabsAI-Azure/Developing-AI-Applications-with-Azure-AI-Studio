@@ -106,7 +106,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
    Learner Support Contacts:
 
-    - Email Support: labs-support@spektrasystems.com
+    - Email Support: cloudlabs-support@spektrasystems.com
     - Live Chat Support: https://cloudlabs.ai/labs-support
 
 
