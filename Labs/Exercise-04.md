@@ -28,7 +28,9 @@ It refine model responses by adjusting prompts in successive iterations. This pr
      Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
 
      deployment_name : **gpt-4**
-   
+
+     ![](./media/msid-image10.png)
+
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
    ```
@@ -45,6 +47,8 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    ```
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+
+    ![](./media/msid-image11.png)
 
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
@@ -153,9 +157,11 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrun.png)
 
-1. On the Batch run settings select **+ Add new data**.
+1. On the Batch run settings select **+ Add new data**. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** 
+   and click on browser then select **classify.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**. Select 
+   **Next**.
 
-1. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** and click on browser then select **classify.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**. Select **Next**.
+   ![](./media/msid-image12.png)
 
    ![](./media/batchrunevaluate.png)
 
@@ -171,9 +177,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
     ![](./media/image-43.png)
    
-1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select Visualize outputs. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
+1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select **Visualize outputs**. You will be able to see the metrics of 2 variants for the **classify_with_llm** node and LLM, along with predicted outputs for each recorded data.
 
-   ![](./media/new-develop-lab3-5.png)
+   ![](./media/msid-image13.png)
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
@@ -221,7 +227,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
    
 1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the summarize_text_content node and LLM predicted outputs for each record of data.
 
-   ![](./media/new-develop-lab3-4.png)
+   ![](./media/msid-image14.png)
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
