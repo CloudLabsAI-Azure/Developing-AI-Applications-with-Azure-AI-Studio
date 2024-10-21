@@ -133,10 +133,13 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
    ![](./media/image-40.png)
 
+1. Repeat last step and select **Variant 1** from the drop down and select **view full output** for **summarize_text_content** for variant 1. Now, review the output of 
+   the variant, that you selected.
+   
 ## Task 2: Optimize Flow Performance for Production 
 It involves analyzing and refining workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, implementing best practices, and utilizing advanced tools and technologies to streamline operations. Continuous monitoring and iterative improvements are essential to maintain high performance and adapt to changing production demands, ultimately leading to increased productivity and reduced operational costs.
 
-1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**. Click on **Save**.
+1. Scroll up and under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**. Click on **Save**.
 
     ![](./media/image-44.png)
 
