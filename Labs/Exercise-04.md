@@ -214,7 +214,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${data.category} (2)** and click on **Review + submit (3)**.
 
-   ![](./media/classification.png)
+    ![](./media/new-develop-lab3-2.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
