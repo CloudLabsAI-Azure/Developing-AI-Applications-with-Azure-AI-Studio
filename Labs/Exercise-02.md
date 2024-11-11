@@ -27,30 +27,30 @@ As involves setting up a structured environment to manage and streamline prompt-
 
    ![](./media/newproject.png)
 
-1. On the **Create a project** page, and follow these instructions to fill out the properties:
+1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-   - Project name: **modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+    ![](./media/E2-T1-S3.png)
+
+1. On the **Create a hub** section, follow these instructions to fill out the properties:
+
+   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
-   - Hub: Create a new hub
-   - Select **Next**.
-     >**Note**: If you're not able to see the Hub: Create a new hub option, kindly click on Customize.
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
-   - Subscription: Set as default
-   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
-   - Location: **<inject key="Region" enableCopy="false"/>**
-   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>**
-   - Connect Azure AI Search: Keep it as default
-   - Select **Next**
+   - Subscription: Set as default (2)
+   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
+   - Location: **<inject key="Region" enableCopy="false"/>  (4)**
+   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
+   - Connect Azure AI Search: Keep it as default (6)
+   - Select **Next (7)**
 
-      ![](./media/gpt-4-demo3.png)
-      ![](./media/gpt-4-demo5.png)
+    ![](./media/E2-T1-S4.png)
      
 1. On the **Review and finish** page, select **Create a Project**.
 
      ![](./media/gpt-4-demo6.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
-    
+    **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -73,7 +73,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Deploy model gpt-4** page :
 
-    - Deployment name : gpt-4
+    - Deployment name : **gpt-4**
 
     - select **Customize**
 
@@ -83,9 +83,11 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    - Deployment name : gpt-4
    - Deployment type : Standard
-   - Model version : 0613 (Default)
+      **Note :** If you cannot view all the options below, switch the **deployment type** from Standard to **Global Batch** and complete the fields accordingly.
+   - Model version : **0613 (Default)**
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
    - Tokens per Minute Rate Limit (thousands): **5K**
+      **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : DefaultV2
    - Enable dynamic quota : Enabled 
    - Select **Deploy**
@@ -98,7 +100,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/new-develop-issue-5.png)
+   ![](./media/E2-T2-S7.png)
 
    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
 
@@ -189,4 +191,4 @@ In this lab you have completed the following tasks:
 - Created and Customized Prompts
 - Developed a Flow with LLM and Prompt Tools
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
