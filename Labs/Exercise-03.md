@@ -64,8 +64,9 @@ It systematically assesses the performance and effectiveness of various processe
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
     - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
-  
-         ![](./media/modelevaluation(1).png)
+       > **Note:** If you don't see this option, please skip it.
+       
+       ![](./media/modelevaluation(1).png)
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl S** to select all and **Save** the file then within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** 
