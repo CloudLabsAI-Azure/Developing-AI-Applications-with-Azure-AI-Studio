@@ -83,7 +83,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    - Deployment name : gpt-4
    - Deployment type : Standard
-      **Note :** If you cannot view all the options below, switch the **deployment type** from Standard to **Global Batch** and complete the fields accordingly.
+      > **Note :** If you cannot view all the below options, switch the **deployment type** from Standard to **Global Standard**, select **Model Version** as **turbo-xxxx-xx-xx** and complete the fields accordingly.
    - Model version : **0613 (Default)**
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
    - Tokens per Minute Rate Limit (thousands): **5K**
