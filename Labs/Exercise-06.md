@@ -210,8 +210,10 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Switch to the Run a bulk test tab.
 
-1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and upload**bulk-image-moderation-dataset.csv** file.
-
+1. Select **Browse for a file** and within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset**  select and upload **bulk-image-moderation-dataset.csv** file.
+   
+    > Note: The name of the CSV file may vary.
+   
      ![](./media/image-82.png)
      
 1. In the Dataset preview section, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
