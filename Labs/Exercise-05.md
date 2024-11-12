@@ -154,7 +154,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Select **Review + Create** (7)
      - Select **Create**
 
-    ![](./media/E5-T1-S1.png)
+    ![](./media/E5-T2-S1.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
