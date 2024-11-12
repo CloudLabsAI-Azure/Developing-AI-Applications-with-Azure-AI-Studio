@@ -25,16 +25,15 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
-   - Deployment name: **gpt-35-turbo (1)**
+   - Deployment type: **Standard (1)**
    - Model version: Keep it as default (2)
-   - Deployment type: **Standard (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
-   - Tokens per Minute Rate Limit (thousands): **5K (5)**
-   - Content filter: Set as default (6)
-   - Enable dynamic quota: **Enabled (7)**
-   - Select **Deploy (8)**
+   - Connected Azure OpenAI resource: Select your OpenAI resource (3)
+   - Tokens per Minute Rate Limit (thousands): **5K (4)**
+   - Content filter: Set as default (5)
+   - Enable dynamic quota: **Enabled (6)**
+   - Select **Deploy (7)**
 
-     ![](./media/deploymodel.png)
+     ![](./media/E5-T1-S5.png)
 
 1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
 
@@ -47,8 +46,9 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
-
-   ![](./media/modelonboarding.png)
+   > Wait for 5 mins if you get an error while querying.
+   
+     ![](./media/E5-T1-S8.png)
 
 1. Update the **System message (1)** to the following:-
 
@@ -73,15 +73,15 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
    
 1. Select **Apply changes (2)**, and select **continue**.
 
-   ![](./media/modelapply.png)
+     ![](./media/E5-T1-S10.png)
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
-   ![](./media/whatcanyoudo.png)
+     ![](./media/E5-T1-S11.png)
 
 1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
 
-   ![](./media/promptflow(3).png)
+     ![](./media/E5-T1-S12.png)
 
 1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
 
@@ -145,14 +145,16 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 1. Select **Deploy** to deploy the flow with the following settings:
 
    - Basic settings:
-     - Endpoint: New
-     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**
-     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/>**
-     - Virtual machine: **Standard_DS3_v2**
-     - Instance count: **3**
-     - Inferencing data collection: **Enabled**
-     - Select **Review + Create**
+     - Endpoint: New (1)
+     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**   (2)
+     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/>**   (3)
+     - Virtual machine: **Standard_DS3_v2** (4)
+     - Instance count: **3** (5)
+     - Inferencing data collection: **Enabled** (6)
+     - Select **Review + Create** (7)
      - Select **Create**
+
+    ![](./media/E5-T2-S1.png)
 
 1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
 
