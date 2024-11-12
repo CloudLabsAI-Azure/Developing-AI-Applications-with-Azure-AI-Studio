@@ -48,7 +48,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-      ![](./media/E4-T1-S4.png)
+      ![](./media/E4-T1-S6.png)
 
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
