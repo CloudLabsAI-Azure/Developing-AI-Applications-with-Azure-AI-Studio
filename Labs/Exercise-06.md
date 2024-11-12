@@ -241,4 +241,4 @@ In this lab you have completed the following tasks:
 - Implemented Content Safety Measures
 - Monitor and Analyze Content for Compliance
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab.
