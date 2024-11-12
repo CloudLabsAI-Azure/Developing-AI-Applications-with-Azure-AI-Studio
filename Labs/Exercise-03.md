@@ -64,7 +64,7 @@ It systematically assesses the performance and effectiveness of various processe
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
     - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
-       > **Note:** If you don't see this option, please skip it.
+       > **Note:** If you don't see the option for selecting the **scenario**, please skip it.
        
        ![](./media/modelevaluation(1).png)
 
