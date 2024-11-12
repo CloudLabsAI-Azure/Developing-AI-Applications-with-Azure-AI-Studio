@@ -25,9 +25,9 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Scroll down to **classify_with_llm** node and Select the following:
 
-    > Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (1)
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (1)
 
-    > deployment_name : **gpt-4** (2)
+    - deployment_name : **gpt-4** (2)
 
       ![](./media/E4-T1-S4.png)
    
@@ -77,9 +77,9 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
 1. Scroll up to **summarize_text_content** node and Select the following 
 
-   > Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
 
-   > deployment_name : **gpt-4**
+   - deployment_name : **gpt-4**
 
 1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
      
