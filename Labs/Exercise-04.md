@@ -11,7 +11,7 @@ In this lab, you will perform the following:
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
-1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Tools** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
    ![](./media/promptflow-2.png)
 
