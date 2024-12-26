@@ -180,6 +180,10 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
      ![](./media/gpt-4-demo14.png)
 
+1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
+
+    ![](./media/run-anway.png)
+
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
      ![](./media/output.png)
