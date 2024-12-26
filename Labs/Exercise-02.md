@@ -17,15 +17,15 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
 
-      ![](./media/gpt-4-demo2.png)
+      ![](./media/sign-in.png)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 
-1. On the **Azure AI foundry**, on the home page, select **+ New Project**.
+1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
 
-   ![](./media/newproject.png)
+   ![](./media/create-project.png)
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
@@ -61,11 +61,11 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 Creating and customizing prompts involves designing specific, targeted questions or statements to elicit desired responses or actions. This process includes defining clear objectives, understanding the audience, and using precise language to ensure clarity and relevance. Customization can further refine prompts to align with particular contexts or user needs, enhancing engagement and effectiveness in various applications such as education, customer service, and AI interactions.
 
-1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
 
-   ![](./media/gpt-4-demo8.png)
+   ![](./media/deploy-base-model-1.png)
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
