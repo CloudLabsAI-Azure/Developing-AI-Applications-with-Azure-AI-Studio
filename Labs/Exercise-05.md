@@ -145,6 +145,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Select **Deploy** to deploy the flow with the following settings:
 
+   ![](./media/deploy.png)
+   
    - Basic settings:
      - Endpoint: New (1)
      - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**   (2)
