@@ -25,7 +25,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
    
-   - Deployment Name : **Default (1)**
+   - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (3)**
    - Connected Azure OpenAI resource: Select your OpenAI resource (4)
