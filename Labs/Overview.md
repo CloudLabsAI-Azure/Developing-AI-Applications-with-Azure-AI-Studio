@@ -71,7 +71,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
  
-   ![](./media/env-1.png)
+   ![](./media/env-1-1.png)
  
 ## Utilizing the Split Window Feature
  
@@ -84,6 +84,12 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
    ![Manage Your Virtual Machine](./media/res.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![Manage Your Virtual Machine](./media/labzoom-1.png)
 
 ## **Lab Duration Extension**
 
@@ -106,7 +112,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
    Learner Support Contacts:
 
-    - Email Support: labs-support@spektrasystems.com
+    - Email Support: cloudlabs-support@spektrasystems.com
     - Live Chat Support: https://cloudlabs.ai/labs-support
 
 

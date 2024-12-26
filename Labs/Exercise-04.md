@@ -11,9 +11,9 @@ In this lab, you will perform the following:
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
-1. On the [Azure AI Studio](https://ai.azure.com/?reloadCount=1), under **Tools** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Tools** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
-   ![](./media/promptflow(2).png)
+   ![](./media/promptflow-2.png)
 
 1. In the **Create a new flow** under **Explore gallery** in the **Web Classification** box select **Clone**.
 
@@ -121,9 +121,9 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
 
    ```
-1. Select **Save** button from the top menu, and click on **Start compute session**. Select the **Run** button on the top right.
+1. Click the **Save** button from the top menu, then select **Start Compute Session**. Run all the nodes by clicking the play button on each existing node. Finally, click the **Run** button in the top right corner.
 
-    ![](./media/webclassfication.png)
+    ![](./media/run-1.png)
 
 1. On the Submit flow run window open under **Select the LLM node with variants that you want to run** choose **Select a node to run variants** then select **summarize_text_content (1)**, and click on **Submit (2)**. 
 
@@ -148,7 +148,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
    
 1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
 
-   ![](./media/evaluation(3).png)
+   ![](./media/evaluations-1-1.png)
 
 1. On the **Batch run & Evaluate** give **Run display name** as **classify-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under **Variants** select **classify_with_llm (2)**, and click on **Next (3)**.
 
@@ -188,13 +188,13 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest input and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
 
-   ![](./media/webclassifications.png)
+   ![](./media/webclassifications-1.png)
 
 1. Click on **Save**.
 
 1. Select **Evaluate (1)** and then select **Custom Evaluation (2)**.
 
-   ![](./media/evaluation(3).png)
+   ![](./media/evaluations-1-1.png)
 
 1. On the Batch run & Evaluate give **Run display name** as **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under variants select **Use default variants for all nodes (2)**, and select **summarize_text_content (3)** click on **Next (4)**.
 
@@ -222,7 +222,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Back on Prompt flow page and from top click on **View run list** link.
 
-   ![](./media/viewrunlist.png)
+   ![](./media/viewrunlist-1.png)
    
 1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
 

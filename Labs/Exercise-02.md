@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI Studio, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI Studio's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
+In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
 ## Lab objectives
 In this lab, you will perform the following:
 
@@ -15,17 +15,17 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. Open a new tab, and navigate to the [Azure AI Studio](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
+1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
 
-      ![](./media/gpt-4-demo2.png)
+      ![](./media/sign-in.png)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 
-1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
+1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
 
-   ![](./media/newproject.png)
+   ![](./media/create-project.png)
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
@@ -46,7 +46,7 @@ As involves setting up a structured environment to manage and streamline prompt-
      
 1. On the **Review and finish** page, select **Create a Project**.
 
-     ![](./media/gpt-4-demo6.png)
+     ![](./media/review-finish-1.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
@@ -61,11 +61,11 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 Creating and customizing prompts involves designing specific, targeted questions or statements to elicit desired responses or actions. This process includes defining clear objectives, understanding the audience, and using precise language to ensure clarity and relevance. Customization can further refine prompts to align with particular contexts or user needs, enhancing engagement and effectiveness in various applications such as education, customer service, and AI interactions.
 
-1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
 
-   ![](./media/gpt-4-demo8.png)
+   ![](./media/deploy-base-model-1.png)
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
@@ -73,30 +73,28 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Deploy model gpt-4** page :
 
-    - Deployment name : **gpt-4**
+    - Deployment name : **gpt-4 (1)**
+    - Deployment type : **Global standard (2)**
+    - Select **Customize (3)**
 
-    - select **Customize**
-
-      ![](./media/gpt-4-demo9.png)
+      ![](./media/gpt-4-1.png)
 
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
-   - Deployment name : gpt-4
-   - Deployment type : Standard
-      > **Note :** If you cannot view all the below options, switch the **deployment type** from Standard to **Global Standard**, select **Model Version** as **turbo-xxxx-xx-xx** and complete the fields accordingly.
-   - Model version : **0613 (Default)**
+   - Deployment name : **gpt-4 (1)**
+   - Deployment type :  **Global Standard (2)**
+   - Model version : **turbo-2024-04-09 (3)**
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **5K**
+   - Tokens per Minute Rate Limit (thousands): **5K(4)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
-   - Content filter : DefaultV2
-   - Enable dynamic quota : Enabled 
-   - Select **Deploy**
+   - Content filter : **DefaultV2 (5)**
+   - Select **Deploy (6)**
 
-     ![](./media/gpt-4-demo10.png)
+     ![](./media/gpt-4.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/image-04.png)
+   ![](./media/prompt-flow.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
@@ -126,17 +124,21 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
-    ![](./media/apple.png)
+    ![](./media/apple-1.png)
 
 1. Select **Save**, and select **Start compute session**.
 
-    ![](./media/image-87.png)
+    ![](./media/save.png)
 
    >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
-1. The flow run status is shown as Running, select **Run**.
+1. The flow run status is shown as Running, click on play button and run all the existing node .
 
-     ![](./media/computesession.png)
+    ![](./media/computesession-1.png)
+  
+1. Once all nodes have successfully executed, select **Run** from the toolbar.
+
+     ![](./media/run-1.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 

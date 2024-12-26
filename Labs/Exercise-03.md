@@ -14,11 +14,11 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. From the left navigation menu, under the **Tools** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/modelevluation.png)
+   ![](./media/evaluation-1.png)
 
 1. A new window opens with your previous system message already populated and your deployed model selected.
 
-   ![](./media/gpt-4-demo.png)
+   ![](./media/gpt-4-demo-1.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
 
@@ -48,31 +48,39 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-   ![](./media/gpt-4-demo19.png)
+   ![](./media/manual.png)
 
 ## Task 2: Run and Analyze Evaluation Flows
+
 It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
 1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
 
-   ![](./media/gpt-4-demo1.png)
+   ![](./media/promptflow-1.png)
 
 1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
 
-   ![](./media/evaluations(1).png)
+   ![](./media/evaluations-1.png)
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
     - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
        > **Note:** If you don't see the option for selecting the **scenario**, please skip it.
        
-       ![](./media/modelevaluation(1).png)
+       ![](./media/modelevaluation-1.png)
 
     - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl S** to select all and **Save** the file then within **File Explorer** select **Save as type** as **All files** then in **File name** remove **.txt** 
-      from the file name travel-qa.jsonl.txt and click on **Save**.
+      and **Ctrl C** to select all and **Copy**.
+  
+    - Search for Visual Studio in the VM's search bar and open it. If prompted, click **Yes, I trust the authors**.
 
-        ![](./media/gpt-4-demo20.png)
+    - From the **File (1)** menu, select **New Text File (2)**, paste the copied code.
+
+       ![](./media/new-text.png)
+
+    - Save it as a **JSON Lines** file on your desktop.
+
+       ![](./media/json.png)
    
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
   
