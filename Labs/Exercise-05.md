@@ -49,7 +49,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
    > Wait for 5 mins if you get an error while querying.
    
-     ![](./media/E5-T1-S8.png)
+     ![](./media/what-canudo.png)
 
 1. Update the **System message (1)** to the following:-
 
