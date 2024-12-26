@@ -69,18 +69,22 @@ It systematically assesses the performance and effectiveness of various processe
        
        ![](./media/modelevaluation-1.png)
 
-    - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
+    - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
-    - Search for Visual Studio in the VM's search bar and open it. If prompted, click **Yes, I trust the authors**.
+    - Search for Visual Studio in the Windows search bar of the vm and open it.
+
+       ![](./media/vsc.png)
 
     - From the **File (1)** menu, select **New Text File (2)**, paste the copied code.
 
        ![](./media/new-text.png)
 
     - Save it as a **JSON Lines** file on your desktop.
+  
+       ![](./media/json-1.png)
 
-       ![](./media/json.png)
+       ![](./media/choose-jsonl.png)
    
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
   
