@@ -85,6 +85,12 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 
    ![Manage Your Virtual Machine](./media/res.png)
 
+## Lab Guide Zoom In/Zoom Out
+
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![Manage Your Virtual Machine](./media/labzoom-1.png)
+
 ## **Lab Duration Extension**
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
