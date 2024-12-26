@@ -44,7 +44,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
     ![](./media/E2-T1-S4.png)
      
-1. On the **Review and finish** page, select **Create a Project**.
+1. On the **Review and finish** page, select **Create**.
 
      ![](./media/review-finish-1.png)
    
