@@ -168,7 +168,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure you're in **classify_with_llm_data_set** for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
 
      ![](./media/E4-T2-S8.png)
 
