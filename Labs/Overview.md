@@ -71,7 +71,7 @@ Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've 
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
  
-   ![](./media/env-1.png)
+   ![](./media/env-1-1.png)
  
 ## Utilizing the Split Window Feature
  
