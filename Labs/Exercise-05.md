@@ -1,7 +1,7 @@
 # Lab 05: Implementing Chat Flow and Tool Integration
 
 ## Lab scenario
-In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
+In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
 ## Lab objectives
 In this lab, you will perform the following:
@@ -9,13 +9,13 @@ In this lab, you will perform the following:
 - Task 2: Use LLM and Prompt Tools in Flows
 
 ## Task 1: Design and Implement a Chat Flow
-Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
+Design and implement a chat flow using Azure AI foundry to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + Deployments (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (1)** and then select **+ Deploy base model (2)** from the dropdown.
 
-   ![](./media/new-develop-issue-1.png)
+   ![](./media/deploy-base-model-1.png)
 
 1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
@@ -24,18 +24,19 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 1. On **Deploy model gpt-35-turbo** enter Deployment name: **gpt-35-turbo** and click on **Customize**.
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
+   
+   - Deployment Name : **Default (1)**
+   - Deployment type: **Standard (2)**
+   - Model version: **0125 (3)**
+   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
+   - Tokens per Minute Rate Limit (thousands): **10K (5)**
+   - Content filter: **Defaultv2 (6)**
+   - Enable dynamic quota: **Enabled (7)**
+   - Select **Deploy (8)**
 
-   - Deployment type: **Standard (1)**
-   - Model version: Keep it as default (2)
-   - Connected Azure OpenAI resource: Select your OpenAI resource (3)
-   - Tokens per Minute Rate Limit (thousands): **5K (4)**
-   - Content filter: Set as default (5)
-   - Enable dynamic quota: **Enabled (6)**
-   - Select **Deploy (7)**
+     ![](./media/gpt-35-turbo-1-1.png)
 
-     ![](./media/E5-T1-S5.png)
-
-1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + Deployments (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)**.
 
    ![](./media/new-deployments(1).png)
 
@@ -156,7 +157,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
     ![](./media/E5-T2-S1.png)
 
-1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
+1. In Azure AI foundry, from the left navigation pane, under **Components**, select the **Deployments**.
 
    >**Note:** Select **Save** if your flow is not saved.
 
