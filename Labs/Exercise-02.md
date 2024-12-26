@@ -29,7 +29,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-    ![](./media/E2-T1-S3.png)
+    ![](./media/create1.png)
 
 1. On the **Create a hub** section, follow these instructions to fill out the properties:
 
@@ -132,9 +132,11 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
    >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
-1. The flow run status is shown as Running, click on play button and run all the existing node .
+1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
 
-    ![](./media/computesession-1.png)
+    ![](./media/joke.png)
+
+    ![](./media/echo.png)
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
