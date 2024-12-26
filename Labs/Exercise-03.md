@@ -86,11 +86,11 @@ It systematically assesses the performance and effectiveness of various processe
   
          ![](./media/image-22.png)
 
-    - **Dataset mapping for prompt flow**: Select **${data.answer}**, and select **Next** 
+    - **Dataset mapping for prompt flow**: Select **${data.response}**, and select **Next** 
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
     - **Deployment name/Model**: **gpt-4 model**
-    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.answer}** from the drop-down.
+    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.response}** from the drop-down.
     - Select **Next**
     - Select **Submit**
 
