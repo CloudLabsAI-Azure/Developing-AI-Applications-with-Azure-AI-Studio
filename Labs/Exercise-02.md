@@ -85,7 +85,7 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Deployment type :  **Global Standard (2)**
    - Model version : **turbo-2024-04-09 (3)**
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **5K(4)**
+   - Tokens per Minute Rate Limit (thousands): **10 K(4)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (5)**
    - Select **Deploy (6)**
