@@ -36,13 +36,13 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
      ![](./media/gpt-35-turbo-1-1.png)
 
-1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + Deployments (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + Deployments**. On the **Model + deployments** page select **gpt-35-turbo (1)**.
 
-   ![](./media/new-deployments(1).png)
+   ![](./media/new-deployments-1-1.png)
 
 1. On the **gpt-35-turbo** page, select **Open in playground**, under **Details** tab.
 
-   ![](./media/openinplayground.png)
+   ![](./media/openinplayground-1.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
@@ -72,35 +72,35 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ```
    
-1. Select **Apply changes (2)**, and select **continue**.
+1. Select **Apply changes**, and select **continue**.
 
-     ![](./media/E5-T1-S10.png)
+     ![](./media/gpt-35-1-1.png)
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
-     ![](./media/E5-T1-S11.png)
+     ![](./media/E5-T1-S11-1.png)
 
 1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
 
-     ![](./media/E5-T1-S12.png)
+     ![](./media/E5-T1-S12-1.png)
 
 1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
 
-   ![](./media/travelchat.png)
+   ![](./media/travelchat-1.png)
 
 1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
 
-   ![](./media/startcompute.png)
+   ![](./media/startcompute-1.png)
    
    >**Note:** The compute session will take 1-3 minutes to start.
    
 1. Select the LLM node named **chat**. Note that the prompt already includes the system prompt you specified in the chat playground.
 
-   ![](./media/chatllm.png)
+   ![](./media/chatllm-1.png)
 
 1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-35-turbo** model you deployed. For **response_format**, select **{“type”:”text”}**.
 
-   ![](./media/new-travelchat(1).png)
+   ![](./media/new-travelchat-1.png)
 
 1. Review the prompt field and ensure it looks like the following:
 
@@ -139,7 +139,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Ensure the compute session is running. Select **Save (1)**. Select **Chat (2)** to test the flow.
 
-   ![](./media/chatflow.png)
+   ![](./media/chatflow-1.png)
 
 1. Enter the query: **I have one day in London, what should I do?** and review the output.
 
@@ -157,25 +157,25 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
     ![](./media/E5-T2-S1.png)
 
-1. In Azure AI foundry, from the left navigation pane, under **Components**, select the **Deployments**.
+1. In Azure AI foundry, from the left navigation pane, under **My assets**, select **Model + Deployments**
 
    >**Note:** Select **Save** if your flow is not saved.
 
 1. Select the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
 
-   ![](./media/modeldeployments(1).png)
+   ![](./media/modeldeployments-1.png)
 
 1. Then, on its **Test** page, enter the prompt **What is there to do in San Francisco?** and review the response.
 
-     ![](./media/testdeploy.png)
+     ![](./media/testdeploy-1.png)
 
 1. Enter the prompt **Where else could I go?** and review the response.
 
-     ![](./media/image-33.png)
+     ![](./media/image-33-1.png)
 
 1. View the **Consume** page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint - enabling you to integrate the prompt flow solution into an application as a custom copilot.
 
-   ![](./media/modelendpoints.png)
+   ![](./media/modelendpoints-1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
