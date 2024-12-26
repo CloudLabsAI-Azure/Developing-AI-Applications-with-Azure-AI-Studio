@@ -121,7 +121,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
 
    ```
-1. Click the **Save** button from the top menu, then select **Start Compute Session**. Run all the nodes by clicking the play button on each existing node. Finally, click the **Run** button in the top right corner.
+1. Click the **Save** button from the top menu, then select **Start Compute Session**. Finally, click the **Run** button in the top right corner.
 
     ![](./media/run-1.png)
 
