@@ -12,7 +12,7 @@ In this lab, you will perform the following:
 
 You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
 
-1. From the left navigation menu, under the **Tools** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
    ![](./media/evaluation-1.png)
 
@@ -69,28 +69,32 @@ It systematically assesses the performance and effectiveness of various processe
        
        ![](./media/modelevaluation-1.png)
 
-    - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
+    - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
-    - Search for Visual Studio in the VM's search bar and open it. If prompted, click **Yes, I trust the authors**.
+    - Search for Visual Studio in the Windows search bar of the vm and open it.
+
+       ![](./media/vsc.png)
 
     - From the **File (1)** menu, select **New Text File (2)**, paste the copied code.
 
        ![](./media/new-text.png)
 
     - Save it as a **JSON Lines** file on your desktop.
+  
+       ![](./media/json-1.png)
 
-       ![](./media/json.png)
+       ![](./media/choose-jsonl.png)
    
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
   
          ![](./media/image-22.png)
 
-    - **Dataset mapping for prompt flow**: Select **${data.answer}**, and select **Next** 
+    - **Dataset mapping for prompt flow**: Select **${data.response}**, and select **Next** 
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
     - **Deployment name/Model**: **gpt-4 model**
-    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.answer}** from the drop-down.
+    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.response}** from the drop-down.
     - Select **Next**
     - Select **Submit**
 

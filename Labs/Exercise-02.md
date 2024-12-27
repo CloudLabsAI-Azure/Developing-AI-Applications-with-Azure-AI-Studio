@@ -29,7 +29,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-    ![](./media/E2-T1-S3.png)
+    ![](./media/create1.png)
 
 1. On the **Create a hub** section, follow these instructions to fill out the properties:
 
@@ -44,7 +44,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
     ![](./media/E2-T1-S4.png)
      
-1. On the **Review and finish** page, select **Create a Project**.
+1. On the **Review and finish** page, select **Create**.
 
      ![](./media/review-finish-1.png)
    
@@ -85,7 +85,7 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Deployment type :  **Global Standard (2)**
    - Model version : **turbo-2024-04-09 (3)**
    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **5K(4)**
+   - Tokens per Minute Rate Limit (thousands): **10 K(4)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (5)**
    - Select **Deploy (6)**
@@ -132,9 +132,11 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
    >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
-1. The flow run status is shown as Running, click on play button and run all the existing node .
+1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
 
-    ![](./media/computesession-1.png)
+    ![](./media/joke.png)
+
+    ![](./media/echo.png)
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
@@ -177,6 +179,10 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    - website_name: Microsoft
 
      ![](./media/gpt-4-demo14.png)
+
+1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
+
+    ![](./media/run-anway.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 

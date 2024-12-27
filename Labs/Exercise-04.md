@@ -11,7 +11,7 @@ In this lab, you will perform the following:
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
-1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Tools** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
    ![](./media/promptflow-2.png)
 
@@ -121,7 +121,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
 
    ```
-1. Click the **Save** button from the top menu, then select **Start Compute Session**. Run all the nodes by clicking the play button on each existing node. Finally, click the **Run** button in the top right corner.
+1. Click the **Save** button from the top menu, then select **Start Compute Session**. Finally, click the **Run** button in the top right corner.
 
     ![](./media/run-1.png)
 
@@ -168,7 +168,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure you're in **classify_with_llm_data_set** for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
 
      ![](./media/E4-T2-S8.png)
 

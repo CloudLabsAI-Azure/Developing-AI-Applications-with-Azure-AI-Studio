@@ -25,7 +25,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
    
-   - Deployment Name : **Default (1)**
+   - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (3)**
    - Connected Azure OpenAI resource: Select your OpenAI resource (4)
@@ -49,7 +49,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
    > Wait for 5 mins if you get an error while querying.
    
-     ![](./media/E5-T1-S8.png)
+     ![](./media/what-canudo.png)
 
 1. Update the **System message (1)** to the following:-
 
@@ -145,6 +145,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Select **Deploy** to deploy the flow with the following settings:
 
+   ![](./media/deploy.png)
+   
    - Basic settings:
      - Endpoint: New (1)
      - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**   (2)
