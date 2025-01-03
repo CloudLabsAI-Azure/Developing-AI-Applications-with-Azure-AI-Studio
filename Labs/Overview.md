@@ -2,11 +2,11 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
+This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. By completing this lab, participants will learn to: 
+This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to: 
 
 - **Understand Model Development Lifecycle**: The model development lifecycle is a structured approach to creating and deploying machine learning models, encompassing several key stages: problem definition, data collection, data preprocessing, model selection, training, evaluation, and deployment. It starts with understanding the problem and gathering relevant data, followed by cleaning and transforming the data to ensure quality. Next, various models are chosen and trained on the data, with performance assessed through evaluation metrics. Based on these metrics, the best-performing model is selected and deployed into a production environment, where it is monitored and maintained to ensure continued accuracy and relevance. This lifecycle ensures a systematic approach to building effective machine learning solutions.
 
@@ -26,7 +26,7 @@ Participants should have:
 Basic knowledge and understanding of the following
  
  - Azure Portal
- - Azure AI Studio
+ - Azure AI Foundry
  - Content Safety Studio
 
 ## Architecture 
