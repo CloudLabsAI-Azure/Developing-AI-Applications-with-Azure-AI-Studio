@@ -32,7 +32,7 @@ Basic knowledge and understanding of the following
 ## Architecture 
 
 - **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
-- **Azure AI Studio** : Azure AI Studio is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+- **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
 - **Content Safety Studio** : Content Safety Studio is a suite of tools within Azure that provides capabilities for moderating and filtering content to ensure it meets safety and compliance standards. It includes text moderation and image moderation services.
 
 ## Architecture Diagram: 
