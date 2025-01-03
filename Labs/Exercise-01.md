@@ -1,7 +1,7 @@
 # Lab 01: Understanding the Lifecycle of Model Development
 
 ## Lab scenario
-In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
+In this lab, you will explore the lifecycle of developing AI applications using Azure AI Foundry's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
 
 ## Lab objectives
 In this lab, you will perform the following:
@@ -22,9 +22,9 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 
 ### Task 1.1: Understand the types of flows
 
-In this task, you will explore different flow types in Azure AI Studio
+In this task, you will explore different flow types in Azure AI Foundry
 
-1. In Azure AI Studio, you can start a new flow by selecting a flow type or a template from the gallery.
+1. In Azure AI Foundry, you can start a new flow by selecting a flow type or a template from the gallery.
 
 - **Standard flow**: Designed for general application development, the standard flow allows you to create a flow using a wide range of built-in tools for developing LLM-based applications. It provides flexibility and versatility for developing applications across different domains.
 - **Chat flow**: Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug their applications within a conversational context.
@@ -33,11 +33,11 @@ In this task, you will explore different flow types in Azure AI Studio
   ![](./media/image-48.png)
 
 ### Task 1.2: Understand a flow
-In this task, you will explore **Prompt flow** a feature within the Azure AI Studio.
+In this task, you will explore **Prompt flow** a feature within the Azure AI Foundry.
 
 1. A flow in Prompt flow serves as an executable workflow that streamlines the development of your LLM-based AI application. It provides a comprehensive framework for managing data flow and processing within your application.
 
-1. Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows often consist of three parts:
+1. Prompt flow is a feature within the Azure AI Foundry that allows you to author flows. Flows are executable workflows often consist of three parts:
 
     - **Inputs**: Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
     - **Nodes**: Represent tools that perform data processing, task execution, or algorithmic operations.
@@ -51,7 +51,7 @@ In this task, you will explore **Prompt flow** a feature within the Azure AI Stu
 
 ### Task 1.3: Explore the tools available in prompt flow
 
-In this task, you will explore the tools available in Prompt Flow within Azure AI Studio.
+In this task, you will explore the tools available in Prompt Flow within Azure AI Foundry.
 
 1. Tools are the fundamental building blocks of a flow.
 
