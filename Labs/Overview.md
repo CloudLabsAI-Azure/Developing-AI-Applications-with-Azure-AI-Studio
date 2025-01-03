@@ -2,11 +2,11 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
+This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. By completing this lab, participants will learn to: 
+This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to: 
 
 - **Understand Model Development Lifecycle**: The model development lifecycle is a structured approach to creating and deploying machine learning models, encompassing several key stages: problem definition, data collection, data preprocessing, model selection, training, evaluation, and deployment. It starts with understanding the problem and gathering relevant data, followed by cleaning and transforming the data to ensure quality. Next, various models are chosen and trained on the data, with performance assessed through evaluation metrics. Based on these metrics, the best-performing model is selected and deployed into a production environment, where it is monitored and maintained to ensure continued accuracy and relevance. This lifecycle ensures a systematic approach to building effective machine learning solutions.
 
@@ -26,13 +26,13 @@ Participants should have:
 Basic knowledge and understanding of the following
  
  - Azure Portal
- - Azure AI Studio
+ - Azure AI Foundry
  - Content Safety Studio
 
 ## Architecture 
 
 - **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
-- **Azure AI Studio** : Azure AI Studio is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+- **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
 - **Content Safety Studio** : Content Safety Studio is a suite of tools within Azure that provides capabilities for moderating and filtering content to ensure it meets safety and compliance standards. It includes text moderation and image moderation services.
 
 ## Architecture Diagram: 
@@ -43,18 +43,18 @@ Basic knowledge and understanding of the following
 
 - **Understanding the Lifecycle of Model Development**:
    - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Studio.
+   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
 
-- **Training the Model**: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Studio.
+- **Training the Model**: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Foundry.
 - **Evaluation Flow Setup**: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
 - **Fine-Tuning the Model**: Fine-tune models through iterative prompt tuning, variant comparison, and performance optimization to enhance accuracy and efficiency.
-- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Studio.
+- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
 - **Ensuring Responsible AI with Content Safety Studio**: Utilize Text Moderation to filter harmful text and Image Moderation to block unsafe images, ensuring safe and appropriate user-generated content.
 
 
 ## Getting Started with the Lab
  
-Welcome to your Developing AI Applications with Azure AI Studio Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
