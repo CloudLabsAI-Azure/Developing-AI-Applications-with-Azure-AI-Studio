@@ -17,7 +17,7 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 
      ![](./media/image-51.png)
 
-1. In the All resources section, select **+ Create a new resource**.
+1. In the **All resources** section, select **+ Create a new resource**.
 
      ![](./media/image-52.png)
 
@@ -39,7 +39,7 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
 
      ![](./media/image-54.png)
 
-1. Once deployement is successful click on **Go to resource**.
+1. Once deployment is successful click on **Go to resource**.
 
      ![](./media/image-57.png)
 
@@ -73,7 +73,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 #### Safe content
 
-1. Now lets use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
+1. Now let's use our image and test then check the result. **Moderate image content** select **Run a simple test** tab then click on **Browse for a file**
 
      ![](./media/image-61.png)
 
@@ -193,13 +193,13 @@ We can’t anticipate that all text content from our customers would be free of 
 
 1. In the Test box, enter the following:
 
-    - I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker?
+    - I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker?
 
     - Set all Threshold levels to Medium.
 
     - Select Run test.
 
-    - Although the content is Allowed, the Severity level for Violence is should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+    - Although the content is Allowed, the Severity level for Violence should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
   
 #### Run a bulk test
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 

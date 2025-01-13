@@ -68,7 +68,7 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
  
 ## Exploring Your Lab Resources
  
-1. To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
  
    ![](./media/env-1-1.png)
