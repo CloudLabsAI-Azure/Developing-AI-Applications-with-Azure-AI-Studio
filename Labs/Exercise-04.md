@@ -9,7 +9,7 @@ In this lab, you will perform the following:
 - Task 2: Optimize Flow Performance for Production
 
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
-It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
+It refines model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
 1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
@@ -23,7 +23,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
       ![](./media/image-366.png)
 
-1. Scroll down to **classify_with_llm** node and Select the following:
+1. Scroll down to **classify_with_llm** node and select the following:
 
     - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (1)
 
@@ -75,7 +75,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
      
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
-1. Scroll up to **summarize_text_content** node and Select the following 
+1. Scroll up to **summarize_text_content** node and select the following 
 
    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
 
