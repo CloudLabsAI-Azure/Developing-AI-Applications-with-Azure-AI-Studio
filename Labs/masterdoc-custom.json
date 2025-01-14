@@ -1,0 +1,18 @@
+[ {
+  "Name": "Building and Evaluating Prompt Flows with Azure AI Foundry",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/custom-overview.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/train-model.md",
+      "Order": 2
+     },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/evalutaion-flow.md",
+      "Order": 3
+    }
+  ]
+} ]
