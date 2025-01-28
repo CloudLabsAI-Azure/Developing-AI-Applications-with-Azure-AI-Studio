@@ -29,17 +29,17 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-    ![](./media/create1.png)
+    ![](./media/d1.png)
 
 1. On the **Create a hub** section, follow these instructions to fill out the properties:
 
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
-   - Subscription: Set as default (2)
+   - Subscription: **Set as default (2)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
    - Location: **<inject key="Region" enableCopy="false"/>  (4)**
    - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
-   - Connect Azure AI Search: Keep it as default (6)
+   - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
     ![](./media/E2-T1-S4.png)
@@ -52,6 +52,7 @@ As involves setting up a structured environment to manage and streamline prompt-
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -67,30 +68,30 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploy-base-model-1.png)
 
-1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
+1. On the **Select a model** page, search for **gpt-4o (1)** and select **gpt-4o (2)**, select **Confirm (3)** under the **gpt-4o**.
 
-   ![](./media/new-develop-issue-2.png)
+   ![](./media/d2.png)
 
-1. On **Deploy model gpt-4** page :
+1. On **Deploy model gpt-4o** page :
 
-    - Deployment name : **gpt-4 (1)**
+    - Deployment name : **gpt-4o (1)**
     - Deployment type : **Global standard (2)**
     - Select **Customize (3)**
 
-      ![](./media/gpt-4-1.png)
+      ![](./media/d3.png)
 
-1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
+1. On **Deploy model gpt-4o** page, follow these instructions to create the deployment:
 
-   - Deployment name : **gpt-4 (1)**
+   - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
-   - Model version : **turbo-2024-04-09 (3)**
-   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **10 K(4)**
+   - Model version : **2024-11-20 (3)**
+   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Tokens per Minute Rate Limit (thousands): **10 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
-   - Content filter : **DefaultV2 (5)**
-   - Select **Deploy (6)**
+   - Content filter : **DefaultV2 (6)**
+   - Select **Deploy (7)**
 
-     ![](./media/gpt-4.png)
+     ![](./media/d4.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
@@ -100,11 +101,12 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/E2-T2-S7.png)
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
+   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
    ![](./media/gpt-4-demo11.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -118,7 +120,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
      ![](./media/gpt-4-demo13.png)
 
@@ -130,7 +132,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
     ![](./media/save.png)
 
-   >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
+   >**Note:** It might take **10-15 minutes** to start the session. Wait till compute session starts.
     
 1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
 
