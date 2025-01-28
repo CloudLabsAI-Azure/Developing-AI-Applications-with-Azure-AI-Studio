@@ -23,13 +23,13 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
       ![](./media/image-366.png)
 
-1. Scroll down to **classify_with_llm** node and select the following:
+1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (1)
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
 
-    - deployment_name : **gpt-4** (2)
+    - deployment_name : **gpt-4o (3)**
 
-      ![](./media/E4-T1-S4.png)
+      ![](./media/d15.png)
    
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
