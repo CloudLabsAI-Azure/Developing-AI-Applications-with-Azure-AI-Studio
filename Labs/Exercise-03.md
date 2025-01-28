@@ -52,9 +52,9 @@ You can manually review model responses based on test data. Manually reviewing a
 
 It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
-1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
+1. Select **Prompt flow (1)** from left navigation pane and select the prompt flow you created. **(2)**
 
-   ![](./media/promptflow-1.png)
+   ![](./media/d7.png)
 
 1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
 
@@ -70,30 +70,49 @@ It systematically assesses the performance and effectiveness of various processe
     - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
-    - Search for Visual Studio in the Windows search bar of the vm and open it.
+    - Search for **Visual Studio (1)** in the Windows search bar of the vm and select **Visual Studio (2)**.
 
        ![](./media/vsc.png)
 
-    - From the **File (1)** menu, select **New Text File (2)**, paste the copied code.
+    - From the **File (1)** menu, select **New Text File (2)**, 
 
-       ![](./media/new-text.png)
+       ![](./media/d8.png)
 
-    - Save it as a **JSON Lines** file on your desktop.
-  
-       ![](./media/json-1.png)
+    - **Paste the copied code**.
 
-       ![](./media/choose-jsonl.png)
+    - Navigate to **File (1)** and click on **Save as (2)**.    
+
+       ![](./media/d9.png)    
+
+    - Click on **Desktop (1)**, Enter the File name as **Sample (1)** select **JSON Lines (3)** for Save as type and then click on **Save (4)**.
+
+       ![](./media/d10.png)        
+
+1. Navigate back to **Azure AI foundary**, where your **creating a new evaluation**.
    
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
+    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
   
          ![](./media/image-22.png)
 
-    - **Dataset mapping for prompt flow**: Select **${data.response}**, and select **Next** 
-    - **Select metrics**: **Coherence, Fluency**
-    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-    - **Deployment name/Model**: **gpt-4 model**
-    - Scroll down under **How does your dataset map to your evaluation input** for contect select **${data.response}** from the drop-down.
-    - Select **Next**
+    - Select the file that you downloaded **(1)** and click on **Open(2)**
+
+         ![](./media/d11.png)    
+
+    - **Dataset mapping for prompt flow**: Select **${data.response} (1)** and select **Next (2)** 
+
+         ![](./media/d12.png)  
+
+    - **Select metrics**: **Coherence (1), Fluency (2)**
+    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
+    - **Deployment name/Model**: **gpt-4o model (4)**
+
+         ![](./media/d13.png)  
+
+    - Scroll down under **How does your dataset map to your evaluation input**. Select **${data.response} (1)** from the drop-down.
+    - Select **Next (2)**
+
+         ![](./media/d14.png)  
+
     - Select **Submit**
 
 1. Wait for the evaluations to be completed, you may need to refresh.
