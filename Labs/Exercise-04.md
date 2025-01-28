@@ -71,7 +71,7 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
     ```
 
-    ![](./media/gpt-4-demo22.png)
+    ![](./media/d19.png)
      
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
@@ -79,11 +79,11 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
 1. Scroll up to **summarize_text_content** node and select the following 
 
-   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
 
-   - deployment_name : **gpt-4**
+   - deployment_name : **gpt-4o (2)**
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
+1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1 **(3)**.  
      
    ```  
    # system:
@@ -101,13 +101,13 @@ It refines model responses by adjusting prompts in successive iterations. This p
    Summary:
    ```
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select **Show variants (4)** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-    ![](./media/gpt-4-demo23.png)
+    ![](./media/d20.png)
    
-1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
+1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1
 
-1. On the variant_1 replace the existing prompt with the following prompt:
+1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
    ```
    # system:
