@@ -16,7 +16,7 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/evaluation-1.png)
 
-1. A new window opens with your previous system message already populated and your deployed model selected.
+1. A new window opens with your previous **system message** already populated and your deployed model selected.
 
    ![](./media/gpt-4-demo-1.png)
 
@@ -40,13 +40,11 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/output(1).png)
 
-1. Select **Save results** from the top bar. Enter **manual_evaluation_results** as the name for the results, and select **Save**.
+1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
    ![](./media/gpt-4-demo18.png)
    
-1. Using the menu on the left, navigate to **Evaluations**.
-
-1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
+1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **(3)**. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
    ![](./media/manual.png)
 

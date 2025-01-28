@@ -122,23 +122,25 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
-     ![](./media/gpt-4-demo13.png)
+     ![](./media/d5.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
+1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)**.
 
     ![](./media/apple-1.png)
 
-1. Select **Save**, and select **Start compute session**.
+1. Select **Save (1)**, and select **Start compute session (2)**.
 
     ![](./media/save.png)
 
    >**Note:** It might take **10-15 minutes** to start the session. Wait till compute session starts.
     
-1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
+1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
     ![](./media/joke.png)
 
-    ![](./media/echo.png)
+1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
+
+    ![](./media/d6.png)
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
@@ -148,16 +150,16 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
      ![](./media/image-30.png)
 
-1. You can view the flow run status and output in the Outputs section.
+1. You can view the flow run status and output in the **Outputs** section.
 
     ![](./media/image-31.png)
 
-1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
+1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
     ![](./media/gpt-4-demo17.png)
     ![](./media/gpt-4-demo(15).png)
 
-1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
+1. Add this code inside the **modelflow** prompt tool **(1)**, and select **Validate and parse input (2)**
 
    ```jinja
    Welcome to {{ website_name }}!
@@ -175,10 +177,10 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
    ![](./media/gpt-4-demo16.png)
    
-1. In the input section add these following value, select **Save** and **Run**.
+1. In the input section add these following value, select **Save (2)** and **Run (3)**.
 
-   - user_name: Jane
-   - website_name: Microsoft
+   - user_name: **Jane (1)**
+   - website_name: **Microsoft (1)**
 
      ![](./media/gpt-4-demo14.png)
 
