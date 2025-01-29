@@ -225,14 +225,13 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
    
      ![](./media/image-82.png)
      
-1. In the **Dataset preview section**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful 
-   content).
+1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content). **(2)**
 
-1. Set all Threshold levels to **Medium**.
+     - Set all Threshold levels to **Medium (3)**.
 
-1. Select **Run test**.
+     - Select **Run test (4)**.
    
-    ![](./media/image-78.png)
+       ![](./media/d44.png)
 
 1. Review the result.
 
@@ -241,6 +240,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
     ![](./media/image-80.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  - Hit the Validate button for the corresponding task.
   - If you receive a success message, you can proceed to the next task.
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
