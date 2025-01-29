@@ -22,7 +22,6 @@ As involves setting up a structured environment to manage and streamline prompt-
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-
 1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
 
    ![](./media/create-project.png)
