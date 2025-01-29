@@ -29,17 +29,17 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-    ![](./media/create1.png)
+    ![](./media/d1.png)
 
 1. On the **Create a hub** section, follow these instructions to fill out the properties:
 
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
-   - Subscription: Set as default (2)
+   - Subscription: **Set as default (2)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
    - Location: **<inject key="Region" enableCopy="false"/>  (4)**
    - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
-   - Connect Azure AI Search: Keep it as default (6)
+   - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
     ![](./media/E2-T1-S4.png)
@@ -52,6 +52,7 @@ As involves setting up a structured environment to manage and streamline prompt-
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -67,30 +68,30 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/deploy-base-model-1.png)
 
-1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
+1. On the **Select a model** page, search for **gpt-4o (1)** and select **gpt-4o (2)**, select **Confirm (3)** under the **gpt-4o**.
 
-   ![](./media/new-develop-issue-2.png)
+   ![](./media/d2.png)
 
-1. On **Deploy model gpt-4** page :
+1. On **Deploy model gpt-4o** page :
 
-    - Deployment name : **gpt-4 (1)**
+    - Deployment name : **gpt-4o (1)**
     - Deployment type : **Global standard (2)**
     - Select **Customize (3)**
 
-      ![](./media/gpt-4-1.png)
+      ![](./media/d3.png)
 
-1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
+1. On **Deploy model gpt-4o** page, follow these instructions to create the deployment:
 
-   - Deployment name : **gpt-4 (1)**
+   - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
-   - Model version : **turbo-2024-04-09 (3)**
-   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **10 K(4)**
+   - Model version : **2024-11-20 (3)**
+   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Tokens per Minute Rate Limit (thousands): **10 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
-   - Content filter : **DefaultV2 (5)**
-   - Select **Deploy (6)**
+   - Content filter : **DefaultV2 (6)**
+   - Select **Deploy (7)**
 
-     ![](./media/gpt-4.png)
+     ![](./media/d4.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
@@ -100,11 +101,12 @@ Creating and customizing prompts involves designing specific, targeted questions
 
    ![](./media/E2-T2-S7.png)
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
+   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
    ![](./media/gpt-4-demo11.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -118,25 +120,27 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
-     ![](./media/gpt-4-demo13.png)
+     ![](./media/d5.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
+1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)**.
 
     ![](./media/apple-1.png)
 
-1. Select **Save**, and select **Start compute session**.
+1. Select **Save (1)**, and select **Start compute session (2)**.
 
     ![](./media/save.png)
 
-   >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
+   >**Note:** It might take **10-15 minutes** to start the session. Wait till compute session starts.
     
-1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
+1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
     ![](./media/joke.png)
 
-    ![](./media/echo.png)
+1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
+
+    ![](./media/d6.png)
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
@@ -146,16 +150,16 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
      ![](./media/image-30.png)
 
-1. You can view the flow run status and output in the Outputs section.
+1. You can view the flow run status and output in the **Outputs** section.
 
     ![](./media/image-31.png)
 
-1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
+1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
     ![](./media/gpt-4-demo17.png)
     ![](./media/gpt-4-demo(15).png)
 
-1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
+1. Add this code inside the **modelflow** prompt tool **(1)**, and select **Validate and parse input (2)**
 
    ```jinja
    Welcome to {{ website_name }}!
@@ -173,10 +177,10 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
    ![](./media/gpt-4-demo16.png)
    
-1. In the input section add these following value, select **Save** and **Run**.
+1. In the input section add these following value, select **Save (2)** and **Run (3)**.
 
-   - user_name: Jane
-   - website_name: Microsoft
+   - user_name: **Jane (1)**
+   - website_name: **Microsoft (1)**
 
      ![](./media/gpt-4-demo14.png)
 

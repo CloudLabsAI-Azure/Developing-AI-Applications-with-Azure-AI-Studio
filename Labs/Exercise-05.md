@@ -17,7 +17,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ![](./media/deploy-base-model-1.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search for **gpt-35-turbo (1)**, select **gpt-35-turbo (2)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
    ![](./media/selectmodel.png)
 
@@ -28,7 +28,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
+   - Connected Azure OpenAI resource: Select your OpenAI resource **(4)**
    - Tokens per Minute Rate Limit (thousands): **10K (5)**
    - Content filter: **Defaultv2 (6)**
    - Enable dynamic quota: **Enabled (7)**
@@ -72,21 +72,27 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ```
    
-1. Select **Apply changes**, and select **continue**.
+1. Select **Apply changes (2)**.
 
-     ![](./media/gpt-35-1-1.png)
+     ![](./media/d33.png)
+
+1. Select **continue**.     
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
      ![](./media/E5-T1-S11-1.png)
 
-1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
+1. Under the Chat playground, select **Prompt flow** from the top bar.
 
      ![](./media/E5-T1-S12-1.png)
 
-1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
+1. Enter **Travel-Chat (1)** as folder name, and select **Open (2)**.
 
-   ![](./media/travelchat-1.png)
+     ![](./media/d34.png)
+
+1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
+
+   ![](./media/d35.png)
 
 1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
 
@@ -98,11 +104,16 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ![](./media/chatllm-1.png)
 
-1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-35-turbo** model you deployed. For **response_format**, select **{“type”:”text”}**.
+1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
 
-   ![](./media/new-travelchat-1.png)
+   - **Connection**: Select the connection that was created for you when you created the AI hub **(1)**. 
+   - **Api**: Select **chat (2)**.
+   - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
+   - **response_format**: Select **{“type”:”text”} (4)**.
 
-1. Review the prompt field and ensure it looks like the following:
+     ![](./media/d36.png)
+
+1. Review the **prompt field** and ensure it looks like the following:
 
    ```
    system:
@@ -143,31 +154,38 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Enter the query: **I have one day in London, what should I do?** and review the output.
 
+   ![](./media/d37.png)
+
 1. Select **Deploy** to deploy the flow with the following settings:
 
    ![](./media/deploy.png)
    
    - Basic settings:
-     - Endpoint: New (1)
-     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**   (2)
-     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/>**   (3)
-     - Virtual machine: **Standard_DS3_v2** (4)
-     - Instance count: **3** (5)
-     - Inferencing data collection: **Enabled** (6)
-     - Select **Review + Create** (7)
-     - Select **Create**
+     - Endpoint: **New (1)**
+     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/> (2)**
+     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/> (3)**
+     - Virtual machine: **Standard_DS3_v2 (4)**
+     - Instance count: **3 (5)**
+     - Inferencing data collection: **Enabled (6)**
+     - Select **Review + Create (7)**
 
     ![](./media/E5-T2-S1.png)
+
+1. Select **Create**    
 
 1. In Azure AI foundry, from the left navigation pane, under **My assets**, select **Model + Deployments**
 
    >**Note:** Select **Save** if your flow is not saved.
 
-1. Select the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
+1. Select the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(2)**.
 
-   ![](./media/modeldeployments-1.png)
+   ![](./media/d38.png)
 
-1. Then, on its **Test** page, enter the prompt **What is there to do in San Francisco?** and review the response.
+1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
+
+   ![](./media/d39.png)
+
+1. Navigate to **Test** tab, enter the prompt **What is there to do in San Francisco?** and review the response.
 
      ![](./media/testdeploy-1.png)
 
@@ -180,6 +198,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
    ![](./media/modelendpoints-1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.

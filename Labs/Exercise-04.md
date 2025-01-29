@@ -23,13 +23,13 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
       ![](./media/image-366.png)
 
-1. Scroll down to **classify_with_llm** node and select the following:
+1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (1)
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
 
-    - deployment_name : **gpt-4** (2)
+    - deployment_name : **gpt-4o (3)**
 
-      ![](./media/E4-T1-S4.png)
+      ![](./media/d15.png)
    
 1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
 
@@ -48,13 +48,13 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-      ![](./media/E4-T1-S6.png)
+      ![](./media/d16.png)
 
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
-     ![](./media/gpt-4-demo21.png)
+     ![](./media/d17.png)
    
-1. On the variant_1 replace the existing prompt with the following prompt:
+1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
     ```  
     # system:  
@@ -71,17 +71,19 @@ It refines model responses by adjusting prompts in successive iterations. This p
 
     ```
 
-    ![](./media/gpt-4-demo22.png)
+    ![](./media/d19.png)
      
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
+     ![](./media/d18.png)
+
 1. Scroll up to **summarize_text_content** node and select the following 
 
-   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
 
-   - deployment_name : **gpt-4**
+   - deployment_name : **gpt-4o (2)**
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
+1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1 **(3)**.  
      
    ```  
    # system:
@@ -99,13 +101,13 @@ It refines model responses by adjusting prompts in successive iterations. This p
    Summary:
    ```
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select **Show variants (4)** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-    ![](./media/gpt-4-demo23.png)
+    ![](./media/d20.png)
    
-1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
+1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1
 
-1. On the variant_1 replace the existing prompt with the following prompt:
+1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
    ```
    # system:
@@ -131,9 +133,9 @@ It refines model responses by adjusting prompts in successive iterations. This p
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
-1. In top menu select **Variant 0 (1)** from the drop down and select **view full output** for **summarize_text_content** for **variant 0**. Now, review the output of the variant, that you selected.
+1. In top menu select **Variant 0 (1)** from the drop down and select **View full output (2)** for **summarize_text_content** for **variant 0**. Now, review the output of the variant, that you selected.
 
-   ![](./media/image-39.png)
+   ![](./media/d21.png)
 
    ![](./media/image-40.png)
 
@@ -144,7 +146,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
     ![](./media/image-44.png)
 
-   >**Note:** In the Output section, if the outputs are already added, please ignore and select **Save**.
+   >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
 1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
 
@@ -154,11 +156,21 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrun.png)
 
-1. On the Batch run settings select **+ Add new data**.
+1. On the **Batch run settings** select **+ Add new data**.
 
-1. On the **Add new data** window open enter name  **classify_with_llm_data_set (1)** select **Upload from local file** and click on browser then select **classify.jsonl (2)** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add (3)**.
+   ![](./media/d22.png)
 
-     ![](./media/E4-T2-S5.png)
+1. On the **Add new data** window open, enter name  **classify_with_llm_data_set (1)** select **Upload from local file (2)** and click on **Browse (3)**.
+
+   ![](./media/d23.png)
+
+1. Navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
+
+     ![](./media/d24.png)
+
+1. Click on **Add**.
+
+     ![](./media/d25.png)
 
 1.  Select **${data.text-context} (1)** for text-context and select **Next (2)**.
 
@@ -168,9 +180,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure you're in **classify_with_llm_data_set** for **groundtruth** data source enter **${data.url}** and **prediction** select **category**, and select **Next**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation (1)** and select **classify_with_llm_data_set (2)** for **groundtruth** data source enter **${data.url} (3)** and **prediction** select **category (4)**, and select **Next (5)**.
 
-     ![](./media/E4-T2-S8.png)
+     ![](./media/d26.png)
 
 1. On **Review** page review the settings and click on **Submit**
 
@@ -178,9 +190,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
     ![](./media/image-43.png)
    
-1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select Visualize outputs. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
+1. After the batch run and evaluation run complete, in the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
 
-   ![](./media/new-develop-lab3-5.png)
+   ![](./media/d27.png)
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
@@ -202,7 +214,17 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. On the Batch run settings, click on **+ Add new data**.
 
-1. In the new data window, enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file from **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** and click on **Add**.
+1. In the new data window, enter name  **summarize_text_content_data_set (1)** select **Upload from local file (2)** and click on **browse (3)**.
+
+   ![](./media/d28.png)
+
+1. Navigate to  **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data (1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
+
+   ![](./media/d29.png)
+
+1. Click on **Add**.
+
+   ![](./media/d30.png)
 
 1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
 
@@ -212,9 +234,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${data.url} (1)** and **prediction** as **${data.category} (2)** and click on **Review + submit (3)**.
+1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation (1)** and make sure for **groundtruth** data source is select as **${data.url} (2)** and **prediction** as **${data.category} (3)** and click on **Review + submit (4)**.
 
-    ![](./media/new-develop-lab3-2.png)
+    ![](./media/d31.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
@@ -226,7 +248,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
    
 1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
 
-   ![](./media/new-develop-lab3-4.png)
+   ![](./media/d32.png)
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
