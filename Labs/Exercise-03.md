@@ -18,7 +18,7 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. A new window opens with your previous **system message** already populated and your deployed model selected.
 
-   ![](./media/gpt-4-demo-1.png)
+   ![](./media/d50.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
 
@@ -36,9 +36,9 @@ You can manually review model responses based on test data. Manually reviewing a
 
     ![](./media/image-20.png)
 
-1. You can now manually review the outputs for each question by selecting the thumbs up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs up and one thumbs down response in your ratings.
+1. You can now manually review the **Outputs** for each question by selecting the thumbs up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs up and one thumbs down response in your ratings.
 
-   ![](./media/output(1).png)
+   ![](./media/d51.png)
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 

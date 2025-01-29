@@ -13,7 +13,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. From the left navigation menu, under **My assets**, select **Model + Deployments (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (1)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (1)** and then select **+ Deploy base model (3)** from the dropdown.
 
    ![](./media/deploy-base-model-1.png)
 
