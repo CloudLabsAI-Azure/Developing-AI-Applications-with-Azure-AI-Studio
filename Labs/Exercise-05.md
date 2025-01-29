@@ -17,7 +17,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ![](./media/deploy-base-model-1.png)
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search for **gpt-35-turbo (1)**, select **gpt-35-turbo (2)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
    ![](./media/selectmodel.png)
 
@@ -28,7 +28,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource (4)
+   - Connected Azure OpenAI resource: Select your OpenAI resource **(4)**
    - Tokens per Minute Rate Limit (thousands): **10K (5)**
    - Content filter: **Defaultv2 (6)**
    - Enable dynamic quota: **Enabled (7)**
@@ -72,19 +72,25 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ```
    
-1. Select **Apply changes**, and select **continue**.
+1. Select **Apply changes (2)**.
 
-     ![](./media/gpt-35-1-1.png)
+     ![](./media/d33.png)
+
+1. Select **continue**.     
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
      ![](./media/E5-T1-S11-1.png)
 
-1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
+1. Under the Chat playground, select **Prompt flow** from the top bar.
 
      ![](./media/E5-T1-S12-1.png)
 
-1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
+1. Enter **Travel-Chat (1)** as folder name, and select **Open (2)**.
+
+     ![](./media/d34.png)
+
+1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
 
    ![](./media/travelchat-1.png)
 
