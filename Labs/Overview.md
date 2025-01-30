@@ -88,7 +88,7 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 1. Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/res.png)
+   ![Manage Your Virtual Machine](./media/resource1.png)
 
 ## **Lab Duration Extension**
 

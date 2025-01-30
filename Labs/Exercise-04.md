@@ -1,9 +1,9 @@
 # Lab 04: Fine-Tuning the Model 
 
-## Lab scenario
+## Lab Overview
 In this lab, you will be fine-tuning a model by performing iterative prompt tuning and variant comparison to enhance its performance and accuracy. You will leverage Azure AI foundry to systematically refine prompts, evaluate different model variants, and determine the best configurations. Additionally, you will optimize the flow performance for production, ensuring that the workflow processes are efficient and effective. This will involve identifying and addressing bottlenecks, implementing best practices, and leveraging advanced tools to improve overall productivity and operational efficiency.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
