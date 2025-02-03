@@ -24,7 +24,6 @@ As involves setting up a structured environment to manage and streamline prompt-
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-
 1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
 
     ![](./media/create-project.png)
@@ -67,7 +66,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
 
-]    ![](./media/deploy-base-model-1.png)
+    ![](./media/deploy-base-model-1.png)
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
@@ -83,14 +82,14 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
-   - Deployment name : **gpt-4 (1)**
-   - Deployment type :  **Global Standard (2)**
-   - Model version : **turbo-2024-04-09 (3)**
-   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **10 K(4)**
+    - Deployment name : **gpt-4 (1)**
+    - Deployment type :  **Global Standard (2)**
+    - Model version : **turbo-2024-04-09 (3)**
+    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+    - Tokens per Minute Rate Limit (thousands): **10 K(4)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
-   - Content filter : **DefaultV2 (5)**
-   - Select **Deploy (6)**
+    - Content filter : **DefaultV2 (5)**
+    - Select **Deploy (6)**
 
     ![](./media/gpt-4.png)
 
@@ -102,7 +101,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
     ![](./media/E2-T2-S7.png)
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
+    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
 
     ![](./media/gpt-4-demo11.png) 
 
@@ -159,19 +158,19 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
 
-   ```jinja
-   Welcome to {{ website_name }}!
-   {% if user_name %}
+    ```jinja
+    Welcome to {{ website_name }}!
+    {% if user_name %}
     Hello, {{ user_name }}!
-   {% else %}
+    {% else %}
     Hello there!
-   {% endif %}
-   Please select an option from the menu below:
-   1. View your account
-   2. Update personal information
-   3. Browse available products
-   4. Contact customer support
-   ```
+    {% endif %}
+    Please select an option from the menu below:
+    1. View your account
+    2. Update personal information
+    3. Browse available products
+    4. Contact customer support
+    ```
 
     ![](./media/gpt-4-demo16.png)
    
