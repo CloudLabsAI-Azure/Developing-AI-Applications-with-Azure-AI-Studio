@@ -60,7 +60,7 @@ It systematically assesses the performance and effectiveness of various processe
 
    ![](./media/promptflow-1.png)
 
-1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
+1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automated Evaluation (2)**.
 
    ![](./media/evaluations-1.png)
 
@@ -106,7 +106,8 @@ It systematically assesses the performance and effectiveness of various processe
 
 1. Explore the **Metric dashboard** and **Detailed metrics result**.
 
-    ![](./media/image-26.png)
+    ![](./media/image-26upd.png)
+   >**Note:** The outcomes of Coherence and Fluency may vary with each iteration.
 
     ![](./media/image-27.png)
 
