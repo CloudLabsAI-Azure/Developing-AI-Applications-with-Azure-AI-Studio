@@ -19,7 +19,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
 
-      ![](./media/sign-in.png)
+    ![](./media/sign-in.png)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
@@ -27,7 +27,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
 
-   ![](./media/create-project.png)
+    ![](./media/create-project.png)
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
@@ -48,7 +48,7 @@ As involves setting up a structured environment to manage and streamline prompt-
      
 1. On the **Review and finish** page, select **Create**.
 
-     ![](./media/review-finish-1.png)
+    ![](./media/review-finish-1.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
@@ -67,11 +67,11 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
 
-   ![](./media/deploy-base-model-1.png)
+]    ![](./media/deploy-base-model-1.png)
 
 1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
 
-   ![](./media/new-develop-issue-2.png)
+    ![](./media/new-develop-issue-2.png)
 
 1. On **Deploy model gpt-4** page :
 
@@ -132,7 +132,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
     ![](./media/save.png)
 
-   >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
+    >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
 1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
 
@@ -173,7 +173,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    4. Contact customer support
    ```
 
-   ![](./media/gpt-4-demo16.png)
+    ![](./media/gpt-4-demo16.png)
    
 1. In the input section add these following value, select **Save** and **Run**.
 
