@@ -176,8 +176,8 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    
 1. In the input section add these following value, select **Save** and **Run**.
 
-   - user_name: Jane
-   - website_name: Microsoft
+    - user_name: Jane
+    - website_name: Microsoft
 
     ![](./media/gpt-4-demo14.png)
 
