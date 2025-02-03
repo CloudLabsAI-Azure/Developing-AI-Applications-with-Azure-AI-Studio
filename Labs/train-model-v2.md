@@ -79,7 +79,7 @@ Creating and customizing prompts involves designing specific, targeted questions
     - Deployment type : **Global standard (2)**
     - Select **Customize (3)**
 
-      ![](./media/gpt-4-1.png)
+    ![](./media/gpt-4-1.png)
 
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
@@ -92,19 +92,19 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Content filter : **DefaultV2 (5)**
    - Select **Deploy (6)**
 
-     ![](./media/gpt-4.png)
+    ![](./media/gpt-4.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/prompt-flow.png)
+    ![](./media/prompt-flow.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/E2-T2-S7.png)
+    ![](./media/E2-T2-S7.png)
 
    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
 
-   ![](./media/gpt-4-demo11.png) 
+    ![](./media/gpt-4-demo11.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -122,7 +122,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
 
-     ![](./media/gpt-4-demo13.png)
+    ![](./media/gpt-4-demo13.png)
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
@@ -142,11 +142,11 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
-     ![](./media/run-1.png)
+    ![](./media/run-1.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
-     ![](./media/image-30.png)
+    ![](./media/image-30.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
@@ -180,7 +180,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
    - user_name: Jane
    - website_name: Microsoft
 
-     ![](./media/gpt-4-demo14.png)
+    ![](./media/gpt-4-demo14.png)
 
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
@@ -188,7 +188,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
-     ![](./media/output.png)
+    ![](./media/output.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
