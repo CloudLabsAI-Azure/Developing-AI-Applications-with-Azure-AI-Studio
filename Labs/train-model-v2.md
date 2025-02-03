@@ -149,12 +149,12 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. You can view the flow run status and output in the Outputs section.
 
-    ![](./media/image-31.png)
+     ![](./media/image-31.png)
 
 1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
 
-    ![](./media/gpt-4-demo17.png)
-    ![](./media/gpt-4-demo(15).png)
+     ![](./media/gpt-4-demo17.png)
+     ![](./media/gpt-4-demo(15).png)
 
 1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
 
@@ -172,26 +172,26 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     4. Contact customer support
     ```
 
-    ![](./media/gpt-4-demo16.png)
+      ![](./media/gpt-4-demo16.png)
    
 1. In the input section add these following value, select **Save** and **Run**.
 
     - user_name: Jane
     - website_name: Microsoft
 
-    ![](./media/gpt-4-demo14.png)
+       ![](./media/gpt-4-demo14.png)
 
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
-    ![](./media/run-anway.png)
+      ![](./media/run-anway.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
-    ![](./media/output.png)
+     ![](./media/output.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
-    ![](./media/output1.png)
+     ![](./media/output1.png)
    
 ## Review
 In this lab you have completed the following tasks:
