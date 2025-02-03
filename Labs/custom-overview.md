@@ -1,12 +1,12 @@
 # Building and Evaluating Prompt Flows with Azure AI Foundry
-
+### Overall Estimated Duration: 60 minutes
 ## Overview 
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools.
+In this lab, you will gain hands-on experience in developing custom AI models, training them effectively, and refining their performance for optimal results. You will also learn how to set up and automate model evaluations to ensure accuracy and reliability. Additionally, the lab covers integrating chat flows and essential tools, enabling seamless deployment and interaction with AI solutions.
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to: 
+This lab is designed to provide hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, you will learn to:
 
 - **Create and Train Models**: Creating and training models involves developing a machine learning or statistical model by first defining its structure and then training it using data. This process typically starts with selecting an appropriate algorithm based on the problem, such as regression, classification, or clustering. Once the model is chosen, it is initialized and trained on a dataset by feeding it input features and corresponding target values. During training, the model adjusts its parameters to minimize errors or maximize performance metrics. After training, the model is evaluated using separate validation data to assess its accuracy and generalizability. Fine-tuning and adjustments may be necessary to improve performance before deploying the model for real-world use.
 
