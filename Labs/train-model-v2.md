@@ -1,6 +1,6 @@
 # Lab 01: Training the Model
 
-### Estimated Duration: 45 Minutes
+### Estimated Duration: 30 Minutes
 
 ## Lab scenario
 
