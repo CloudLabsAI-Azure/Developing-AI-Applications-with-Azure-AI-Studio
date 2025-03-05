@@ -37,7 +37,7 @@ As involves setting up a structured environment to manage and streamline prompt-
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
    - Subscription: **Set as default (2)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
-   - Location: **East US (4)**
+   - Location: **<inject key="Region" enableCopy="false"/> (4)**
    - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
