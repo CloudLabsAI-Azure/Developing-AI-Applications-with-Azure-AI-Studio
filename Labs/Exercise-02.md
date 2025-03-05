@@ -37,7 +37,7 @@ As involves setting up a structured environment to manage and streamline prompt-
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
    - Subscription: **Set as default (2)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
-   - Location: **<inject key="Region" enableCopy="false"/>  (4)**
+   - Location: **East US (4)**
    - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
@@ -64,7 +64,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
+1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
 
    ![](./media/deploy-base-model-1.png)
 
