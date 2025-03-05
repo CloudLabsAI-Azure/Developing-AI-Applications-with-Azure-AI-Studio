@@ -40,6 +40,8 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/d51.png)
 
+   > **Note:** If you receive an error in any of the output while executing the run "exceeded token rate limit of your current AIService", then please rerun the failed ones after couple of minutes.
+
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
    ![](./media/gpt-4-demo18.png)
