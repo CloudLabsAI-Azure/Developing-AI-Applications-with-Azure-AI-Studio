@@ -11,7 +11,7 @@ In this lab, you will perform the following:
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI foundry to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. From the left navigation menu, under **My assets**, select **Model + Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
 1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (1)** and then select **+ Deploy base model (3)** from the dropdown.
 
