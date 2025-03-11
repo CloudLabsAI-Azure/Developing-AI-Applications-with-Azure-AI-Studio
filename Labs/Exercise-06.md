@@ -1,7 +1,7 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
 ## Lab Overview
-In this lab, you will learn about moderating image content for singular isolated images using AI models. You will explore techniques to detect and filter inappropriate or harmful content in images, ensuring they meet content safety standards.
+This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
 
 ## Lab Objectives
 In this lab, you will perform the following:
