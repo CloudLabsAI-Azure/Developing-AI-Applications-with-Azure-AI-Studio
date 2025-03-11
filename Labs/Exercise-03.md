@@ -114,7 +114,7 @@ This process systematically assesses the performance and effectiveness of AI-gen
 
     - Select **Next (2)**
 
-         ![](./media/d14.png)  
+         ![](./media/dataquery-037.png)  
 
     - Select **Submit**
 

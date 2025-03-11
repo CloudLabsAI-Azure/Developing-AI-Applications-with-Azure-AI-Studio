@@ -1,4 +1,4 @@
-# Lab 02: Training the Model
+# Lab 02: Building and Customizing Prompt Flows with LLM
 
 ## Lab Overview
 
