@@ -5,10 +5,10 @@ In this lab, you will learn about the Content Safety Studio is a powerful tool f
 
 ## Lab Objectives
 In this lab, you will perform the following:
-- Task 1: Implement Content Safety Measures
-- Task 2: Monitor and Analyze Content for Compliance
+<!-- - Task 1: Implement Content Safety Measures -->
+- Task 1 : Moderate image content for singular isolated images.
   
-## Task 1: Implement Content Safety Measures
+<!-- ## Task 1: Implement Content Safety Measures
 
 Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
 
@@ -61,19 +61,31 @@ Content Safety resource in Azure to detect and manage harmful content. You'll cr
    
 ## Task 2: Monitor and Analyze Content for Compliance
 
-In this task, you will implement and evaluate content moderation for both images and text using Azure's Content Safety Studio. The goal is to ensure that content uploaded by users complies with safety standards by testing for harmful content and analyzing moderation results.
+In this task, you will implement and evaluate content moderation for both images and text using Azure's Content Safety Studio. The goal is to ensure that content uploaded by users complies with safety standards by testing for harmful content and analyzing moderation results. -->
 
-## Task 2. 1 : Moderate image content for singular isolated images.
+## Task 1 : Moderate image content for singular isolated images.
 
-1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
+1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
-     ![](./media/image-11.png)
+     ![](./media/safety+security.png)     
+
+1. Under **Filter image content** option, select **Moderate image content**.
+
+     ![](./media/moderateimagecontent.png)
+
+<!-- 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
+
+     ![](./media/image-11.png) -->
 
 1. On **Moderate image content** select **Run a simple test (1)** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**. **(2)**
 
      ![](./media/d40.png)
 
 #### Safe content
+
+1. Before, starting, select the below Azure AI services, and proceed with lab using this Azure AI services.
+
+     ![](./media/azureaiservices0389.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
@@ -109,13 +121,13 @@ We should also anticipate customers potentially posting harmful image content. T
 
     >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
 
-### Task 2.2: Run a bulk test
+### Task 1.2: Run a bulk test
 
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
 1. On **Moderate image content** select **Run a bulk test (1)** tab then click on **Browse for a file (2)**.
 
-     ![](./media/image-12.png)
+     ![](./media/runabulktest(1).png)
 
 1. Within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data**  press **Enter**. Select **image_sample_dataset.zip (1)** folder and click on **Open (2)**. 
 
@@ -131,7 +143,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
    ![](./media/image-16.png)
 
-### Task 2.3 : Text moderation using Moderate text content 
+### Task 1.3 : Text moderation using Moderate text content 
 
 We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
@@ -139,9 +151,9 @@ We could leverage an AI model to detect whether the text input from our customer
 
 Let’s first test some positive customer feedback.
 
-1. In Content Safety Studio, select **Moderate text content**.
+1. Back to the **Azure AI Foundry** portal > **Safety + security (1)**, select **Moderate text content**.
 
-   ![](./media/image-70.png)
+   ![](./media/moderatetextcontent-10846.png)
 
 1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under **select a sample or type your own** section.
 
@@ -239,17 +251,16 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/image-80.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+<!-- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
   - Hit the Validate button for the corresponding task.
   - If you receive a success message, you can proceed to the next task.
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" />
+<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" /> -->
 
 ## Review
 In this lab you have completed the following tasks:
-- Implemented Content Safety Measures
 - Monitor and Analyze Content for Compliance
 
 ### You have successfully completed the lab.
