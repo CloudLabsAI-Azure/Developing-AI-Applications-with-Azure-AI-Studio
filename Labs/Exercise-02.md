@@ -1,4 +1,4 @@
-# Lab 02: Building and Customizing Prompt Flows with LLM and Prompt tools
+# Lab 02: Building and Customizing Prompt Flows
 
 ## Lab Overview
 
