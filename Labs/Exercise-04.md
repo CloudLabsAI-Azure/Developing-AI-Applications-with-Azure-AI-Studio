@@ -144,7 +144,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**. Click on **Save**.
 
-    ![](./media/output-1.png)
+    ![](./media/output-0903.png)
 
    >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
