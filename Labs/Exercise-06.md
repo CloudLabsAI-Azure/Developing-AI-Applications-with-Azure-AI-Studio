@@ -1,4 +1,4 @@
-# Lab 06: Ensuring Responsible AI with Content Safety Studio 
+# Lab 06: Ensuring Responsible AI with Content Safety 
 
 ## Lab Overview
 In this lab, you will learn about moderating image content for singular isolated images using AI models. You will explore techniques to detect and filter inappropriate or harmful content in images, ensuring they meet content safety standards.
