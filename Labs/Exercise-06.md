@@ -137,7 +137,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
    
 1. Under Test section, review **Dataset preview (1)** then select **Configure filters** tab review **Category** and **Threshold level** **(2)** then click on **Run test (3)**.
 
-     ![](./media/image-14.png)
+     ![](./media/image-145768.png)
 
 1. Review the **result**.
 
