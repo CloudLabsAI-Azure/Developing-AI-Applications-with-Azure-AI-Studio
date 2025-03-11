@@ -65,7 +65,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 ! -->
 
-## Task 1 : Moderate image content for singular isolated images.
+## Task 1 : Moderate image content for singular isolated images
 
 1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
