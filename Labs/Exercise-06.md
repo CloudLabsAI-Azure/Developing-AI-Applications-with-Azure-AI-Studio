@@ -6,7 +6,7 @@ In this lab, you will learn about moderating image content for singular isolated
 ## Lab Objectives
 In this lab, you will perform the following:
 <!-- - Task 1: Implement Content Safety Measures -->
-- Task 1 : Moderate image content for singular isolated images.
+- Task 1 : Image and Text Moderation Using Azure AI foundry
   
 <!-- ## Task 1: Implement Content Safety Measures
 
@@ -65,7 +65,7 @@ In this task, you will implement and evaluate content moderation for both images
 
 ! -->
 
-## Task 1 : Moderate image content for singular isolated images
+## Task 1 : Image and Text Moderation Using Azure AI Foundry
 
 1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
@@ -263,6 +263,8 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 ## Review
 In this lab you have completed the following tasks:
-- Monitor and Analyze Content for Compliance
+- Image Moderation: Tested single and bulk images for safety, self-harm, and AI-generated content.
+- Text Moderation: Analyzed safe and harmful text, including misspellings, with bulk testing.
+- Conclusion: Azure AI Content Safety enhances content moderation for compliance and safer digital spaces.
 
 ### You have successfully completed the lab.
