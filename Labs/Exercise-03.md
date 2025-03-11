@@ -110,7 +110,8 @@ This process systematically assesses the performance and effectiveness of AI-gen
 
          ![](./media/d13.png)  
 
-    - Scroll down under **How does your dataset map to your evaluation input**. Select **${data.response} (1)** from the drop-down.
+    - Scroll down to **How does your dataset map to your evaluation input**. Ensure that **${data.query}** is selected for the **query**, and **${data.response}** is selected for the **response**.
+
     - Select **Next (2)**
 
          ![](./media/d14.png)  

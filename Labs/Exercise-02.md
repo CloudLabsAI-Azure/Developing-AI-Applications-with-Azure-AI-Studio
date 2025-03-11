@@ -42,7 +42,7 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
-    ![](./media/E2-T1-S4.png)
+        ![](./media/E2-T1-S4.png)
      
 1. On the **Review and finish** page, select **Create**.
 
@@ -64,7 +64,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
+1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
    ![](./media/deploy-base-model-1.png)
 
@@ -85,13 +85,13 @@ Creating and customizing prompts involves designing specific, targeted questions
    - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
    - Model version : **2024-11-20 (3)**
-   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
-   - Tokens per Minute Rate Limit (thousands): **10 K(5)**
+   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Tokens per Minute Rate Limit (thousands): **5 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (6)**
    - Select **Deploy (7)**
 
-     ![](./media/d4.png)
+     ![](./media/d4-0.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 

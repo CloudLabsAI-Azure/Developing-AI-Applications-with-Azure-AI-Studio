@@ -13,7 +13,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
+1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
    ![](./media/DAI-image2.png)
 
@@ -27,14 +27,14 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
+   - Select **Customize (3)**
    - Model version: **0125 (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource **(4)**
+   - Resource location: **East US 2 (4)**
    - Tokens per Minute Rate Limit (thousands): **10K (5)**
-   - Content filter: **Defaultv2 (6)**
-   - Enable dynamic quota: **Enabled (7)**
-   - Select **Deploy (8)**
+   - Enable dynamic quota: **Enabled (6)**
+   - Select **Create resource and deploy (7)**
 
-     ![](./media/DAI-image4.png)
+     ![](./media/createsourcedeploy.png)
      
 1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints**. On the **Model + deployments** page select **gpt-35-turbo (1)** then click **Open in playground (2)**
 
@@ -46,6 +46,8 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    > Wait for 5 mins if you get an error while querying.
    
      ![](./media/what-canudo.png)
+
+   >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. Update the **System message (1)** to the following:-
 
@@ -78,6 +80,8 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
      ![](./media/E5-T1-S11-1.png)
 
+     >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
+
 1. Under the Chat playground, select **Prompt flow** from the top bar.
 
      ![](./media/E5-T1-S12-1.png)
@@ -102,12 +106,12 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
 
-   - **Connection**: Select the connection that was created for you when you created the AI hub **(1)**. 
+   - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
    - **Api**: Select **chat (2)**.
    - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
    - **response_format**: Select **{“type”:”text”} (4)**.
 
-     ![](./media/DAI-image7.png)
+     ![](./media/gpt-35-turbo-deplyment.png)
 
 1. Review the **prompt field** and ensure it looks like the following:
 
@@ -152,6 +156,8 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
    ![](./media/d37.png)
 
+   >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
+
 1. Select **Deploy** to deploy the flow with the following settings:
 
    ![](./media/deploy.png)
@@ -165,7 +171,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Inferencing data collection: **Enabled (6)**
      - Select **Review + Create (7)**
 
-    ![](./media/DAI-image8.png)
+         ![](./media/DAI-image8.png)
 
 1. Select **Create**    
 
@@ -175,7 +181,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Select the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(2)**.
 
-   ![](./media/d38.png)
+   ![](./media/modelendpoints-1109.png)
 
 1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
 
@@ -185,9 +191,13 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
      ![](./media/testdeploy-1.png)
 
+     >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
+
 1. Enter the prompt **Where else could I go?** and review the response.
 
      ![](./media/image-33-1.png)
+
+     >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. View the **Consume** page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint - enabling you to integrate the prompt flow solution into an application as a custom copilot.
 

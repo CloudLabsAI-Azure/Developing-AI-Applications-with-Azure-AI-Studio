@@ -144,7 +144,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**. Click on **Save**.
 
-    ![](./media/image-44.png)
+    ![](./media/output-1.png)
 
    >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
@@ -180,9 +180,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation (1)** and select **classify_with_llm_data_set (2)** for **groundtruth** data source enter **${data.url} (3)** and **prediction** select **category (4)**, and select **Next (5)**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)** and select **classify_with_llm_data_set (2)**. For the **ground truth** data source, select **category** under the **Data input**, and for **prediction**, select **category (4)** under the **Flow output**, then select **Next (5)**.
 
-     ![](./media/d26.png)
+     ![](./media/batch-output(1).png)
 
 1. On **Review** page review the settings and click on **Submit**
 
@@ -198,9 +198,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
 1. Now will evaluate the variants of summarize_text_content node as well.
 
-1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest input and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
+1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input** and enter **Text**. Under the **Outputs** section, delete the existing outputs, click on **+ Add output**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **url** and set the value as **${inputs.url}**.
 
-   ![](./media/webclassifications-1.png)
+   ![](./media/summary-01.png)
 
 1. Click on **Save**.
 
@@ -234,9 +234,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation (1)** and make sure for **groundtruth** data source is select as **${data.url} (2)** and **prediction** as **${data.category} (3)** and click on **Review + submit (4)**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
 
-    ![](./media/d31.png)
+    ![](./media/data.summary.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
