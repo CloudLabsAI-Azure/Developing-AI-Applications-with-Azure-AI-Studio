@@ -42,7 +42,7 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
-        ![](./media/E2-T1-S4.png)
+        ![](./media/eastuschange.png)
      
 1. On the **Review and finish** page, select **Create**.
 
@@ -136,7 +136,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     
 1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
-    ![](./media/joke.png)
+    ![](./media/joke-03.png)
 
 1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
 

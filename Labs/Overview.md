@@ -27,29 +27,11 @@ Basic knowledge and understanding of the following
  
  - Azure Portal
  - Azure AI Foundry
- - Content Safety Studio
 
 ## Architecture 
 
 - **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
 - **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
-- **Content Safety Studio** : Content Safety Studio is a suite of tools within Azure that provides capabilities for moderating and filtering content to ensure it meets safety and compliance standards. It includes text moderation and image moderation services.
-
-## Architecture Diagram: 
-
-  ![](./media/arc-diagram-1.png)
-
-## Explanation of Components 
-
-- **Understanding the Lifecycle of Model Development**:
-   - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
-
-- **Training the Model**: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Foundry.
-- **Evaluation Flow Setup**: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
-- **Fine-Tuning the Model**: Fine-tune models through iterative prompt tuning, variant comparison, and performance optimization to enhance accuracy and efficiency.
-- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
-- **Ensuring Responsible AI with Content Safety Studio**: Utilize Text Moderation to filter harmful text and Image Moderation to block unsafe images, ensuring safe and appropriate user-generated content.
 
 
 ## Getting Started with the Lab
