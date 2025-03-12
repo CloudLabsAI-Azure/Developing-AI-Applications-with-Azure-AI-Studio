@@ -1,7 +1,7 @@
 # Lab 04: Fine-Tuning Prompts for Optimal Performance
 
 ## Lab Overview
-In this lab, you will focus on fine-tuning prompts to enhance AI model performance. Through iterative refinement and optimization techniques, you will learn how to improve response quality, compare prompt variations, and streamline workflow execution. This hands-on experience will help you develop more effective and efficient AI-driven applications.
+In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
 
 ## Lab Objectives
 In this lab, you will perform the following:
