@@ -33,6 +33,9 @@ Basic knowledge and understanding of the following
 - **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
 - **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
 
+## Architecture Diagram: 
+
+  ![](./media/archi-updated.png)
 
 ## Getting Started with the Lab
  
