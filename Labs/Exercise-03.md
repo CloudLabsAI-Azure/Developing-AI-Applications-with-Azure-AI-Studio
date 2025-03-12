@@ -1,16 +1,16 @@
 # Lab 03: Evaluation Flow Setup
 
 ## Lab Overview
-In this lab, you will set up and analyze evaluation flows for an AI model using Azure AI Foundry. You will manually review model responses to various inputs, providing a detailed evaluation of the model's performance. By setting up specific evaluation metrics, such as coherence and fluency, you will automate the evaluation process using a provided dataset. This hands-on experience will help you understand how to critically assess and refine AI model outputs, ensuring the model meets desired performance standards.
+In this lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1-score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on exercise will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
 
 ## Lab Objectives
 In this lab, you will perform the following:
-- Task 1: Set Up Evaluation Metrics
-- Task 2: Run and Analyze Evaluation Flows
+- Task 1: Setup Manual Evaluation
+- Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
-## Task 1: Set Up Evaluation Metrics
+## Task 1: Setup Manual Evaluation
 
-You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
+Set up manual evaluation by defining criteria, collecting human feedback, and analyzing model accuracy and biases to improve performance.
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
@@ -50,9 +50,9 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/manual.png)
 
-## Task 2: Run and Analyze Evaluation Flows
+## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
-This process systematically assesses the performance and effectiveness of AI-generated responses by conducting dataset evaluation. It involves executing evaluation workflows, collecting data, and thoroughly analyzing model outputs to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, refine model performance, and optimize their AI-driven processes. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
+TIn this lab, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
@@ -129,7 +129,7 @@ This process systematically assesses the performance and effectiveness of AI-gen
 
 ## Review
 In this lab you have completed the following tasks:
-- Set Up Evaluation Metrics
-- Ran and Analyzed Evaluation Flows
+- Set Up Manual Evaluation
+- Setup Automated Evaluation with Built-in Evaluation Metrics
 
 ### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
