@@ -5,67 +5,12 @@ This lab provides hands-on experience in implementing responsible AI practices u
 
 ## Lab Objectives
 In this lab, you will perform the following:
-<!-- - Task 1: Implement Content Safety Measures -->
+
 - Task 1 : Image and Text Moderation Using Azure AI foundry
-  
-<!-- ## Task 1: Implement Content Safety Measures
-
-Content Safety resource in Azure to detect and manage harmful content. You'll create and configure the resource, assign the necessary roles, and ensure it's integrated with the Content Safety Studio. This setup allows you to use Azure’s AI tools to moderate content effectively.
-
-1.  Open a new tab, and navigate to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), If the user is not logged in, Click on Sign in from the top right corner and select the user. Then select 
-    the **Settings** icon in the top navigation menu.
-
-     ![](./media/image-51.png)
-
-1. In the **All resources** section, select **+ Create a new resource**.
-
-     ![](./media/image-52.png)
-
-1. You will be directed to the **Azure portal**, and on the **Create Content Safety** page, specify the following and click on **Review + Create (6)**.
-
-     - Subscription – Leave the deafult **Azure subscription (1)**
-  
-     - Resource group – select the Resource Group **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    
-     - Region – **East US (3)**
-  
-     - Name – **Content-Safety-<inject key="DeploymentID" enableCopy="false"/> (4)**
-  
-     - Pricing tier – **Free F0 (5)**
-  
-       ![](./media/image-53.png)
-
-1. Review the settings and click **Create**.
-
-     ![](./media/image-54.png)
-
-1. Once deployment is successful click on **Go to resource**.
-
-     ![](./media/image-57.png)
-
-1. Back on **Content-Safety-<inject key="DeploymentID" enableCopy="false"/>** page,  from the left navigation pane, select  **Overview (1)** and review the settings then click on **Content Safety Studio (2)** link.
-
-      ![](./media/image-59.png)
-   
-1. Your navigated to the [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
-
-     ![](./media/image-51.png)
-
-1. Refresh the page, it may take some time to create the resource. Make sure **Content Safety resources** is created.
-
-      ![](./media/image-55.png)
-
-1. Select **Content-Safety-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Use resource (2)**.
-
-     ![](./media/image-(60).png)
-   
-## Task 2: Monitor and Analyze Content for Compliance
-
-In this task, you will implement and evaluate content moderation for both images and text using Azure's Content Safety Studio. The goal is to ensure that content uploaded by users complies with safety standards by testing for harmful content and analyzing moderation results. 
-
-! -->
 
 ## Task 1 : Image and Text Moderation Using Azure AI Foundry
+
+This task involves using **Azure AI Foundry** to moderate images and text by detecting inappropriate, harmful, or sensitive content. It leverages AI models to analyze and filter content based on predefined policies, ensuring compliance and safety in applications.
 
 1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
@@ -74,10 +19,6 @@ In this task, you will implement and evaluate content moderation for both images
 2. Under **Filter image content** option, select **Moderate image content**.
 
      ![](./media/moderateimagecontent.png)
-
-<!-- 1. On **Azure AI | Content Safety Studio** under **Safeguard your image content with built-in-features**, select **Moderate image content**.
-
-     ![](./media/image-11.png) -->
 
 3. On **Moderate image content** select **Run a simple test (1)** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**. **(2)**
 
@@ -252,14 +193,6 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
     ![](./media/image-79.png)
 
     ![](./media/image-80.png)
-
-<!-- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-  - Hit the Validate button for the corresponding task.
-  - If you receive a success message, you can proceed to the next task.
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="a76d4e32-03f7-494b-9427-63f1702eff54" /> -->
 
 ## Review
 In this lab you have completed the following tasks:

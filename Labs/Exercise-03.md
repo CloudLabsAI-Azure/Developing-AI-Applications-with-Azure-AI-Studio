@@ -54,20 +54,19 @@ You can manually review model responses based on test data. Manually reviewing a
 
 This process systematically assesses the performance and effectiveness of AI-generated responses by conducting dataset evaluation. It involves executing evaluation workflows, collecting data, and thoroughly analyzing model outputs to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, refine model performance, and optimize their AI-driven processes. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
-1. Select **Prompt flow (1)** from left navigation pane and select the prompt flow you created. **(2)**
+1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/d7.png)
+   ![](./media/evaluation-metrics.png)
 
-1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
+1. On the **What do you want to evaluate?** pane, select **Dataset**.
 
-   ![](./media/evaluations-1.png)
+   ![](./media/whatdoyouwant.png)
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
-       > **Note:** If you don't see the option for selecting the **scenario**, please skip it.
+    - Select **Next (2)**.
        
-       ![](./media/modelevaluation-1.png)
+       ![](./media/createnewevaluation.png)
 
     - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
@@ -94,15 +93,13 @@ This process systematically assesses the performance and effectiveness of AI-gen
    
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
   
-         ![](./media/image-22.png)
+         ![](./media/addyourdatasets.png)
 
     - Select the file that you downloaded **(1)** and click on **Open(2)**
 
          ![](./media/d11.png)    
 
-    - **Dataset mapping for prompt flow**: Select **${data.response} (1)** and select **Next (2)** 
-
-         ![](./media/d12.png)  
+    - Select **Next (2)** 
 
     - **Select metrics**: **Coherence (1), Fluency (2)**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
@@ -118,11 +115,13 @@ This process systematically assesses the performance and effectiveness of AI-gen
 
     - Select **Submit**
 
-1. Wait for the evaluations to be completed, you may need to refresh.
+      >**Note:** Wait for the evaluations to be completed, you may need to refresh.
 
-1. Select the evaluation run you just created.
+1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run.
 
-1. Explore the **Metric dashboard** and **Detailed metrics result**.
+   ![](./media/evaluationmetrics238.png)
+
+1. Explore the **Metric dashboard** and select **Data** from the top menu to view the **Detailed metrics results**.
 
     ![](./media/image-26.png)
 
