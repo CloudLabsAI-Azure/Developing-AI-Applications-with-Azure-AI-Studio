@@ -35,7 +35,7 @@ Basic knowledge and understanding of the following
 
 ## Architecture Diagram: 
 
-  ![](./media/archi-updated.png)
+  ![](./media/archi-updated1.png)
 
 ## Getting Started with the Lab
  
