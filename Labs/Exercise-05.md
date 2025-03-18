@@ -27,14 +27,16 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
-   - Select **Customize (3)**
-   - Model version: **0125 (3)**
-   - Resource location: **East US 2 (4)**
-   - Tokens per Minute Rate Limit (thousands): **10K (5)**
-   - Enable dynamic quota: **Enabled (6)**
-   - Select **Create resource and deploy (7)**
+   - Select **Customize**
+   - Enable automatic version updates: **Enabled (3)**
+   - Model version: **0125 (4)**
+   - Connected AI resource: select the resource which we created in earlier task **(5)**
+   - Tokens per Minute Rate Limit (thousands): **10K (6)**
+   - Content filter: **DefaultV2 (7)**
+   - Enable dynamic quota: **Enabled (8)**
+   - Select **Deploy (9)**
 
-     ![](./media/createsourcedeploy.png)
+     ![](./media/gpt-35-turbo-690.png)
      
 1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints**. On the **Model + deployments** page select **gpt-35-turbo (1)** then click **Open in playground (2)**
 
@@ -82,13 +84,13 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
      >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
-1. Under the Chat playground, select **Prompt flow** from the top bar.
+1. From the left navigation pane, select **Prompt flow (1) > + Create (2)** to add the Prompt tool to your flow.
 
-     ![](./media/E5-T1-S12-1.png)
+   ![](./media/prompt-flow.png)
 
-1. Enter **Travel-Chat (1)** as folder name, and select **Open (2)**.
+1. On **Create a new flow** blade, under **Chat flow**, click on **Create**, then enter **Travel-Chat** for Folder name, then click on **Create** 
 
-     ![](./media/d34.png)
+   ![](./media/chat-flow-090.png)
 
 1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
 
@@ -100,20 +102,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    
    >**Note:** The compute session will take 1-3 minutes to start.
    
-1. Select the LLM node named **chat**. Note that the prompt already includes the system prompt you specified in the chat playground.
-
-   ![](./media/chatllm-1.png)
-
-1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
-
-   - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
-   - **Api**: Select **chat (2)**.
-   - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
-   - **response_format**: Select **{“type”:”text”} (4)**.
-
-     ![](./media/gpt-35-turbo-deplyment.png)
-
-1. Review the **prompt field** and ensure it looks like the following:
+1. Select the LLM node named **chat**. Update the system message like below:
 
    ```
    system:
@@ -143,6 +132,19 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    user:
    {{question}}
    ```
+
+   ![](./media/chatllm-1.png)
+
+1. Select **Save**.
+
+1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
+
+   - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
+   - **Api**: Select **chat (2)**.
+   - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
+   - **response_format**: Select **{“type”:”text”} (4)**.
+
+     ![](./media/gpt-35-turbo-deplyment.png)
    
 ## Task 2: Use LLM and Prompt Tools in Flows
 
