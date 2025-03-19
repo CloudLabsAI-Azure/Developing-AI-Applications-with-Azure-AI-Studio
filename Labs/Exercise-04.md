@@ -40,10 +40,8 @@ It refines model responses by adjusting prompts in successive iterations. This p
    The classification will be based on the URL, the webpage text content summary, or both.
 
    # user:
-   For a given URL: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw, and text content: NFL Sunday Ticket is a service offered by Google LLC that allows users to watch NFL games 
-   on YouTube. It is available in 2023 and is subject to the terms and privacy policy of Google LLC. It is also subject to YouTube's terms of use and any applicable laws.
+   For a given URL: https://arxiv.org/abs/2303.04671, and text content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models. 
    Classify the above URL to complete the category and indicate evidence.
-   
    ```
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
@@ -138,6 +136,8 @@ It refines model responses by adjusting prompts in successive iterations. This p
    ![](./media/d21.png)
 
    ![](./media/image-40.png)
+
+   >**Note:** The output shown in the image may differ in your lab.
 
 ## Task 2: Optimize Flow Performance for Production 
 It involves analyzing and refining workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, implementing best practices, and utilizing advanced tools and technologies to streamline operations. Continuous monitoring and iterative improvements are essential to maintain high performance and adapt to changing production demands, ultimately leading to increased productivity and reduced operational costs.
