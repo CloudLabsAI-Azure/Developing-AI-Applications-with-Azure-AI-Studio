@@ -93,6 +93,8 @@ Creating and customizing prompts involves designing specific, targeted questions
 
      ![](./media/d4-0.png)
 
+     >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
+
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
    ![](./media/prompt-flow.png)
