@@ -37,7 +37,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-     ![](./media/labguide-1.png)
+   ![](./media/labguide-1a.png)
 
  ### Virtual Machine & Lab Guide
  
@@ -47,19 +47,19 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](./media/env-1-1.png)
+   ![](./media/env-1-1a.png)
  
 ## Utilizing the Split Window Feature
  
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](./media/spl.png)
+   ![](./media/spla.png)
  
 ## Managing Your Virtual Machine
 
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/res.png)
+   ![Manage Your Virtual Machine](./media/resa.png)
 
 ## Lab Guide Zoom In/Zoom Out
 

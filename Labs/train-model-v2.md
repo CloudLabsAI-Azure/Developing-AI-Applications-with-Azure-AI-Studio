@@ -68,30 +68,22 @@ Creating and customizing prompts involves designing specific, targeted questions
 
     ![](./media/deploy-base-model-1.png)
 
-1. On the **Select a model** page, search and select **gpt-4 (1)**, select **Confirm (2)** under the **gpt-4**.
+1. On the **Select a model** page, search and select **gpt-4o (1)**, select **Confirm (2)** under the **gpt-4o**.
 
-    ![](./media/new-develop-issue-2.png)
-
-1. On **Deploy model gpt-4** page :
-
-    - Deployment name : **gpt-4 (1)**
-    - Deployment type : **Global standard (2)**
-    - Select **Customize (3)**
-
-    ![](./media/gpt-4-1.png)
+    ![](./media/new-develop-issue-2a.png)
 
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
-    - Deployment name : **gpt-4 (1)**
+    - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Global Standard (2)**
-    - Model version : **turbo-2024-04-09 (3)**
-    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-    - Tokens per Minute Rate Limit (thousands): **10 K(4)**
+    - Model version : **2024-05-13 (Default) (3)**
+    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
+    - Tokens per Minute Rate Limit (thousands): **8K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
-    - Content filter : **DefaultV2 (5)**
-    - Select **Deploy (6)**
+    - Content filter : **DefaultV2 (6)**
+    - Select **Deploy (7)**
 
-    ![](./media/gpt-4.png)
+    ![](./media/gpt-4o.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
@@ -119,9 +111,9 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
+1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o**, in the LLM tool editor.
 
-    ![](./media/gpt-4-demo13.png)
+    ![](./media/gpt-4-demo13o.png)
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
