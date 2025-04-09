@@ -42,14 +42,17 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
-        ![](./media/eastuschange.png)
+        ![](./media/dex1.png)
      
 1. On the **Review and finish** page, select **Create**.
 
      ![](./media/review-finish-1.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
-    > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+
+     ![](./media/dex2.png)
+     
+      > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
 
 1. Click on **Close** to close the pop up.
      
@@ -103,7 +106,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/E2-T2-S7.png)
+   ![](./media/dex7.png)
 
    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
@@ -140,7 +143,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     
 1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
-    ![](./media/joke-03.png)
+    ![](./media/dex8.png)
 
 1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
 
