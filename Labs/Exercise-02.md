@@ -24,7 +24,7 @@ In this task, you will set up a structured environment to manage and streamline 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
+1. On the **Azure AI Studio**, on the home page, select **+ Create Project**.
 
    ![](./media/dex4.png)
 
@@ -153,13 +153,13 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
      ![](./media/dex18.png)
 
-1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
+1. Once the flow run is completed, select **View outputs** to view the flow results. The output will look similar to the image as shown below.
 
-     ![](./media/image-30.png)
+     ![](./media/dex39.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
-    ![](./media/msid-image21.png)
+    ![](./media/dex40.png)
 
 1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
