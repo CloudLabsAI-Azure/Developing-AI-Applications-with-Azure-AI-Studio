@@ -2,13 +2,14 @@
 
 ## Lab Overview
 In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
-
+ 
 ## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
 
 ## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
+
 It refines model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
 1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
