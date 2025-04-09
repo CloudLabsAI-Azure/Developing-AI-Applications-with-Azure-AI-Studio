@@ -112,10 +112,10 @@ In this task, you will configure automated evaluation using built-in metrics to 
          ![](./media/dex32.png)  
 
     - Select **Submit**
+  
+1. Wait for the evaluations to be **completed**, you may need to refresh.
 
-         ![](./media/dex33.png)      
-
-         >**Note:** Wait for the evaluations to be **completed**, you may need to refresh.
+   ![](./media/dex33.png)
 
 1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
