@@ -1,19 +1,20 @@
-# Lab 04: Fine-Tuning the Model 
+# Lab 04: Fine-Tuning Prompts for Optimal Performance
 
 ## Lab scenario
-In this lab, you will be fine-tuning a model by performing iterative prompt tuning and variant comparison to enhance its performance and accuracy. You will leverage Azure AI Studio to systematically refine prompts, evaluate different model variants, and determine the best configurations. Additionally, you will optimize the flow performance for production, ensuring that the workflow processes are efficient and effective. This will involve identifying and addressing bottlenecks, implementing best practices, and leveraging advanced tools to improve overall productivity and operational efficiency.
+In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
 
-## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
+### Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
+
 It refine model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
 
-1. On the [Azure AI Studio](https://ai.azure.com/?reloadCount=1), under **Tools** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
-   ![](./media/promptflow(2).png)
+   ![](./media/dex42.png)
 
 1. In the **Create a new flow** under **Explore gallery** in the **Web Classification** box select **Clone**.
 
@@ -23,15 +24,15 @@ It refine model responses by adjusting prompts in successive iterations. This pr
 
       ![](./media/image-366.png)
 
-1. Scroll down to **classify_with_llm** node and Select the following:
+1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-     Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
 
-     deployment_name : **gpt-4**
+    - deployment_name : **gpt-4o (3)**
 
-     ![](./media/msid-image10.png)
+      ![](./media/dex43.png)
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
+1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node **(1)**.
 
    ```
    # system:
@@ -46,7 +47,7 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    
    ```
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select **Show variants (2)** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
     ![](./media/msid-image11.png)
 
@@ -75,13 +76,15 @@ It refine model responses by adjusting prompts in successive iterations. This pr
      
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
 
+    ![](./media/dex45.png)
+
 1. Scroll up to **summarize_text_content** node and Select the following 
 
-     Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
+     Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
 
-     deployment_name : **gpt-4**
+     deployment_name : **gpt-4o (2)**
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1.  
+1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1 **(3)**.  
      
    ```  
    # system:
@@ -99,13 +102,13 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
    ```
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select **Show variants (4)** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-    ![](./media/gpt-4-demo23.png)
+    ![](./media/dex46.png)
    
 1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
 
-1. On the variant_1 replace the existing prompt with the following prompt:
+1. On the **variant_1** replace the existing prompt with the following prompt:
 
    ```
    # system:
@@ -121,7 +124,10 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    Summary:
 
    ```
-1. Select **Save** button from the top menu, and click on **Start compute session**.
+
+    ![](./media/dex47.png)
+
+1. Select **Save (1)** button from the top menu, and click on **Start compute session (2)**.
 
     ![](./media/image-87.png)
 
@@ -137,23 +143,26 @@ It refine model responses by adjusting prompts in successive iterations. This pr
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
-1. In top menu select **Variant 0 (1)** from the drop down and select **view full output** for **summarize_text_content** for variant 0. Now, review the output of the variant, that you selected.
+1. In top menu select **Variant 0 (1)** from the drop down and select **view full output (2)** for **summarize_text_content** for variant 0. Now, review the output of the variant, that you selected.
 
-   ![](./media/image-39.png)
+   ![](./media/dex48.png)
 
    ![](./media/image-40.png)
 
-1. Repeat last step and select **Variant 1** from the drop down and select **view full output** for **summarize_text_content** for variant 1. Now, review the output of 
-   the variant, that you selected.
-   
+    >**Note:** The output shown in the image may differ in your lab.   
+  
 ## Task 2: Optimize Flow Performance for Production 
 It involves analyzing and refining workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, implementing best practices, and utilizing advanced tools and technologies to streamline operations. Continuous monitoring and iterative improvements are essential to maintain high performance and adapt to changing production demands, ultimately leading to increased productivity and reduced operational costs.
 
-1. Scroll up and under **Inputs**, click on **+ Add input** then add **category** and **text-context**. Under **Output**, click on **+ Add output** then add **category** and **evidence**. Click on **Save**.
+1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. 
 
-    ![](./media/image-44.png)
+    ![](./media/dex49.png)
 
-   >**Note:** In the Output section, if the outputs are already added, please ignore and select **Save**.
+1. Under **Output**, click on **+ Add output** then add **category** and **evidence** **(1)**. Click on **Save (2)**.
+
+    ![](./media/dex50.png)
+
+     >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
 1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
 
@@ -163,42 +172,57 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/batchrun.png)
 
-1. On the Batch run settings select **+ Add new data**. On the **Add new data** window open enter name  **classify_with_llm_data_set** select **Upload from local file** 
-   and click on browser then select **classify.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**. Select 
-   **Next**.
+1. On the **Batch run settings** select **+ Add new data**.
 
-   ![](./media/msid-image12.png)
+   ![](./media/dex51.png)
 
-   ![](./media/batchrunevaluate.png)
+1. On the **Add new data** window open, enter name  **classify_with_llm_data_set (1)** select **Upload from local file (2)** and click on **Browse (3)**.
+
+   ![](./media/dex52.png)
+
+1. Navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
+
+     ![](./media/dex53.png)
+
+1. Click on **Add**.
+
+     ![](./media/dex54.png)
+
+1.  Select **${data.text-context} (1)** for **text-context** and select **Next (2)**.
+
+     ![](./media/dex55.png)     
 
 1. On the **Select evaluation** page, select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
    ![](./media/batchrunclassifiation.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and for **groundtruth** data source enter **${data.url}** and **prediction** select 
-   **category**, and select **Next**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)** and select **classify_with_llm_data_set (2)**. For the **ground truth** data source, select **category (3)** under the **Data input**, and for **prediction**, select **category (4)** under the **Flow output**, then select **Next (5)**.
 
-    >**Note**: If you're not able to select **URL** please refresh the page and wait for 2- 5 mins then try re-performing this task.
-     
-1. On **Review** page review the settings and click on **Submit**
+     ![](./media/dex56.png)
+
+1. On **Review** page review the settings and click on **Submit**.
+
+     ![](./media/dex57.png)
 
 1. Back on Prompt flow page and from top click on **View run list** link.
 
     ![](./media/image-43.png)
    
-1. After the batch run and evaluation run complete, in the run detail page, multi-select the batch runs for each variant, then select **Visualize outputs**. You will be able to see the metrics of 2 variants for the **classify_with_llm** node and LLM, along with predicted outputs for each recorded data.
+1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
 
    ![](./media/msid-image13.png)
 
 1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
 
-1. Now will evaluate the variants of summarize_text_content node as well.
+1. Now will evaluate the variants of **summarize_text_content** node as well.
 
-1. Back on **Prompt flow** page, under **Input** section apart from **url** remove the rest input and click on **+ Add input** then enter **Text**. Under outputs delete the existing outputs and click on **+ Add output** then add **Summary**, select the value as **${inputs.Text}**, and add **url** select the value as **${inputs.url}**.
+1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input** and enter **Text**. 
 
-   ![](./media/webclassifications.png)
+   ![](./media/dex58.png)
 
-1. Click on **Save**.
+1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **url** and set the value as **${inputs.url}** **(1)** and then click on **Save (2)**
+
+   ![](./media/dex59.png)
 
 1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
 
@@ -212,7 +236,17 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/version1.png)
 
-1. Add new data window open enter name  **summarize_text_content_data_set** select **Upload from local file** and click on browser then select **summarize.jsonl** file from **C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data** and click on **Add**.
+1. In the new data window, enter name  **summarize_text_content_data_set (1)** select **Upload from local file (2)** and click on **browse (3)**.
+
+   ![](./media/dex60.png)
+
+1. Navigate to  `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
+
+   ![](./media/dex61.png)
+
+1. Click on **Add**.
+
+   ![](./media/dex62.png)
 
 1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
 
@@ -222,9 +256,9 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/classification.png)
 
-1. On **Configure evaluation** page expand **Classification Accuarancy Evaluation** and make sure for **groundtruth** data source is select as **${run.outputs.Summary} (1)** and **prediction** as **${run.outputs.Summary} (2)** and click on **Review + submit (3)**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
 
-   ![](./media/new-develop-lab3-2.png)
+    ![](./media/dex63.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
@@ -234,7 +268,7 @@ It involves analyzing and refining workflow processes to ensure maximum efficien
 
    ![](./media/viewrunlist.png)
    
-1. After the batch run and evaluation run complete, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the summarize_text_content node and LLM predicted outputs for each record of data.
+1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the summarize_text_content node and LLM predicted outputs for each record of data.
 
    ![](./media/msid-image14.png)
 
