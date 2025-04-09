@@ -118,9 +118,9 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
 ## Let's Get Started with Azure Portal
 
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
 
-   ![Launch Azure Portal](./media/u52.png)
+   ![Launch Azure Portal](./media/deg6.png)
    
 1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
