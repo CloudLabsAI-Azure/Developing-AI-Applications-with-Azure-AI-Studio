@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 ## Task 1: Initialize a Prompt Flow Project
 
-As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
+In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
 1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
 
@@ -42,14 +42,19 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Connect Azure AI Search: **Keep it as default (6)**
    - Select **Next (7)**
 
-        ![](./media/eastuschange.png)
+        ![](./media/dex1.png)
      
 1. On the **Review and finish** page, select **Create**.
 
      ![](./media/review-finish-1.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
-    > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+
+     ![](./media/dex2.png)
+     
+      > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+
+1. Click on **Close** to close the pop up.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -60,7 +65,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 ### Task 2 : Create and Customize Prompts
 
-Creating and customizing prompts involves designing specific, targeted questions or statements to elicit desired responses or actions. This process includes defining clear objectives, understanding the audience, and using precise language to ensure clarity and relevance. Customization can further refine prompts to align with particular contexts or user needs, enhancing engagement and effectiveness in various applications such as education, customer service, and AI interactions.
+In this task, you will focus on creating and customizing prompts by designing targeted and purposeful questions or statements that guide the LLM toward generating accurate and useful responses. You'll define clear objectives, consider the intended audience, and use precise language to ensure relevance. Customization will help align prompts with specific contexts or use cases, improving engagement and effectiveness in applications like education, customer support, and AI-driven workflows.
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
@@ -101,7 +106,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/E2-T2-S7.png)
+   ![](./media/dex7.png)
 
    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
@@ -116,7 +121,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 
-Developing a flow with Large Language Models (LLMs) and prompt tools involves designing a structured interaction where the LLM is guided by carefully crafted prompts to generate desired outputs. This process typically includes defining the objective, selecting appropriate LLMs, and iteratively refining prompts based on the model's responses to ensure accuracy and relevance. Prompt tools assist in managing and optimizing this interaction, enabling more efficient and effective use of LLMs in tasks such as content creation, data analysis, and automated customer support.
+In this task, you will develop a flow with Large Language Models (LLMs) and prompt tools by defining a clear objective, selecting the appropriate LLM, and crafting structured prompts to guide the model’s responses. You will iteratively refine these prompts based on the output to ensure accuracy and relevance. Prompt tools will help you manage and optimize the interaction, enabling efficient use of LLMs for tasks such as content creation, data analysis, or automated support.
 
 1. The prompt flow authoring page opens. You can start authoring your flow now. By default you see a sample flow. This example flow has nodes for the LLM and Python tools.
 
@@ -138,7 +143,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     
 1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
-    ![](./media/joke-03.png)
+    ![](./media/dex8.png)
 
 1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
 
