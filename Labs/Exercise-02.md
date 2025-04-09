@@ -50,6 +50,8 @@ As involves setting up a structured environment to manage and streamline prompt-
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+
+1. Click on **Close** to close the pop up.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
