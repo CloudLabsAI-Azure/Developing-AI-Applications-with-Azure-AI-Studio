@@ -52,7 +52,7 @@ Set up manual evaluation by defining criteria, collecting human feedback, and an
 
 ## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
-TIn this lab, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
+In this task, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
