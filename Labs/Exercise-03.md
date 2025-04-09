@@ -1,24 +1,24 @@
 # Lab 03: Evaluation Flow Setup
 
 ## Lab scenario
-In this lab, you will set up and analyze evaluation flows for an AI model using Azure AI Studio. You will manually review model responses to various inputs, providing a detailed evaluation of the model's performance. By setting up specific evaluation metrics, such as coherence and fluency, you will automate the evaluation process using a provided dataset. This hands-on experience will help you understand how to critically assess and refine AI model outputs, ensuring the model meets desired performance standards.
+In this lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1-score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on exercise will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Set Up Evaluation Metrics
-- Task 2: Run and Analyze Evaluation Flows
+- Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
 ## Task 1: Set Up Evaluation Metrics
 
 You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
 
-1. From the left navigation menu, under the **Tools** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/modelevluation.png)
+   ![](./media/Dex19.png)
 
-1. A new window opens with your previous system message already populated and your deployed model selected.
+1. A new window opens with your previous **system message** already populated and your **deployed model** selected.
 
-   ![](./media/gpt-4-demo.png)
+   ![](./media/dex20.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
 
@@ -40,73 +40,100 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/output(1).png)
 
-1. Select **Save results** from the top bar. Enter **manual_evaluation_results** as the name for the results, and select **Save**.
+1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
    ![](./media/gpt-4-demo18.png)
    
-1. Using the menu on the left, navigate to **Evaluations**.
+1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **(3)**. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
+   ![](./media/dex21.png)
 
-   ![](./media/gpt-4-demo19.png)
+## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
-## Task 2: Run and Analyze Evaluation Flows
-It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
+In this task, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
-1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
+1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/gpt-4-demo1.png)
+   ![](./media/dex22.png)
 
-1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automate Evaluation (2)**.
+1. On the **What do you want to evaluate?** pane, select **Dataset**.
 
-   ![](./media/evaluations(1).png)
+   ![](./media/dex23.png)
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **Evaluation Description**: You can leave blank (2)
-    - Click on **Next (3)**.
-  
-         ![](./media/msid-image5.png)
-
-    - Open a new tab and Download the **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl S** to select all and **Save** the file then within **File Explorer** ensure **File name** travel-qa.jsonl.txt then select **Save as type** as **All 
-      files** and click on **Save**.
-
-        ![](./media/msid-image7.png)
-     
-     - Go to the file location where you have saved the file. Select **View** from the toolbaar and then select **File name extensions**. Then rename the file and remove 
-       **.txt** from the file name. When **Rename** window prompted click on **Yes**.
-
-         ![](./media/msid-image8.png)
-
-         ![](./media/msid-image9.png)
+    - Select **Next (2)**.
        
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
-  
-         ![](./media/image-22.png)
+       ![](./media/dex24.png)
 
-    - **Dataset mapping for prompt flow**: Select **${data.answer}**, and select **Next** 
-    - **Select metrics**: **Coherence, Fluency**
-    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-    - **Deployment name/Model**: **gpt-4 model**
-    - Scroll down under **How does your dataset map to your evaluation input for question** select ${data.question} and for answer select ${data.answer} from the drop- 
-      down.
-    - Select **Next**
+    - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
+      and **Ctrl C** to select all and **Copy**.
+  
+    - Search for **Visual Studio (1)** in the Windows search bar of the vm and select **Visual Studio (2)**.
+
+       ![](./media/dex26.png)
+
+    - From the **File (1)** menu, select **New Text File (2)**, 
+
+       ![](./media/dex27.png)
+
+    - **Paste the copied code**.
+
+    - Navigate to **File (1)** and click on **Save As (2)**.    
+
+       ![](./media/dex28.png)    
+
+    - Click on **Desktop (1)**, Enter the File name as **Sample (1)** select **JSON Lines (3)** for Save as type and then click on **Save (4)**.
+
+       ![](./media/dex29.png)        
+
+1. Navigate back to **Azure AI foundary**, where your **creating a new evaluation**.
+   
+    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
+  
+         ![](./media/dex25.png)
+
+    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and click on **Open(3)**
+
+         ![](./media/dex30.png)    
+
+    - Select **Next** 
+
+    - **Select metrics**: **Coherence (1), Fluency (2)**
+    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
+    - **Deployment name/Model**: **gpt-4o model (4)**
+
+         ![](./media/dex31.png)  
+
+    - Scroll down to **How does your dataset map to your evaluation input**. Ensure that **${data.query} (1)** is selected for the **query**, and **${data.response} (1)** is selected for the **response**.
+
+    - Select **Next (2)**
+
+         ![](./media/dex32.png)  
+
     - Select **Submit**
 
-1. Wait for the evaluations to be completed, you may need to refresh.
+         ![](./media/dex33.png)      
 
-     ![](./media/msid-image6.png)
+         >**Note:** Wait for the evaluations to be **completed**, you may need to refresh.
 
-1. Explore the **Metric dashboard** and **Detailed metrics result**.
+1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
-    ![](./media/image-26.png)
+   ![](./media/dex34.png)
 
-    ![](./media/image-27.png)
+1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
+
+    ![](./media/dex35.png)
+
+    ![](./media/dex36.png)
+
+1. Navigate to **Data (1)** tab from the top menu to view the **Detailed metrics results (2)**.    
+
+    ![](./media/dex38.png)
 
 ## Review
 In this lab you have completed the following tasks:
 - Set Up Evaluation Metrics
-- Ran and Analyzed Evaluation Flows
+- Setup Automated Evaluation with Built-in Evaluation Metrics
 
 ### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
