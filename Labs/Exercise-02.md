@@ -1,9 +1,10 @@
-# Lab 02: Training the Model
+# Lab 02: Building and Customizing Prompt Flows
 
 ## Lab scenario
 
-In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI Studio, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI Studio's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
-## Lab objectives
+In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
+
+## Lab Objectives
 In this lab, you will perform the following:
 
 - Task 1 : Initialize a Prompt Flow Project
@@ -13,44 +14,48 @@ In this lab, you will perform the following:
 
 ## Task 1: Initialize a Prompt Flow Project
 
-As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
+In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
-1. In order to navigate to Azure AI Studio, right-click [Azure AI Studio](https://ai.azure.com/?reloadCount=1) and select 'Copy Link' Then, open Microsoft Edge from the 
+1. In order to navigate to Azure AI Studio, right-click [Azure AI Studio](https://ai.azure.com/?reloadCount=1) and select Copy Link Then, open Microsoft Edge from the 
    LabVM desktop, paste the link into a new tab address bar, and press **Enter** .Select **Sign in**. When prompted, enter the following Azure credentials.
 
-      ![](./media/gpt-4-demo2.png)
+      ![](./media/dex3.png)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. On the **Azure AI Studio**, on the home page, select **+ New Project**.
 
-   ![](./media/newproject.png)
+   ![](./media/dex4.png)
 
-1. On the **Create a project** page, and follow these instructions to fill out the properties:
+1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
 
-   - Project name: **modelproject-<inject key="DeploymentID" enableCopy="false"/>**
+    ![](./media/dex5.png)   
+
+1. On the **Create a hub** section, follow these instructions to fill out the properties:
+
+   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
      >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
-   - Hub: Create a new hub
-   - Select **Next**.
-     >**Note**: If you're not able to see the Hub: Create a new hub option, kindly click on Customize.
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**
-   - Subscription: Set as default
-   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>**
-   - Location: **<inject key="Region" enableCopy="false"/>**
-   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>**
-   - Connect Azure AI Search: Keep it as default
-   - Select **Next**
+   - Subscription: **Set as default (2)**
+   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)** 
+   - Location: **<inject key="Region" enableCopy="false"/> (4)**
+   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
+   - Connect Azure AI Search: **Keep it as default (6)**
+   - Select **Next (7)**
 
-      ![](./media/gpt-4-demo3.png)
-      ![](./media/gpt-4-demo5.png)
+        ![](./media/dex1.png)
      
-1. On the **Review and finish** page, select **Create a Project**.
+1. On the **Review and finish** page, select **Create**.
 
-     ![](./media/gpt-4-demo6.png)
+     ![](./media/dex6.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
 
+     ![](./media/dex2.png)
+
+      > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+
+1. Click on **Close** to close the pop up.
     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -60,47 +65,50 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 ### Task 2 : Create and Customize Prompts
 
-Creating and customizing prompts involves designing specific, targeted questions or statements to elicit desired responses or actions. This process includes defining clear objectives, understanding the audience, and using precise language to ensure clarity and relevance. Customization can further refine prompts to align with particular contexts or user needs, enhancing engagement and effectiveness in various applications such as education, customer service, and AI interactions.
+In this task, you will focus on creating and customizing prompts by designing targeted and purposeful questions or statements that guide the LLM toward generating accurate and useful responses. You'll define clear objectives, consider the intended audience, and use precise language to ensure relevance. Customization will help align prompts with specific contexts or use cases, improving engagement and effectiveness in applications like education, customer support, and AI-driven workflows.
 
-1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/gpt-4-demo8.png)
+   ![](./media/dex9.png)
 
-1. On the **Select a model** page, search and select **gpt-4 (1) (2)**, select **Confirm (2)** under the **gpt-4**.
+1. On the **Select a model** page, search for **gpt-4o (1)** and select **gpt-4o (2)**, select **Confirm (3)** under the **gpt-4o**.
 
-   ![](./media/msid-image2.png)
+   ![](./media/dex10.png)
 
-1. On **Deploy model gpt-4** page :
+1. On **Deploy model gpt-4o** page :
 
-    - Deployment name : gpt-4
+    - Deployment name : **gpt-4o (1)**
+    - Deployment type : **Global standard (2)**
+    - Select **Customize (3)**
 
-    - select **Customize**
+      ![](./media/dex11.png)
 
-      ![](./media/gpt-4-demo9.png)
+1. On **Deploy model gpt-4o** page, follow these instructions to create the deployment:
 
-1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
+   - Deployment name : **gpt-4o (1)**
+   - Deployment type :  **Global Standard (2)**
+   - Model version : **2024-11-20 (3)**
+   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Tokens per Minute Rate Limit (thousands): **5 K(5)**
+      > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
+   - Content filter : **DefaultV2 (6)**
+   - Select **Deploy (7)**
 
-   - Deployment name : gpt-4
-   - Deployment type : Global Standard
-   - Model version : turbo-2024-04-09
-   - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-   - Tokens per Minute Rate Limit (thousands): **10K**
-   - Content filter : DefaultV2
-   - Select **Deploy**
+     ![](./media/dex12.png)
 
-     ![](./media/msid-image3.png)
+     >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/image-04.png)
+   ![](./media/dex13.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/new-develop-issue-5.png)
+   ![](./media/dex7.png)
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
+   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
    ![](./media/gpt-4-demo11.png) 
 
@@ -113,29 +121,37 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 
-Developing a flow with Large Language Models (LLMs) and prompt tools involves designing a structured interaction where the LLM is guided by carefully crafted prompts to generate desired outputs. This process typically includes defining the objective, selecting appropriate LLMs, and iteratively refining prompts based on the model's responses to ensure accuracy and relevance. Prompt tools assist in managing and optimizing this interaction, enabling more efficient and effective use of LLMs in tasks such as content creation, data analysis, and automated customer support.
+In this task, you will develop a flow with Large Language Models (LLMs) and prompt tools by defining a clear objective, selecting the appropriate LLM, and crafting structured prompts to guide the model’s responses. You will iteratively refine these prompts based on the output to ensure accuracy and relevance. Prompt tools will help you manage and optimize the interaction, enabling efficient use of LLMs for tasks such as content creation, data analysis, or automated support.
 
 1. The prompt flow authoring page opens. You can start authoring your flow now. By default you see a sample flow. This example flow has nodes for the LLM and Python tools.
 
-1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**.
+1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
-     ![](./media/gpt-4-demo13.png)
+     ![](./media/dex14.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Mango').
+1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)**.
 
-    ![](./media/msid-image20.png)
+    ![](./media/dex15.png)
 
-1. Select **Save**, and select **Start compute session**.
+1. Select **Save (1)**, and select **Start compute session (2)**.
 
-    ![](./media/image-87.png)
+    ![](./media/dex16.png)
 
-   >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
+     >**Note:** It might take **10-15 minutes** to start the session. Wait till compute session starts.
+
+1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
+
+    ![](./media/dex8.png)    
+
+1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
+
+    ![](./media/dex17.png)     
     
-1. The flow run status is shown as Running, select **Run**.
+1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
-     ![](./media/computesession.png)
+     ![](./media/dex18.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
@@ -145,12 +161,12 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
     ![](./media/msid-image21.png)
 
-1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
+1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
     ![](./media/gpt-4-demo17.png)
     ![](./media/gpt-4-demo(15).png)
 
-1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
+1. Add this code inside the **modelflow** prompt tool **(1)**, and select **Validate and parse input (2)**
 
    ```jinja
    Welcome to {{ website_name }}!
@@ -168,10 +184,10 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
    ![](./media/gpt-4-demo16.png)
    
-1. In the input section add these following value, select **Save** and **Run**.
+1. In the input section add these following value, select **Save (2)** and **Run (3)**.
 
-   - user_name: Jane
-   - website_name: Microsoft
+   - user_name: **Jane (1)**
+   - website_name: **Microsoft (1)**
 
      ![](./media/gpt-4-demo14.png)
 
@@ -184,6 +200,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     ![](./media/output1.png)
    
 ## Review
+
 In this lab you have completed the following tasks:
 
 - Initialize a Prompt Flow Project
