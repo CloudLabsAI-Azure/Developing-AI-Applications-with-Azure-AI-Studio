@@ -56,17 +56,17 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/evaluation-metrics.png)
+   ![](./media/dex22.png)
 
 1. On the **What do you want to evaluate?** pane, select **Dataset**.
 
-   ![](./media/whatdoyouwant.png)
+   ![](./media/dex23.png)
 
 1. Create a new evaluation with the following settings:
     - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
     - Select **Next (2)**.
        
-       ![](./media/createnewevaluation.png)
+       ![](./media/dex24.png)
 
     - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
@@ -93,13 +93,13 @@ In this task, you will configure automated evaluation using built-in metrics to 
    
     - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
   
-         ![](./media/addyourdatasets.png)
+         ![](./media/dex25.png)
 
-    - Select the file that you downloaded **(1)** and click on **Open(2)**
+    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and click on **Open(3)**
 
-         ![](./media/d11.png)    
+         ![](./media/dex30.png)   
 
-    - Select **Next (2)** 
+    - Select **Next** 
 
     - **Select metrics**: **Coherence (1), Fluency (2)**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
@@ -111,21 +111,27 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     - Select **Next (2)**
 
-         ![](./media/dataquery-037.png)  
+         ![](./media/dex32.png)  
 
     - Select **Submit**
+   
+1. Wait for the evaluations to be completed, you may need to refresh.
 
-      >**Note:** Wait for the evaluations to be completed, you may need to refresh.
+   ![](./media/dex33.png)
 
-1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run.
+1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
-   ![](./media/evaluationmetrics238.png)
+   ![](./media/dex34.png)
 
-1. Explore the **Metric dashboard** and select **Data** from the top menu to view the **Detailed metrics results**.
+1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
 
-    ![](./media/image-26.png)
+    ![](./media/dex35.png)
 
-    ![](./media/image-27.png)
+    ![](./media/dex36.png)
+
+1. Navigate to **Data (1)** tab from the top menu to view the **Detailed metrics results (2)**.    
+
+    ![](./media/dex38.png)
 
 ## Review
 In this lab you have completed the following tasks:
