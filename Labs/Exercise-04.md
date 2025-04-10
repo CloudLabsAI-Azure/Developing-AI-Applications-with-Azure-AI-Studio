@@ -12,7 +12,7 @@ In this lab, you will perform the following:
 
 ### Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
-It refines model responses by adjusting prompts in successive iterations. This process allows for systematic evaluation of the differences between output variants, ensuring that the model's performance improves with each iteration and produces the most accurate and relevant responses.
+In this task, you will refine model responses by adjusting prompts over successive iterations. This process enables systematic evaluation and comparison of output variants, helping to ensure that each iteration leads to improved performance and more accurate, relevant responses.
 
 1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
@@ -154,7 +154,8 @@ It refines model responses by adjusting prompts in successive iterations. This p
    >**Note:** The output shown in the image may differ in your lab.
 
 ## Task 2: Optimize Flow Performance for Production 
-It involves analyzing and refining workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, implementing best practices, and utilizing advanced tools and technologies to streamline operations. Continuous monitoring and iterative improvements are essential to maintain high performance and adapt to changing production demands, ultimately leading to increased productivity and reduced operational costs.
+
+In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
 1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. 
 

@@ -12,7 +12,7 @@ In this lab, you will perform the following:
 
 ## Task 1: Setup Manual Evaluation
 
-Set up manual evaluation by defining criteria, collecting human feedback, and analyzing model accuracy and biases to improve performance.
+In this task, you will set up a manual evaluation process to assess model performance. This involves defining evaluation criteria, collecting human feedback, and analyzing results to measure accuracy and identify potential biases. 
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
