@@ -23,13 +23,14 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ![](./media/DAI-image3.png)
 
-1. On **Deploy model gpt-35-turbo** enter Deployment name: **gpt-35-turbo** and click on **Customize**.
+1. On **Deploy model gpt-35-turbo**, click on **Customize**.
+
+   ![](./media/1dex1.png)
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
    
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
-   - Select **Customize**
    - Enable automatic version updates: **Enabled (3)**
    - Model version: **0125 (4)**
    - Connected AI resource: select the resource which we created in earlier task **(5)**
@@ -38,18 +39,18 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    - Enable dynamic quota: **Enabled (8)**
    - Select **Deploy (9)**
 
-     ![](./media/gpt-35-turbo-690.png)
+     ![](./media/1dex2.png)
      
-1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints**. On the **Model + deployments** page select **gpt-35-turbo (1)** then click **Open in playground (2)**
+1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)** then click **Open in playground (3)**
 
-    ![](./media/DAI-image5.png)
+    ![](./media/1dex3.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
    > Wait for 5 mins if you get an error while querying.
    
-     ![](./media/what-canudo.png)
+     ![](./media/1dex5.png)
 
    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
@@ -78,7 +79,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
      ![](./media/d33.png)
 
-1. Select **continue**.     
+1. Select **Continue**.     
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
@@ -90,13 +91,13 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
    ![](./media/prompt-flow.png)
 
-1. On **Create a new flow** blade, under **Chat flow**, click on **Create**, then enter **Travel-Chat** for Folder name, then click on **Create** 
+1. On **Create a new flow** blade, under **Chat flow**, click on **Create (1)**, then enter **Travel-Chat (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/chat-flow-090.png)
+   ![](./media/1dex4.png)
 
-1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
+1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**) **(1)**, an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat **(2)**.
 
-   ![](./media/d35.png)
+   ![](./media/1dex8.png)
 
 1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
 
@@ -139,6 +140,8 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
 
 1. Select **Save**.
 
+   ![](./media/1dex10.png)
+
 1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
 
    - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
@@ -175,9 +178,11 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
      - Inferencing data collection: **Enabled (6)**
      - Select **Review + Create (7)**
 
-         ![](./media/DAI-image8.png)
+         ![](./media/1dex14.png)
 
-1. Select **Create**    
+1. Select **Create**.
+
+   ![](./media/1dex15.png)
 
 1. In Azure AI foundry, from the left navigation pane, under **My assets**, select **Model + endpoints**
 
@@ -185,7 +190,7 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Select the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(2)**.
 
-   ![](./media/modelendpoints-1109.png)
+   ![](./media/1dex16.png)
 
 1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
 
