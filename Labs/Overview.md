@@ -1,5 +1,7 @@
 # Developing AI Applications with Azure AI Foundry
 
+## Overall Estimated Duration: 8 Hours
+
 ## Overview 
 
 This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
@@ -38,6 +40,8 @@ Basic knowledge and understanding of the following
   ![](./media/archi-updated1.png)
 
 ## Explanation of Components 
+
+The architecture for this lab involves the following key components:
 
 - **Understanding the Lifecycle of Model Development**:
    - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
@@ -87,7 +91,13 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
    ![Manage Your Virtual Machine](./media/resource1.png)
 
-## **Lab Duration Extension**
+## Lab Validation
+
+After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+![](./media/inline-validation-01.png)
+
+## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
@@ -127,12 +137,7 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
  
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
-1. Click **Next** from the bottom right corner to embark on your Lab journey!
-
-   ![Launch Azure Portal](./media/d47.png)
-
-
-## **Support Contact**
+## Support Contact
 
 1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
@@ -143,5 +148,7 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 
 2. Now, click on **Next** from the lower right corner to move on to the next page.
- 
+
+   ![Launch Azure Portal](./media/d47.png)
+
 ### Happy Learning!!
