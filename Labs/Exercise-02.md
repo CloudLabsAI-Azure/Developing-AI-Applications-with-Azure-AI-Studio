@@ -25,7 +25,7 @@ In this task, you will set up a structured environment to manage and streamline 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
+1. On the **Azure AI Foundry**, on the home page, select **+ Create Project**.
 
    ![](./media/create-project.png)
 
