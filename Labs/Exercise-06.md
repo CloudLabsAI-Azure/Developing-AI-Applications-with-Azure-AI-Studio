@@ -16,11 +16,11 @@ This task involves using **Azure AI Foundry** to moderate images and text by det
 
 1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
-     ![](./media/safety+security.png)     
+     ![](./media/dee1.png)     
 
-2. Under **Filter image content** option, select **Moderate image content**.
+2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
-     ![](./media/moderateimagecontent.png)
+     ![](./media/dee2.png)
 
 3. On **Moderate image content** select **Run a simple test (1)** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**. **(2)**
 
@@ -28,17 +28,17 @@ This task involves using **Azure AI Foundry** to moderate images and text by det
 
 #### Safe content
 
-1. Before, starting, select the below Azure AI services, and proceed with lab using this Azure AI services.
+1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
 
-     ![](./media/azureaiservices0389.png)
+     ![](./media/dee3.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
      ![](./media/image-61.png)
 
-1. Within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset (1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
 
-     ![](./media/d41.png)
+     ![](./media/dee4.png)
 
 1. Review the image and click on **Run test**.
 
@@ -58,13 +58,17 @@ We should also anticipate customers potentially posting harmful image content. T
 
     ![](./media/d42.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` and then upload the **bear-attack-blood.JPG** file.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
 
-1. Set all Threshold levels to **Medium**.
+    ![](./media/dee9.png)
 
-1. Select **Run test**.
+1. Set all Threshold levels to **Medium (1)** and then select **Run test (2)**.
+
+    ![](./media/dee10.png)
 
     >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
+
+     ![](./media/dee11.png)
 
 ### Task 1.2: Run a bulk test
 
@@ -72,11 +76,11 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 1. On **Moderate image content** select **Run a bulk test (1)** tab then click on **Browse for a file (2)**.
 
-     ![](./media/runabulktest(1).png)
+     ![](./media/dee12.png)
 
-1. Within file explorer navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data**  press **Enter**. Select **image_sample_dataset.zip (1)** folder and click on **Open (2)**. 
+1. Within file explorer navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
 
-    ![](./media/image-81.png)
+    ![](./media/dee13.png)
    
 1. Under Test section, review **Dataset preview (1)** then select **Configure filters** tab review **Category** and **Threshold level** **(2)** then click on **Run test (3)**.
 
@@ -96,9 +100,9 @@ We could leverage an AI model to detect whether the text input from our customer
 
 Let’s first test some positive customer feedback.
 
-1. Back to the **Azure AI Foundry** portal > **Safety + security (1)**, select **Moderate text content**.
+1. Back to the **Azure AI Foundry** portal > **Safety + security (1)**, navigate to **Try it out (2)** tab and then select **Moderate text content (3)**.
 
-   ![](./media/moderatetextcontent-10846.png)
+   ![](./media/dee15.png)
 
 1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under **select a sample or type your own** section.
 
@@ -135,13 +139,15 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
       ![](./media/image-75.png)
  
-   - Although the content is **Allowed**, the Severity level for Hate is low. To guide our model to block such content, we’d need to adjust the Threshold level for **Hate**. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
+   - Although the content is **Allowed**, the Severity level for **Hate is low**. To guide our model to block such content, we’d need to adjust the Threshold level for **Hate**. A lower Threshold level would block any content that’s a low, medium, or high severity. There’s no room for exceptions!
 
-   - Set the Threshold level for **Hate to `Low` (2)**.
+      ![](./media/dee16.png)   
 
-   - Select **Run test (3)**.
+   - Set the Threshold level for **Hate to `Low` (1)**.
 
-     ![](./media/image-76.png)
+   - Select **Run test (2)**.
+
+     ![](./media/dee20.png)
     
    - The content is now **Blocked** and was rejected by the filter in the Hate category.
 
@@ -157,14 +163,17 @@ We can’t anticipate that all text content from our customers would be free of 
 
 1. In the **Test box**, enter the following:
 
-    - **I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker?**
+    - **I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker? (1)**
 
-    - Set all Threshold levels to **Medium**.
+    - Set all Threshold levels to **Medium (2)**.
 
-    - Select **Run test**.
+    - Select **Run test (3)**
 
-    - Although the content is Allowed, the Severity level for Violence should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
-  
+      ![](./media/dee22.png)    
+
+    - Although the content is Allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+
+     
 #### Run a bulk test
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
 based on the model’s performance.
@@ -176,11 +185,11 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/d43.png)
 
-1. Within **file explorer** navigate to **C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data** press **Enter**. Select **bulk-image-moderation-dataset.csv (2)** file and **Open (2)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
     > Note: The name of the CSV file may vary.
    
-     ![](./media/image-82.png)
+     ![](./media/dee25.png)
      
 1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content). **(2)**
 
