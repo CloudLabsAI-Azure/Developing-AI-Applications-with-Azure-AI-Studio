@@ -4,7 +4,7 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to gain hands-on experience with **Azure AI Foundry's Prompt Flow**. Participants will learn how to initialize a Prompt Flow project, create and customize prompts, and develop flows using LLM and Prompt tools. The lab guides users through building, running, and monitoring AI-driven workflows, helping them understand the practical steps involved in developing, testing, and refining AI applications.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to gain hands-on experience with Azure AI Foundry's Prompt Flow. Participants will learn how to initialize a Prompt Flow project, create and customize prompts, and develop flows using LLM and Prompt tools. The lab guides users through building, running, and monitoring AI-driven workflows, helping them understand the practical steps involved in developing, testing, and refining AI applications.
 
 
 ## Objective 
