@@ -1,5 +1,7 @@
 # Lab 04: Fine-Tuning Prompts for Optimal Performance
 
+## Estimated Duration: 90 minutes
+
 ## Lab Overview
 In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
  
