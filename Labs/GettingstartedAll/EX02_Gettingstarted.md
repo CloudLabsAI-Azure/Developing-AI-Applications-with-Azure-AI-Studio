@@ -4,18 +4,18 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using **Azure AI Foundry's Prompt Flow**. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to gain hands-on experience with **Azure AI Foundry's Prompt Flow**. Participants will learn how to initialize a Prompt Flow project, create and customize prompts, and develop flows using LLM and Prompt tools. The lab guides users through building, running, and monitoring AI-driven workflows, helping them understand the practical steps involved in developing, testing, and refining AI applications.
 
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in building and managing flows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create, configure, and utilize different flow types and tools for developing robust LLM-based applications.
+This lab is designed to equip participants with hands-on experience in initializing and building AI workflows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create prompts, configure tools, and develop, test, and refine flows for LLM-based applications.
 
-- **Comprehend the Flow Development Lifecycle**: You will learn how to comprehend the flow development lifecycle in Azure AI Foundry’s Prompt Flow, including the stages of initialization, experimentation, evaluation, refinement, and production, to effectively build and deploy AI applications.
+- **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
-- **Understand the types of flows**: You will learn how to understand and navigate a flow within Azure AI Foundry’s Prompt Flow, including its core components—inputs, nodes, and outputs—and how they work together to form an executable workflow for LLM-based application development.
+- **Create and Customize Prompts**: You will learn how to design and tailor prompts to guide LLMs effectively, aligning them with specific objectives and use cases to enhance the accuracy, relevance, and impact of AI-generated responses.
 
-- **Explore the tools available in prompt flow**: You will learn how to explore and use the core tools available in Prompt Flow—LLM, Python, and Prompt tools—to build and customize AI workflows, enabling flexible task execution and seamless integration with external APIs and Python packages.
+- **Develop a Flow with LLM and Prompt Tools**: You will learn how to build a flow using LLM and Prompt tools by defining objectives, crafting and refining prompts, and leveraging model outputs to create effective, task-specific AI workflows.
 
 ## Prerequisites 
 
@@ -36,9 +36,7 @@ Basic knowledge and understanding of the following
 
 ## Explanation of Components 
 
-- **Understanding the Lifecycle of Model Development**:
-   - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
+- **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
 
 ## Getting Started with the Lab
  
