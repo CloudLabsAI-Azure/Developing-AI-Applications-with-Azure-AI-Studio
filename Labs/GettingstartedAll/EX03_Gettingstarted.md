@@ -4,10 +4,9 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to strengthen their skills in evaluating AI models using **Azure AI Foundry's Prompt Flow**. Participants will learn to configure both automated and manual evaluation pipelines, using built-in metrics and human feedback to assess model performance. The lab emphasizes practical techniques to improve model accuracy, reliability, and quality through a balanced evaluation approach.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building and evaluating AI workflows using **Azure AI Foundry's Prompt Flow**. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. They will also set up both automated and manual evaluation pipelines using built-in metrics and human feedback. The lab emphasizes a structured approach to designing, testing, and refining prompt-based AI applications for improved performance and reliability.
 
-
-## Objective 
+## Objectives 
 
 This lab is designed to equip participants with hands-on experience in setting up both automated and manual evaluation pipelines using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to evaluate model performance using built-in metrics like accuracy and F1-score, and enhance results through human-in-the-loop feedback.
 
