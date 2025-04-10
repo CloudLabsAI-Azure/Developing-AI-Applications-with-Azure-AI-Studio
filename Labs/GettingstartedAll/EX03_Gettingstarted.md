@@ -4,18 +4,22 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using **Azure AI Foundry's Prompt Flow**. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to strengthen their skills in evaluating AI models using **Azure AI Foundry's Prompt Flow**. Participants will learn to configure both automated and manual evaluation pipelines, using built-in metrics and human feedback to assess model performance. The lab emphasizes practical techniques to improve model accuracy, reliability, and quality through a balanced evaluation approach.
 
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in building and managing flows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create, configure, and utilize different flow types and tools for developing robust LLM-based applications.
+This lab is designed to equip participants with hands-on experience in setting up both automated and manual evaluation pipelines using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to evaluate model performance using built-in metrics like accuracy and F1-score, and enhance results through human-in-the-loop feedback.
 
-- **Comprehend the Flow Development Lifecycle**: You will learn how to comprehend the flow development lifecycle in Azure AI Foundry’s Prompt Flow, including the stages of initialization, experimentation, evaluation, refinement, and production, to effectively build and deploy AI applications.
+- **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
-- **Understand the types of flows**: You will learn how to understand and navigate a flow within Azure AI Foundry’s Prompt Flow, including its core components—inputs, nodes, and outputs—and how they work together to form an executable workflow for LLM-based application development.
+- **Create and Customize Prompts**: You will learn how to design and tailor prompts to guide LLMs effectively, aligning them with specific objectives and use cases to enhance the accuracy, relevance, and impact of AI-generated responses.
 
-- **Explore the tools available in prompt flow**: You will learn how to explore and use the core tools available in Prompt Flow—LLM, Python, and Prompt tools—to build and customize AI workflows, enabling flexible task execution and seamless integration with external APIs and Python packages.
+- **Develop a Flow with LLM and Prompt Tools**: You will learn how to build a flow using LLM and Prompt tools by defining objectives, crafting and refining prompts, and leveraging model outputs to create effective, task-specific AI workflows.
+
+- **Set Up Evaluation Metrics**: You will learn how to define evaluation criteria, collect human feedback, and analyze model outputs to assess performance, accuracy, and potential biases through a manual evaluation process.
+
+- **Set Up Automated Evaluation with Built-in Metrics**: You will learn how to configure automated evaluation using built-in metrics such as accuracy, precision, recall, and F1-score to efficiently measure and monitor model performance.
 
 ## Prerequisites 
 
@@ -36,9 +40,10 @@ Basic knowledge and understanding of the following
 
 ## Explanation of Components 
 
-- **Understanding the Lifecycle of Model Development**:
-   - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
+- **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
+
+- **Evaluation Flow Setup**: This lab focuses on setting up and analyzing evaluation flows for an AI model in Azure AI Foundry. You will systematically review model responses to diverse inputs, assessing performance based on key evaluation criteria. By defining and applying metrics like coherence and fluency, you will automate the evaluation process using a structured dataset. Through this hands-on experience, you will develop a deeper understanding of model assessment techniques and optimization strategies to improve AI performance.
+
 
 ## Getting Started with the Lab
  
@@ -179,6 +184,6 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
 2. Now, click on **Next** from the lower right corner to move on to the next page.
 
-   ![Launch Azure Portal](../media/deeg1.png)
+   ![Launch Azure Portal](../media/dee29.png)
  
 ### Happy Learning!!
