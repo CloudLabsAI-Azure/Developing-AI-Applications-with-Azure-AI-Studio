@@ -1,14 +1,14 @@
-# Developing AI Applications with Azure AI Foundry
+# Developing AI Applications with Azure AI Foundry: Ensuring Responsible AI Practices with Content Safety
 
 ## Overall Estimated Duration: 1 Hour
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building, testing, and deploying AI workflows using Azure AI Foundry's Prompt Flow. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. The lab also guides participants through designing and implementing chat flows, testing them, and deploying them into production. Through practical exercises, participants will explore prompt engineering, monitor flow execution, and integrate custom copilots into real-world applications.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to build, test, and refine AI workflows using **Azure AI Foundry's Prompt Flow** while incorporating responsible AI practices. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. The lab also emphasizes fairness, transparency, privacy, and security by leveraging Azure’s built-in Responsible AI tools. Through hands-on exercises, participants will detect and mitigate biases, ensure model interpretability, and apply privacy-preserving techniques for secure and compliant AI solutions.
 
 ## Objectives 
 
-This lab is designed to equip participants with hands-on experience in building, testing, and deploying AI workflows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create and refine prompts, develop and monitor flows with LLM tools, and implement chat flows for real-world applications.
+By completing this lab, participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows with LLM tools. 
 
 - **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
@@ -16,9 +16,8 @@ This lab is designed to equip participants with hands-on experience in building,
 
 - **Develop a Flow with LLM and Prompt Tools**: You will learn how to build a flow using LLM and Prompt tools by defining objectives, crafting and refining prompts, and leveraging model outputs to create effective, task-specific AI workflows.
 
-- **Design and Implement a Chat Flow**: You will learn how to create a chat flow using Azure AI Foundry by integrating inputs, configuring LLM nodes, and testing the interaction with a deployed language model to ensure accurate, production-ready responses.
+- **Image and Text Moderation Using Azure AI foundry**: You will learn how to use Azure AI Foundry to detect and filter inappropriate, harmful, or sensitive content in both images and text, ensuring compliance with moderation policies and promoting safe, responsible AI use in your application.
 
-- **Use LLM and Prompt Tools in Flows**: You will learn how to test and validate your developed flow using the chat interface in Azure AI Foundry, leveraging built-in LLM and prompt tools to fine-tune prompts and ensure accurate, context-aware model responses.
 
 ## Prerequisites 
 
@@ -41,7 +40,7 @@ Basic knowledge and understanding of the following
 
 - **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
 
-- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
+- **Ensuring Responsible AI Practices with Content Safety**: Ensuring responsible AI practices involves implementing robust content safety measures to prevent harm and misuse. These components ensure AI interactions are ethical, secure, and aligned with user protection standards.
 
 ## Getting Started with the Lab
  

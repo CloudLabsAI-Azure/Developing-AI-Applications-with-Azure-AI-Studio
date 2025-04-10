@@ -1,4 +1,4 @@
-# Developing AI Applications with Azure AI Foundry
+# Developing AI Applications with Azure AI Foundry: Building and Customizing Prompt Flows
 
 ## Overall Estimated Duration: 1 Hour
 
@@ -9,7 +9,7 @@ This lab is intended for AI developers, data scientists, cloud engineers, and AI
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in initializing and building AI workflows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create prompts, configure tools, and develop, test, and refine flows for LLM-based applications.
+By completing this lab, participants will learn to create prompts, configure tools, and develop, test, and refine flows for LLM-based applications.
 
 - **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 

@@ -1,4 +1,4 @@
-# Developing AI Applications with Azure AI Foundry
+# Developing AI Applications with Azure AI Foundry: Understanding the Lifecycle of Model Development
 
 ## Overall Estimated Duration: 1 Hour
 
@@ -9,7 +9,7 @@ This lab is intended for AI developers, data scientists, cloud engineers, and AI
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in building and managing flows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create, configure, and utilize different flow types and tools for developing robust LLM-based applications.
+By completing this lab, participants will learn to create, configure, and utilize different flow types and tools for developing robust LLM-based applications.
 
 - **Comprehend the Flow Development Lifecycle**: You will learn how to comprehend the flow development lifecycle in Azure AI Foundry’s Prompt Flow, including the stages of initialization, experimentation, evaluation, refinement, and production, to effectively build and deploy AI applications.
 
