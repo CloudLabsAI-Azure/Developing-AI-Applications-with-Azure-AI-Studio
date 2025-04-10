@@ -7,7 +7,7 @@ This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud E
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Studio's Prompt Flow. By completing this lab, participants will learn to: 
+This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to: 
 
 - **Understanding the Lifecycle of Flow Development**: This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation, while learning how flows and nodes enable efficient data processing and task execution.
 
