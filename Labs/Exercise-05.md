@@ -11,7 +11,8 @@ In this lab, you will perform the following:
 - Task 2: Use LLM and Prompt Tools in Flows
 
 ## Task 1: Design and Implement a Chat Flow
-Design and implement a chat flow using Azure AI foundry to interact with a deployed language model, test its functionality, and deploy it for production use.
+
+In this task, you will design and implement a chat flow using Azure AI Foundry to interact with a deployed language model. You will test its functionality to ensure accurate and relevant responses, and prepare the chat flow for deployment in a production environment.
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
@@ -153,7 +154,7 @@ Design and implement a chat flow using Azure AI foundry to interact with a deplo
    
 ## Task 2: Use LLM and Prompt Tools in Flows
 
-Now that you’ve developed the flow, you can use the chat window to test the flow.
+In this task, you will use the chat window to test the developed flow by leveraging built-in LLM and prompt tools within Azure AI Foundry. This will help you validate the flow's behavior, experiment with prompt tuning, and ensure the language model responds accurately within the defined interaction patterns.
 
 1. Ensure the compute session is running. Select **Save (1)**. Select **Chat (2)** to test the flow.
 
