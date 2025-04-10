@@ -4,7 +4,7 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using **Azure AI Foundry's Prompt Flow**. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using Azure AI Foundry's Prompt Flow. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
 
 
 ## Objective 
