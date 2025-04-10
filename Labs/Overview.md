@@ -189,5 +189,7 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
 
 2. Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![Launch Azure Portal](./media/dee29.png)
  
 ### Happy Learning!!

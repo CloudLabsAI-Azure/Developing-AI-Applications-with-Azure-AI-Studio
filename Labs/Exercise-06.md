@@ -184,7 +184,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/dee24.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-image-moderation-dataset.csv (2)** file and **Open (3)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
     > Note: The name of the CSV file may vary.
    
