@@ -4,11 +4,11 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building, refining, and evaluating AI workflows using Azure AI Foundry's Prompt Flow. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and build flows using LLM and Prompt tools. The lab also focuses on prompt engineering best practices, including structuring input queries for optimal AI performance and iterating on prompt design for consistent, accurate results. Through practical exercises, participants will develop, test, and monitor AI-driven workflows to enhance reliability and output quality.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building, testing, and deploying AI workflows using Azure AI Foundry's Prompt Flow. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. The lab also guides participants through designing and implementing chat flows, testing them, and deploying them into production. Through practical exercises, participants will explore prompt engineering, monitor flow execution, and integrate custom copilots into real-world applications.
 
 ## Objectives 
 
-This lab is designed to equip participants with hands-on experience in building and refining AI workflows using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to create effective prompts, develop flows with LLM tools, and optimize prompt design for improved AI performance.
+This lab is designed to equip participants with hands-on experience in building, testing, and deploying AI workflows using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to create and refine prompts, develop and monitor flows with LLM tools, and implement chat flows for real-world applications.
 
 - **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
@@ -16,10 +16,9 @@ This lab is designed to equip participants with hands-on experience in building 
 
 - **Develop a Flow with LLM and Prompt Tools**: You will learn how to build a flow using LLM and Prompt tools by defining objectives, crafting and refining prompts, and leveraging model outputs to create effective, task-specific AI workflows.
 
-- **Perform Iterative Prompt Tuning and Variant Comparison**: You will learn how to refine prompts through successive iterations and compare output variants to systematically improve the accuracy, relevance, and effectiveness of model responses.
+- **Design and Implement a Chat Flow**: You will learn how to create a chat flow using Azure AI Foundry by integrating inputs, configuring LLM nodes, and testing the interaction with a deployed language model to ensure accurate, production-ready responses.
 
-- **Optimize Flow Performance for Production**: You will learn how to analyze and refine workflows by identifying bottlenecks, applying best practices, and implementing continuous monitoring to ensure efficient, reliable, and scalable production performance.
-
+- **Use LLM and Prompt Tools in Flows**: You will learn how to test and validate your developed flow using the chat interface in Azure AI Foundry, leveraging built-in LLM and prompt tools to fine-tune prompts and ensure accurate, context-aware model responses.
 
 ## Prerequisites 
 
@@ -42,8 +41,7 @@ Basic knowledge and understanding of the following
 
 - **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
 
-- **Fine-Tuning Prompts for Optimal Performance**: Fine-tuning prompts involves adjusting components to enhance clarity and relevance. This optimization ensures interactions are more effective and engaging.
-
+- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
 
 ## Getting Started with the Lab
  
