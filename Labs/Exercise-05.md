@@ -1,9 +1,9 @@
 # Lab 05: Implementing Chat Flow and Tool Integration
 
 ## Lab scenario
-In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI Studio, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
+In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You'll start by creating a basic chat flow using Azure AI foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will perform the following:
 - Task 1: Design and Implement a Chat Flow
 - Task 2: Use LLM and Prompt Tools in Flows
@@ -11,44 +11,46 @@ In this lab, you will perform the following:
 ## Task 1: Design and Implement a Chat Flow
 Design and implement a chat flow using Azure AI Studio to interact with a deployed language model, test its functionality, and deploy it for production use.
 
-1. From the left navigation menu, under **Components**, select **Deployments (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (2)** from the dropdown.
+1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/new-develop-issue-1.png)
+   ![](./media/dex9.png)
 
 1. On the **Select a model** page, search and select **gpt-35-turbo (1)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
    ![](./media/selectmodel.png)
 
-1. On **Deploy model gpt-35-turbo** enter Deployment name: **gpt-35-turbo** and click on **Customize**.
+1. On **Deploy model gpt-35-turbo**, click on **Customize**.
+
+   ![](./media/1dex1.png)
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
 
-   - Deployment name: **gpt-35-turbo (1)**
+   - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
-   - Model version: **0613 (3)**
-   - Connected Azure OpenAI resource: Select your OpenAI resource **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** (4)
-   - Tokens per Minute Rate Limit (thousands): **5K (5)**
-   - Content filter: Set as default (6)
-   - Enable dynamic quota: **Enabled (7)**
-   - Select **Deploy (8)**
+   - Enable automatic version updates: **Enabled (3)**
+   - Model version: **0125 (4)**
+   - Connected AI resource: select the resource which we created in earlier task **(5)**
+   - Tokens per Minute Rate Limit (thousands): **10K (6)**
+   - Content filter: **DefaultV2 (7)**
+   - Enable dynamic quota: **Enabled (8)**
+   - Select **Deploy (9)**
 
-     ![](./media/msid-image22.png)
+     ![](./media/1dex2.png)
 
-1. On the [Azure AI Studio](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **Components**, select **Deployments (1)**. On the **Model deployments** page select **gpt-35-turbo (2)**.
+1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)** then click **Open in playground (3)**
 
-   ![](./media/new-deployments(1).png)
-
-1. On the **gpt-35-turbo** page, select **Open in playground**, under **Details** tab.
-
-   ![](./media/openinplayground.png)
+    ![](./media/1dex3.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
+   > Wait for 5 mins if you get an error while querying.
+   
+     ![](./media/1dex5.png)
 
-   ![](./media/modelonboarding.png)
+   >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. Update the **System message (1)** to the following:-
 
@@ -71,23 +73,29 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
 
    ```
    
-1. After Updating System Message, Select **Save(2)**.
+1. Select **Apply changes (2)**.
 
-   ![](./media/modelapply.png)
+     ![](./media/1dex6.png)
 
-   >**Note**: When **Update system message?** prompted click on **Continue**.
+1. Select **Continue**. 
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
    ![](./media/whatcanyoudo.png)
 
-1. Under the Chat playground, select **Prompt flow** from the top bar. Enter **Travel-Chat** as folder name, and select **Open**.
+    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.   
 
-   ![](./media/msid-image16.png)
+1. From the left navigation pane, select **Prompt flow (1) > + Create (2)** to add the Prompt tool to your flow.
 
-1. A simple chat flow is created for you. Note there are two inputs (chat history and the user’s question), an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat.
+   ![](./media/1dex7.png)
 
-   ![](./media/travelchat.png)
+1. On **Create a new flow** blade, under **Chat flow**, click on **Create (1)**, then enter **Travel-Chat (2)** for Folder name, then click on **Create (3)** 
+
+   ![](./media/1dex4.png)   
+
+1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**) **(1)**, an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat **(2)**.
+
+   ![](./media/1dex8.png)
 
 1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
 
@@ -95,15 +103,7 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
    
    >**Note:** The compute session will take 1-3 minutes to start.
    
-1. Select the LLM node named **chat**. Note that the prompt already includes the system prompt you specified in the chat playground.
-
-   ![](./media/chatllm.png)
-
-1. You still need to connect the LLM node to your deployed model. In the LLM node section, for **Connection**, select the connection that was created for you when you created the AI hub. For **Api**, select **chat**. For **deployment_name**, select the **gpt-35-turbo** model you deployed. For **response_format**, select **{“type”:”text”}**.
-
-   ![](./media/new-travelchat(1).png)
-
-1. Review the prompt field and ensure it looks like the following:
+1. Select the LLM node named **chat**. Update the system message like below:
 
    ```
    system:
@@ -133,6 +133,22 @@ Design and implement a chat flow using Azure AI Studio to interact with a deploy
    user:
    {{question}}
    ```
+
+   ![](./media/1dex9.png)
+
+1. Select **Save**.
+
+   ![](./media/1dex10.png)   
+
+1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
+
+   - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
+   - **Api**: Select **chat (2)**.
+   - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
+   - **response_format**: Select **{“type”:”text”} (4)**.
+
+     ![](./media/1dex11.png)
+
    
 ## Task 2: Use LLM and Prompt Tools in Flows
 
@@ -144,45 +160,59 @@ Now that you’ve developed the flow, you can use the chat window to test the fl
 
 1. Enter the query: **I have one day in London, what should I do?** and review the output.
 
+   ![](./media/1dex12.png)
+
+   >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 1. Select **Deploy** to deploy the flow with the following settings:
 
+   ![](./media/1dex13.png)
+   
    - Basic settings:
-     - Endpoint: New
-     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/>**
-     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/>**
-     - Virtual machine: **Standard_DS3_v2**
-     - Instance count: **3**
-     - Inferencing data collection: **Enabled**
-     - Select **Review + Create** and then Select **Create**
-    
-       ![](./media/msid-image17.png)
+     - Endpoint: **New (1)**
+     - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/> (2)**
+     - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/> (3)**
+     - Virtual machine: **Standard_DS3_v2 (4)**
+     - Instance count: **3 (5)**
+     - Inferencing data collection: **Enabled (6)**
+     - Select **Review + Create (7)**
 
-       ![](./media/msid-image18.png)
+         ![](./media/1dex14.png)
+
+1. Select **Create**.
+
+   ![](./media/1dex15.png)         
 
 1. Wait for the deployments get successfully you can monitor the deployment by clicking on **Notification** icon from top menu.
 
     ![](./media/msid-image19.png)
 
-1. In Azure AI Studio, from the left navigation pane, under **Components**, select the **Deployments**.
+1. In Azure AI foundry, from the left navigation pane, under **My assets**, select **Model + endpoints**
 
    >**Note:** Select **Save** if your flow is not saved.
 
-1. Select the **Model deployments** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment.
+1. Select the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(2)**.
 
-   ![](./media/modeldeployments(1).png)
+   ![](./media/1dex16.png)
 
-1. Then, on its **Test** page, enter the prompt **What is there to do in San Francisco?** and review the response.
+1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
 
-     ![](./media/testdeploy.png)
+   ![](./media/1dex17.png)
+
+1. Navigate to **Test** tab, enter the prompt **What is there to do in San Francisco?** and review the response.
+
+     ![](./media/1dex18.png)
+
+     >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. Enter the prompt **Where else could I go?** and review the response.
 
-     ![](./media/image-33.png)
+     ![](./media/1dex19.png)
+
+     >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. View the **Consume** page for the endpoint, and note that it contains connection information and sample code that you can use to build a client application for your endpoint - enabling you to integrate the prompt flow solution into an application as a custom copilot.
 
-   ![](./media/modelendpoints.png)
-
+   ![](./media/1dex20.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
