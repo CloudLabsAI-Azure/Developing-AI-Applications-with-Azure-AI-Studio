@@ -28,7 +28,6 @@ Basic knowledge and understanding of the following
  
  - Azure Portal
  - Azure AI Foundry
- - Content Safety Studio
 
 ## Architecture 
 
