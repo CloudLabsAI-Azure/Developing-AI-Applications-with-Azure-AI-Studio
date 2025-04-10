@@ -1,5 +1,7 @@
-# Building and Evaluating Prompt Flows with Azure AI Foundry
+# Lunch and Learn: Building and Evaluating Prompt Flows with Azure AI Foundry
+
 ### Overall Estimated Duration: 60 minutes
+
 ## Overview 
 
 In this lab, you will gain hands-on experience in developing custom AI models, training them effectively, and refining their performance for optimal results. You will also learn how to set up and automate model evaluations to ensure accuracy and reliability. Additionally, the lab covers integrating chat flows and essential tools, enabling seamless deployment and interaction with AI solutions.
@@ -14,8 +16,7 @@ This lab is designed to provide hands-on experience in model evaluation and fine
 
 ## Prerequisites 
 
-Participants should have: 
-Basic knowledge and understanding of the following
+Participants should have basic knowledge and understanding of the following
  
  - Azure Portal
  - Azure AI Foundry
@@ -67,7 +68,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
    ![Manage Your Virtual Machine](./media/labzoom-1.png)
 
-## **Lab Duration Extension**
+## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
@@ -81,8 +82,13 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. 
 
+## Lab Validation
 
-## **Support Contact**
+After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+![](./media/inline-validation-01.png)
+
+## Support Contact
 
 1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
@@ -93,5 +99,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
 
 2. Now, click on Next from the lower right corner to move on to the next page.
- 
+
+   ![](./media/next-page.png)
+
 ### Happy Learning!!
