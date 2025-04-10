@@ -16,7 +16,7 @@ In this lab, you will perform the following:
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
-1. In order to navigate to Azure AI Studio, right-click [Azure AI Studio](https://ai.azure.com/?reloadCount=1) and select Copy Link Then, open Microsoft Edge from the 
+1. In order to navigate to Azure AI Studio, right-click [Azure AI Foundry](https://ai.azure.com/?reloadCount=1) and select Copy Link Then, open Microsoft Edge from the 
    LabVM desktop, paste the link into a new tab address bar, and press **Enter** .Select **Sign in**. When prompted, enter the following Azure credentials.
 
       ![](./media/dex3.png)
@@ -24,7 +24,7 @@ In this task, you will set up a structured environment to manage and streamline 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Azure AI Studio**, on the home page, select **+ Create Project**.
+1. On the **Azure AI Foundry**, on the home page, select **+ Create Project**.
 
    ![](./media/dex4.png)
 
