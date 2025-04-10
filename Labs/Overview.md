@@ -1,4 +1,4 @@
-# Developing AI Applications with Azure AI Studio
+# Developing AI Applications with Azure AI Foundry
 
 ## Overview 
 
@@ -52,7 +52,7 @@ Basic knowledge and understanding of the following
 
 ## Getting Started with the Lab
  
-Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Foundry. Let's begin by making the most of this experience:
   
 ## Accessing Your Lab Environment
  
