@@ -12,7 +12,7 @@ In this lab, you will perform the following:
 
 ## Task 1 : Image and Text Moderation Using Azure AI Foundry
 
-This task involves using **Azure AI Foundry** to moderate images and text by detecting inappropriate, harmful, or sensitive content. It leverages AI models to analyze and filter content based on predefined policies, ensuring compliance and safety in applications.
+In this task, you will use Azure AI Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
 
 1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
 
@@ -112,9 +112,9 @@ Let’s first test some positive customer feedback.
 
      - **I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product! (1)**
 
-     - Set all Threshold levels to **Medium (2)**.
+     - Set all Threshold levels to **Medium (2)**
 
-     - Select **Run test (3)**.
+     - Select **Run test (3)**
 
        ![](./media/image-72.png)
      
@@ -133,9 +133,9 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
     - **I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand**. **(1)**
 
-    - Set all Threshold levels to **Medium (2)**.
+    - Set all Threshold levels to **Medium (2)**
 
-    - Select **Run test (3)**.
+    - Select **Run test (3)**
 
       ![](./media/image-75.png)
  
@@ -165,7 +165,7 @@ We can’t anticipate that all text content from our customers would be free of 
 
     - **I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker? (1)**
 
-    - Set all Threshold levels to **Medium (2)**.
+    - Set all Threshold levels to **Medium (2)**
 
     - Select **Run test (3)**
 
@@ -184,7 +184,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/dee24.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**
    
     > Note: The name of the CSV file may vary.
    
@@ -192,9 +192,9 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
      
 1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content). **(2)**
 
-     - Set all Threshold levels to **Medium (3)**.
+     - Set all Threshold levels to **Medium (3)**
 
-     - Select **Run test (4)**.
+     - Select **Run test (4)**
    
        ![](./media/dee28.png)
 
