@@ -4,11 +4,11 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building and evaluating AI workflows using **Azure AI Foundry's Prompt Flow**. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. They will also set up both automated and manual evaluation pipelines using built-in metrics and human feedback. The lab emphasizes a structured approach to designing, testing, and refining prompt-based AI applications for improved performance and reliability.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building, refining, and evaluating AI workflows using Azure AI Foundry's Prompt Flow. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and build flows using LLM and Prompt tools. The lab also focuses on prompt engineering best practices, including structuring input queries for optimal AI performance and iterating on prompt design for consistent, accurate results. Through practical exercises, participants will develop, test, and monitor AI-driven workflows to enhance reliability and output quality.
 
 ## Objectives 
 
-This lab is designed to equip participants with hands-on experience in setting up both automated and manual evaluation pipelines using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to evaluate model performance using built-in metrics like accuracy and F1-score, and enhance results through human-in-the-loop feedback.
+This lab is designed to equip participants with hands-on experience in building and refining AI workflows using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to create effective prompts, develop flows with LLM tools, and optimize prompt design for improved AI performance.
 
 - **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
@@ -16,9 +16,10 @@ This lab is designed to equip participants with hands-on experience in setting u
 
 - **Develop a Flow with LLM and Prompt Tools**: You will learn how to build a flow using LLM and Prompt tools by defining objectives, crafting and refining prompts, and leveraging model outputs to create effective, task-specific AI workflows.
 
-- **Set Up Evaluation Metrics**: You will learn how to define evaluation criteria, collect human feedback, and analyze model outputs to assess performance, accuracy, and potential biases through a manual evaluation process.
+- **Perform Iterative Prompt Tuning and Variant Comparison**: You will learn how to refine prompts through successive iterations and compare output variants to systematically improve the accuracy, relevance, and effectiveness of model responses.
 
-- **Set Up Automated Evaluation with Built-in Metrics**: You will learn how to configure automated evaluation using built-in metrics such as accuracy, precision, recall, and F1-score to efficiently measure and monitor model performance.
+- **Optimize Flow Performance for Production**: You will learn how to analyze and refine workflows by identifying bottlenecks, applying best practices, and implementing continuous monitoring to ensure efficient, reliable, and scalable production performance.
+
 
 ## Prerequisites 
 
@@ -41,7 +42,7 @@ Basic knowledge and understanding of the following
 
 - **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
 
-- **Evaluation Flow Setup**: This lab focuses on setting up and analyzing evaluation flows for an AI model in Azure AI Foundry. You will systematically review model responses to diverse inputs, assessing performance based on key evaluation criteria. By defining and applying metrics like coherence and fluency, you will automate the evaluation process using a structured dataset. Through this hands-on experience, you will develop a deeper understanding of model assessment techniques and optimization strategies to improve AI performance.
+- **Fine-Tuning Prompts for Optimal Performance**: Fine-tuning prompts involves adjusting components to enhance clarity and relevance. This optimization ensures interactions are more effective and engaging.
 
 
 ## Getting Started with the Lab
