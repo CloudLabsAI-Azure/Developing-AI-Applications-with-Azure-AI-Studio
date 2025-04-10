@@ -1,7 +1,7 @@
 # Lab 01: Understanding the Lifecycle of Model Development
 
 ## Lab scenario
-In this lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
+In this hands-on lab, you will explore the lifecycle of developing AI applications using Azure AI Studio's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enable seamless data processing and task execution.
 
 ## Lab objectives
 In this lab, you will perform the following:
