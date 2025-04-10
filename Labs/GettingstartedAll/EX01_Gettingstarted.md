@@ -1,10 +1,10 @@
-# Developing AI Applications with Azure AI Studio
+# Developing AI Applications with Azure AI Foundry
 
 ## Overall Estimated Duration: 1 Hour
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using **Azure AI Studio's Prompt Flow**. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts looking to enhance their skills in AI application development using **Azure AI Foundry's Prompt Flow**. Participants will explore the end-to-end lifecycle, including initialization, experimentation, evaluation, and production deployment. They will work with different flow types—Standard, Chat, and Evaluation—and understand how nodes and flows enable seamless task execution. The lab also emphasizes responsible AI practices, including content safety and moderation.
 
 
 ## Objective 
@@ -42,7 +42,7 @@ Basic knowledge and understanding of the following
 
 ## Getting Started with the Lab
  
-Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Foundry. Let's begin by making the most of this experience:
   
 ## Accessing Your Lab Environment
  
@@ -76,7 +76,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (2)** tab. Your experience is in your hands!
 
-![Manage Your Virtual Machine](./media/deg5.png)
+![Manage Your Virtual Machine](../media/deg5.png)
 
 ## Lab Validation
 
