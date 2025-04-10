@@ -4,11 +4,11 @@
 
 ## Overview 
 
-This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building and evaluating AI workflows using **Azure AI Foundry's Prompt Flow**. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. They will also set up both automated and manual evaluation pipelines using built-in metrics and human feedback. The lab emphasizes a structured approach to designing, testing, and refining prompt-based AI applications for improved performance and reliability.
+This lab is intended for AI developers, data scientists, cloud engineers, and AI enthusiasts aiming to gain hands-on experience in building and evaluating AI workflows using Azure AI Foundry's Prompt Flow. Participants will learn to initialize Prompt Flow projects, create and customize prompts, and develop flows using LLM and Prompt tools. They will also set up both automated and manual evaluation pipelines using built-in metrics and human feedback. The lab emphasizes a structured approach to designing, testing, and refining prompt-based AI applications for improved performance and reliability.
 
 ## Objectives 
 
-This lab is designed to equip participants with hands-on experience in setting up both automated and manual evaluation pipelines using **Azure AI Foundry's Prompt Flow**. By completing this lab, participants will learn to evaluate model performance using built-in metrics like accuracy and F1-score, and enhance results through human-in-the-loop feedback.
+This lab is designed to equip participants with hands-on experience in setting up both automated and manual evaluation pipelines using Azure AI Foundry's Prompt Flow. By completing this lab, participants will learn to evaluate model performance using built-in metrics like accuracy and F1-score, and enhance results through human-in-the-loop feedback.
 
 - **Initialize a Prompt Flow Project**: ou will learn how to set up a structured Prompt Flow project in Azure AI Foundry by creating a project directory, configuring essential files, and organizing resources to streamline the design, testing, and refinement of prompt-based AI workflows.
 
