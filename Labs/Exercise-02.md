@@ -107,15 +107,15 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/prompt-flow.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**.
 
-    > **Note**: **Please follow the Note provided in same step below the screenshot as you will get an error while creating the Prompflow**
+    >**Note**: **Please follow the Note provided in same step below the screenshot as you will get an error while creating the Prompflow**.
 
-   ![](./media/dex7.png)
+     ![](./media/dex7.png)
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
+      >**Note:** If you encounter permission errors or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
-   ![](./media/gpt-4-demo11.png) 
+      ![](./media/gpt-4-demo11.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -144,7 +144,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
     ![](./media/save.png)
 
-   >**Note:** It might take **10-15 minutes** to start the session. Wait till compute session starts.
+   >**Note:** Sometimes, it may take `10–15` minutes for the compute session to start. This delay is due to a portal glitch, so please be patient—there’s no alternative but to wait until the session becomes active.
     
 1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
