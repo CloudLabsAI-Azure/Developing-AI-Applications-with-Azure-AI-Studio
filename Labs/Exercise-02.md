@@ -18,7 +18,8 @@ In this lab, you will perform the following:
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
-1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
+1. In order to navigate to Azure AI Foundry, right-click [Azure AI Foundry](https://ai.azure.com/?reloadCount=1) and select **Copy Link** Then, open Microsoft Edge from the 
+   LabVM desktop, paste the link into a new tab address bar, and press **Enter** .Select **Sign in**. When prompted, enter the following Azure credentials.
 
       ![](./media/sign-in.png)
 
@@ -106,7 +107,9 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/prompt-flow.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**
+
+    > **Note**: **Please follow the Note provided in same step below the screenshot as you will get an error while creating the Prompflow**
 
    ![](./media/dex7.png)
 
