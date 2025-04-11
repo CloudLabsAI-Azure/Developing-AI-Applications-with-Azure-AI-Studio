@@ -16,7 +16,7 @@ In this lab, you will perform the following:
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
-1. In order to navigate to Azure AI Studio, right-click [Azure AI Foundry](https://ai.azure.com/?reloadCount=1) and select Copy Link Then, open Microsoft Edge from the 
+1. In order to navigate to Azure AI Foundry, right-click [Azure AI Foundry](https://ai.azure.com/?reloadCount=1) and select Copy Link Then, open Microsoft Edge from the 
    LabVM desktop, paste the link into a new tab address bar, and press **Enter** .Select **Sign in**. When prompted, enter the following Azure credentials.
 
       ![](./media/dex3.png)
@@ -104,13 +104,15 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/dex13.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**
 
-   ![](./media/dex7.png)
+    >**Note**: **Please make sure to follow the note provided in the same step, just below the screenshot, as it addresses an error you may encounter while creating the Prompt Flow**.
 
-   >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
+     ![](./media/dex7.png)
 
-   ![](./media/gpt-4-demo11.png) 
+      >**Note:** If you encounter permission errors or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
+      >
+      ![](./media/gpt-4-demo11.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -190,6 +192,8 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
    - website_name: **Microsoft (1)**
 
      ![](./media/gpt-4-demo14.png)
+
+      >**Note**: This is just an example — feel free to provide any input of your choice, and it will be reflected in the output accordingly based on the code provided in the previous step.
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
