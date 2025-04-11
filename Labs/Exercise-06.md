@@ -1,11 +1,11 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
-## Estimated Duration: 90 minutes
+## Estimated Duration: 60 minutes
 
 ## Lab Overview
 This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
 
-## Lab Objectives
+## Lab Objective
 In this lab, you will perform the following:
 
 - Task 1 : Image and Text Moderation Using Azure AI foundry
