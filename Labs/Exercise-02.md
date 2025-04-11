@@ -196,6 +196,8 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
      ![](./media/gpt-4-demo14.png)
 
+      >**Note**: This is just an example — feel free to provide any input of your choice, and it will be reflected in the output accordingly based on the code provided in the previous step.
+      
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
     ![](./media/run-anway.png)
