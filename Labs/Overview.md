@@ -37,7 +37,7 @@ Basic knowledge and understanding of the following
 
 ## Architecture Diagram: 
 
-  ![](./media/archi-updated1.png)
+  ![](./media/archi-dia-ai-found.png)
 
 ## Explanation of Components 
 
