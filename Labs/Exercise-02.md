@@ -168,47 +168,46 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
-    ![](./media/gpt-4-demo17.png)
-    ![](./media/gpt-4-demo(15).png)
+   ![](./media/gpt-4-demo17.png)
+   ![](<./media/gpt-4-demo(15).png>)
 
 1. Add this code inside the **modelflow** prompt tool **(1)**, and select **Validate and parse input (2)**
 
    ```jinja
-   Welcome to {{ website_name }}!
+   Welcome to Joke Bot !
    {% if user_name %}
     Hello, {{ user_name }}!
    {% else %}
     Hello there!
    {% endif %}
-   Please select an option from the menu below:
-   1. View your account
-   2. Update personal information
-   3. Browse available products
-   4. Contact customer support
+   Pick a category from the list below and get ready to laugh:
+   1. 🐶 Animal Jokes – From pets to wildlife, it’s a zoo of laughs.
+   2. 💼 Office Humor – Relatable jokes for the 9-to-5 grind.
+   3. 💻 Tech & Programmer Jokes – Debug your mood with geeky giggles.
+   4. 📚 School & Exam Jokes – A+ comedy for students and survivors.
+   5. ⚡ One-Liners – Quick, witty, and straight to the funny bone.
+   6. 😏 Sarcastic Jokes – Dry, sharp, and deliciously savage.
    ```
 
-   ![](./media/gpt-4-demo16.png)
-   
+   ![](./media/gpt-4-demo16-1.png)
+
 1. In the input section add these following value, select **Save (2)** and **Run (3)**.
 
-   - user_name: **Jane (1)**
-   - website_name: **Microsoft (1)**
+   - user_name: **John (1)**
 
-     ![](./media/gpt-4-demo14.png)
+     ![](./media/gpt-4-demo14-1.png)
 
-      >**Note**: This is just an example — feel free to provide any input of your choice, and it will be reflected in the output accordingly based on the code provided in the previous step.
-      
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
-    ![](./media/run-anway.png)
+   ![](./media/run-anway.png)
 
 1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
 
-     ![](./media/output.png)
+   ![](./media/output001.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
-    ![](./media/output1.png)
+   ![](./media/output1-2.png)
    
 ## Review
 In this lab you have completed the following tasks:
