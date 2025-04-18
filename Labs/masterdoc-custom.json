@@ -3,15 +3,15 @@
   "Language": "English",
   "Files": [
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/custom-overview.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/custom-overview.md",
       "Order": 1
     },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/train-model-v2.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/train-model-v2.md",
       "Order": 2
      },
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/evalutaion-flow.md",
+      "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/main/Labs/evalutaion-flow.md",
       "Order": 3
     }
   ]
