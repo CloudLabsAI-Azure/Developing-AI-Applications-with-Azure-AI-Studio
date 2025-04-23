@@ -107,7 +107,11 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/prompt-flow.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**.
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter below provided Folder name, and click on **Create (3)**
+
+   ```
+   promptflow-<inject key="DeploymentID" enableCopy="false"/>
+   ```
 
     >**Note**: **Please make sure to follow the note provided in the same step, just below the screenshot, as it addresses an error you may encounter while creating the Prompt Flow**.
 
