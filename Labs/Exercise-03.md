@@ -16,7 +16,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/evaluation-1.png)
+   ![](./media/evaluation-1a.png)
 
 1. A new window opens with your previous **system message** already populated and your deployed model selected.
 

@@ -183,7 +183,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d23.png)
 
-1. Navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
+1. Navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
 
      ![](./media/d24.png)
 
@@ -241,7 +241,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d28.png)
 
-1. Navigate to  `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
+1. Navigate to  `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
 
    ![](./media/d29.png)
 
@@ -260,6 +260,8 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
 
     ![](./media/dex63.png)
+
+    >**Note:** If you're not seeing the option for the Dataset column, try changing the data column from `summarize_text_content_data_set` to any other column, and then reselect `summarize_text_content_data_set`. This should refresh the options.
 
 1. On **Review** page review the settings and click on **Submit**.
 
