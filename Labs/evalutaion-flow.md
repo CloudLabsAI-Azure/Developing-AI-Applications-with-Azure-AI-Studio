@@ -82,7 +82,7 @@ It systematically assesses the performance and effectiveness of various processe
 
        ![](./media/new-text.png)
 
-    - Save it as a **JSON Lines** file on your desktop.
+    - Provide the name as `sample and save it as **JSON Lines** file on your desktop.
   
        ![](./media/json-1.png)
 
@@ -92,7 +92,7 @@ It systematically assesses the performance and effectiveness of various processe
   
          ![](./media/image-22.png)
 
-    - **Dataset mapping for prompt flow**: Select **${data.response}**, and select **Next** 
+    - **Dataset mapping for prompt flow**: Select **${data.response}** for Dataset coloumn and click on **Next** 
     - **Select metrics**: **Coherence, Fluency**
     - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
     - **Deployment name/Model**: **gpt-4o model**
