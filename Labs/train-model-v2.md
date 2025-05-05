@@ -75,7 +75,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
     - Deployment name : **gpt-4o (1)**
-    - Deployment type :  **Global Standard (2)**
+    - Deployment type :  **Standard (2)**
     - Model version : **2024-05-13 (Default) (3)**
     - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
