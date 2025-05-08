@@ -1,4 +1,4 @@
-# Lab 01: Understanding the Lifecycle of Flow Development
+# Lab 01: Understanding the Lifecycle of Flow Development (READ ONLY)
 
 ## Estimated Duration: 30 minutes
 
@@ -10,7 +10,7 @@ In this lab, you will explore the lifecycle of developing AI applications using 
 In this lab, you will perform the following:
 - Task 1: Comprehend the Flow Development Lifecycle
   
-### Task 1: Comprehend the Flow Development Lifecycle (READ ONLY)
+### Task 1: Comprehend the Flow Development Lifecycle
 
 Prompt flow offers a well-defined process that facilitates the seamless development of AI applications. By using it, you can effectively progress through the stages of developing, testing, tuning, and deploying flows, ultimately resulting in the creation of fully fledged AI applications.
 
