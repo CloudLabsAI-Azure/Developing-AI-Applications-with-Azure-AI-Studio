@@ -59,15 +59,15 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 ## Accessing Your Lab Environment
 
-1. Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
+1. Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-     ![](./media/d45.png)
+     ![](./media/develop-ai-overview-1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![Zoom In/Zoom Out](./media/d46.png)  
+   ![Zoom In/Zoom Out](./media/develop-ai-overview-2.png)  
 
 ## Virtual Machine & Lab Guide
 
@@ -77,39 +77,25 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![](./media/d48.png)
+   ![](./media/develop-ai-overview-3.png)
 
 ## Utilizing the Split Window Feature
 
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](./media/d-48.png)
+   ![](./media/develop-ai-overview-4.png)
 
 ## Managing Your Virtual Machine
 
-1. Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+1. Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/resource1.png)
+   ![Manage Your Virtual Machine](./media/develop-ai-overview-5.png)
 
 ## Lab Validation
 
 After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-![](./media/inline-validation-01.png)
-
-## Lab Duration Extension
-
-1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment.
-
-   ![Duration](./media/u45.png)
-
-    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
-
-2. Click **OK** to extend your lab duration.
-
-    ![Manage Your Virtual Machine](./media/gext2.png)
-
-3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+![](./media/develop-ai-overview-6.png)
 
 ## Let's Get Started with Azure Portal
 
@@ -133,11 +119,11 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
    ![Ask Later](./media/u43.png)
 
-1. If prompted to stay signed in, you can click **No**.
+1. If prompted to stay signed in, you can click **Yes**.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
+## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible [Optional]
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
