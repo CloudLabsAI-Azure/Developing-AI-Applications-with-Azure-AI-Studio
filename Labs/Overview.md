@@ -2,13 +2,13 @@
 
 ## Overall Estimated Duration: 8 Hours
 
-## Overview 
+## Overview
 
 This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
 
 ## Objective 
 
-This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to: 
+This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to:
 
 - **Understanding the Lifecycle of Flow Development**: This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation, while learning how flows and nodes enable efficient data processing and task execution.
 
@@ -24,13 +24,13 @@ This lab is designed to equip participants with hands-on experience in model eva
 
 ## Prerequisites 
 
-Participants should have: 
+Participants should have:
 Basic knowledge and understanding of the following
- 
+
  - Azure Portal
  - Azure AI Foundry
 
-## Architecture 
+## Architecture
 
 - **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
 - **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
@@ -39,7 +39,7 @@ Basic knowledge and understanding of the following
 
   ![](./media/archi-dia-ai-found.png)
 
-## Explanation of Components 
+## Explanation of Components
 
 The architecture for this lab involves the following key components:
 
@@ -54,11 +54,11 @@ The architecture for this lab involves the following key components:
 - **Ensuring Responsible AI Practices with Content Safety**: Ensuring responsible AI practices involves implementing robust content safety measures to prevent harm and misuse. These components ensure AI interactions are ethical, secure, and aligned with user protection standards.
 
 ## Getting Started with the Lab
- 
+
 Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
- 
+
 ## Accessing Your Lab Environment
- 
+
 1. Once you're ready to dive in, your virtual machine and **Lab guide** will be right at your fingertips within your web browser.
 
      ![](./media/d45.png)
@@ -67,24 +67,24 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![Zoom In/Zoom Out](./media/d46.png)     
+   ![Zoom In/Zoom Out](./media/d46.png)  
 
- ### Virtual Machine & Lab Guide
- 
-   Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
- 
+## Virtual Machine & Lab Guide
+
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+
 ## Exploring Your Lab Resources
- 
+
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
- 
+
    ![](./media/d48.png)
- 
+
 ## Utilizing the Split Window Feature
- 
+
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
    ![](./media/d-48.png)
- 
+
 ## Managing Your Virtual Machine
 
 1. Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
@@ -99,42 +99,42 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
 ## Lab Duration Extension
 
-1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
+1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment.
 
    ![Duration](./media/u45.png)
 
     >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
 2. Click **OK** to extend your lab duration.
- 
+
     ![Manage Your Virtual Machine](./media/gext2.png)
 
-3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. 
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
 
 ## Let's Get Started with Azure Portal
 
 1. On your virtual machine, click on the Azure Portal icon as shown below:
 
    ![Launch Azure Portal](./media/u52.png)
-   
+
 1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
- 
+
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
+
        ![Enter Your Username](./media/u50.png)
- 
+
 1. Next, provide your password:
- 
+
    - **Password:** <inject key="AzureAdUserPassword"></inject>
- 
+
        ![Enter Your Password](./media/u51.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
 
    ![Ask Later](./media/u43.png)
-    
+
 1. If prompted to stay signed in, you can click **No**.
- 
+
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
@@ -142,11 +142,13 @@ After completing the task, hit the **Validate** button under Validation tab inte
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 1. If **Action required** pop-up window appears, click on **Next**.
-   
+
    ![](./media/dpg11.png)
 
 1. On **Start by getting the app** page, click on **Next**.
+
 1. Click on **Next** twice.
+
 1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
    ![Install](./media/dpg12.png)
