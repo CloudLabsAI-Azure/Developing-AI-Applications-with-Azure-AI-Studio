@@ -33,34 +33,40 @@ In this task, you will set up a structured environment to manage and streamline 
 
    ![](./media/create-project.png)
 
-1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
+1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** , select the **default subscription (2)**, select **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (3)** Resource Group, keep the default Azure AI Foundary resource name **(4)**. click on **Create (5)**.
 
-    ![](./media/d1.png)
+    ![](./media/E1-T1-S4.png)
 
-1. On the **Create a hub** section, follow these instructions to fill out the properties:
+1. Let this project create completely. 
 
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
-     >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
+1. Navigate to the Azure Portal using the link below:
+    ```
+    https://portal.azure.com
+    ```
+1. Search and select AI Foundry on the azure portal.
+
+1. Once the **AI Foundry** page opens, select **AI Hubs** under **Use with AI Foundry** from the left panel. Click on **+ Create** and select **Hub** from the drop down. 
+
+1. In the **Basics** tab of **Create an Azure AI hub resource**, follow these instructions to fill out the properties:
+
    - Subscription: **Set as default (2)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
-   - Location: **<inject key="Region" enableCopy="false"/> (4)**
-   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
-   - Connect Azure AI Search: **Keep it as default (6)**
-   - Select **Next (7)**
+   - Region: **<inject key="Region" enableCopy="false"/> (4)**
+   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
+   - Connect Azure AI Services incl. Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
+   - Review the details filled and click on **Review+Create**.
 
-        ![](./media/dex1.png)
-     
-1. On the **Review and finish** page, select **Create**.
+1. Click on **Create** once the validation passes to create the Hub. 
 
-     ![](./media/review-finish-1.png)
-   
-1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+1. After the deployment gets suceeded, click on **Go to Resource**.
 
-     ![](./media/dex2.png)
-     
-      > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
+1. On the Azure AI hub page, select **Overview** and click on **Launch Azure AI Foundry** option visible. This will take you to the Azure AI Foundry portal. 
 
-1. Click on **Close** to close the pop up.
+1. On the Azure AI Foundry portal, under Hub Overview, select **+New Project**.
+
+1. Let the **Current hub** option load and keep the default **project name** and click on **Create**. 
+
+1. Once the project creation completes, you will be navigated to the project you just created. Keep a note of the project as you will be performing further tasks here. 
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
