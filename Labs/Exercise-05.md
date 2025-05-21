@@ -195,7 +195,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 
    ![](./media/d39.png)
 
-1. Navigate to **Test** tab, enter the prompt **What is there to do in San Francisco?** and review the response.
+1. Navigate to **Test** tab, enter the prompt **What is there to do in San Francisco?** in the input question (string) section and review the response.
 
      ![](./media/testdeploy-1.png)
 
