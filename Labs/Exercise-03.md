@@ -118,7 +118,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
    
 1. Wait for the evaluations to be completed, you may need to refresh.
 
-   ![](./media/dex33.png)
+   ![](./media/refreshhhh.png)
 
 1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
@@ -126,13 +126,11 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
 1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
 
-    ![](./media/dex35.png)
-
-    ![](./media/dex36.png)
+    ![](./media/metricdatass.png)
 
 1. Navigate to **Data (1)** tab from the top menu to view the **Detailed metrics results (2)**.    
 
-    ![](./media/dex38.png)
+    ![](./media/passseddd.png)
 
 ## Review
 In this lab you have completed the following tasks:
