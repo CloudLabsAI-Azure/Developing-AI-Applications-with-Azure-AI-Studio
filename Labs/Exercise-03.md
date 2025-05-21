@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 In this task, you will set up a manual evaluation process to assess model performance. This involves defining evaluation criteria, collecting human feedback, and analyzing results to measure accuracy and identify potential biases. 
 
-1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
    ![](./media/evaluation-1a.png)
 
@@ -56,21 +56,15 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 In this task, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
-1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/dex22.png)
+   ![](./media/evalslss.png)
 
-1. On the **What do you want to evaluate?** pane, select **Dataset**.
+1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset** and click on next.
 
-   ![](./media/dex23.png)
+   ![](./media/evsnsdn2.png)
 
-1. Create a new evaluation with the following settings:
-    - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - Select **Next (2)**.
-       
-       ![](./media/dex24.png)
-
-    - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
+1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
     - Search for **Visual Studio (1)** in the Windows search bar of the vm and select **Visual Studio (2)**.
@@ -93,29 +87,34 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
 1. Navigate back to **Azure AI foundary**, where your **creating a new evaluation**.
    
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
+    - **Configure test data**: **Upload new data (1)**, and select **Upload file (2)**.
   
-         ![](./media/dex25.png)
+         ![](./media/uplddata.png)
 
-    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and click on **Open(3)**
+    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and upload the newly sample.jsonl file**
 
          ![](./media/dex30.png)   
 
     - Select **Next** 
 
-    - **Select metrics**: **Coherence (1), Fluency (2)**
-    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
-    - **Deployment name/Model**: **gpt-4o model (4)**
+    - **Configure Evaluators**: Click on Add and select **Likert-scale evaluator**
+      ![](./media/addecallas.png)
+      
+      ![](./media/linksss.png)
+      
+    - Select **Coherence** and below in Query select {{item.query}} and for Response select **${item.response} ** and click on Add.
 
-         ![](./media/d13.png)  
+      ![](./media/cohernce.png)
+      
+    - Same way click on add again and select **Likert-scale evaluator** Select **Fluency** and below in Query select {{item.query}} and for Response select **${item.response} ** and click on Add.
+    
+    - Once added, click on Next.
 
-    - Scroll down to **How does your dataset map to your evaluation input**. Ensure that **${data.query} (1)** is selected for the **query**, and **${data.response} (1)** is selected for the **response**.
+      ![](./media/addededddd.png)
 
-    - Select **Next (2)**
-
-         ![](./media/dex32.png)  
-
-    - Select **Submit**
+   - Now, update model evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on Submit.
+     ![](./media/submiteeddd.png)
+     
    
 1. Wait for the evaluations to be completed, you may need to refresh.
 
