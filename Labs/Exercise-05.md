@@ -22,36 +22,36 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. On the **Select a model** page, search for **gpt-35-turbo (1)**, select **gpt-35-turbo (2)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
-   ![](./media/DAI-image3.png)
+   ![](./media/model.png)
 
 1. On **Deploy model gpt-35-turbo**, click on **Customize**.
 
-   ![](./media/1dex1.png)
+   ![](./media/customize.png)
 
 1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
    
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
-   - Enable automatic version updates: **Enabled (3)**
-   - Model version: **0125 (4)**
+   - Model version upgrade policy: **Upgrade once new defaultversion become available (3)**
+   - Model version: **0125 (Default) (4)**
    - Connected AI resource: select the resource which we created in earlier task **(5)**
-   - Tokens per Minute Rate Limit (thousands): **10K (6)**
+   - Tokens per Minute Rate Limit: **10K (6)**
    - Content filter: **DefaultV2 (7)**
    - Enable dynamic quota: **Enabled (8)**
    - Select **Deploy (9)**
 
-     ![](./media/1dex2.png)
+     ![](./media/config.png)
      
 1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)** then click **Open in playground (3)**
 
-    ![](./media/1dex3.png)
+    ![](./media/playground.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
-   > Wait for 5 mins if you get an error while querying.
+   > Wait for 2-3 mins if you get an error while querying.
    
-     ![](./media/1dex5.png)
+     ![](./media/chatwindow.png)
 
    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
@@ -78,19 +78,17 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    
 1. Select **Apply changes (2)**.
 
-     ![](./media/d33.png)
-
-1. Select **Continue**.     
+     ![](./media/d33.png)   
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
-     ![](./media/E5-T1-S11-1.png)
+     ![](./media/changes.png)
 
      >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. From the left navigation pane, select **Prompt flow (1) > + Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/prompt-flow.png)
+   ![](./media/prompt_flow1.png)
 
 1. On **Create a new flow** blade, under **Chat flow**, click on **Create (1)**, then enter **Travel-Chat (2)** for Folder name, then click on **Create (3)** 
 
@@ -143,7 +141,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    ![](./media/1dex10.png)
 
-1. You still need to connect the LLM node to your deployed model. In the **LLM node** section, 
+1. You still need to connect the LLM node to your deployed model. In the top of the**LLM node** section, you need to select the connection from teh drop down list and proceed as below.
 
    - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
    - **Api**: Select **chat (2)**.
@@ -181,7 +179,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 
          ![](./media/1dex14.png)
 
-1. Select **Create**.
+1. Review the configurations and then select **Create**.
 
    ![](./media/1dex15.png)
 
