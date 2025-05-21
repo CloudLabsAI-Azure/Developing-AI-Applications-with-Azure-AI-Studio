@@ -43,22 +43,22 @@ In this task, you will set up a structured environment to manage and streamline 
     ```
     https://portal.azure.com
     ```
-1. Search and select AI Foundry on the azure portal.
+1. Search and select **Azure AI Foundry** on the azure portal.
 
     ![](./media/E1-T1-S5.png)
 
-1. Once the **AI Foundry** page opens, select **AI Hubs** under **Use with AI Foundry** from the left panel. Click on **+ Create** and select **Hub** from the drop down. 
+1. Once the **AI Foundry** page opens, select **AI Hubs (1)** under **Use with AI Foundry** from the left panel. Click on **+ Create (2)** and select **Hub (3)** from the drop down. 
 
     ![](./media/E1-T1-S6.png)
 
 1. In the **Basics** tab of **Create an Azure AI hub resource**, follow these instructions to fill out the properties:
 
-   - Subscription: **Set as default (2)**
-   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
-   - Region: **<inject key="Region" enableCopy="false"/> (4)**
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
-   - Connect Azure AI Services incl. Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
-   - Review the details filled and click on **Review+Create**.
+   - Subscription: **Set as default (1)**
+   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
+   - Region: **<inject key="Region" enableCopy="false"/> (3)**
+   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**.
+   - Connect Azure AI Services incl. Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>  (5)**
+   - Review the details filled and click on **Review+Create (6)**.
 
     ![](./media/E1-T1-S7.png)
 
