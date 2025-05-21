@@ -64,9 +64,9 @@ In this task, you will set up a structured environment to manage and streamline 
 
 1. On the Azure AI Foundry portal, under Hub Overview, select **+New Project**.
 
-1. Let the **Current hub** option load and keep the default **project name** and click on **Create**. 
+1. Let the **Current hub** option load, provide the **project name** as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**. 
 
-1. Once the project creation completes, you will be navigated to the project you just created. Keep a note of the project as you will be performing further tasks here. 
+1. Once the project creation completes, you will be navigated inside that project. You will be performing further tasks in this project **modelproject-<inject key="DeploymentID" enableCopy="false"/>**.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
