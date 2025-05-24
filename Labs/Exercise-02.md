@@ -24,20 +24,22 @@ In this task, you will set up a structured environment to manage and streamline 
     ```
 1. Select **Sign in**. When prompted, enter the following Azure credentials.
 
-      ![](./media/sign-in.png)
+      ![](./media/sign-in-1.png)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Azure AI Foundry**, on the home page, select **+ Create Project**.
+1. On the **Azure AI Foundry**, on the home page, select **Create an agent**.
 
-   ![](./media/create-project.png)
+   ![](./media/create-project-1.png)
 
 1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** , select the **default subscription (2)**, select **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (3)** Resource Group, keep the default Azure AI Foundary resource name **(4)**. click on **Create (5)**.
 
-    ![](./media/E1-T1-S4.png)
+    ![](./media/E1-T1-S4-1.png)
 
 1. Let this project create completely. 
+
+    ![](./media/project-creation.png)
 
 1. Navigate to the Azure Portal using the link below:
     ```
@@ -64,25 +66,31 @@ In this task, you will set up a structured environment to manage and streamline 
 
 1. Click on **Create** once the validation passes to create the Hub. 
 
+    ![](./media/ai-hub-create.png)
+
 1. After the deployment gets suceeded, click on **Go to Resource**.
 
     ![](./media/E1-T1-S8.png)
 
-1. On the Azure AI hub page, select **Overview** and click on **Launch Azure AI Foundry** option visible. This will take you to the Azure AI Foundry portal. 
+1. On the Azure AI hub page, select **Overview (1)** and click on **Launch Azure AI Foundry (2)** option visible. This will take you to the Azure AI Foundry portal. 
 
     ![](./media/E1-T1-S9.png)
 
-1. On the Azure AI Foundry portal, under Hub Overview, select **+New Project**.
+1. On the Azure AI Foundry portal, under Hub **Overview (1)**, select **+ New Project (2)**.
 
-    ![](./media/E1-T1-S10.png)
+    ![](./media/E1-T1-S10-1.png)
 
-1. Let the **Current hub** option load, provide the **project name** as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**. 
+1. Let the **Current hub (1)** option load, provide the **project name** as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(2)** and click on **Create (3)**. 
 
     ![](./media/E1-T1-S11.png)
 
 1. Once the project creation completes, you will be navigated inside that project. You will be performing further tasks in this project **modelproject-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![](./media/E1-T1-S12.png)
+
+    > **Note:** If any pop-up appear, click on close.
+
+      ![](./media/ai-project-popup-close.png)
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -99,11 +107,11 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
 1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/deploy-base-model-1.png)
+   ![](./media/deploy-base-model-2.png)
 
 1. On the **Select a model** page, search for **gpt-4o (1)** and select **gpt-4o (2)**, select **Confirm (3)** under the **gpt-4o**.
 
-   ![](./media/d2.png)
+   ![](./media/d2-1.png)
 
 1. On **Deploy model gpt-4o** page :
 
@@ -124,13 +132,13 @@ In this task, you will focus on creating and customizing prompts by designing ta
    - Content filter : **DefaultV2 (6)**
    - Select **Deploy (7)**
 
-     ![](./media/d4-0.png)
+     ![](./media/d4-1.png)
 
      >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/prompt-flow.png)
+   ![](./media/prompt-flow-1.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter below provided Folder name, and click on **Create (3)**
 
@@ -140,9 +148,9 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
     >**Note**: **Please make sure to follow the note provided in the same step, just below the screenshot, as it addresses an error you may encounter while creating the Prompt Flow**.
 
-     ![](./media/dex7.png)
+     ![](./media/dex7-1.png)
 
-      >**Note:** If you encounter permission errors or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
+      >**Note:** If you encounter permission errors like "Cloud Dependency Permission" or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
 
       ![](./media/gpt-4-demo11.png) 
 
@@ -161,6 +169,8 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
+    ![](./media/d4-2.png)
+
 1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
      ![](./media/d5.png)
@@ -171,9 +181,11 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. Select **Save (1)**, and select **Start compute session (2)**.
 
-    ![](./media/save.png)
+    ![](./media/save-1.png)
 
-   >**Note:** Sometimes, it may take `10–15` minutes for the compute session to start. This delay is due to a portal glitch, so please be patient—there’s no alternative but to wait until the session becomes active.
+   >**Note:** Sometimes, it may take `10–15` minutes for the compute session to start. This delay is due to a portal glitch, so please be patient—there’s no alternative but to wait until the session becomes active. Once the compute session started, you can see as **Compute session running**
+
+    ![](./media/compute-session-running.png)
     
 1. Once the compute session is complete, click the play button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
@@ -224,7 +236,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    - user_name: **John (1)**
 
-     ![](./media/gpt-4-demo14-1.png)
+     ![](./media/gpt-4-demo14-2.png)
 
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
