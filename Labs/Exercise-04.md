@@ -16,9 +16,9 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
-   ![](./media/promptflow-2.png)
+   ![](./media/promptflow-2-1.png)
 
-1. In the **Create a new flow** under **Explore gallery** in the **Web Classification** box select **Clone**.
+1. In the **Create a new flow** pane, under **Explore gallery**, in the **Web Classification** box, select **Clone**.
 
      ![](./media/image-35.png)
 
@@ -28,7 +28,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
+    - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
 
     - deployment_name : **gpt-4o (3)**
 
@@ -82,7 +82,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll up to **summarize_text_content** node and select the following 
 
-   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
+   - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
 
    - deployment_name : **gpt-4o (2)**
 

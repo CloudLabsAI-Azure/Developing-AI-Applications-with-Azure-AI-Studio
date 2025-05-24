@@ -16,7 +16,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 1. On the **Azure AI Foundry** portal, select **Guardrails + controls (1)** under **Protect and govern**, then select **Try it Out (2)**.
 
-     ![](./media/gurdrlss.png)     
+     ![](./media/gurdrlss-1.png)     
 
 2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
@@ -30,7 +30,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
 
-     ![](./media/dee3.png)
+     ![](./media/dee3-1.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
@@ -76,7 +76,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 1. On **Moderate image content** select **Run a bulk test (1)** tab then click on **Browse for a file (2)**.
 
-     ![](./media/dee12.png)
+     ![](./media/dee12-1.png)
 
 1. Within file explorer navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
 
@@ -102,11 +102,11 @@ Let’s first test some positive customer feedback.
 
 1. Back On the **Azure AI Foundry** portal, select **Guardrails + controls (1)** under **Protect and govern**, then select **Try it Out tab and then select **Moderate text content (3)**.
 
-   ![](./media/2ndguard.png)
+   ![](./media/2ndguard-1.png)
 
 1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under **select a sample or type your own** section.
 
-   ![](./media/image-71.png)
+   ![](./media/image-71-1.png)
 
 1. In the **Test box**, enter the following:
 

@@ -16,9 +16,9 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/evaluation-1a.png)
+   ![](./media/evaluation-1a-1.png)
 
-1. A new window opens with your previous **system message** already populated and your deployed model selected.
+1. A new window opens with your **System message** already populated and your deployed **Model** already selected.
 
    ![](./media/d50.png)
 
@@ -46,11 +46,11 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
-   ![](./media/gpt-4-demo18.png)
+   ![](./media/gpt-4-demo18-1.png)
    
 1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **(3)**. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-   ![](./media/manual.png)
+   ![](./media/manual-1.png)
 
 ## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
@@ -58,16 +58,16 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/evalslss.png)
+   ![](./media/evalslss-1.png)
 
-1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset** and click on next.
+1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset (1)** and click on **Next (2)**.
 
-   ![](./media/evsnsdn2.png)
+   ![](./media/evsnsdn2-1.png)
 
 1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
-    - Search for **Visual Studio (1)** in the Windows search bar of the vm and select **Visual Studio (2)**.
+    - Search for **Visual Studio Code (1)** in the Windows search bar of the vm and select **Visual Studio Code (2)**.
 
        ![](./media/vsc.png)
 
@@ -83,46 +83,56 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     - Click on **Desktop (1)**, Enter the File name as **Sample (1)** select **JSON Lines (3)** for Save as type and then click on **Save (4)**.
 
-       ![](./media/d10.png)        
+       ![](./media/d10.png)
 
-1. Navigate back to **Azure AI foundary**, where your **creating a new evaluation**.
+      > **Note:** Make sure to select the correct file type. The AI Foundry portal only accepts files in the **JSON Lines** format. If any other file type is selected, the file will not be accepted.
+
+1. Navigate back to **Azure AI foundry**, where your **creating a new evaluation**.
    
-    - **Configure test data**: **Upload new data (1)**, and select **Upload file (2)**.
+    - **Configure test data**: select **Upload new dataset**
   
          ![](./media/uplddata.png)
 
-    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and upload the newly sample.jsonl file**
+    - Navigate to **Desktop (1)**, select the file **Sample.jsonl** **(2)** and Click on **Open** **(3)**.
 
          ![](./media/dex30.png)   
 
     - Select **Next** 
 
-    - **Configure Evaluators**: Click on Add and select **Likert-scale evaluator**
+    - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
       ![](./media/addecallas.png)
       
       ![](./media/linksss.png)
       
-    - Select **Coherence** and below in Query select {{item.query}} and for Response select **${item.response} ** and click on Add.
+    - Select **Coherence (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
 
       ![](./media/cohernce.png)
+
+    - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
+      ![](./media/addecallas-1.png)
       
-    - Same way click on add again and select **Likert-scale evaluator** Select **Fluency** and below in Query select {{item.query}} and for Response select **${item.response} ** and click on Add.
+      ![](./media/linksss.png)
+
+    - Select **Fluency (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
+
+      ![](./media/cohernce-1.png)
     
     - Once added, click on Next.
 
-      ![](./media/addededddd.png)
+      ![](./media/addededddd-1.png)
 
-   - Now, update model evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on Submit.
-     ![](./media/submiteeddd.png)
+   - Now, update model evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Submit (2)**.
+     
+     ![](./media/submiteeddd-1.png)
      
    
-1. Wait for the evaluations to be completed, you may need to refresh.
+1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
 
-   ![](./media/refreshhhh.png)
+   ![](./media/refreshhhh-1.png)
 
 1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
-   ![](./media/dex34.png)
+   ![](./media/dex34-1.png)
 
 1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
 
