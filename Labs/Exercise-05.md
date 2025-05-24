@@ -200,6 +200,8 @@ In this task, you will use the chat window to test the developed flow by leverag
 
      ![](./media/testdeploy-1.png)
 
+     >**Note:** If the **Test** tab is not opening, wait for 3-5 minutes, refresh the page and try again. 
+
      >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
 1. Enter the prompt **Where else could I go?** and review the response.
