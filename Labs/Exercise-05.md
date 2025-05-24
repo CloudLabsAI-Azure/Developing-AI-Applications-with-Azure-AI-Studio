@@ -18,11 +18,11 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/DAI-image2.png)
+   ![](./media/DAI-image2-1.png)
 
 1. On the **Select a model** page, search for **gpt-35-turbo (1)**, select **gpt-35-turbo (2)**, select **Confirm (3)** under the **gpt-35-turbo**.
 
-   ![](./media/model.png)
+   ![](./media/model-1.png)
 
 1. On **Deploy model gpt-35-turbo**, click on **Customize**.
 
@@ -32,19 +32,18 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    
    - Deployment Name : **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
-   - Model version upgrade policy: **Upgrade once new defaultversion become available (3)**
-   - Model version: **0125 (Default) (4)**
-   - Connected AI resource: select the resource which we created in earlier task **(5)**
-   - Tokens per Minute Rate Limit: **10K (6)**
-   - Content filter: **DefaultV2 (7)**
-   - Enable dynamic quota: **Enabled (8)**
-   - Select **Deploy (9)**
+   - Model version: **0125 (Default) (3)**
+   - Connected AI resource: select the resource which we created in earlier task **(4)**
+   - Tokens per Minute Rate Limit: **10K (5)**
+   - Content filter: **DefaultV2 (6)**
+   - Enable dynamic quota: **Enabled (7)**
+   - Select **Deploy (8)**
 
-     ![](./media/config.png)
+     ![](./media/config-1.png)
      
 1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)** then click **Open in playground (3)**
 
-    ![](./media/playground.png)
+    ![](./media/playground-1.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
@@ -55,7 +54,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
-1. Update the **System message (1)** to the following:-
+1. Update the **Give the model instructions and context (1)** to the following:-
 
    ```
    **Objective**: Assist users with travel-related inquiries, offering tips, advice, and recommendations as a knowledgeable travel agent.
@@ -76,7 +75,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    ```
    
-1. Select **Apply changes (2)**.
+1. Select **Apply changes (2)** and when **Update system message?** pop-up appears, click on **Continue**.
 
      ![](./media/d33.png)   
 
@@ -190,6 +189,8 @@ In this task, you will use the chat window to test the developed flow by leverag
 1. Select the **Model deployments (1)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(2)**.
 
    ![](./media/1dex16.png)
+
+   > **Note:** It might take 3-5 minutes to deploy.
 
 1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
 
