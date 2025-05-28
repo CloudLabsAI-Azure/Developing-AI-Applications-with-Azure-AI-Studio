@@ -1,3 +1,5 @@
+# Developing AI Applications with Azure AI Studio
+
 ## Exercise 01: Understanding the Lifecycle of Flow Development (READ ONLY)
 
 ### Estimated Duration: 30 minutes
