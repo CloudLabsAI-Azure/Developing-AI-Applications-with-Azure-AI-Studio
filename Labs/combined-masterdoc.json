@@ -1,0 +1,14 @@
+[ {
+  "Name": "Guided Lab: Azure Platform",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Developing-AI-Applications-with-Azure-AI-Studio/refs/heads/main/Labs/Developing-AI-Applications-with-Azure-AI-Studio-Combine.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/OpenAIWorkshop/refs/heads/main/scenarios/OpenAIWorkshop-combine.md",
+      "Order": 2
+     }
+  ]
+} ]
