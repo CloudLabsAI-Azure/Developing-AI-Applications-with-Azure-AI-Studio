@@ -70,7 +70,7 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
     - **Python tool**: Allows the execution of custom Python scripts.
     - **Prompt tool**: Prepares prompts as strings for complex scenarios or integration with other tools.
 
-    ![](./media/image-50.png)
+      ![](./media/image-50.png)
    
 1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text, or making an API call. You can use multiple tools within one flow and use a tool multiple time.
 
@@ -120,6 +120,7 @@ In this task, you will set up a structured environment to manage and streamline 
     ![](./media/project-creation.png)
 
 1. Navigate to the Azure Portal using the link below:
+
     ```
     https://portal.azure.com
     ```
@@ -175,7 +176,8 @@ In this task, you will set up a structured environment to manage and streamline 
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="85914800-05d0-40dd-80ca-292f5415040a" />
+
+<validation step="57c4a434-0b5b-45a6-b178-0be8ef207607" />
 
 ### Task 2 : Create and Customize Prompts
 
@@ -237,7 +239,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="97dc69b4-95e6-4d6b-9b64-b143ebe6290b" />
+<validation step="1e9a4269-28c6-4a12-a16b-0ed96570d487" />
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 
@@ -973,7 +975,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
+<validation step="7221578e-67fa-4377-9fd2-ec0b05448f2b" />
 
 
 ## Exercise 06: Ensuring Responsible AI Practices with Content Safety 
