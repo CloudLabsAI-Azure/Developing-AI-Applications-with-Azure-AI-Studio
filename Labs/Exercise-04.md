@@ -38,16 +38,26 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ```
    # system:
-   Your task is to classify a given URL into one of the following types:
+   Your task is to classify a given URL into one of the following categories:
    Movie, App, Academic, Channel, Profile, PDF, or None based on the text content information.
-   The classification will be based on the URL, the webpage text content summary, or both.
+   The classification must be based on the URL, the webpage text content summary, or both.
 
    # user:
-   For a given URL: https://arxiv.org/abs/2303.04671, and text content: Visual ChatGPT is a system that enables users to interact with ChatGPT by sending and receiving not only languages but also images, providing complex visual questions or visual editing instructions, and providing feedback and asking for corrected results. It incorporates different Visual Foundation Models and is publicly available. Experiments show that Visual ChatGPT opens the door to investigating the visual roles of ChatGPT with the help of Visual Foundation Models. 
-   Classify the above URL to complete the category and indicate evidence.
+   The "category" must be one of: Movie, App, Academic, Channel, Profile, PDF, or None.  
+   The "evidence" must be one of: Url, Text content, or Both.
+
+   For a given URL and text content, classify the URL into the appropriate category and indicate the evidence used for classification.
+
+   URL: {{url}}  
+   Text content: {{text_content}}
+
+   Use this **parsable JSON format** for your output, without any prefixes or suffixes:  
+   {"category": "Academic", "evidence": "Text content"}
+
+   OUTPUT:
    ```
 
-    ![](./media/dex44.png)   
+   ![](./media/dex44.png)   
 
 1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
@@ -60,18 +70,24 @@ In this task, you will refine model responses by adjusting prompts over successi
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
     ```  
-    # system:  
-    Your task is to classify a given URL into one of the following types:
-    Movie, App, Academic, Channel, Profile, PDF, or None based on the text content information.
-    The classification will be based on the URL, the webpage text content summary, or both.
+    # system:
+    Summarize the following text into a **single paragraph of no more than 100 words**. Do not include any information that is not explicitly stated.
+
+    # Instructions:
+
+    1. Read and understand the input.
+    2. Identify and condense the essential points and central idea.
+    3. Present a grammatically correct summary that reflects only the original content.
+
+    # Output:
+
+    - One paragraph, max 100 words.
+    - No new information or interpretation.
 
     # user:
-    For a given URL: https://play.google.com/store/apps/details?id=com.spotify.music, and text content: Spotify is a free music and podcast streaming app with millions of songs, albums, 
-    and original podcasts. It also offers audiobooks, so users can enjoy thousands of stories. It has a variety of features such as creating and sharing music playlists, discovering new 
-    music, and listening to popular and exclusive podcasts. It also has a Premium subscription option which allows users to download and listen offline, and access ad-free music. It is 
-    available on all devices and has a variety of genres and artists to choose from.
-    Classify the above URL to complete the category and indicate evidence.
+    Text: {{text}}
 
+    Summary:
     ```
 
     ![](./media/d19.png)
