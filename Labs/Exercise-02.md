@@ -59,10 +59,10 @@ In this task, you will set up a structured environment to manage and streamline 
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Region: **<inject key="Region" enableCopy="false"/> (3)**
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**.
-   - Connect Azure AI Services incl. Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>  (5)**
-   - Review the details filled and click on **Review+Create (6)**.
+   - Connect Azure AI Services incl. Azure OpenAI: **(new) modelhub<inject key="DeploymentID" enableCopy="false"/>  (5)**
+   - Review the details filled and click on **Review + create (6)**.
 
-    ![](./media/E1-T1-S7.png)
+        ![](./media/E1-T1-S7.png)
 
 1. Click on **Create** once the validation passes to create the Hub. 
 
@@ -126,7 +126,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
    - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
    - Model version : **2024-11-20 (3)**
-   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Connected AI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
    - Tokens per Minute Rate Limit (thousands): **5 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (6)**

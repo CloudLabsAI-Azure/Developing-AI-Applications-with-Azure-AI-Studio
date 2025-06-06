@@ -115,7 +115,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     - Select **Fluency (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
 
-      ![](./media/cohernce-1.png)
+      ![](./media/dev-01.png)
     
     - Once added, click on Next.
 
@@ -125,7 +125,6 @@ In this task, you will configure automated evaluation using built-in metrics to 
      
      ![](./media/submiteeddd-1.png)
      
-   
 1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
 
    ![](./media/refreshhhh-1.png)
