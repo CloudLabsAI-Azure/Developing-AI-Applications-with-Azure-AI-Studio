@@ -82,7 +82,7 @@ It systematically assesses the performance and effectiveness of various processe
 
        ![](./media/new-text.png)
 
-    - Provide the name as `sample and save it as **JSON Lines** file on your desktop.
+    - Provide the name as `sample` and save it as **JSON Lines** file on your desktop.
   
        ![](./media/json-1.png)
 
