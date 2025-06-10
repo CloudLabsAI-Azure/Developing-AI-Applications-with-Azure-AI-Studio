@@ -83,18 +83,18 @@ It systematically assesses the performance and effectiveness of various processe
 
        ![](./media/choose-jsonl.png)
    
-1. Navigate back to Azure AI foundry, where you were creating a new evaluation.
-1. Configure test data: select Upload new dataset, then select the file that you downloaded earlier in this task **(sample.jsonl)**.
-1. Configure Evaluators: Click on + Add and select Likert-scale evaluator.
-1. Provide the name as Coherence (1) for Criteria Name, Coherence (2) for presets, scroll down and select {{item.query}} (3) for query, select ${item.response} (4) for Response and click on Add (5).
-1. Configure Evaluators: Click on + Add and select Likert-scale evaluator
-1. Provide the name as Fluency (1) for Criteria Name, Fluency (2) for presets, scroll down and select {{item.query}} (3) for query, select ${item.response} (4) for Response and click on Add (5).
-1. Once added, click on Next.
-1. Now, update model evaluation name to Modelevaluation- (1) and click on Submit (2)
-1. Wait until the evaluation status changes to Completed. If the status shows Queued or Running, you may need to refresh the page to see the latest update.
-1. Select Evaluation (1) from the left navigation menu, and under Automated Evaluation (2), choose the newly created evaluation run (3).
-1. Under the Report tab, scroll down to explore the Metric dashboard.
-1. Navigate to Data (1) tab from the top menu to view the Detailed metrics results (2).
+1. Navigate back to **Azure AI foundry**, where you were **creating a new evaluation**.
+   - **Configure test data**: select **Upload new dataset**, then select the file that you downloaded earlier in this task **(sample.jsonl)**.
+   - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**.
+   - Provide the name as **Coherence** (1) for Criteria Name, **Coherence** (2) for presets, scroll down and select **{{item.query}}** (3) for query, select **{{item.response}}** (4) for Response and click on **Add (5)**.
+   - *Configure Evaluators*: Click on *+ Add* and select *Likert-scale evaluator*.
+   - Provide the name as **Fluency** (1) for Criteria Name, **Fluency** (2) for presets, scroll down and select **{{item.query}}** (3) for query, select **{{item.response}}** (4) for Response and click on **Add** (5).
+   - Once added, click on **Next**.
+   - Now, update model evaluation name to **Modelevaluation-<inject key="DeploymentID"></inject>** (1) and click on **Submit** (2)
+1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
+1. Select **Evaluation** (1) from the left navigation menu, and under **Automated Evaluation** (2), choose the newly created evaluation run (3).
+1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
+1. Navigate to **Data** (1) tab from the top menu to view the **Detailed metrics results** (2).
 
 ## Review
 
