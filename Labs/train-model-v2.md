@@ -17,24 +17,29 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. On the Azure portal, search for **Azure AI Foundry**.
+1. On the Azure portal, search for **Azure AI Foundry** (1).
 
     ![](./media/image0001.png)
 1. On the **Azure AI foundry**, on the home page, select **Use with AI foundry** on the left pane.
-1. Click on **AI Hubs** and then slect **+create** followed by **Hub**
+1. Click on **AI Hubs** (1) and then slect **+create** (2) followed by **Hub** (3).
+
+    ![](./media/image0002.png)
 1. On the **Azure AI hub** page, follow these instructions to fill out the properties:
 
-   - Subscription: Set as default (2)
-   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
-   - Location: **<inject key="Region" enableCopy="false"/>  (4)**
-   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (3)** 
-   - Friendly name: Set as default (2)
-   - Default project resource group: Set as default (2)
-   - Connect Azure AI Services incl. OpenAI: Keep it as default (6)
-   - Select **Review + create (7)**
+   - Subscription: Set as default (1)
+   - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
+   - Location: **<inject key="Region" enableCopy="false"/>  (3)**
+   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (4)** 
+   - Friendly name: Set as default (5)
+   - Default project resource group: Set as default (6 )
+   - Connect Azure AI Services incl. OpenAI: Keep it as default (7)
+   - Select **Review + create (8)**
 
-   
-1. Once the validation is passed , select **Create**.
+       ![](./media/image0003.png)
+
+1. Once the validation is passed , select **Create** (1).
+
+    ![](./media/image0004.png)
 1. Click on **Go to resource**, and select **Launch Azure AI Foundry**.
 1. Select **+New Project**, enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
 
