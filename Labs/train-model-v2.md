@@ -40,11 +40,15 @@ As involves setting up a structured environment to manage and streamline prompt-
 1. Once the validation is passed, select **Create** (1).
 
     ![](./media/image0004.png)
-1. Click on **Go to resource**, and select **Launch Azure AI Foundry**.
-1. Select **+New Project**, enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
+1. Click on **Go to resource**, and select **Launch Azure AI Foundry** (1).
 
-   
-1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
+    ![](./media/image0005.png)
+1. Select **+New Project** (1), enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
+
+    ![](./media/image0006.png)
+
+    ![](./media/image0007.png)
+
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
      
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
