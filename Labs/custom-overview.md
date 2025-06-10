@@ -36,9 +36,9 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+1. Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
 
-   ![](./media/labguide-1a.png)
+   ![](./media/labguide-1a-1.png)
 
  ### Virtual Machine & Lab Guide
  
@@ -48,7 +48,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](./media/env-1-1a.png)
+   ![](./media/env-1-1a-1.png)
  
 ## Utilizing the Split Window Feature
  
@@ -60,7 +60,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/resa.png)
+   ![Manage Your Virtual Machine](./media/resa-1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
@@ -86,7 +86,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
 After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-![](./media/inline-validation-01.png)
+![](./media/inline-validation-01-1.png)
 
 ## Support Contact
 
