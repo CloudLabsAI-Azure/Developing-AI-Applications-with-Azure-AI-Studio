@@ -64,12 +64,7 @@ It systematically assesses the performance and effectiveness of various processe
 
    ![](./media/evaluations-1.png)
 
-1. Create a new evaluation with the following settings:
-    - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - **What kind of scenario are you evaluating?**: **Question and answer with context (2)**, and click on **Next (3)**.
-       > **Note:** If you don't see the option for selecting the **scenario**, please skip it.
-       
-       ![](./media/modelevaluation-1.png)
+1. On create a new evaluation, Select **Evalutae an existing query-response dataset**, and click on **Next**.
 
     - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
@@ -88,28 +83,18 @@ It systematically assesses the performance and effectiveness of various processe
 
        ![](./media/choose-jsonl.png)
    
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**, select the file that you downloaded.
-  
-         ![](./media/image-22.png)
-
-    - **Dataset mapping for prompt flow**: Select **${data.response}** for Dataset coloumn and click on **Next** 
-    - **Select metrics**: **Coherence, Fluency**
-    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai**
-    - **Deployment name/Model**: **gpt-4o model**
-    - Scroll down under **How does your dataset map to your evaluation input** for context select **${data.response}** from the drop-down.
-    - Select **Next**
-    - Select **Submit**
-
-1. Wait for the evaluations to be completed, you may need to refresh.
-
-1. Select the evaluation run you just created.
-
-1. Explore the **Metric dashboard** and **Detailed metrics result**.
-
-    ![](./media/image-26upd.png)
-   >**Note:** The outcomes of Coherence and Fluency may vary with each iteration.
-
-    ![](./media/image-27.png)
+1. Navigate back to Azure AI foundry, where you were creating a new evaluation.
+1. Configure test data: select Upload new dataset, then select the file that you downloaded earlier in this task **(sample.jsonl)**.
+1. Configure Evaluators: Click on + Add and select Likert-scale evaluator.
+1. Provide the name as Coherence (1) for Criteria Name, Coherence (2) for presets, scroll down and select {{item.query}} (3) for query, select ${item.response} (4) for Response and click on Add (5).
+1. Configure Evaluators: Click on + Add and select Likert-scale evaluator
+1. Provide the name as Fluency (1) for Criteria Name, Fluency (2) for presets, scroll down and select {{item.query}} (3) for query, select ${item.response} (4) for Response and click on Add (5).
+1. Once added, click on Next.
+1. Now, update model evaluation name to Modelevaluation- (1) and click on Submit (2)
+1. Wait until the evaluation status changes to Completed. If the status shows Queued or Running, you may need to refresh the page to see the latest update.
+1. Select Evaluation (1) from the left navigation menu, and under Automated Evaluation (2), choose the newly created evaluation run (3).
+1. Under the Report tab, scroll down to explore the Metric dashboard.
+1. Navigate to Data (1) tab from the top menu to view the Detailed metrics results (2).
 
 ## Review
 
