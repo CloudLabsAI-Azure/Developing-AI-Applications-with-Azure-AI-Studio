@@ -19,6 +19,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 1. On the Azure portal, search for **Azure AI Foundry**.
 
+    ![](./media/image0001.png)
 1. On the **Azure AI foundry**, on the home page, select **Use with AI foundry** on the left pane.
 1. Click on **AI Hubs** and then slect **+create** followed by **Hub**
 1. On the **Azure AI hub** page, follow these instructions to fill out the properties:
