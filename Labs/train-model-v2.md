@@ -34,7 +34,8 @@ As involves setting up a structured environment to manage and streamline prompt-
 
    
 1. Once the validation is passed , select **Create**.
-
+1. Click on **Go to resource**, and select **Launch Azure AI Foundry**.
+1. Select **+New Project**, enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
 
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
@@ -65,7 +66,7 @@ Creating and customizing prompts involves designing specific, targeted questions
     - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Standard (2)**
     - Model version : **2024-05-13 (Default) (3)**
-    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
+    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
     - Content filter : **DefaultV2 (6)**
