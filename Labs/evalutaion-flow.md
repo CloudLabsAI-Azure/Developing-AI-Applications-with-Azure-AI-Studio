@@ -50,7 +50,7 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-   ![](./media/manual.png)
+    ![](./media/image0010.png)
 
 ## Task 2: Run and Analyze Evaluation Flows
 
