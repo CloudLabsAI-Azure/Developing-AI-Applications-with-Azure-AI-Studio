@@ -16,7 +16,7 @@ You can manually review model responses based on test data. Manually reviewing a
 
 1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/evaluation-1.png)
+    ![](./media/image0009.png)
 
 1. A new window opens with your previous system message already populated and your deployed model selected.
 
