@@ -68,20 +68,6 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
    ![Manage Your Virtual Machine](./media/labzoom-1.png)
 
-## Lab Duration Extension
-
-1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
-
-   ![Manage Your Virtual Machine](./media/gext.png)
-
-    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
-
-2. Click **OK** to extend your lab duration.
- 
-    ![Manage Your Virtual Machine](./media/gext2.png)
-
-3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. 
-
 ## Lab Validation
 
 After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
