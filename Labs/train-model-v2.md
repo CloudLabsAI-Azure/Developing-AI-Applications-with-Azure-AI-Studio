@@ -75,14 +75,14 @@ Creating and customizing prompts involves designing specific, targeted questions
 
     - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Standard (2)**
-    - Model version : **2024-11-20 (Default) (3)**
+    - Model version : **2024-11-20(3)**
     - Connected Azure OpenAI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
     - Content filter : **DefaultV2 (6)**
     - Select **Deploy (7)**
 
-    ![](./media/gpt-4o.png)
+    ![](./media/image0008.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
