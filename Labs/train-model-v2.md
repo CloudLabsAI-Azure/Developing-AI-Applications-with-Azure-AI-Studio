@@ -37,7 +37,7 @@ As involves setting up a structured environment to manage and streamline prompt-
 
        ![](./media/image0003.png)
 
-1. Once the validation is passed , select **Create** (1).
+1. Once the validation is passed, select **Create** (1).
 
     ![](./media/image0004.png)
 1. Click on **Go to resource**, and select **Launch Azure AI Foundry**.
