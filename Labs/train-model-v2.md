@@ -17,37 +17,26 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. Open a new tab, and navigate to the [Azure AI Foundry](https://ai.azure.com/?reloadCount=1). Select **Sign in**. When prompted, enter the following Azure credentials.
+1. On the Azure portal, search for **Azure AI Foundry**.
 
-    ![](./media/sign-in.png)
+1. On the **Azure AI foundry**, on the home page, select **Use with AI foundry** on the left pane.
+1. Click on **AI Hubs** and then slect **+create** followed by **Hub**
+1. On the **Azure AI hub** page, follow these instructions to fill out the properties:
 
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-1. On the **Azure AI foundry**, on the home page, select **+ Create Project**.
-
-    ![](./media/create-project.png)
-
-1. On the **Create a project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and click on **Customize (2)**.
-
-    ![](./media/create1.png)
-
-1. On the **Create a hub** section, follow these instructions to fill out the properties:
-
-   - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(1)**.
-     >**Note**: Ignore the error on this page. Once you make the correct resource group selection in the upcoming steps, the error will disappear.
    - Subscription: Set as default (2)
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (3)**  
    - Location: **<inject key="Region" enableCopy="false"/>  (4)**
-   - Connect Azure AI Services or Azure OpenAI: **(new)ai-modelhub<inject key="DeploymentID" enableCopy="false"/>   (5)**
-   - Connect Azure AI Search: Keep it as default (6)
-   - Select **Next (7)**
+   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (3)** 
+   - Friendly name: Set as default (2)
+   - Default project resource group: Set as default (2)
+   - Connect Azure AI Services incl. OpenAI: Keep it as default (6)
+   - Select **Review + create (7)**
 
-    ![](./media/E2-T1-S4.png)
-     
-1. On the **Review and finish** page, select **Create**.
+   
+1. Once the validation is passed , select **Create**.
+1. Click on **Go to resource**, and select **Launch Azure AI Foundry**.
+1. Select **+New Project**, enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
 
-    ![](./media/review-finish-1.png)
    
 1. You will be able to track progress in resource creation, and the project will be created when the process is complete. Once a project is created, you can access the playground, tools, and other assets in the left navigation panel.
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
@@ -76,8 +65,8 @@ Creating and customizing prompts involves designing specific, targeted questions
 
     - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Standard (2)**
-    - Model version : **2024-05-13 (Default) (3)**
-    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
+    - Model version : **2024-11-20 (Default) (3)**
+    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
     - Content filter : **DefaultV2 (6)**
