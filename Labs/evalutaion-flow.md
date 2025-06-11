@@ -64,7 +64,9 @@ It systematically assesses the performance and effectiveness of various processe
 
    ![](./media/evaluations-1.png)
 
-1. On create a new evaluation, Select **Evalutae an existing query-response dataset**, and click on **Next**.
+1. On create a new evaluation, Select **Evaluat e an existing query-response dataset** (1), and click on **Next** (2).
+
+   ![](./media/image0011.png)
 
     - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
@@ -84,11 +86,23 @@ It systematically assesses the performance and effectiveness of various processe
        ![](./media/choose-jsonl.png)
    
 1. Navigate back to **Azure AI foundry**, where you were **creating a new evaluation**.
-   - **Configure test data**: select **Upload new dataset**, then select the file that you downloaded earlier in this task **(sample.jsonl)**.
-   - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**.
+   - **Configure test data**: select **Upload new dataset** (1), then select the file that you downloaded earlier in this task **(sample.jsonl)** and click on **Next**.
+
+      ![](./media/image0012.png)
+   - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator** (1).
+
+      ![](./media/image0013.png)
    - Provide the name as **Coherence** (1) for Criteria Name, **Coherence** (2) for presets, scroll down and select **{{item.query}}** (3) for query, select **{{item.response}}** (4) for Response and click on **Add (5)**.
+
+      ![](./media/image0014.png)
    - *Configure Evaluators*: Click on *+ Add* and select *Likert-scale evaluator*.
+
+      ![](./media/image0015.png)
+
+      ![](./media/image0013.png)
    - Provide the name as **Fluency** (1) for Criteria Name, **Fluency** (2) for presets, scroll down and select **{{item.query}}** (3) for query, select **{{item.response}}** (4) for Response and click on **Add** (5).
+
+      ![](./media/image0016.png)
    - Once added, click on **Next**.
    - Now, update model evaluation name to **Modelevaluation-<inject key="DeploymentID"></inject>** (1) and click on **Submit** (2)
 1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
