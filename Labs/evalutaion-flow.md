@@ -103,12 +103,22 @@ It systematically assesses the performance and effectiveness of various processe
    - Provide the name as **Fluency** (1) for Criteria Name, **Fluency** (2) for presets, scroll down and select **{{item.query}}** (3) for query, select **{{item.response}}** (4) for Response and click on **Add** (5).
 
       ![](./media/image0016.png)
-   - Once added, click on **Next**.
-   - Now, update model evaluation name to **Modelevaluation-<inject key="DeploymentID"></inject>** (1) and click on **Submit** (2)
-1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
+   - Once added, click on **Next** (1).
+
+      ![](./media/image0018.png)
+   - Now, update model evaluation name to **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/>** (1) and click on **Submit** (2).
+
+      ![](./media/image0017.png)
+1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued**(1) or **Running**, you may need to **Refresh** (2) the page to see the latest update.
+
+   ![](./media/image0019.png)
 1. Select **Evaluation** (1) from the left navigation menu, and under **Automated Evaluation** (2), choose the newly created evaluation run (3).
-1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
-1. Navigate to **Data** (1) tab from the top menu to view the **Detailed metrics results** (2).
+1. Under the **Report** (1) tab, scroll down to explore the **Metric dashboard**.
+
+   ![](./media/image0020.png)
+1. Navigate to **Data** (1) tab from the top menu to view the **Detailed metrics results**.
+
+   ![](./media/image0021.png)
 
 ## Review
 
