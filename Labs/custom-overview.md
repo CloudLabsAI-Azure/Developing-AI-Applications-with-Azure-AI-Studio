@@ -54,7 +54,7 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](./media/spla.png)
+   ![](./media/spla-1.png)
  
 ## Managing Your Virtual Machine
 
