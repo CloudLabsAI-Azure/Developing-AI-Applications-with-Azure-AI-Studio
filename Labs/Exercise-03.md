@@ -1,24 +1,26 @@
 # Lab 03: Evaluation Flow Setup
 
-## Lab scenario
-In this hands-on lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1-score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on exercise will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
+## Estimated Duration: 60 minutes
+
+## Lab Overview
+In this lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1-score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on exercise will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
 
 ## Lab Objectives
 In this lab, you will perform the following:
-- Task 1: Set Up Evaluation Metrics
+- Task 1: Setup Manual Evaluation
 - Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
-## Task 1: Set Up Evaluation Metrics
+## Task 1: Setup Manual Evaluation
 
 In this task, you will set up a manual evaluation process to assess model performance. This involves defining evaluation criteria, collecting human feedback, and analyzing results to measure accuracy and identify potential biases. 
 
-1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/Dex19.png)
+   ![](./media/evaluation-1a-1.png)
 
-1. A new window opens with your previous **system message** already populated and your **deployed model** selected.
+1. A new window opens with your **System message** already populated and your deployed **Model** already selected.
 
-   ![](./media/dex20.png)
+   ![](./media/d50.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
 
@@ -36,104 +38,112 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
     ![](./media/image-20.png)
 
-1. You can now manually review the outputs for each question by selecting the thumbs up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs up and one thumbs down response in your ratings.
+1. You can now manually review the **Outputs** for each question by selecting the thumbs up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs up and one thumbs down response in your ratings.
 
-   ![](./media/output(1).png)
+   ![](./media/d51.png)
+
+   > **Note:** If you receive an error in any of the output while executing the run "exceeded token rate limit of your current AIService", then please rerun the failed ones after couple of minutes.
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
-   ![](./media/gpt-4-demo18.png)
+   ![](./media/gpt-4-demo18-1.png)
    
 1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **(3)**. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
-   ![](./media/dex21.png)
+   ![](./media/manual-1.png)
 
 ## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
 In this task, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
-1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/dex22.png)
+   ![](./media/evalslss-1.png)
 
-1. On the **What do you want to evaluate?** pane, select **Dataset**.
+1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset (1)** and click on **Next (2)**.
 
-   ![](./media/dex23.png)
+   ![](./media/evsnsdn2-1.png)
 
-1. Create a new evaluation with the following settings:
-    - **Evaluation name**: **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - Select **Next (2)**.
-       
-       ![](./media/dex24.png)
-
-    - Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
+1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
       and **Ctrl C** to select all and **Copy**.
   
-    - Search for **Visual Studio (1)** in the Windows search bar of the vm and select **Visual Studio (2)**.
+    - Search for **Visual Studio Code (1)** in the Windows search bar of the vm and select **Visual Studio Code (2)**.
 
-       ![](./media/dex26.png)
+       ![](./media/vsc.png)
 
     - From the **File (1)** menu, select **New Text File (2)**, 
 
-       ![](./media/dex27.png)
+       ![](./media/d8.png)
 
     - **Paste the copied code**.
 
-    - Navigate to **File (1)** and click on **Save As (2)**.    
+    - Navigate to **File (1)** and click on **Save as (2)**.    
 
-       ![](./media/dex28.png)    
+       ![](./media/d9.png)    
 
     - Click on **Desktop (1)**, Enter the File name as **Sample (1)** select **JSON Lines (3)** for Save as type and then click on **Save (4)**.
 
-       ![](./media/dex29.png)        
+       ![](./media/d10.png)
 
-1. Navigate back to **Azure AI foundary**, where your **creating a new evaluation**.
+      > **Note:** Make sure to select the correct file type. The AI Foundry portal only accepts files in the **JSON Lines** format. If any other file type is selected, the file will not be accepted.
+
+1. Navigate back to **Azure AI foundry**, where your **creating a new evaluation**.
    
-    - **Select the data you want to evaluate**: **Add your dataset (1)**, and select **Upload file (2)**.
+    - **Configure test data**: select **Upload new dataset**
   
-         ![](./media/dex25.png)
+         ![](./media/uplddata.png)
 
-    - Navigate to **Desktop (1)**, select the file that you downloaded **(2)** and click on **Open(3)**
+    - Navigate to **Desktop (1)**, select the file **Sample.jsonl** **(2)** and Click on **Open** **(3)**.
 
-         ![](./media/dex30.png)    
+         ![](./media/dex30.png)   
 
     - Select **Next** 
 
-    - **Select metrics**: **Coherence (1), Fluency (2)**
-    - **Connection**: Your AI Services connection - **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (3)**
-    - **Deployment name/Model**: **gpt-4o model (4)**
+    - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
+      ![](./media/addecallas.png)
+      
+      ![](./media/linksss.png)
+      
+    - Select **Coherence (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
 
-         ![](./media/dex31.png)  
+      ![](./media/cohernce.png)
 
-    - Scroll down to **How does your dataset map to your evaluation input**. Ensure that **${data.query} (1)** is selected for the **query**, and **${data.response} (1)** is selected for the **response**.
+    - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
+      ![](./media/addecallas-1.png)
+      
+      ![](./media/linksss.png)
 
-    - Select **Next (2)**
+    - Select **Fluency (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
 
-         ![](./media/dex32.png)  
+      ![](./media/dev-01.png)
+    
+    - Once added, click on Next.
 
-    - Select **Submit**
-  
-1. Wait for the evaluations to be **completed**, you may need to refresh.
+      ![](./media/addededddd-1.png)
 
-   ![](./media/dex33.png)
+   - Now, update model evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Submit (2)**.
+     
+     ![](./media/submiteeddd-1.png)
+     
+1. Wait until the evaluation status changes to **Completed**. If the status shows **Queued** or **Running**, you may need to refresh the page to see the latest update.
+
+   ![](./media/refreshhhh-1.png)
 
 1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
 
-   ![](./media/dex34.png)
+   ![](./media/dex34-1.png)
 
 1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
 
-    ![](./media/dex35.png)
-
-    ![](./media/dex36.png)
+    ![](./media/metricdatass.png)
 
 1. Navigate to **Data (1)** tab from the top menu to view the **Detailed metrics results (2)**.    
 
-    ![](./media/dex38.png)
+    ![](./media/passseddd.png)
 
 ## Review
 In this lab you have completed the following tasks:
-- Set Up Evaluation Metrics
+- Set Up Manual Evaluation
 - Setup Automated Evaluation with Built-in Evaluation Metrics
 
 ### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
