@@ -1,11 +1,11 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
-## Estimated Duration: 90 minutes
+## Estimated Duration: 60 minutes
 
 ## Lab Overview
 This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
 
-## Lab Objectives
+## Lab Objective
 In this lab, you will perform the following:
 
 - Task 1 : Image and Text Moderation Using Azure AI foundry
@@ -14,9 +14,9 @@ In this lab, you will perform the following:
 
 In this task, you will use Azure AI Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
 
-1. On the **Azure AI Foundry** portal, select **Safety + Security (1)** under **Assess and Improve**, then select **Try it Out (2)**.
+1. On the **Azure AI Foundry** portal, select **Guardrails + controls (1)** under **Protect and govern**, then select **Try it Out (2)**.
 
-     ![](./media/dee1.png)     
+     ![](./media/gurdrlss-1.png)     
 
 2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
@@ -24,25 +24,25 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 3. On **Moderate image content** select **Run a simple test (1)** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**. **(2)**
 
-     ![](./media/dee5.png)
+     ![](./media/d40.png)
 
 #### Safe content
 
 1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
 
-     ![](./media/dee3.png)
+     ![](./media/dee3-1.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
-     ![](./media/dee6.png)
+     ![](./media/image-61.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
+1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` **(1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
 
      ![](./media/dee4.png)
 
 1. Review the image and click on **Run test**.
 
-    ![](./media/dee7.png)
+    ![](./media/image-68.png)
    
 1. Review the result. As expected, this image content is **Allowed**, and the Severity level is Safe across all categories. 
 
@@ -56,9 +56,9 @@ We should also anticipate customers potentially posting harmful image content. T
 
 1. Select **Self harmed content (1)** and click on **Browse for a file (2)**.
 
-    ![](./media/dee8.png)
+    ![](./media/d42.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
 
     ![](./media/dee9.png)
 
@@ -76,21 +76,21 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 1. On **Moderate image content** select **Run a bulk test (1)** tab then click on **Browse for a file (2)**.
 
-     ![](./media/dee12.png)
+     ![](./media/dee12-1.png)
 
-1. Within file explorer navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
+1. Within file explorer navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
 
     ![](./media/dee13.png)
    
 1. Under Test section, review **Dataset preview (1)** then select **Configure filters** tab review **Category** and **Threshold level** **(2)** then click on **Run test (3)**.
 
-     ![](./media/dee14.png)
+     ![](./media/image-145768.png)
 
-1. Review the **Result**.
+1. Review the **result**.
 
-   ![](./media/dee17.png)
+   ![](./media/image-15.png)
 
-   ![](./media/dee19.png)
+   ![](./media/image-16.png)
 
 ### Task 1.3 : Text moderation using Moderate text content 
 
@@ -100,21 +100,21 @@ We could leverage an AI model to detect whether the text input from our customer
 
 Let’s first test some positive customer feedback.
 
-1. Back to the **Azure AI Foundry** portal > **Safety + security (1)**, navigate to **Try it out (2)** tab and then select **Moderate text content (3)**.
+1. Back On the **Azure AI Foundry** portal, select **Guardrails + controls (1)** under **Protect and govern**, then select **Try it Out tab and then select **Moderate text content (3)**.
 
-   ![](./media/dee15.png)
+   ![](./media/2ndguard-1.png)
 
 1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under **select a sample or type your own** section.
 
-   ![](./media/image-71.png)
+   ![](./media/image-71-1.png)
 
 1. In the **Test box**, enter the following:
 
      - **I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product! (1)**
 
-     - Set all Threshold levels to **Medium (2)**
+     - Set all Threshold levels to **Medium (2)**.
 
-     - Select **Run test (3)**
+     - Select **Run test (3)**.
 
        ![](./media/image-72.png)
      
@@ -133,9 +133,9 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
     - **I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand**. **(1)**
 
-    - Set all Threshold levels to **Medium (2)**
+    - Set all Threshold levels to **Medium (2)**.
 
-    - Select **Run test (3)**
+    - Select **Run test (3)**.
 
       ![](./media/image-75.png)
  
@@ -159,20 +159,21 @@ We can’t anticipate that all text content from our customers would be free of 
 
 1. Select **Violent content with misspelling**.
 
-    ![](./media/dee21.png)
+    ![](./media/image-74.png)
 
 1. In the **Test box**, enter the following:
 
     - **I recently purchased a campin cooker, but we had an accident. A racon got inside, was shocked, and died. Its blood is all over the interior. How do I clean the cooker? (1)**
 
-    - Set all Threshold levels to **Medium (2)**
+    - Set all Threshold levels to **Medium (2)**.
 
     - Select **Run test (3)**
 
       ![](./media/dee22.png)    
 
-    - Although the content is Allowed, the Severity level for Violence should be Low. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
-  
+    - Although the content is Allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+
+     
 #### Run a bulk test
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
 based on the model’s performance.
@@ -182,9 +183,9 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Switch to the **Run a bulk test (1)** tab. Select **Browse for a file (2)**.
 
-    ![](./media/dee24.png)
+    ![](./media/d43.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**
+1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
     > Note: The name of the CSV file may vary.
    
@@ -192,11 +193,11 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
      
 1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content). **(2)**
 
-     - Set all Threshold levels to **Medium (3)**
+     - Set all Threshold levels to **Medium (3)**.
 
-     - Select **Run test (4)**
+     - Select **Run test (4)**.
    
-       ![](./media/dee28.png)
+       ![](./media/d44.png)
 
 1. Review the result.
 
