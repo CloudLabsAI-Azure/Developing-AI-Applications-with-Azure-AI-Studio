@@ -30,7 +30,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
 
-     ![](./media/dee3-1.png)
+     ![](./media/l6.task1.1.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 

@@ -98,7 +98,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll up to **summarize_text_content** node and select the following 
 
-   - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**
 
    - deployment_name : **gpt-4o (2)**
 
