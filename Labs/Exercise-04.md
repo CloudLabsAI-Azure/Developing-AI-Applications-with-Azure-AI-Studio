@@ -28,7 +28,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
     - deployment_name : **gpt-4o (3)**
 
