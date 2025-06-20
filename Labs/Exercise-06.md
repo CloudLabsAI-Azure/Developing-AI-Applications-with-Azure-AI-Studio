@@ -30,7 +30,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
 
-     ![](./media/dee3-1.png)
+     ![](./media/l6.task1.1.png)
 
 1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
@@ -64,11 +64,11 @@ We should also anticipate customers potentially posting harmful image content. T
 
 1. Set all Threshold levels to **Medium (1)** and then select **Run test (2)**.
 
-    ![](./media/dee10.png)
+    ![](./media/selfharm1.png)
 
-    >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of High.
+    >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of Medium.
 
-     ![](./media/dee11.png)
+     ![](./media/selfharm2.png)
 
 ### Task 1.2: Run a bulk test
 
@@ -88,9 +88,9 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 1. Review the **result**.
 
-   ![](./media/image-15.png)
+   ![](./media/selfharm3.png)
 
-   ![](./media/image-16.png)
+   ![](./media/selfharm4.png)
 
 ### Task 1.3 : Text moderation using Moderate text content 
 

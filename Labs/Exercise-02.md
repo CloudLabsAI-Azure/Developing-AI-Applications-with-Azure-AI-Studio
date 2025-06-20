@@ -59,14 +59,16 @@ In this task, you will set up a structured environment to manage and streamline 
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Region: **<inject key="Region" enableCopy="false"/> (3)**
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**.
-   - Connect Azure AI Services incl. Azure OpenAI: **(new) modelhub<inject key="DeploymentID" enableCopy="false"/>  (5)**
-   - Review the details filled and click on **Review + create (6)**.
+   - Connect Azure AI Services incl. Azure OpenAI: Click on **Create new** (5)
+   - On the Create new Azure AI Services pane : **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>  (6)** 
+   - Select **Save (7)**
+   - Review the details filled and click on **Review + create (8)**.
 
-        ![](./media/E1-T1-S7.png)
+        ![](./media/l1.task1.1.png)
 
 1. Click on **Create** once the validation passes to create the Hub. 
 
-    ![](./media/ai-hub-create.png)
+    ![](./media/l1.task1.2.png)
 
 1. After the deployment gets suceeded, click on **Go to Resource**.
 
@@ -76,7 +78,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/E1-T1-S9.png)
 
-1. On the Azure AI Foundry portal, under Hub **Overview (1)**, select **+ New Project (2)**.
+1. On the Azure AI Foundry portal, under Hub **Overview (1)**, scroll down and select **+ New Project (2)**.
 
     ![](./media/E1-T1-S10-1.png)
 
@@ -126,13 +128,13 @@ In this task, you will focus on creating and customizing prompts by designing ta
    - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
    - Model version : **2024-11-20 (3)**
-   - Connected AI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (4)**
    - Tokens per Minute Rate Limit (thousands): **5 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (6)**
-   - Select **Deploy (7)**
+   - Select **Connect and Deploy (7)**
 
-     ![](./media/d4-1.png)
+     ![](./media/l1.task2.1.png)
 
      >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
@@ -171,7 +173,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
     ![](./media/d4-2.png)
 
-1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
      ![](./media/d5.png)
 
