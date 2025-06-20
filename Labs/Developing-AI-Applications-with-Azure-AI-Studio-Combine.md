@@ -1,4 +1,4 @@
-# Developing AI Applications with Azure AI Studio
+# Developing AI Applications with Azure AI Foundry
 
 ## Exercise 01: Understanding the Lifecycle of Flow Development (READ ONLY)
 
