@@ -231,7 +231,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d27.png)
 
-1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
 
 1. Now will evaluate the variants of **summarize_text_content** node as well.
 
@@ -291,7 +291,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d32.png)
 
-1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best performing variant as the default for that node.
 
 ## Review
 In this lab you have completed the following tasks:
