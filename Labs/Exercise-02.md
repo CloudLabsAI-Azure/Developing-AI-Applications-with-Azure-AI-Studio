@@ -37,7 +37,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/E1-T1-S4-1.png)
 
-1. Let this project create completely. 
+1. Wait for few minutes to create this project completely. 
 
     ![](./media/project-creation.png)
 
@@ -115,11 +115,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/d2-1.png)
 
-1. On **Deploy model gpt-4o** page :
-
-    - Deployment name : **gpt-4o (1)**
-    - Deployment type : **Global standard (2)**
-    - Select **Customize (3)**
+1. On **Deploy model gpt-4o** page, select **Customize**.
 
       ![](./media/d3.png)
 
@@ -128,7 +124,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
    - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
    - Model version : **2024-11-20 (3)**
-   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (4)**
+   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/> (4)**
    - Tokens per Minute Rate Limit (thousands): **5 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (6)**
