@@ -39,7 +39,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    - Enable dynamic quota: **Enabled (7)**
    - Select **Deploy (8)**
 
-     ![](./media/config-1.png)
+     ![](./media/l5.task1.1.png)
      
 1. On the [Azure AI foundry](https://ai.azure.com/?tid=f9733b59-6ed1-4cb1-a5c4-55f5c0d6ad6f), under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select **gpt-35-turbo (2)** then click **Open in playground (3)**
 
@@ -140,7 +140,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    ![](./media/1dex10.png)
 
-1. You still need to connect the LLM node to your deployed model. In the top of the**LLM node** section, you need to select the connection from teh drop down list and proceed as below.
+1. You still need to connect the LLM node to your deployed model. In the top of the**LLM node** section, you need to select the connection from the drop down list and proceed as below.
 
    - **Connection**: Select the connection that was newly created for you when you created the **gpt-35-turbo** **(1)** deployment. 
    - **Api**: Select **chat (2)**.
