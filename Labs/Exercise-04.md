@@ -28,32 +28,40 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)**
+    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
     - deployment_name : **gpt-4o (3)**
 
       ![](./media/d15.png)
    
-1. Replace the existing prompt with the following prompt as a baseline prompt in the classify_with_llm node.
+1. Replace the existing prompt with the following prompt as a baseline prompt in the **classify_with_llm** node.
 
    ```
    # system:
    Your task is to classify a given URL into one of the following categories:
    Movie, App, Academic, Channel, Profile, PDF, or None based on the text content information.
    The classification must be based on the URL, the webpage text content summary, or both.
-
+   
    # user:
-   The "category" must be one of: Movie, App, Academic, Channel, Profile, PDF, or None.  
+   The "category" must be one of: Movie, App, Academic, Channel, Profile, PDF,News,Shopping or None.
    The "evidence" must be one of: Url, Text content, or Both.
-
+   
    For a given URL and text content, classify the URL into the appropriate category and indicate the evidence used for classification.
+   
+   Here are a few examples:
+   {% for ex in examples %}
+   URL: {{ex.url}}
+   Text content: {{ex.text_content}}
+   
+   OUTPUT:
+   Use this exact JSON format for your output (no extra text, prefixes, or suffixes):
+   {"category": "{{ex.category }}", "evidence": "{{ex.evidence}}"}
 
-   URL: {{url}}  
+   {%  endfor %}
+
+   For a given URL and text content, classify the url to complete the category and indicate evidence:
+   URL: {{url}}
    Text content: {{text_content}}
-
-   Use this **parsable JSON format** for your output, without any prefixes or suffixes:  
-   {"category": "Academic", "evidence": "Text content"}
-
    OUTPUT:
    ```
 
@@ -63,7 +71,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
       ![](./media/d16.png)
 
-1. Select the **Clone** button on variant_0 to generate variant_1, then we can configure parameters to different values on variant_1
+1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters with different values on variant_1.
 
      ![](./media/d17.png)
    
@@ -71,23 +79,29 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ```  
     # system:
-    Summarize the following text into a **single paragraph of no more than 100 words**. Do not include any information that is not explicitly stated.
-
-    # Instructions:
-
-    1. Read and understand the input.
-    2. Identify and condense the essential points and central idea.
-    3. Present a grammatically correct summary that reflects only the original content.
-
-    # Output:
-
-    - One paragraph, max 100 words.
-    - No new information or interpretation.
-
+    Your task is to categorize a given URL into one of the following types: Movie, App, Academic, Channel, Profile, PDF, or None.
+    Use the URL string, the summary of the page content, or both to decide the most appropriate category.
+    
     # user:
-    Text: {{text}}
+    The selection range of the value of "category" must be "Movie",  "App", " Academic",  "Channel",  "Profile" , "PDF", "News", "Shopping" or "None".
+    The selection range of the value of "evidence" must be within Url, Text content, or Both — depending on what was most helpful in making your classification.
+    Given the input below, classify the link and return your answer strictly in valid JSON format.
+    Here are a few examples:
+    {% for ex in examples %}
+    URL: {{ex.url}}  
+    Text content: {{ex.text_content}}
+    
+    
+    OUTPUT:
+    Use this exact JSON format for your output (no extra text, prefixes, or suffixes):  
+    {"category": "{{ex.category }}", "evidence": "{{ex.evidence}}"}
 
-    Summary:
+    {%  endfor %}
+
+    For a given URL and text content, classify the url to complete the category and indicate evidence:
+    URL: {{url}}
+    Text content: {{text_content}}
+    OUTPUT:
     ```
 
     ![](./media/d19.png)
@@ -96,13 +110,15 @@ In this task, you will refine model responses by adjusting prompts over successi
 
      ![](./media/d18.png)
 
-1. Scroll up to **summarize_text_content** node and select the following 
+1. Scroll up to **summarize_text_content (1)** node and select the following: 
 
-   - Connection : Select the connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (1)**
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
-   - deployment_name : **gpt-4o (2)**
+   - deployment_name : **gpt-4o (3)**
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in summarize_text_content node, based on variant_0, you can create variant_1 **(3)**.  
+   ![](./media/d52.png)
+
+1. Replace the existing prompt with the following prompt as a baseline prompt in **summarize_text_content** node.  
      
    ```  
    # system:
@@ -120,11 +136,15 @@ In this task, you will refine model responses by adjusting prompts over successi
    Summary:
    ```
 
-1. Select **Show variants (4)** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+   ![](./media/d53.png)
+
+1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
     ![](./media/d20.png)
    
-1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1
+1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1.
+
+   ![](./media/d54.png)
 
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -145,6 +165,43 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/dex47.png)
 
+1. Scroll to the last node and click on **+ LLM** present in top left corner to create new LLM node.
+
+   ![](./media/d55.png)
+
+1. Provide the name as **PostProcess (1)** and click on **Add (2)**.
+
+   ![](./media/d56.png)
+
+1. Once the **PostProcess** node is created, select the following:
+
+   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**
+
+   - Api : **chat (2)**
+
+   - deployment_name : **gpt-4o (3)**
+
+   - response_format : **{"type":"json_object"}** **(4)**
+
+   ![](./media/d57.png)
+
+1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node. For the input value, select **${classify_with_llm.output} (2)** 
+
+   ```
+   # system:
+   You will provide a properly formed JSON response given an input
+   
+   The response must follow this sample:
+   {
+       "category":
+       "evidence":(URL,Text content, or Both)
+   }
+   # user:
+   {{input}}
+   ```
+
+   ![](./media/d58.png)
+
 1. Click the **Save (1)** button from the top menu, then select **Start Compute Session (2)**.
 
     ![](./media/image-87.png)
@@ -163,21 +220,23 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. In top menu select **Variant 0 (1)** from the drop down and select **View full output (2)** for **summarize_text_content** for **variant 0**. Now, review the output of the variant, that you selected.
 
+   >**Note:** The output shown in the image may differ in your lab.
+
    ![](./media/d21.png)
 
    ![](./media/image-40.png)
 
-   >**Note:** The output shown in the image may differ in your lab.
+   
 
 ## Task 2: Optimize Flow Performance for Production 
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
-1. Under **Inputs**, click on **+ Add input** then add **category** and **text-context**. 
+1. Under **Inputs**, click on **+ Add input**, then add **category** and **text-context**. 
 
     ![](./media/dex49.png)
 
-1. Under **Output**, click on **+ Add output** then add **category** and **evidence** **(1)**. Click on **Save (2)**.
+1. Under **Outputs**, click on **+ Add output**, then add **category** and **evidence** **(1)**. Click on **Save (2)**.
 
     ![](./media/dex50.png)
 
@@ -231,7 +290,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d27.png)
 
-1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
 
 1. Now will evaluate the variants of **summarize_text_content** node as well.
 
@@ -265,7 +324,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d30.png)
 
-1. Under **Input mapping** for **url** select **${data.text} (1)**, and for **text** select **${data.text} (2)**. Select **Next (3)**.
+1. Under **Input mapping** for **url** select **${data.text} (1)** and click on **Next (2)**.
 
    ![](./media/inputmapping.png)
 
@@ -291,7 +350,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d32.png)
 
-1. After you identify which variant is the best, you can go back to the flow authoring page and set that variant as default variant of the node
+   > **Note:** If you see any evaluations with name **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/>-Classification Accuracy Evaluation** and displayed as failed, kindly ignore it and proceed further.
+
+1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best performing variant as the default for that node.
 
 ## Review
 In this lab you have completed the following tasks:
