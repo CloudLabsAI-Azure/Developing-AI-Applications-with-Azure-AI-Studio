@@ -37,7 +37,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/E1-T1-S4-1.png)
 
-1. Let this project create completely. 
+1. Wait for few minutes to create this project completely. 
 
     ![](./media/project-creation.png)
 
@@ -59,14 +59,16 @@ In this task, you will set up a structured environment to manage and streamline 
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Region: **<inject key="Region" enableCopy="false"/> (3)**
    - Hub name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**.
-   - Connect Azure AI Services incl. Azure OpenAI: **(new) modelhub<inject key="DeploymentID" enableCopy="false"/>  (5)**
-   - Review the details filled and click on **Review + create (6)**.
+   - Connect Azure AI Services incl. Azure OpenAI: Click on **Create new** (5)
+   - On the Create new Azure AI Services pane : **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>  (6)** 
+   - Select **Save (7)**
+   - Review the details filled and click on **Review + create (8)**.
 
-        ![](./media/E1-T1-S7.png)
+        ![](./media/l1.task1.1.png)
 
 1. Click on **Create** once the validation passes to create the Hub. 
 
-    ![](./media/ai-hub-create.png)
+    ![](./media/l1.task1.2.png)
 
 1. After the deployment gets suceeded, click on **Go to Resource**.
 
@@ -76,7 +78,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/E1-T1-S9.png)
 
-1. On the Azure AI Foundry portal, under Hub **Overview (1)**, select **+ New Project (2)**.
+1. On the Azure AI Foundry portal, under Hub **Overview (1)**, scroll down and select **+ New Project (2)**.
 
     ![](./media/E1-T1-S10-1.png)
 
@@ -97,7 +99,7 @@ In this task, you will set up a structured environment to manage and streamline 
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="7bcc3c7d-5cdd-4b90-bc17-2db14b9234d8" />
+<validation step="85914800-05d0-40dd-80ca-292f5415040a" />
 
 ### Task 2 : Create and Customize Prompts
 
@@ -113,11 +115,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/d2-1.png)
 
-1. On **Deploy model gpt-4o** page :
-
-    - Deployment name : **gpt-4o (1)**
-    - Deployment type : **Global standard (2)**
-    - Select **Customize (3)**
+1. On **Deploy model gpt-4o** page, select **Customize**.
 
       ![](./media/d3.png)
 
@@ -126,13 +124,13 @@ In this task, you will focus on creating and customizing prompts by designing ta
    - Deployment name : **gpt-4o (1)**
    - Deployment type :  **Global Standard (2)**
    - Model version : **2024-11-20 (3)**
-   - Connected AI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (4)**
+   - Connected AI resource : make sure to select which contain your deployment id **ai-modelhub<inject key="DeploymentID" enableCopy="false"/> (4)**
    - Tokens per Minute Rate Limit (thousands): **5 K(5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter : **DefaultV2 (6)**
-   - Select **Deploy (7)**
+   - Select **Connect and Deploy (7)**
 
-     ![](./media/d4-1.png)
+     ![](./media/l1.task2.1.png)
 
      >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
@@ -159,7 +157,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-<validation step="72202d41-82ea-4bdd-a001-1efce3ff528f" />
+<validation step="97dc69b4-95e6-4d6b-9b64-b143ebe6290b" />
 
 ### Task 3 : Develop a Flow with LLM and Prompt Tools
 
@@ -171,7 +169,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
     ![](./media/d4-2.png)
 
-1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
      ![](./media/d5.png)
 
