@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1b3c0954-3e81-44d5-8c14-38e2e7fac065)# Lab 03: Evaluation Flow Setup
+# Lab 03: Evaluation Flow Setup
 
 ## Estimated Duration: 60 Minutes
 
@@ -38,17 +38,17 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
     ![](./media/4-7-25-l3-3.png)
 
-1. You can now manually review the **Outputs** for each question by selecting the thumbs up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs-up and one thumbs-down response in your ratings.
+1. You can now manually review the **Outputs** for each question by selecting the thumbs-up or down icon at the bottom right of a response. Rate each response, ensuring you include at least one thumbs-up and one thumbs-down response in your ratings.
 
    ![](./media/d51.png)
 
-   > **Note:** If you receive an error in any of the output while executing the run "exceeded token rate limit of your current AIService", then please rerun the failed ones after a couple of minutes.
+   > **Note:** If you receive an error in any of the outputs while executing the run "exceeded token rate limit of your current AIService", then please rerun the failed ones after a couple of minutes.
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
    ![](./media/gpt-4-demo18-1.png)
    
-1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **(3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
+1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
 
    ![](./media/manual-1.png)
 
@@ -75,7 +75,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
        ![](./media/d8.png)
 
-    - **Paste the copied code**.
+    - **Paste the copied code [Ctrl  V]**.
 
     - Navigate to **File (1)** and click on **Save as (2)**.    
 
@@ -87,7 +87,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
       > **Note:** Make sure to select the correct file type. The AI Foundry portal only accepts files in the **JSON Lines** format. If any other file type is selected, the file will not be accepted.
 
-1. Navigate back to **Azure AI foundry**, where your **creating a new evaluation**.
+1. Navigate back to **Azure AI Foundry**, where your **creating a new evaluation**.
    
     - **Configure test data**: select **Upload new dataset**
   
@@ -95,33 +95,35 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     - Navigate to **Desktop (1)**, select the file **Sample.jsonl** **(2)** and Click on **Open** **(3)**.
 
-         ![](./media/dex30.png)   
+      ![](./media/dex30.png)   
 
     - Select **Next** 
 
     - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
-      ![](./media/addecallas.png)
+
+      ![](./media/4-7-25-l3-new.png)
       
-      ![](./media/linksss.png)
+      ![](./media/4-7-25-l3-7.png)
       
-    - Select **Coherence (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
+    - Enter **Coherence (1)** in the Criteria name field, then click on the **Coherence (2)** preset. In the **Query (3)** field, select `{{item.query}}`, and in the **Response (4)** field, select `{{item.response}}`. Finally, click **Add (5)** to save the configuration.  
 
       ![](./media/4-7-25-l3-6.png)
 
     - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
+
       ![](./media/addecallas-1.png)
       
       ![](./media/4-7-25-l3-7.png)
 
-    - Select **Fluency (1)** and below in Query select **{{item.query}}** **(2)** and for Response select **${item.response}** **(3)** and click on **Add (4)**.
+    - Enter **Fluency (1)** in the Criteria name field, then click on the **Fluency (2)** preset. In the **Query (3)** field, select `{{item.query}}`, and in the **Response (4)** field, select `{{item.response}}`. Finally, click **Add (5)** to save the configuration.  
 
       ![](./media/4-7-25-l3-8.png)
     
-    - Once added, click on Next.
+    - Once added, click on **Next**.
 
       ![](./media/addededddd-1.png)
 
-   - Now, update model evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Submit (2)**.
+   - Now, update model Evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Submit (2)**.
      
      ![](./media/4-7-25-l3-9.png)
      
