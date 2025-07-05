@@ -1,6 +1,6 @@
 # Lab 04: Fine-Tuning Prompts for Optimal Performance
 
-## Estimated Duration: 60 minutes
+## Estimated Duration: 60 Minutes
 
 ## Lab Overview
 In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
@@ -67,7 +67,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/dex44.png)   
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
       ![](./media/d16.png)
 
@@ -106,7 +106,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/d19.png)
      
-1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For classify_with_llm node, based on variant_0:
+1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For the classify_with_llm node, based on variant_0:
 
      ![](./media/d18.png)
 
@@ -118,7 +118,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/d52.png)
 
-1. Replace the existing prompt with the following prompt as a baseline prompt in **summarize_text_content** node.  
+1. Replace the existing prompt with the following prompt as a baseline prompt in the **summarize_text_content** node.  
      
    ```  
    # system:
@@ -138,7 +138,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/d53.png)
 
-1. Select **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
+1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
     ![](./media/d20.png)
    
@@ -165,7 +165,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/dex47.png)
 
-1. Scroll to the last node and click on **+ LLM** present in top left corner to create new LLM node.
+1. Scroll to the last node and click on **+ LLM** present in the top left corner to create a new LLM node.
 
    ![](./media/d55.png)
 
@@ -206,19 +206,19 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/image-87.png)
 
-     >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.    
+     >**Note:** It might take 10-15 minutes to start the session. Wait till the compute session starts.    
 
 1. Finally, click the **Run** button in the top right corner.
 
     ![](./media/run-1.png)
 
-1. On the Submit flow run window open under **Select the LLM node with variants that you want to run** choose **Select a node to run variants** then select **summarize_text_content (1)**, and click on **Submit (2)**. 
+1. On the Submit flow run window open under **Select the LLM node with variants that you want to run**, choose **Select a node to run variants**, then select **summarize_text_content (1)**, and click on **Submit (2)**. 
 
    ![](./media/image-41.png)
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
-1. In top menu select **Variant 0 (1)** from the drop down and select **View full output (2)** for **summarize_text_content** for **variant 0**. Now, review the output of the variant, that you selected.
+1. In top menu select **Variant 0 (1)** from the drop down and select **View full output (2)** for **summarize_text_content** for **variant 0**. Now, review the output of the variant that you selected.
 
    >**Note:** The output shown in the image may differ in your lab.
 
@@ -227,7 +227,6 @@ In this task, you will refine model responses by adjusting prompts over successi
    ![](./media/image-40.png)
 
    
-
 ## Task 2: Optimize Flow Performance for Production 
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
@@ -282,7 +281,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
      ![](./media/dex57.png)
 
-1. Back on Prompt flow page and from top click on **View run list** link.
+1. Back on the Prompt flow page and from the top, click on the **View run list** link.
 
     ![](./media/image-43.png)
    
@@ -292,7 +291,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
 
-1. Now will evaluate the variants of **summarize_text_content** node as well.
+1. Now will evaluate the variants of the **summarize_text_content** node as well.
 
 1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input** and enter **Text**. 
 
@@ -342,7 +341,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
     ![](./media/submit(1).png)
 
-1. Back on Prompt flow page and from top click on **View run list** link.
+1. Back on the Prompt flow page, and from the top, click on the **View run list** link.
 
    ![](./media/viewrunlist-1.png)
    
@@ -352,11 +351,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    > **Note:** If you see any evaluations with name **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/>-Classification Accuracy Evaluation** and displayed as failed, kindly ignore it and proceed further.
 
-1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best performing variant as the default for that node.
+1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best-performing variant as the default for that node.
 
 ## Review
-In this lab you have completed the following tasks:
+In this lab, you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
