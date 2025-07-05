@@ -16,11 +16,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
-   ![](./media/promptflow-2-1.png)
+   ![](./media/4-7-25-l4-1.png)
 
 1. In the **Create a new flow** pane, under **Explore gallery**, in the **Web Classification** box, select **Clone**.
 
-     ![](./media/image-35.png)
+     ![](./media/4-7-25-l4-1.1.png)
 
 1. On the **Clone Flow** page, enter name **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
 
@@ -69,11 +69,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-      ![](./media/d16.png)
+   ![](./media/d16.png)
 
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters with different values on variant_1.
 
-     ![](./media/d17.png)
+   ![](./media/4-7-25-l4-6.png)
    
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -116,7 +116,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    - deployment_name : **gpt-4o (3)**
 
-   ![](./media/d52.png)
+     ![](./media/d52.png)
 
 1. Replace the existing prompt with the following prompt as a baseline prompt in the **summarize_text_content** node.  
      
@@ -136,7 +136,7 @@ In this task, you will refine model responses by adjusting prompts over successi
    Summary:
    ```
 
-   ![](./media/d53.png)
+   ![](./media/4-7-25-l4-7.png)
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
@@ -144,7 +144,7 @@ In this task, you will refine model responses by adjusting prompts over successi
    
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1.
 
-   ![](./media/d54.png)
+   ![](./media/4-7-25-l4-2.png)
 
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -167,11 +167,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll to the last node and click on **+ LLM** present in the top left corner to create a new LLM node.
 
-   ![](./media/d55.png)
+   ![](./media/4-7-25-l4-3.png)
 
 1. Provide the name as **PostProcess (1)** and click on **Add (2)**.
 
-   ![](./media/d56.png)
+   ![](./media/l4-new.png)
 
 1. Once the **PostProcess** node is created, select the following:
 
@@ -183,7 +183,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    - response_format : **{"type":"json_object"}** **(4)**
 
-   ![](./media/d57.png)
+     ![](./media/d57.png)
 
 1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node. For the input value, select **${classify_with_llm.output} (2)** 
 
@@ -222,18 +222,17 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    >**Note:** The output shown in the image may differ in your lab.
 
-   ![](./media/d21.png)
+   ![](./media/4-7-25-l4-5.png)
 
    ![](./media/image-40.png)
-
-   
+  
 ## Task 2: Optimize Flow Performance for Production 
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
 1. Under **Inputs**, click on **+ Add input**, then add **category** and **text-context**. 
 
-    ![](./media/dex49.png)
+    ![](./media/4-7-25-l4-8.png)
 
 1. Under **Outputs**, click on **+ Add output**, then add **category** and **evidence** **(1)**. Click on **Save (2)**.
 
@@ -241,9 +240,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
      >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
-1. Select **Evaluate (1)** > **Custom Evaluation (2)**.
+1. Select **Evaluate (1)** -> **Custom Evaluation (2)**.
 
-   ![](./media/evaluations-1-1.png)
+   ![](./media/4-7-25-l4-9.png)
 
 1. On the **Batch run & Evaluate** give **Run display name** as **classify-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under **Variants** select **classify_with_llm (2)**, and click on **Next (3)**.
 
@@ -263,11 +262,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Click on **Add**.
 
-     ![](./media/d25.png)
+   ![](./media/d25.png)
 
-1.  Select **${data.text-context} (1)** for **text-context** and select **Next (2)**.
+1. Select **${data.text-context} (1)** for **text-context** and select **Next (2)**.
 
-     ![](./media/dex55.png)
+   ![](./media/dex55.png)
    
 1. On the **Select evaluation** page, select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
@@ -275,35 +274,35 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)** and select **classify_with_llm_data_set (Version 1) (2)**. For the **groundtruth** data source, select **category (3)** under the **Data input**, and for **prediction**, select **category (4)** under the **Flow output**, then select **Next (5)**.
 
-     ![](./media/dex56.png)
+   ![](./media/dex56.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
-     ![](./media/dex57.png)
+   ![](./media/dex57.png)
 
 1. Back on the Prompt flow page and from the top, click on the **View run list** link.
 
-    ![](./media/image-43.png)
+   ![](./media/image-43.png)
    
 1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
 
    ![](./media/d27.png)
 
-1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
+1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score, and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
 
 1. Now will evaluate the variants of the **summarize_text_content** node as well.
 
-1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input** and enter **Text**. 
+1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input (1)** and enter **Text (2)**. 
 
-   ![](./media/dex58.png)
+   ![](./media/4-7-25-l4-10.png)
 
-1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **url** and set the value as **${inputs.url}** **(1)** and then click on **Save (2)**
+1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **URL** and set the value as **${inputs.url}** **(1)** and then click on **Save (2)**
 
    ![](./media/dex59.png)
 
 1. Select **Evaluate (1)** and then select **Custom Evaluation (2)**.
 
-   ![](./media/evaluations-1-1.png)
+   ![](./media/4-7-25-l4-9.png)
 
 1. On the Batch run & Evaluate give **Run display name** as **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under variants select **Use default variants for all nodes (2)**, and select **summarize_text_content (3)** click on **Next (4)**.
 
@@ -339,11 +338,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On **Review** page review the settings and click on **Submit**.
 
-    ![](./media/submit(1).png)
+    ![](./media/4-7-25-l4-12.png)
 
 1. Back on the Prompt flow page, and from the top, click on the **View run list** link.
 
-   ![](./media/viewrunlist-1.png)
+   ![](./media/4-7-25-l4-11.png)
    
 1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
 
