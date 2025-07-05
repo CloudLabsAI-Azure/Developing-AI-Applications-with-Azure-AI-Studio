@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a9ba4ee8-ca96-4559-b0b6-28df787f32e7)# Lab 05: Implementing Chat Flow and Tool Integration
+# Lab 05: Implementing Chat Flow and Tool Integration
 
 ## Estimated Duration: 60 Minutes
 
