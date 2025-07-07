@@ -20,7 +20,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. In the **Create a new flow** pane, under **Explore gallery**, in the **Web Classification** box, select **Clone**.
 
-     ![](./media/4-7-25-l4-1.1.png)
+     ![](./media/4-7-25-p4-1.png)
 
 1. On the **Clone Flow** page, enter name **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
 
@@ -69,11 +69,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-   ![](./media/d16.png)
+   ![](./media/4-7-25-p4-2.png)
 
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters with different values on variant_1.
 
-   ![](./media/4-7-25-l4-6.png)
+   ![](./media/4-7-25-p4-3.png)
    
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -108,7 +108,7 @@ In this task, you will refine model responses by adjusting prompts over successi
      
 1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For the classify_with_llm node, based on variant_0:
 
-     ![](./media/d18.png)
+     ![](./media/4-7-25-p4-4.1.png)
 
 1. Scroll up to **summarize_text_content (1)** node and select the following: 
 
@@ -116,7 +116,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    - deployment_name : **gpt-4o (3)**
 
-     ![](./media/d52.png)
+     ![](./media/4-7-25-p4-4.png)
 
 1. Replace the existing prompt with the following prompt as a baseline prompt in the **summarize_text_content** node.  
      
@@ -140,11 +140,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-    ![](./media/d20.png)
+    ![](./media/4-7-25-p4-5.png)
    
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1.
 
-   ![](./media/4-7-25-l4-2.png)
+   ![](./media/4-7-25-p4-5.png)
 
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -185,8 +185,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
      ![](./media/d57.png)
 
-1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node. For the input value, select **${classify_with_llm.output} (2)** 
-
+1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node.
    ```
    # system:
    You will provide a properly formed JSON response given an input
@@ -200,13 +199,19 @@ In this task, you will refine model responses by adjusting prompts over successi
    {{input}}
    ```
 
-   ![](./media/d58.png)
+   ![](./media/4-7-25-p4-7.png)
 
 1. Click the **Save (1)** button from the top menu, then select **Start Compute Session (2)**.
 
     ![](./media/image-87.png)
 
      >**Note:** It might take 10-15 minutes to start the session. Wait till the compute session starts.    
+
+1. Click the **Validate and parse input** button **(1)** and For the input value, select **${classify_with_llm.output} (2)** 
+
+   ![](./media/4-7-25-p4-8.png)
+
+   ![](./media/4-7-25-p4-9.png)
 
 1. Finally, click the **Run** button in the top right corner.
 
@@ -230,19 +235,19 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
-1. Under **Inputs**, click on **+ Add input**, then add **category** and **text-context**. 
+1. Under **Inputs**, click on **+ Add input (1)**, then add **category** and **text-context** **(2)**. 
 
-    ![](./media/4-7-25-l4-8.png)
+    ![](./media/4-7-25-p4-11.png)
 
 1. Under **Outputs**, click on **+ Add output**, then add **category** and **evidence** **(1)**. Click on **Save (2)**.
 
-    ![](./media/dex50.png)
+    ![](./media/4-7-25-p4-12.png)
 
      >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
 1. Select **Evaluate (1)** -> **Custom Evaluation (2)**.
 
-   ![](./media/4-7-25-l4-9.png)
+   ![](./media/4-7-25-p4-10.png)
 
 1. On the **Batch run & Evaluate** give **Run display name** as **classify-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under **Variants** select **classify_with_llm (2)**, and click on **Next (3)**.
 
