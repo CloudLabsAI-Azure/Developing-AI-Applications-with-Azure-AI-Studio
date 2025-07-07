@@ -250,7 +250,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
    ![](./media/output1-2.png)
    
 ## Review
-In this lab you have completed the following tasks:
+In this lab, you have completed the following tasks:
 
 - Initialize a Prompt Flow Project
 - Created and Customized Prompts
