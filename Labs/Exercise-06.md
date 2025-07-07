@@ -1,6 +1,6 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
-## Estimated Duration: 60 minutes
+## Estimated Duration: 60 Minutes
 
 ## Lab Overview
 This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
@@ -8,31 +8,31 @@ This lab provides hands-on experience in implementing responsible AI practices u
 ## Lab Objective
 In this lab, you will perform the following:
 
-- Task 1 : Image and Text Moderation Using Azure AI foundry
+- Task 1: Image and Text Moderation Using Azure AI Foundry
 
-## Task 1 : Image and Text Moderation Using Azure AI Foundry
+## Task 1: Image and Text Moderation Using Azure AI Foundry
 
 In this task, you will use Azure AI Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
 
 1. On the **Azure AI Foundry** portal, select **Guardrails + controls (1)** under **Protect and govern**, then select **Try it Out (2)**.
 
-     ![](./media/gurdrlss-1.png)     
+     ![](./media/4-7-25-l6-1.png)     
 
 2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
      ![](./media/dee2.png)
 
-3. On **Moderate image content** select **Run a simple test (1)** tab, review the options note we have three set content  **Safe content**, **self- harm content** and **AI-generated sexual content**. **(2)**
+3. On **Moderate image content** select **Run a simple test (1)** tab, and review the options. Note we have three sets of content:  **Safe content**, **self-harm content**, and **AI-generated sexual content**. **(2)**
 
      ![](./media/d40.png)
 
 #### Safe content
 
-1. Before starting, select the below **Azure AI services**, and proceed with lab using this Azure AI services.
+1. Before starting, select the below **Azure AI services**, and proceed with the lab using these Azure AI services.
 
      ![](./media/l6.task1.1.png)
 
-1. Now let's use our image and test then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
+1. Now let's use our image and test, then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
      ![](./media/image-61.png)
 
@@ -50,7 +50,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
    >**Note**: So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
-#### Self harmed content
+#### Self-harmed content
 
 We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
@@ -66,7 +66,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
     ![](./media/selfharm1.png)
 
-    >**Note**: Rightfully so, the content is Blocked, and was rejected by the Violence filter which has a Severity level of Medium.
+    >**Note**: Rightfully so, the content is blocked, and was rejected by the Violence filter, which has a Severity level of Medium.
 
      ![](./media/selfharm2.png)
 
@@ -92,7 +92,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
    ![](./media/selfharm4.png)
 
-### Task 1.3 : Text moderation using Moderate text content 
+### Task 1.3: Text moderation using Moderate text content 
 
 We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
@@ -127,7 +127,7 @@ Let’s first test some positive customer feedback.
 
 #### Harmful content
 
-But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name calling or degrading statements.
+But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name-calling or degrading statements.
 
 1. In the **Test box**, enter the following:
 
@@ -155,7 +155,7 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
 #### Violent content with misspelling
 
-We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racoon.
+We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racon.
 
 1. Select **Violent content with misspelling**.
 
@@ -168,10 +168,14 @@ We can’t anticipate that all text content from our customers would be free of 
     - Set all Threshold levels to **Medium (2)**.
 
     - Select **Run test (3)**
-
+    
       ![](./media/dee22.png)    
+    
+    - Review the result.
 
-    - Although the content is Allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
+      ![](./media/4-7-25-l6-2.png)
+
+    - Although the content is allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content; however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
 
      
 #### Run a bulk test
@@ -179,7 +183,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 based on the model’s performance.
 
 We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
-dataset includes a label to indicate whether the content is harmful. Let’s do another test round but this time with the data set!
+dataset includes a label to indicate whether the content is harmful. Let’s do another test round, but this time with the data set!
 
 1. Switch to the **Run a bulk test (1)** tab. Select **Browse for a file (2)**.
 
@@ -206,7 +210,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
     ![](./media/image-80.png)
 
 ## Review
-In this lab you have completed the following tasks:
+In this lab, you have completed the following tasks:
 - Image Moderation: Tested single and bulk images for safety, self-harm, and AI-generated content.
 - Text Moderation: Analyzed safe and harmful text, including misspellings, with bulk testing.
 - Conclusion: Azure AI Content Safety enhances content moderation for compliance and safer digital spaces.

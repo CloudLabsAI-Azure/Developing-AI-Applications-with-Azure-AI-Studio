@@ -10,7 +10,7 @@ This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud E
 
 This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to:
 
-- **Understanding the Lifecycle of Flow Development**: This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation, while learning how flows and nodes enable efficient data processing and task execution.
+- **Understanding the Lifecycle of Flow Development**: This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation while learning how flows and nodes enable efficient data processing and task execution.
 
 - **Building and Customizing Prompt Flows**: In this lab, you will gain practical experience in setting up and managing a Prompt Flow project within Azure AI Foundry. You will begin by initializing the project and configuring the development environment to support the creation, testing, and refinement of AI applications. The lab will guide you through designing and customizing prompts, starting with the creation of a new flow, integrating the Prompt tool, and incorporating Large Language Model (LLM) capabilities. By building and executing a sample flow with custom inputs, you will learn how to monitor execution, analyze outputs, and refine workflows, providing a comprehensive understanding of AI-driven application development.
 
@@ -32,8 +32,8 @@ Basic knowledge and understanding of the following
 
 ## Architecture
 
-- **Azure Portal** : The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
-- **Azure AI Foundry** : Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+- **Azure Portal**: The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
+- **Azure AI Foundry**: Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
 
 ## Architecture Diagram: 
 
@@ -93,7 +93,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 ## Lab Validation
 
-After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
 ![](./media/develop-ai-overview-6.png)
 
@@ -139,7 +139,7 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
    ![Install](./media/dpg12.png)
 
-   > Note: For Ios, Open the app store and repeat the steps.
+   > Note: For iOS, open the App Store and repeat the steps.
 
    > Note: Skip if already installed.
 
@@ -149,7 +149,7 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
    ![QR code](./media/dpg13.png)
 
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+1. Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
 
 1. Once the notification is approved, click on **Next**.
 
