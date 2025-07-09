@@ -9,6 +9,7 @@ In this lab, you will explore the lifecycle of developing AI applications using 
 
 In this lab, you will perform the following:
 - Task 1: Comprehend the Flow Development Lifecycle
+     
      - Task 1.1: Understand the types of flows  
      - Task 1.2: Understand a flow  
      - Task 1.3: Explore the tools available in prompt flow
@@ -67,9 +68,9 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 1. Three common tools are:
 
     - **LLM tool**: Enables the creation of custom prompts utilizing Large Language Models.
-    - **Python tool**: Allows the execution of custom Python scripts.
     - **Prompt tool**: Prepares prompts as strings for complex scenarios or integration with other tools.
-
+    - **Python tool**: Allows the execution of custom Python scripts.
+    
       ![](./media/image-50.png)
    
 1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text or making an API call. You can use multiple tools within one flow and use a tool multiple times.
