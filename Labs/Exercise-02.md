@@ -48,7 +48,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/project-creation.png)
 
-   > **Note:** Wait **1-2** minutes to create the project.
+   > **Note:** This may take 1–2 minutes to complete. Please wait while the project is being created.
 
 1. Navigate to the Azure Portal using the link below:
     ```
