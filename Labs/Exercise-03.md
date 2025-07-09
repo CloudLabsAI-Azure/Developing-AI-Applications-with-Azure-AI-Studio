@@ -34,6 +34,8 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    `Are there any guided tours available for the Great Wall of China?`
 
+   ![](./media/lab-3-input.png)
+
 1. Select **Run** from the top bar to generate outputs for all questions you added as inputs.
 
     ![](./media/4-7-25-l3-3.png)
