@@ -133,7 +133,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/refreshhhh-1.png)
 
-1. From the left navigation menu, under the Protect and govern section, select **Evaluation (1)**, and under **Automated Evaluation (2)**, choose the newly created evaluation run **(3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**, and under **Automated Evaluation (2)**, choose the newly created evaluation run **(3)**.
 
    ![](./media/4-7-25-l3-10.png)
 
