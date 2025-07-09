@@ -99,7 +99,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/E1-T1-S12.png)
 
-    > **Note:** If any pop-up appears, click on Close.
+    > **Note:** If any pop-up appears, click on **Close**.
 
       ![](./media/ai-project-popup-close.png)
      
@@ -143,7 +143,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
      >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
-1. From the left navigation pane, select **Prompt flow (1)** under Build and customize and click **+ Create (2)** to add the Prompt tool to your flow.
+1. From the left navigation pane, select **Prompt flow (1)** under **Build and customize** and click **+ Create (2)** to add the Prompt tool to your flow.
 
    ![](./media/prompt-flow-1.png)
 
@@ -182,7 +182,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/4-7-25-l2-14.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)** on Value.
+1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)** in the **Value** field.
 
     ![](./media/apple-1.png)
 
@@ -241,7 +241,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. In the input section, add the following value, select **Save (2)** and **Run (3)**.
 
-   - user_name: **John (1)** on Value
+   - user_name: **John (1)** in the **Value** field
 
      ![](./media/4-7-25-l2-18.png)
 
