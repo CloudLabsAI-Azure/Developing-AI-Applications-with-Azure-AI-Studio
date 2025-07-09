@@ -34,7 +34,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    - Deployment Name: **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (Default) (3)**
-   - Connected AI resource: select the resource that we created in an earlier task **(4)**
+   - Connected AI resource: select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>(4)**
    - Tokens per Minute Rate Limit: **10K (5)**
    - Content Filter: **DefaultV2 (6)**
    - Enable dynamic quota: **Enabled (7)**
@@ -143,7 +143,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. You still need to connect the LLM node to your deployed model. At the top of the **LLM node** section, you need to select the connection from the drop-down list and proceed as below.
 
-   - **Connection**: Select the connection from the drop-down **(1)**. 
+   - **Connection**: Select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**. 
    - **Api**: Select **chat (2)**.
    - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
    - **response_format**: Select **{“type”:”text”} (4)**.
