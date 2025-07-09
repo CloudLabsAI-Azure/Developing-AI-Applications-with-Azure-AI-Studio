@@ -313,7 +313,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/summarizetextcontent.png)
 
-1. On the Batch run settings, click on **+ Add new data**.
+1. On the **Batch run & Evaluate** screen, under the **Batch run settings** section, click on **+ Add new data** to upload your dataset.
 
    ![](./media/lab4-new-3.png)
 
