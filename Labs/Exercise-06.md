@@ -48,7 +48,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
     ![](./media/image-69.png)
 
-   >**Note**: So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+   >**Note:** So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
 ## Self-harmed content
 
@@ -66,7 +66,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
     ![](./media/selfharm1.png)
 
-    >**Note**: Rightfully so, the content is blocked, and was rejected by the Violence filter, which has a Severity level of Medium.
+    >**Note:** Rightfully so, the content is blocked and was rejected by the Violence filter, which has a Severity level of Medium.
 
      ![](./media/selfharm2.png)
 
@@ -122,8 +122,7 @@ Let’s first test some positive customer feedback.
 
     ![](./media/image-73.png)
 
-    >**Note**: The content is **Allowed**, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
-
+    >**Note:** The content is **Allowed**, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
 ## Harmful content
 
@@ -176,14 +175,12 @@ We can’t anticipate that all text content from our customers would be free of 
       ![](./media/4-7-25-l6-2.png)
 
     - Although the content is allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content; however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
-
      
 ## Run a bulk test
-So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics 
-based on the model’s performance.
 
-We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the 
-dataset includes a label to indicate whether the content is harmful. Let’s do another test round, but this time with the data set!
+So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+
+We have a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful. Let’s do another test round, but this time with the data set!
 
 1. Switch to the **Run a bulk test (1)** tab. Select **Browse for a file (2)**.
 
@@ -191,11 +188,11 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
 1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
-    > Note: The name of the CSV file may vary.
+    > **Note:** The name of the CSV file may vary.
    
      ![](./media/dee25.png)
      
-1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content). **(2)**
+1. In the **Dataset preview section (1)**, browse through the Records and their corresponding Label. A 0 indicates that the content is acceptable (not harmful). A 1 indicates that the content is unacceptable (harmful content) **(2)**.
 
      - Set all Threshold levels to **Medium (3)**.
 

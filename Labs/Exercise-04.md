@@ -10,7 +10,7 @@ In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
 
-### Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
+## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
 In this task, you will refine model responses by adjusting prompts over successive iterations. This process enables systematic evaluation and comparison of output variants, helping to ensure that each iteration leads to improved performance and more accurate, relevant responses.
 
@@ -160,7 +160,6 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    assistant:
    Summary:
-
    ```
 
     ![](./media/dex47.png)
@@ -186,6 +185,7 @@ In this task, you will refine model responses by adjusting prompts over successi
      ![](./media/d57.png)
 
 1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node.
+
    ```
    # system:
    You will provide a properly formed JSON response given an input
