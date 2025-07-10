@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 In this task, you will use Azure AI Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
 
-1. On the **Azure AI Foundry** portal, from the left menu under **Protect and govern** section, click **Guardrails + controls (1)**. Then, at the top, select the **Try it out (2)** tab.
+1. In the **Azure AI Foundry** portal, click on **Guardrails + controls (1)** under the **Protect and govern** section on the left menu. Then click the **Try it out (2)** tab at the top.
 
      ![](./media/4-7-25-l6-1.png)     
 
