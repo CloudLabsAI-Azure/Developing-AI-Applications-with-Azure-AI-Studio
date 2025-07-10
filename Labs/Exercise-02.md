@@ -18,16 +18,14 @@ In this lab, you will perform the following:
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
-1. Navigate to Azure AI Foundry using the link below:
+1. Navigate to the Azure Portal using the link below:
+
     ```
-    https://ai.azure.com/
+    https://portal.azure.com
     ```
-1. On the **Azure AI Foundry** welcome page, click on **Sign in** at the top-right corner to get started.
 
-      ![](./media/sign-in-1.png)
-
-      > **Note:** You should be signed in automatically with your ODL account. If not, manually sign in using the provided Azure credentials when prompted.
-
+    > **Note:** If prompted with a sign-in window, kindly sign in using the provided Azure credentials
+      
       - Enter your **Email/Username:** <inject key="AzureAdUserEmail"></inject> in the **Sign in** field. Click **Next** to continue.
 
         ![](./media/u50.png)
@@ -36,24 +34,6 @@ In this task, you will set up a structured environment to manage and streamline 
 
         ![](./media/u51.png)
 
-1. On the **Azure AI Foundry**, on the home page, select **Create an agent**.
-
-   ![](./media/4-7-25-l2-1.png)
-
-1. On the **Create a new project** page, enter Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select the **default subscription (2)**, select **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/> (3)** Resource Group, keep the default Azure AI Foundry resource name **(4)**, Region, keep the default region **(5)**. click on **Create (6)**.
-
-    ![](./media/4-7-25-l2-2.png)
-
-1. Wait for a few minutes to create this project completely. 
-
-    ![](./media/project-creation.png)
-
-   > **Note:** This may take 1–2 minutes to complete. Please wait while the project is being created.
-
-1. Navigate to the Azure Portal using the link below:
-    ```
-    https://portal.azure.com
-    ```
 1. Search for **Azure AI Foundry (1)** in the Azure portal and select **Azure AI Foundry (2)** from the Services list.  
 
     ![](./media/4-7-25-l2-3.png)
