@@ -49,7 +49,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
-   > Wait for 2-3 mins if you get an error while querying.
+   > Wait for 2-3 minutes if you get an error while querying.
    
      ![](./media/4-7-25-l5-4.png)
 
@@ -73,9 +73,8 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    3. Tailor responses to the user's specific travel needs and interests.
    4. Ensure recommendations are practical and consider the user's safety and comfort.
    5. Encourage the user to ask follow-up questions for further assistance.
-
    ```
-   
+
 1. Select **Apply changes (2)** and when **Update system message?** pop-up appears, click on **Continue**.
 
      ![](./media/d33.png)   
@@ -225,7 +224,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 <validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
 
 ## Review
-In this lab you have completed the following tasks:
+In this lab, you have completed the following tasks:
 - Designed and Implemented a Chat Flow
 - Used LLM and Prompt Tools in Flows
 
