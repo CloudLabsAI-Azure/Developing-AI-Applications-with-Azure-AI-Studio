@@ -29,12 +29,12 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    ![](./media/4-7-25-l5-1.png)
 
-1. On **Deploy model gpt-35-turbo** follow these instructions to create the deployment:
+1. On **Deploy model gpt-35-turbo**, follow these instructions to create the deployment:
    
    - Deployment Name: **gpt-35-turbo (1)**
    - Deployment type: **Standard (2)**
    - Model version: **0125 (Default) (3)**
-   - Connected AI resource: select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>(4)**
+   - Connected AI resource: select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/> (4)**
    - Tokens per Minute Rate Limit: **10K (5)**
    - Content Filter: **DefaultV2 (6)**
    - Enable dynamic quota: **Enabled (7)**
@@ -42,7 +42,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
      ![](./media/4-7-25-l5-2.png)
      
-1. On the Azure AI Foundry, under **My assets**, select **Model + endpoints (1)**. On the **Model + deployments** page select the checkbox next to **gpt-35-turbo (2)**, then click **Open in playground (3)**
+1. On the Azure AI Foundry, under **My assets**, select **Model + endpoints (1)**. On the **Model deployments** page check the box next to **gpt-35-turbo (2)**, then click **Open in playground (3)**
 
     ![](./media/4-7-25-l5-3.png)
 
@@ -86,7 +86,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
      >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
-1. From the left navigation pane, under the **Build and customize** section, select **Prompt flow (1)** on the Flows click **+ Create (2)** to add the Prompt tool to your flow.
+1. From the left menu, under the **Build and customize** section, click **Prompt flow (1)**. On the Flows page, click **+ Create (2)** to start building your flow with the Prompt tool.
 
    ![](./media/4-7-25-l5-6.png)
 
@@ -168,7 +168,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 
    ![](./media/4-7-25-l5-13.png)
    
-   - On the **Deploy Travel-Chat** screen under the **Basic settings** tab, enter the following details:
+   - On the **Deploy Travel-Chat** pane, under the **Basic settings** tab, enter the following details:
      - Endpoint: **New (1)**
      - Endpoint name: **modelendpoint-<inject key="DeploymentID" enableCopy="false"/> (2)**
      - Deployment name: **modeldeploy-<inject key="DeploymentID" enableCopy="false"/> (3)**
@@ -229,7 +229,6 @@ In this lab you have completed the following tasks:
 - Designed and Implemented a Chat Flow
 - Used LLM and Prompt Tools in Flows
 
-### You have successfully completed the lab.
-Click on **Next >>** to proceed with the next Lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/9-7-next.png)
