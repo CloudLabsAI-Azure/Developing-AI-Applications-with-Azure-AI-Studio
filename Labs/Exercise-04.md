@@ -22,7 +22,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
      ![](./media/4-7-25-p4-1.png)
 
-1. On the **Clone Flow** page, enter Folder name as **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
+1. On the **Clone flow** page, enter Folder name as **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
 
       ![](./media/image-366.png)
 
@@ -217,7 +217,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/run-1.png)
 
-1. On the Submit flow run window open under **Select the LLM node with variants that you want to run**, choose **Select a node to run variants (1)**, then select **summarize_text_content (2)**, and click on **Submit (3)**. 
+1. On the **Submit flow run** pane, under the **Select the LLM node with variants that you want to run**, choose **Select a node to run variants (1)**, then select **summarize_text_content (2)**, and click on **Submit (3)**. 
 
    ![](./media/lab4-new.png)
    
@@ -317,7 +317,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/lab4-new-3.png)
 
-1. In the new data window, enter name  **summarize_text_content_data_set (1)** select **Upload from local file (2)** and click on **Browse (3)**.
+1. In the **Add new data** pane,  enter the Name as **summarize_text_content_data_set (1)** and select **Upload from local file (2)** and click on **Browse (3)**.
 
    ![](./media/d28.png)
 
@@ -364,7 +364,6 @@ In this lab, you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production
 
-### You have successfully completed the lab.
-Click on **Next >>** to proceed with the next Lab.
+ ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/9-7-next.png)

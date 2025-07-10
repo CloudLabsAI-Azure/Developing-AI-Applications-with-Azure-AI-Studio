@@ -42,15 +42,14 @@ This architecture flow demonstrates the end-to-end lifecycle of developing AI so
 
 The architecture for this lab involves the following key components:
 
-- **Azure AI Foundry**: Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+- **Azure AI Foundry**: The main platform used to build, customize, evaluate, and deploy AI-powered prompt flows and agents. Acts as the end-to-end orchestration layer.
+- **Prompt Flow**: A visual tool inside Azure AI Foundry that allows you to chain together steps like input nodes, prompt tools, LLM calls, and post-processing using Python.
+- **Python**: Used for writing custom code blocks within prompt flows—for example, data preprocessing, calling external APIs, or transforming LLM outputs.
+- **GPT-based Language Models**: These models are used in LLM nodes within the Prompt Flows to perform tasks such as summarization, classification, or chat completions.
+- **LLM Nodes**: Represent connections to foundation models like GPT-4, GPT-35-turbo. These nodes are used to perform tasks such as summarization, classification, or chat completion.
+- **Prompt Tool**: The component that defines the input prompt format passed into an LLM node. Supports prompt variants for A/B testing.
+- **Content Safety & Responsible AI (Azure Shield + Document Icons)**: Ensures your flows follow ethical and secure practices. This includes moderation filters, content controls, and transparency safeguards.
   
-- **Comprehend the Flow Development Lifecycle**: This stage helps you understand the foundational concepts of Prompt Flow. You'll explore different flow types (Standard, Chat, Evaluation), understand how data moves within a flow, and get familiar with the tools available to build and manage flows effectively.
-- **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
-- **Evaluation Flow Setup**: This component focuses on setting up evaluation metrics like coherence and fluency to assess your model’s performance. You’ll run evaluation flows and analyze results.
-- **Fine-Tuning Prompts for Optimal Performance**: Fine-tuning prompts involves adjusting components to enhance clarity and relevance. This optimization ensures interactions are more effective and engaging.
-- **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
-- **Ensuring Responsible AI Practices with Content Safety**: Ensuring responsible AI practices involves implementing robust content safety measures to prevent harm and misuse. These components ensure AI interactions are ethical, secure, and aligned with user protection standards.
-
 ## Getting Started with the Lab
 
 Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
@@ -165,15 +164,15 @@ After completing the task, hit the **Validate** button under the Validation tab 
 
 ## Support Contact
 
-1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
-   Learner Support Contacts:
+  Learner Support Contacts:
 
-    - Email Support: cloudlabs-support@spektrasystems.com
-    - Live Chat Support: https://cloudlabs.ai/labs-support
+   - Email Support: cloudlabs-support@spektrasystems.com
+   - Live Chat Support: https://cloudlabs.ai/labs-support
 
 
-2. Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
    ![Launch Azure Portal](./media/d47.png)
 

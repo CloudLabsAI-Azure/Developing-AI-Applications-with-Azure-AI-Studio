@@ -22,19 +22,19 @@ In this task, you will set up a structured environment to manage and streamline 
     ```
     https://ai.azure.com/
     ```
-1. Select **Sign in**. It should auto-login with your ODL account. If not, enter the following Azure credentials when prompted.
+1. On the **Azure AI Foundry** welcome page, click on **Sign in** at the top-right corner to get started.
 
       ![](./media/sign-in-1.png)
 
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+      > **Note:** You should be signed in automatically with your ODL account. If not, manually sign in using the provided Azure credentials when prompted.
 
-      ![](./media/u50.png)
+      - Enter your **Email/Username:** <inject key="AzureAdUserEmail"></inject> in the **Sign in** field. Click **Next** to continue.
 
-    - Next, provide your password, and click **Sign in**
+        ![](./media/u50.png)
 
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
+      - Next, Enter **Password:** <inject key="AzureAdUserPassword"></inject> and click **Sign in**
 
-      ![](./media/u51.png)
+        ![](./media/u51.png)
 
 1. On the **Azure AI Foundry**, on the home page, select **Create an agent**.
 
@@ -249,7 +249,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/run-anway.png)
 
-1. Once the flow run is completed, select **View full Output** to view the flow results. The output will look similar to the image shown below.
+1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image shown below.
 
    ![](./media/output001.png)
 
@@ -264,7 +264,6 @@ In this lab, you have completed the following tasks:
 - Created and Customized Prompts
 - Developed a Flow with LLM and Prompt Tools
 
-### You have successfully completed the lab.
-Click on **Next >>** to proceed with the next Lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/9-7-next.png)

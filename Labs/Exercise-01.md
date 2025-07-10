@@ -70,7 +70,7 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
     - **LLM tool**: Enables the creation of custom prompts utilizing Large Language Models.
     - **Prompt tool**: Prepares prompts as strings for complex scenarios or integration with other tools.
     - **Python tool**: Allows the execution of custom Python scripts.
-    
+
       ![](./media/image-50.png)
    
 1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text or making an API call. You can use multiple tools within one flow and use a tool multiple times.
@@ -81,7 +81,6 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 In this lab, you have completed the following tasks:
 - Comprehended the Flow Development Lifecycle
 
-### You have successfully completed the lab.
-Click on **Next >>** to proceed with the next Lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/9-7-next.png)
