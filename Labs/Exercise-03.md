@@ -22,7 +22,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    ![](./media/4-7-25-l3-2.png)
 
-1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add Inputs**:
+1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add input**:
 
    `Can you provide a list of the top-rated budget hotels in Rome?`
 
@@ -50,7 +50,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    ![](./media/gpt-4-demo18-1.png)
    
-1. Using the menu on the left, navigate to **Evaluations (1)** under the **Protect and govern** section. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved, **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
+1. From the left-hand menu, navigate to **Evaluations (1)** under the **Protect and govern** section. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved, **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
 
    ![](./media/manual-1.png)
 
@@ -150,7 +150,6 @@ In this lab, you have completed the following tasks:
 - Set Up Manual Evaluation
 - Set up Automated Evaluation with Built-in Evaluation Metrics
 
-### You have successfully completed the lab.
-Click on **Next >>** to proceed with the next Lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 
 ![](./media/9-7-next.png)
