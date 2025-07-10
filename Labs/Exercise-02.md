@@ -13,7 +13,6 @@ In this lab, you will perform the following:
 - Task 2: Create and Customize Prompts
 - Task 3: Develop a Flow with LLM and Prompt Tools
 
-
 ## Task 1: Initialize a Prompt Flow Project
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
@@ -26,11 +25,11 @@ In this task, you will set up a structured environment to manage and streamline 
 
     > **Note:** If prompted with a sign-in window, kindly sign in using the provided Azure credentials
       
-      - Enter your **Email/Username:** <inject key="AzureAdUserEmail"></inject> in the **Sign in** field. Click **Next** to continue.
+      - Enter your **Email/Username:** <inject key="AzureAdUserEmail"></inject> and click **Next** to continue.
 
         ![](./media/u50.png)
 
-      - Next, Enter **Password:** <inject key="AzureAdUserPassword"></inject> and click **Sign in**
+      - Enter **Password:** <inject key="AzureAdUserPassword"></inject> and click **Sign in**
 
         ![](./media/u51.png)
 
@@ -47,7 +46,7 @@ In this task, you will set up a structured environment to manage and streamline 
    - Subscription: **Set as default (1)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Region: **<inject key="Region" enableCopy="false"/> (3)**
-   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**.
+   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>**  **(4)**
    - Connect AI Services, incl. OpenAI: Click on **Create new** **(5)**
    - On the Create new Azure AI Services pane: Enter **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>  (6)** 
    - Select **Save (7)**
@@ -137,7 +136,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
      ![](./media/4-7-25-l2-12.png)
 
-      >**Note:** If you encounter permission errors like "Cloud Dependency Permission" or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and click on **Save (3)**.
+      >**Note:** If you encounter permission errors like "Cloud Dependency Permission" or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and clicking on **Save (3)**.
 
       ![](./media/gpt-4-demo11.png) 
 
@@ -197,6 +196,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
    ![](./media/gpt-4-demo17.png)
+
    ![](./media/gpt-4-demo(15).png)
 
 1. Add this code inside the **model flow** prompt tool **(1)**, and select **Validate and parse input (2)**
@@ -225,7 +225,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
      ![](./media/4-7-25-l2-18.png)
 
-1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
+1. If you encounter any warnings while running, as shown in the screenshot below, click **Run anyway**.
 
    ![](./media/run-anway.png)
 
