@@ -66,8 +66,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/4-7-25-l3-5.png)
 
-1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** 
-      and **Ctrl C** to select all and **Copy**.
+1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** and **Ctrl C** to select all and **Copy**.
   
     - Search for **Visual Studio Code (1)** in the Windows search bar of the vm and select **Visual Studio Code (2)**.
 
