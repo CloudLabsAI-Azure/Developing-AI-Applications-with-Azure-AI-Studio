@@ -144,7 +144,7 @@ In this task, you will refine model responses by adjusting prompts over successi
    
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1.
 
-   ![](./media/4-7-25-p4-5.png)
+   ![](./media/4-7-25-p4-6.png)
 
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -329,9 +329,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d30.png)
 
-1. Under **Input mapping** for **url** select **${data.text} (1)** and click on **Next (2)**.
+1. Under **Input mapping** for **url** and **Test** select **${data.text} (1)** and click on **Next (2)**.
 
-   ![](./media/inputmapping.png)
+   ![](./media/inputmap.png)
 
 1. On the **Select evaluation** page select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
