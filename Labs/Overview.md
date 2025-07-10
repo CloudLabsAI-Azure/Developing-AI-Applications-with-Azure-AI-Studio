@@ -4,23 +4,23 @@
 
 ## Overview
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
+This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, and AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
 
 ## Objective 
 
 This lab is designed to equip participants with hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, participants will learn to:
 
-- **Understanding the Lifecycle of Flow Development**: This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation while learning how flows and nodes enable efficient data processing and task execution.
+- **Understanding the Lifecycle of Flow Development:** This lab provides a comprehensive understanding of AI application development using Azure AI Foundry's Prompt Flow. It covers the full development lifecycle, including initialization, experimentation, evaluation, refinement, and deployment. Participants will explore various flow types, such as Standard, Chat, and Evaluation while learning how flows and nodes enable efficient data processing and task execution.
 
-- **Building and Customizing Prompt Flows**: In this lab, you will gain practical experience in setting up and managing a Prompt Flow project within Azure AI Foundry. You will begin by initializing the project and configuring the development environment to support the creation, testing, and refinement of AI applications. The lab will guide you through designing and customizing prompts, starting with the creation of a new flow, integrating the Prompt tool, and incorporating Large Language Model (LLM) capabilities. By building and executing a sample flow with custom inputs, you will learn how to monitor execution, analyze outputs, and refine workflows, providing a comprehensive understanding of AI-driven application development.
+- **Building and Customizing Prompt Flows:** In this lab, you will gain practical experience in setting up and managing a Prompt Flow project within Azure AI Foundry. You will begin by initializing the project and configuring the development environment to support the creation, testing, and refinement of AI applications. The lab will guide you through designing and customizing prompts, starting with the creation of a new flow, integrating the Prompt tool, and incorporating Large Language Model (LLM) capabilities. By building and executing a sample flow with custom inputs, you will learn how to monitor execution, analyze outputs, and refine workflows, providing a comprehensive understanding of AI-driven application development.
 
-- **Evaluation Flow Setup**: This lab focuses on setting up and analyzing evaluation flows for an AI model in Azure AI Foundry. You will systematically review model responses to diverse inputs, assessing performance based on key evaluation criteria. By defining and applying metrics like coherence and fluency, you will automate the evaluation process using a structured dataset. Through this hands-on experience, you will develop a deeper understanding of model assessment techniques and optimization strategies to improve AI performance.
+- **Evaluation Flow Setup:** This lab focuses on setting up and analyzing evaluation flows for an AI model in Azure AI Foundry. You will systematically review model responses to diverse inputs, assessing performance based on key evaluation criteria. By defining and applying metrics like coherence and fluency, you will automate the evaluation process using a structured dataset. Through this hands-on experience, you will develop a deeper understanding of model assessment techniques and optimization strategies to improve AI performance.
 
-- **Fine-Tuning Prompts for Optimal Performance**: This lab focuses on fine-tuning prompts to optimize AI model performance and enhance response quality. You will explore techniques for iterative prompt refinement, evaluate different prompt variations, and analyze their impact on model outputs. Additionally, you will work on optimizing flow performance to ensure efficiency and reliability in production environments. By the end of this lab, you will have a deeper understanding of how to systematically improve AI-generated responses and streamline workflow execution for real-world applications.
+- **Fine-Tuning Prompts for Optimal Performance:** This lab focuses on fine-tuning prompts to optimize AI model performance and enhance response quality. You will explore techniques for iterative prompt refinement, evaluate different prompt variations, and analyze their impact on model outputs. Additionally, you will work on optimizing flow performance to ensure efficiency and reliability in production environments. By the end of this lab, you will have a deeper understanding of how to systematically improve AI-generated responses and streamline workflow execution for real-world applications.
 
-- **Implementing Chat Flow and Tool Integration**: Implementing and testing chat flows involves creating and evaluating the interactions between a user and a chatbot or automated messaging system. This process begins with designing the conversation paths, including potential user inputs and corresponding system responses, to ensure that the chatbot can effectively address various scenarios. After implementation, thorough testing is conducted to identify and rectify any issues, ensuring the chat flow is intuitive, accurate, and capable of handling diverse user interactions. The goal is to deliver a seamless and efficient user experience, refining the chat flow based on test results to improve functionality and user satisfaction.
+- **Implementing Chat Flow and Tool Integration:** Implementing and testing chat flows involves creating and evaluating the interactions between a user and a chatbot or automated messaging system. This process begins with designing the conversation paths, including potential user inputs and corresponding system responses, to ensure that the chatbot can effectively address various scenarios. After implementation, thorough testing is conducted to identify and rectify any issues, ensuring the chat flow is intuitive, accurate, and capable of handling diverse user interactions. The goal is to deliver a seamless and efficient user experience, refining the chat flow based on test results to improve functionality and user satisfaction.
 
-- **Ensure Responsible AI Practices AI with Content Safety**:This lab offers hands-on experience in applying responsible AI principles using Azure AI Foundry. Participants will explore key aspects such as fairness, transparency, privacy, and security while utilizing Azure’s built-in Responsible AI tools. The session focuses on identifying and addressing biases, enhancing model interpretability, implementing privacy-preserving techniques, and ensuring security and compliance adherence.
+- **Ensure Responsible AI Practices AI with Content Safety:** This lab offers hands-on experience in applying responsible AI principles using Azure AI Foundry. Participants will explore key aspects such as fairness, transparency, privacy, and security while utilizing Azure’s built-in Responsible AI tools. The session focuses on identifying and addressing biases, enhancing model interpretability, implementing privacy-preserving techniques, and ensuring security and compliance adherence.
 
 ## Prerequisites 
 
@@ -42,13 +42,13 @@ This architecture flow demonstrates the end-to-end lifecycle of developing AI so
 
 The architecture for this lab involves the following key components:
 
-- **Azure AI Foundry**: The main platform used to build, customize, evaluate, and deploy AI-powered prompt flows and agents. Acts as the end-to-end orchestration layer.
-- **Prompt Flow**: A visual tool inside Azure AI Foundry that allows you to chain together steps like input nodes, prompt tools, LLM calls, and post-processing using Python.
-- **Python**: Used for writing custom code blocks within prompt flows—for example, data preprocessing, calling external APIs, or transforming LLM outputs.
-- **GPT-based Language Models**: These models are used in LLM nodes within the Prompt Flows to perform tasks such as summarization, classification, or chat completions.
-- **LLM Nodes**: Represent connections to foundation models like GPT-4, GPT-35-turbo. These nodes are used to perform tasks such as summarization, classification, or chat completion.
-- **Prompt Tool**: The component that defines the input prompt format passed into an LLM node. Supports prompt variants for A/B testing.
-- **Content Safety & Responsible AI (Azure Shield + Document Icons)**: Ensures your flows follow ethical and secure practices. This includes moderation filters, content controls, and transparency safeguards.
+- **Azure AI Foundry:** The main platform used to build, customize, evaluate, and deploy AI-powered prompt flows and agents. Acts as the end-to-end orchestration layer.
+- **Prompt Flow:** A visual tool inside Azure AI Foundry that allows you to chain together steps like input nodes, prompt tools, LLM calls, and post-processing using Python.
+- **Python:** Used for writing custom code blocks within prompt flows, for example, data preprocessing, calling external APIs, or transforming LLM outputs.
+- **GPT-based Language Models:** These models are used in LLM nodes within the Prompt Flows to perform tasks such as summarization, classification, or chat completions.
+- **LLM Nodes:** Represent connections to foundation models like GPT-4, GPT-35-turbo. These nodes are used to perform tasks such as summarization, classification, or chat completion.
+- **Prompt Tool:** The component that defines the input prompt format passed into an LLM node. Supports prompt variants for A/B testing.
+- **Content Safety & Responsible AI (Azure Shield + Document Icons):** Ensures your flows follow ethical and secure practices. This includes moderation filters, content controls, and transparency safeguards.
   
 ## Getting Started with the Lab
 
@@ -136,9 +136,9 @@ After completing the task, hit the **Validate** button under the Validation tab 
 
    ![Install](./media/dpg12.png)
 
-   > Note: For iOS, open the App Store and repeat the steps.
+   > **Note:** For iOS, open the App Store and repeat the steps.
 
-   > Note: Skip if already installed.
+   > **Note:** Skip if already installed.
 
 1. Open the app and tap on **Scan a QR code**.
 
@@ -158,7 +158,7 @@ After completing the task, hit the **Validate** button under the Validation tab 
 
 1. Tap on **Finish** in the Mobile Device.
 
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+   > **NOTE:** While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
@@ -170,7 +170,6 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 
    - Email Support: cloudlabs-support@spektrasystems.com
    - Live Chat Support: https://cloudlabs.ai/labs-support
-
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
