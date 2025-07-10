@@ -201,7 +201,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/4-7-25-p4-7.png)
 
-1. Click the **Save (1)** button from the top menu, then select **Start compute Session (2)**.
+1. Click the **Save (1)** button from the top menu, then select **Start compute session (2)**.
 
     ![](./media/image-87.png)
 
