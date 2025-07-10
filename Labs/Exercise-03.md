@@ -16,7 +16,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select the **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/4-7-25-l3-1.png)
+   ![](./media/lab3-new.png)
 
 1. A new window opens with your **System message** already populated and your deployed **Model** already selected.
 
@@ -34,6 +34,8 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    `Are there any guided tours available for the Great Wall of China?`
 
+   ![](./media/lab-3-input.png)
+
 1. Select **Run** from the top bar to generate outputs for all questions you added as inputs.
 
     ![](./media/4-7-25-l3-3.png)
@@ -48,7 +50,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    ![](./media/gpt-4-demo18-1.png)
    
-1. Using the menu on the left, navigate to **Evaluations (1)**. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
+1. Using the menu on the left, navigate to **Evaluations (1)** under the **Protect and govern** section. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved, **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
 
    ![](./media/manual-1.png)
 
@@ -131,7 +133,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/refreshhhh-1.png)
 
-1. Select **Evaluation (1)** from the left navigation menu, and under **Automated Evaluation (2),** choose the newly created evaluation run **(3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**, and under **Automated Evaluation (2)**, choose the newly created evaluation run **(3)**.
 
    ![](./media/4-7-25-l3-10.png)
 
@@ -148,4 +150,7 @@ In this lab, you have completed the following tasks:
 - Set Up Manual Evaluation
 - Set up Automated Evaluation with Built-in Evaluation Metrics
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+### You have successfully completed the lab.
+Click on **Next >>** to proceed with the next Lab.
+
+![](./media/9-7-next.png)

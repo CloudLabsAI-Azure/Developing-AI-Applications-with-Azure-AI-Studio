@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 In this task, you will refine model responses by adjusting prompts over successive iterations. This process enables systematic evaluation and comparison of output variants, helping to ensure that each iteration leads to improved performance and more accurate, relevant responses.
 
-1. On the [Azure AI foundry](https://ai.azure.com/?reloadCount=1), under **Build and customize** section select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the Azure AI Foundry, under the **Build and customize** section, select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
    ![](./media/4-7-25-l4-1.png)
 
@@ -22,15 +22,15 @@ In this task, you will refine model responses by adjusting prompts over successi
 
      ![](./media/4-7-25-p4-1.png)
 
-1. On the **Clone Flow** page, enter name **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
+1. On the **Clone Flow** page, enter Folder name as **Web Classification-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Clone (2)**.
 
       ![](./media/image-366.png)
 
 1. Scroll down to **classify_with_llm (1)** node and select the following:
 
-    - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
+    - Connection: Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
-    - deployment_name : **gpt-4o (3)**
+    - deployment_name: **gpt-4o (3)**
 
       ![](./media/d15.png)
    
@@ -112,9 +112,9 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Scroll up to **summarize_text_content (1)** node and select the following: 
 
-   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
+   - Connection: Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
-   - deployment_name : **gpt-4o (3)**
+   - deployment_name: **gpt-4o (3)**
 
      ![](./media/4-7-25-p4-4.png)
 
@@ -175,13 +175,13 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 1. Once the **PostProcess** node is created, select the following:
 
-   - Connection : Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**
+   - Connection: Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**
 
-   - Api : **chat (2)**
+   - Api: **chat (2)**
 
-   - deployment_name : **gpt-4o (3)**
+   - deployment_name: **gpt-4o (3)**
 
-   - response_format : **{"type":"json_object"}** **(4)**
+   - response_format: **{"type":"json_object"}** **(4)**
 
      ![](./media/d57.png)
 
@@ -201,7 +201,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/4-7-25-p4-7.png)
 
-1. Click the **Save (1)** button from the top menu, then select **Start Compute Session (2)**.
+1. Click the **Save (1)** button from the top menu, then select **Start compute session (2)**.
 
     ![](./media/image-87.png)
 
@@ -217,9 +217,9 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     ![](./media/run-1.png)
 
-1. On the Submit flow run window open under **Select the LLM node with variants that you want to run**, choose **Select a node to run variants**, then select **summarize_text_content (1)**, and click on **Submit (2)**. 
+1. On the Submit flow run window open under **Select the LLM node with variants that you want to run**, choose **Select a node to run variants (1)**, then select **summarize_text_content (2)**, and click on **Submit (3)**. 
 
-   ![](./media/image-41.png)
+   ![](./media/lab4-new.png)
    
 1. Once the session runs successfully, review the output by selecting each variant.
 
@@ -239,9 +239,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
     ![](./media/4-7-25-p4-11.png)
 
-1. Under **Outputs**, click on **+ Add output**, then add **category** and **evidence** **(1)**. Click on **Save (2)**.
+1. Under **Outputs**, click on **+ Add output (1)**, then add **category** and **evidence** **(2)**. Click on **Save (3)**.
 
-    ![](./media/4-7-25-p4-12.png)
+    ![](./media/lab4-new-1.png)
 
      >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
@@ -269,7 +269,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d25.png)
 
-1. Select **${data.text-context} (1)** for **text-context** and select **Next (2)**.
+1. Select **${data.text-context} (1)** for **text-context** and click on **Next (2)**.
 
    ![](./media/dex55.png)
    
@@ -301,9 +301,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/4-7-25-l4-10.png)
 
-1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **URL** and set the value as **${inputs.url}** **(1)** and then click on **Save (2)**
+1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output (1)**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **URL** and set the value as **${inputs.url}** **(2)** and then click on **Save (3)**
 
-   ![](./media/dex59.png)
+   ![](./media/lab4-new-2.png)
 
 1. Select **Evaluate (1)** and then select **Custom Evaluation (2)**.
 
@@ -313,9 +313,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/summarizetextcontent.png)
 
-1. On the Batch run settings, click on **+ Add new data**.
+1. On the **Batch run & Evaluate** screen, under the **Batch run settings** section, click on **+ Add new data** to upload your dataset.
 
-1. In the new data window, enter name  **summarize_text_content_data_set (1)** select **Upload from local file (2)** and click on **browse (3)**.
+   ![](./media/lab4-new-3.png)
+
+1. In the new data window, enter name  **summarize_text_content_data_set (1)** select **Upload from local file (2)** and click on **Browse (3)**.
 
    ![](./media/d28.png)
 
@@ -335,7 +337,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/classification.png)
 
-1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set(Version 1) (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
+1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set (Version 1) (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
 
     ![](./media/dex63.png)
 
@@ -362,4 +364,7 @@ In this lab, you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+### You have successfully completed the lab.
+Click on **Next >>** to proceed with the next Lab.
+
+![](./media/9-7-next.png)

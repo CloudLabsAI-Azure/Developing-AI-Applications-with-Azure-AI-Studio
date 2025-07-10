@@ -9,6 +9,10 @@ In this lab, you will explore the lifecycle of developing AI applications using 
 
 In this lab, you will perform the following:
 - Task 1: Comprehend the Flow Development Lifecycle
+     
+     - Task 1.1: Understand the types of flows  
+     - Task 1.2: Understand a flow  
+     - Task 1.3: Explore the tools available in prompt flow
   
 ### Task 1: Comprehend the Flow Development Lifecycle
 
@@ -32,11 +36,11 @@ In this task, you will explore different flow types in Azure AI Foundry
     ```
 1. In Azure AI Foundry, click on `Prompt flow` in the left pane and then select `+ Create`. Here you can start a new flow by selecting a flow type or a template from the gallery.
 
-- **Standard flow**: Designed for general application development, the standard flow allows you to create a flow using a wide range of built-in tools for developing LLM-based applications. It provides flexibility and versatility for developing applications across different domains.
-- **Chat flow**: Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug their applications within a conversational context.
-- **Evaluation flow**: Designed for evaluation scenarios, the evaluation flow enables you to create a flow that takes the outputs of previous flow runs as inputs. This flow type allows you to evaluate the performance of previous run results and output relevant metrics, facilitating the assessment and improvement of their models or applications.
+   - **Standard flow**: Designed for general application development, the standard flow allows you to create a flow using a wide range of built-in tools for developing LLM-based applications. It provides flexibility and versatility for developing applications across different domains.
+   - **Chat flow**: Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug their applications within a conversational context.
+   - **Evaluation flow**: Designed for evaluation scenarios, the evaluation flow enables you to create a flow that takes the outputs of previous flow runs as inputs. This flow type allows you to evaluate the performance of previous run results and output relevant metrics, facilitating the assessment and improvement of their models or applications.
 
-  ![](./media/image-48.png)
+     ![](./media/image-48.png)
 
 ### Task 1.2: Understand a flow
 In this task, you will explore **Prompt flow**, a feature within the Azure AI Foundry.
@@ -64,10 +68,10 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 1. Three common tools are:
 
     - **LLM tool**: Enables the creation of custom prompts utilizing Large Language Models.
-    - **Python tool**: Allows the execution of custom Python scripts.
     - **Prompt tool**: Prepares prompts as strings for complex scenarios or integration with other tools.
-
-    ![](./media/image-50.png)
+    - **Python tool**: Allows the execution of custom Python scripts.
+    
+      ![](./media/image-50.png)
    
 1. Each tool is an executable unit with a specific function. You can use a tool to perform tasks like summarizing text or making an API call. You can use multiple tools within one flow and use a tool multiple times.
 
@@ -77,4 +81,7 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 In this lab, you have completed the following tasks:
 - Comprehended the Flow Development Lifecycle
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
+### You have successfully completed the lab.
+Click on **Next >>** to proceed with the next Lab.
+
+![](./media/9-7-next.png)

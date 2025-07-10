@@ -32,8 +32,7 @@ Basic knowledge and understanding of the following
 
 ## Architecture
 
-- **Azure Portal**: The Azure Portal is a unified web-based console that provides a comprehensive interface for managing Azure resources. It allows users to build, manage, and monitor everything from simple web apps to complex cloud applications.
-- **Azure AI Foundry**: Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+This architecture flow demonstrates the end-to-end lifecycle of developing AI solutions using Azure AI Foundry. It begins with understanding different types of flows and how they function, followed by building and customizing prompt flows using LLMs and integrated tools. You’ll then evaluate the flow’s performance with structured metrics, fine-tune prompts for optimal output, and implement chat-based flows for interactive experiences. Finally, the architecture ensures responsible AI practices by applying content safety controls to detect and mitigate harmful or inappropriate outputs, enabling the creation of secure, efficient AI applications.
 
 ## Architecture Diagram: 
 
@@ -43,12 +42,11 @@ Basic knowledge and understanding of the following
 
 The architecture for this lab involves the following key components:
 
-- **Understanding the Lifecycle of Model Development**:
-   - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
-
+- **Azure AI Foundry**: Azure AI Foundry is a development environment for building, training, and deploying AI models. It provides tools and services to streamline the AI development lifecycle, including data preparation, model training, evaluation, and deployment.
+  
+- **Comprehend the Flow Development Lifecycle**: This stage helps you understand the foundational concepts of Prompt Flow. You'll explore different flow types (Standard, Chat, Evaluation), understand how data moves within a flow, and get familiar with the tools available to build and manage flows effectively.
 - **Building and Customizing Prompt Flows**: Tailoring interactions enhances user engagement and satisfaction. Fine-tuning flows creates dynamic, responsive experiences that meet specific needs, leading to better outcomes and a personalized touch.
-- **Evaluation Flow Setup**: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
+- **Evaluation Flow Setup**: This component focuses on setting up evaluation metrics like coherence and fluency to assess your model’s performance. You’ll run evaluation flows and analyze results.
 - **Fine-Tuning Prompts for Optimal Performance**: Fine-tuning prompts involves adjusting components to enhance clarity and relevance. This optimization ensures interactions are more effective and engaging.
 - **Implementing Chat Flow and Tool Integration**: Design, implement, and deploy chat flows, integrating inputs, LLM nodes, and output configurations using Azure AI Foundry.
 - **Ensuring Responsible AI Practices with Content Safety**: Ensuring responsible AI practices involves implementing robust content safety measures to prevent harm and misuse. These components ensure AI interactions are ethical, secure, and aligned with user protection standards.
@@ -59,15 +57,9 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 ## Accessing Your Lab Environment
 
-1. Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-     ![](./media/develop-ai-overview-1.png)
-
-## Lab Guide Zoom In/Zoom Out
-
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
-
-   ![Zoom In/Zoom Out](./media/develop-ai-overview-2.png)  
+ ![](./media/develop-ai-overview-1.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -75,21 +67,27 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 ## Exploring Your Lab Resources
 
-1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![](./media/develop-ai-overview-3.png)
+ ![](./media/develop-ai-overview-3.png)
 
 ## Utilizing the Split Window Feature
 
-1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](./media/develop-ai-overview-4.png)
+ ![](./media/develop-ai-overview-4.png)
 
 ## Managing Your Virtual Machine
 
-1. Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
    ![Manage Your Virtual Machine](./media/develop-ai-overview-5.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![Zoom In/Zoom Out](./media/develop-ai-overview-2.png)  
 
 ## Lab Validation
 
@@ -109,7 +107,7 @@ After completing the task, hit the **Validate** button under the Validation tab 
 
        ![Enter Your Username](./media/u50.png)
 
-1. Next, provide your password:
+1. Next, provide your password and click on **Sign in**
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
@@ -164,8 +162,6 @@ After completing the task, hit the **Validate** button under the Validation tab 
    > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 ## Support Contact
 
