@@ -661,7 +661,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
 
-     ![](./media/d24.png)
+     ![](./media/d24up.png)
 
 1. Click on **Add**.
 
@@ -719,7 +719,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Navigate to  `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
 
-   ![](./media/d29.png)
+   ![](./media/d29up.png)
 
 1. Click on **Add**.
 
