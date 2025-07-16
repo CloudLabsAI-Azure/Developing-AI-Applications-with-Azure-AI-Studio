@@ -659,7 +659,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d23.png)
 
-1. Navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
+1. Navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
 
      ![](./media/d24.png)
 
@@ -717,7 +717,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d28.png)
 
-1. Navigate to  `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
+1. Navigate to  `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)**, then select **summarize.jsonl (2)** file  and then click on **Open (3)**.
 
    ![](./media/d29.png)
 
@@ -1016,7 +1016,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
      ![](./media/image-61.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` **(1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** press **Enter**, then select **family-builds-campfire.jpg (2)** and click on **Open (3)**. 
 
      ![](./media/dee4.png)
 
@@ -1038,7 +1038,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
     ![](./media/d42.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
 
     ![](./media/dee9.png)
 
@@ -1058,7 +1058,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
      ![](./media/dee12-1.png)
 
-1. Within file explorer navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
+1. Within file explorer navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **image_sample_dataset.zip (2)** folder and click on **Open (3)**. 
 
     ![](./media/dee13.png)
    
@@ -1165,7 +1165,7 @@ dataset includes a label to indicate whether the content is harmful. Let’s do 
 
     ![](./media/d43.png)
 
-1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
+1. Within **file explorer** navigate to `C:\LabFiles\Developing-AI-Applications-with-Azure-AI-Studio\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
     > Note: The name of the CSV file may vary.
    
