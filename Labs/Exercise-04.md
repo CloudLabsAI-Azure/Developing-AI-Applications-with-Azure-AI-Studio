@@ -1,6 +1,6 @@
 # Lab 04: Fine-Tuning Prompts for Optimal Performance
 
-## Estimated Duration: 60 Minutes
+## Estimated Duration: 120 Minutes
 
 ## Lab Overview
 In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
@@ -359,7 +359,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best-performing variant as the default for that node.
 
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production

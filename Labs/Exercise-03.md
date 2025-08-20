@@ -1,6 +1,6 @@
 # Lab 03: Evaluation Flow Setup
 
-## Estimated Duration: 60 Minutes
+## Estimated Duration: 90 Minutes
 
 ## Lab Overview
 In this lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1 score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on exercise will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
@@ -144,7 +144,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     ![](./media/4-7-25-l3-12.png)
 
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 - Set Up Manual Evaluation
 - Set up Automated Evaluation with Built-in Evaluation Metrics

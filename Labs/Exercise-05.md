@@ -223,7 +223,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
 
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 - Designed and Implemented a Chat Flow
 - Used LLM and Prompt Tools in Flows
