@@ -1,6 +1,6 @@
 # Lab 02: Building and Customizing Prompt Flows
 
-## Estimated Duration: 60 Minutes
+## Estimated Duration: 90 Minutes
 
 ## Lab Overview
 
@@ -237,7 +237,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/output1-2.png)
    
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 
 - Initialize a Prompt Flow Project

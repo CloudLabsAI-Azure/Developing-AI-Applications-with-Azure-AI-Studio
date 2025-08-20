@@ -78,7 +78,7 @@ In this task, you will explore the tools available in Prompt Flow within Azure A
 
 1. One of the key benefits of Prompt flow tools is their seamless integration with third-party APIs and Python open source packages. This not only improves the functionality of large language models but also makes the development process more efficient for developers.
    
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 - Comprehended the Flow Development Lifecycle
 

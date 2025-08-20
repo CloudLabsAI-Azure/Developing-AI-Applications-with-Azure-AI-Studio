@@ -1,6 +1,6 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
-## Estimated Duration: 60 Minutes
+## Estimated Duration: 90 Minutes
 
 ## Lab Overview
 This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
@@ -70,7 +70,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
      ![](./media/selfharm2.png)
 
-## Task 1.2: Run a bulk test
+## Task 1.1: Run a bulk test
 
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -92,7 +92,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
    ![](./media/selfharm4.png)
 
-## Task 1.3: Text moderation using Moderate text content 
+## Task 1.2: Text moderation using Moderate text content 
 
 We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
@@ -206,10 +206,12 @@ We have a bulk dataset of images provided by customers. The dataset also include
 
     ![](./media/image-80.png)
 
-## Review
+## Summary
 In this lab, you have completed the following tasks:
 - Image Moderation: Tested single and bulk images for safety, self-harm, and AI-generated content.
 - Text Moderation: Analyzed safe and harmful text, including misspellings, with bulk testing.
 - Conclusion: Azure AI Content Safety enhances content moderation for compliance and safer digital spaces.
 
-### You have successfully completed the lab.
+### You have successfully completed this Hands-on lab.
+
+By completing this lab **Developing AI Applications with Azure AI Foundry**, you gained practical experience in building, evaluating, and deploying AI-driven solutions. You began by exploring the flow development lifecycle, initializing prompt flow projects, and creating customized prompts. You then developed intelligent chat flows using large language models, applied manual and automated evaluation techniques, and performed iterative tuning to optimize performance. Additionally, you integrated Azure AI Content Safety to moderate text and images, ensuring secure and compliant outputs.
