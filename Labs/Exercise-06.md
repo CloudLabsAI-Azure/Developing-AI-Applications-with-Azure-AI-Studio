@@ -212,6 +212,6 @@ In this lab, you have completed the following tasks:
 - Text Moderation: Analyzed safe and harmful text, including misspellings, with bulk testing.
 - Conclusion: Azure AI Content Safety enhances content moderation for compliance and safer digital spaces.
 
-### You have successfully completed this Hands-on lab.
+## You have successfully completed this Hands-on lab.
 
 By completing this lab **Developing AI Applications with Azure AI Foundry**, you gained practical experience in building, evaluating, and deploying AI-driven solutions. You began by exploring the flow development lifecycle, initializing prompt flow projects, and creating customized prompts. You then developed intelligent chat flows using large language models, applied manual and automated evaluation techniques, and performed iterative tuning to optimize performance. Additionally, you integrated Azure AI Content Safety to moderate text and images, ensuring secure and compliant outputs.
