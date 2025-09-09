@@ -1,6 +1,6 @@
 # Lab 02: Building and Customizing Prompt Flows
 
-## Estimated Duration: 90 Minutes
+### Estimated Duration: 90 Minutes
 
 ## Lab Overview
 
