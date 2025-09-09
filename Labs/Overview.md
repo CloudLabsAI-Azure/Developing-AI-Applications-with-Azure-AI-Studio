@@ -1,6 +1,6 @@
 # Developing AI Applications with Azure AI Foundry
 
-## Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -58,7 +58,7 @@ Welcome to your Developing AI Applications with Azure AI Foundry Workshop! We've
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
- ![](./media/develop-ai-overview-1.png)
+ ![](./media/ex1.png)
 
 ## Virtual Machine & Lab Guide
 
