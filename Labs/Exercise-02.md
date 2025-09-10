@@ -153,7 +153,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. The prompt flow authoring page opens. You can start authoring your flow now. By default, you see a sample flow. This example flow has nodes for the LLM and Python tools.
 
-1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
+1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. 
 
     ![](./media/4-7-25-l2-13.png)
 

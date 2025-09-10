@@ -44,7 +44,7 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    ![](./media/d51.png)
 
-   > **Note:** If you receive an error in any of the outputs while executing the run "exceeded token rate limit of your current AIService", then please rerun the failed ones after a couple of minutes.
+   > **Note:** If you receive an error in any of the outputs while executing the run, "exceeded token rate limit of your current AIService", then please rerun the failed ones after a couple of minutes.
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
@@ -66,7 +66,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/4-7-25-l3-5.png)
 
-1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl A** and **Ctrl C** to select all and **Copy**.
+1. Open a new tab and paste the new link **https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-studio/main/data/travel-qa.jsonl** JSONL file. press **Ctrl+A** and **Ctrl+C** to select all and **Copy**.
   
     - Search for **Visual Studio Code (1)** in the Windows search bar of the vm and select **Visual Studio Code (2)**.
 
@@ -76,9 +76,9 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
        ![](./media/d8.png)
 
-    - **Paste the copied code [Ctrl  V]**.
+    - **Paste the copied code [Ctrl+V]**.
 
-    - Navigate to **File (1)** and click on **Save as (2)**.    
+    - Navigate to **File (1)** and click on **Save As (2)**.    
 
        ![](./media/d9.png)    
 
@@ -132,7 +132,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/refreshhhh-1.png)
 
-1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**, and under **Automated Evaluation (2)**, choose the newly created evaluation run **(3)**.
+1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**, and under **Automated evaluation (2)**, choose the newly created evaluation run **(3)**.
 
    ![](./media/4-7-25-l3-10.png)
 
