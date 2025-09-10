@@ -3,7 +3,7 @@
 ### Estimated Duration: 30 Minutes
 
 ## Lab Overview
-In this lab, you will explore the lifecycle of developing AI applications using Azure AI Foundry's Prompt Flow. You'll start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You'll also delve into the concept of flows and nodes within Prompt Flow, which enables seamless data processing and task execution.
+In this lab, you will explore the lifecycle of developing AI applications using Azure AI Foundry's Prompt Flow. You will start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You will also delve into the concept of flows and nodes within Prompt Flow, which enables seamless data processing and task execution.
 
 ## Lab Objective
 
