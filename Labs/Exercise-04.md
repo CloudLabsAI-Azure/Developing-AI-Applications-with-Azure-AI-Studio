@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 
 In this task, you will refine model responses by adjusting prompts over successive iterations. This process enables systematic evaluation and comparison of output variants, helping to ensure that each iteration leads to improved performance and more accurate, relevant responses.
 
-1. On the Azure AI Foundry, under the **Build and customize** section, select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the **Azure AI Foundry**, under the **Build and customize** section, select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
    ![](./media/4-7-25-l4-1.png)
 
