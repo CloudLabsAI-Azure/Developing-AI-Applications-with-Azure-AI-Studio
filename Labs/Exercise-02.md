@@ -41,7 +41,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/4-7-25-l2-4.png)
 
-1. In the **Basics** tab of **Create an Azure AI hub resource**, follow these instructions to fill out the properties:
+1. In the **Basics** tab of **Azure AI hub** page, follow these instructions to fill out the properties:
 
    - Subscription: **Set as default (1)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
@@ -54,7 +54,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
         ![](./media/4-7-25-l2-5.png)
 
-1. Click on **Create** once the validation passes to create the Hub. 
+1. Click on **Create** once the validation passes to create the **Hub**. 
 
     ![](./media/l1.task1.2.png)
 
@@ -62,11 +62,11 @@ In this task, you will set up a structured environment to manage and streamline 
 
     ![](./media/4-7-25-l2-6.png)
 
-1. On the Azure AI hub page, select **Overview (1)** and click on the **Launch Azure AI Foundry (2)** option visible. This will take you to the Azure AI Foundry portal. 
+1. On the **Azure AI hub** page, select **Overview (1)** and click on the **Launch Azure AI Foundry (2)** option visible. This will take you to the Azure AI Foundry portal. 
 
     ![](./media/4-7-25-l2-7.png)
 
-1. On the Azure AI Foundry portal, under Hub **Overview (1)**, scroll down and select **+ New project (2)**.
+1. On the **Azure AI Foundry** portal, under Hub **Overview (1)**, scroll down and select **+ New project (2)**.
 
     ![](./media/4-7-25-l2-8.png)
 
