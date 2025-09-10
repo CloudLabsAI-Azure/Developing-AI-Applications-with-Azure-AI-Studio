@@ -78,7 +78,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
     - **Paste the copied code [Ctrl+V]**.
 
-    - Navigate to **File (1)** and click on **Save as (2)**.    
+    - Navigate to **File (1)** and click on **Save As (2)**.    
 
        ![](./media/d9.png)    
 
