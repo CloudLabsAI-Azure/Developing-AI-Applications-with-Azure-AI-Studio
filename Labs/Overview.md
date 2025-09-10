@@ -160,7 +160,7 @@ After completing the task, hit the **Validate** button under the Validation tab 
 
    > **NOTE:** While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Support Contact
 
