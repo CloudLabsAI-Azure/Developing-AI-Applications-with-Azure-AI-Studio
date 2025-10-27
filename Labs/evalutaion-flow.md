@@ -1,8 +1,9 @@
 # Lab 02: Evaluation Flow Setup
 
-### Estimated Duration: 30 Minutes
+## Estimated Duration: 30 Minutes
 
 ## Lab scenario
+
 In this lab, you will set up and analyze evaluation flows for an AI model using Azure AI Foundry. You will manually review model responses to various inputs, providing a detailed evaluation of the model's performance. By setting up specific evaluation metrics, such as coherence and fluency, you will automate the evaluation process using a provided dataset. This hands-on experience will help you understand how to critically assess and refine AI model outputs, ensuring the model meets desired performance standards.
 
 ## Lab objectives
@@ -14,7 +15,7 @@ In this lab, you will perform the following:
 
 You can manually review model responses based on test data. Manually reviewing allows you to test different inputs one at a time to evaluate whether the model performs as expected.
 
-1. From the left navigation menu, under the **Access and Improve** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
+1. From the left navigation menu, under the **Project and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
     ![](./media/image0009.png)
 
@@ -42,11 +43,11 @@ You can manually review model responses based on test data. Manually reviewing a
 
    ![](./media/output(1).png)
 
-1. Select **Save results** from the top bar. Enter **manual_evaluation_results** as the name for the results, and select **Save**.
+1. Select **Save results** from the top bar. Enter **manual_evaluation_results** as the name for the results and select **Save**.
 
    ![](./media/gpt-4-demo18.png)
    
-1. Using the menu on the left, navigate to **Evaluations**.
+1. Using the menu on the left, navigate to **Evaluation**.
 
 1. Select the **Manual evaluations** tab to find the manual evaluations you just saved. Note that you can explore your previously created manual evaluations, continue where you left of, and save the updated evaluations.
 
@@ -56,15 +57,15 @@ You can manually review model responses based on test data. Manually reviewing a
 
 It systematically assesses the performance and effectiveness of various processes and systems. This involves executing evaluation workflows, collecting data, and thoroughly analyzing the results to identify strengths and weaknesses. By leveraging detailed insights from these analyses, organizations can make informed decisions, implement improvements, and optimize their operations. Continuous evaluation ensures that processes remain efficient, effective, and aligned with organizational goals, ultimately enhancing overall performance and productivity.
 
-1. Select **Prompt flow** from left navigation pane and select the prompt flow you created.
+1. Select **Prompt flow (1)** from left navigation pane and select **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** prompt flow you created.
 
-   ![](./media/promptflow-1.png)
+   ![](./media/oct-build-evaluate-lab1-5.png)
 
 1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automated Evaluation (2)**.
 
    ![](./media/evaluations-1.png)
 
-1. On create a new evaluation, Select **Evaluat e an existing query-response dataset** (1), and click on **Next** (2).
+1. On create a new evaluation, Select **Evaluate an existing query-response dataset** (1), and click on **Next** (2).
 
    ![](./media/image0011.png)
 
@@ -126,4 +127,4 @@ In this lab you have completed the following tasks:
 - Set Up Evaluation Metrics
 - Ran and Analyzed Evaluation Flows
 
-### You have successfully completed the lab.
+## You have successfully completed the lab.

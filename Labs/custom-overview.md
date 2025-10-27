@@ -1,6 +1,6 @@
 # Lunch and Learn: Building and Evaluating Prompt Flows with Azure AI Foundry
 
-### Overall Estimated Duration: 60 minutes
+## Overall Estimated Duration: 60 minutes
 
 ## Overview 
 
@@ -76,16 +76,16 @@ After completing the task, hit the **Validate** button under Validation tab inte
 
 ## Support Contact
 
-1. The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
-   Learner Support Contacts:
+Learner Support Contacts:
 
-    - Email Support: cloudlabs-support@spektrasystems.com
-    - Live Chat Support: https://cloudlabs.ai/labs-support
+   - Email Support: cloudlabs-support@spektrasystems.com
+   - Live Chat Support: https://cloudlabs.ai/labs-support
 
 
-2. Now, click on Next from the lower right corner to move on to the next page.
+Now, click on Next from the lower right corner to move on to the next page.
 
-   ![](./media/next-page.png)
+   ![](./media/oct-build-evaluate-lab1-7.png)
 
-### Happy Learning!!
+## Happy Learning!!
