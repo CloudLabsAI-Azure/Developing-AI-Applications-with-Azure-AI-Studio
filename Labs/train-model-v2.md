@@ -1,6 +1,6 @@
 # Lab 01: Training the Model
 
-### Estimated Duration: 30 Minutes
+## Estimated Duration: 30 Minutes
 
 ## Lab scenario
 
@@ -21,18 +21,19 @@ As involves setting up a structured environment to manage and streamline prompt-
 
     ![](./media/image0001.png)
 1. On the **Azure AI foundry**, on the home page, select **Use with AI foundry** on the left pane.
-1. Click on **AI Hubs** (1) and then slect **+create** (2) followed by **Hub** (3).
+1. Click on **AI Hubs** (1) and then select **+ Create** (2) followed by **Hub** (3).
 
     ![](./media/image0002.png)
+
 1. On the **Azure AI hub** page, follow these instructions to fill out the properties:
 
-   - Subscription: Set as default (1)
+   - Subscription: Keep it as default (1)
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Location: **<inject key="Region" enableCopy="false"/>  (3)**
    - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (4)** 
-   - Friendly name: Set as default (5)
-   - Default project resource group: Set as default (6 )
-   - Connect Azure AI Services incl. OpenAI: Keep it as default (7)
+   - Friendly name: Keep it as default (5)
+   - Default project resource group: Keep it as default (6 )
+   - Connect AI Services incl. OpenAI: Keep it as default (7)
    - Select **Review + create (8)**
 
        ![](./media/image0003.png)
@@ -43,7 +44,8 @@ As involves setting up a structured environment to manage and streamline prompt-
 1. Click on **Go to resource**, and select **Launch Azure AI Foundry** (1).
 
     ![](./media/image0005.png)
-1. Select **+New Project** (1), enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
+
+1. Select **+ New Project** (1), enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
 
     ![](./media/image0006.png)
 
@@ -61,11 +63,9 @@ As involves setting up a structured environment to manage and streamline prompt-
 
 Creating and customizing prompts involves designing specific, targeted questions or statements to elicit desired responses or actions. This process includes defining clear objectives, understanding the audience, and using precise language to ensure clarity and relevance. Customization can further refine prompts to align with particular contexts or user needs, enhancing engagement and effectiveness in various applications such as education, customer service, and AI interactions.
 
-1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
+1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then choose **+ Deploy base model (3)** from the dropdown list.
 
-1. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **+ Deploy base model (3)** from the dropdown.
-
-    ![](./media/deploy-base-model-1.png)
+    ![](./media/oct-build-evaluate-lab1-6.png)
 
 1. On the **Select a model** page, search and select **gpt-4o (1)**, select **Confirm (2)** under the **gpt-4o**.
 
@@ -76,19 +76,19 @@ Creating and customizing prompts involves designing specific, targeted questions
     - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Standard (2)**
     - Model version : **2024-11-20(3)**
-    - Connected Azure OpenAI resource : make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** **(4)**
+    - AI resource : Make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
-      > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
+      > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 8K.
     - Content filter : **DefaultV2 (6)**
-    - Select **Deploy (7)**
+    - Select **Connect and deploy (7)**
 
-    ![](./media/image0008.png)
+        ![](./media/oct-build-evaluate-lab1-1.png)
 
 1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
 
-    ![](./media/prompt-flow.png)
+    ![](./media/oct-build-evaluate-lab1-2.png)
 
-1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)** 
+1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**.
 
     ![](./media/E2-T2-S7.png)
 
@@ -110,17 +110,17 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. Optionally, you can add more tools to the flow. The visible tool options are **LLM, Prompt, and Python**. To view more tools, select **+ More tools**.
 
-1. From the **Graph**, select **joke**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
-    ![](./media/gpt-4-demo13o.png)
+    ![](./media/oct-build-evaluate-lab1-3.png)
 
 1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
 
     ![](./media/apple-1.png)
 
-1. Select **Save**, and select **Start compute session**.
+1. Select **Save (1)**, and select **Start compute session (2)**.
 
-    ![](./media/save.png)
+    ![](./media/oct-build-evaluate-lab1-4.png)
 
     >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
@@ -147,7 +147,7 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
      ![](./media/gpt-4-demo17.png)
      ![](./media/gpt-4-demo(15).png)
 
-1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**
+1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**.
 
     ```jinja
     Welcome to {{ website_name }}!
@@ -191,4 +191,6 @@ In this lab you have completed the following tasks:
 - Created and Customized Prompts
 - Developed a Flow with LLM and Prompt Tools
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
+## You have successfully completed the lab. Now, click on **Next >>** from the lower right corner to proceed on to the next lab.
+
+![](./media/oct-build-evaluate-lab1-7.png)
