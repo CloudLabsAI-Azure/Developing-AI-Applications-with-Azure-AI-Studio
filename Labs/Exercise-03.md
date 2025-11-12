@@ -2,10 +2,12 @@
 
 ### Estimated Duration: 90 Minutes
 
-## Lab Overview
+## Overview
+
 In this lab, you will set up an automated evaluation pipeline using built-in evaluation metrics and configure manual evaluation for deeper insights. You will begin by leveraging built-in metrics such as accuracy, precision, recall, and F1 score to assess model performance automatically. Then, you will set up a manual evaluation process where human reviewers can provide qualitative feedback on model outputs. This hands-on lab will help you understand the integration of automated and manual evaluation methods to improve model accuracy and reliability.
 
-## Lab Objectives
+## Objectives
+
 In this lab, you will perform the following:
 - Task 1: Setup Manual Evaluation
 - Task 2: Set up Automated Evaluation with Built-in Evaluation Metrics
@@ -18,9 +20,9 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
    ![](./media/lab3-new.png)
 
-1. A new window opens with your **System message** already populated and your deployed **Model** already selected.
+1. A new window opens with your **System message (1)** already populated and your deployed **Model (2)** already selected.
 
-   ![](./media/4-7-25-l3-2.png)
+   ![](./media/L3T1S2-1211.png)
 
 1. In the **Manual evaluation result** section, you'll add five inputs for which you will review the output. Enter the following five questions as five separate inputs by selecting **+ Add input**:
 

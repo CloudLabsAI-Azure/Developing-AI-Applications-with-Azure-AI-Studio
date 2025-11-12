@@ -2,10 +2,11 @@
 
 ### Estimated Duration: 60 Minutes
 
-## Lab Overview
+## Overview
+
 In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You will start by creating a basic chat flow using Azure AI Foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will perform the following:
 - Task 1: Design and Implement a Chat Flow
@@ -19,39 +20,38 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/4-7-25-l5-1.1.png)
+   ![](./media/L5T1S1-1211.png)
 
-1. On the **Select a model** page, search for **gpt-35-turbo (1)**, select **gpt-35-turbo (2)**, select **Confirm (3)** under the **gpt-35-turbo**.
+1. On the **Select a model** page, search for **gpt-4.1-mini (1)**, select **gpt-4.1-mini (2)**, select **Confirm (3)** under the **gpt-4.1-mini**.
 
-   ![](./media/model-1.png)
+   ![](./media/L5T1S3-1211.png)
 
-1. On **Deploy model gpt-35-turbo**, click on **Customize**.
+1. On **Deploy model gpt-4.1-mini**, click on **Customize**.
 
-   ![](./media/4-7-25-l5-1.png)
+   ![](./media/L5T1S4-1211.png)
 
-1. On **Deploy model gpt-35-turbo**, follow these instructions to create the deployment:
+1. On **Deploy model gpt-4.1-mini**, follow these instructions to create the deployment:
    
-   - Deployment Name: **gpt-35-turbo (1)**
-   - Deployment type: **Standard (2)**
-   - Model version: **0125 (Default) (3)**
+   - Deployment Name: **gpt-4.1-mini (1)**
+   - Deployment type: **Global Standard (2)**
+   - Model version: **2025-04-14 (Default) (3)**
    - Connected AI resource: select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/> (4)**
    - Tokens per Minute Rate Limit: **10K (5)**
    - Content Filter: **DefaultV2 (6)**
-   - Enable dynamic quota: **Enabled (7)**
-   - Select **Deploy (8)**
+   - Select **Deploy (7)**
 
-     ![](./media/4-7-25-l5-2.png)
+     ![](./media/L5T1S5-1211.png)
      
-1. On the Azure AI Foundry, under **My assets**, select **Model + endpoints (1)**. On the **Model deployments** page check the box next to **gpt-35-turbo (2)**, then click **Open in playground (3)**
+1. On the Azure AI Foundry, under **My assets**, select **Model + endpoints (1)**. On the **Model deployments** page check the box next to **gpt-4.1-mini (2)**, then click **Open in playground (3)**
 
-    ![](./media/4-7-25-l5-3.png)
+    ![](./media/L5T1S6-1211.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
    >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
    > Wait for 2-3 minutes if you get an error while querying.
    
-     ![](./media/4-7-25-l5-4.png)
+     ![](./media/L5T1S7-1211.png)
 
    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
@@ -77,11 +77,11 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. Select **Apply changes (2)** and when **Update system message?** pop-up appears, click on **Continue**.
 
-     ![](./media/d33.png)   
+     ![](./media/L5T1S9-1211.png)   
 
 1. In the chat window, enter the same query as before: **What can you do?**. Note the change in response.
 
-     ![](./media/4-7-25-l5-5.png)
+     ![](./media/L5T1S10-1211.png)
 
      >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
@@ -103,7 +103,7 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
    
    >**Note:** The compute session will take 1-3 minutes to start.
    
-1. Select the LLM node named **chat (1)**. Update the system message like below **(2)**:
+1. Select the LLM node named **chat (1)**. Update the Prompt like below **(2)**:
 
    ```
    system:
@@ -144,10 +144,10 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
    - **Connection**: Select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**. 
    - **Api**: Select **chat (2)**.
-   - **deployment_name**: Select the **gpt-35-turbo (3)** model you deployed.
+   - **deployment_name**: Select the **gpt-4.1-mini (3)** model you deployed.
    - **response_format**: Select **{“type”:”text”} (4)**.
 
-     ![](./media/4-7-25-l5-12.png)
+     ![](./media/L5T1S17-1211.png)
    
 ## Task 2: Use LLM and Prompt Tools in Flows
 
@@ -159,7 +159,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 
 1. Enter the query: **I have one day in London, what should I do?** and review the output.
 
-   ![](./media/d37.png)
+   ![](./media/L5T2S2-1211.png)
 
    >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
 
@@ -180,17 +180,15 @@ In this task, you will use the chat window to test the developed flow by leverag
 
 1. Review the configurations and then select **Create**.
 
-   ![](./media/1dex15.png)
-
-1. In Azure AI Foundry, from the left navigation pane, under **My assets**, select **Model + endpoints (1)**
-
-   ![](./media/4-7-25-l5-15.png)
+   ![](./media/L5T2S4-1211.png)
 
    >**Note:** Select **Save** if your flow is not saved.
 
+1. In Azure AI Foundry, from the left navigation pane, under **My assets**, select **Model + endpoints (1)**
+
 1. Select the **Model deployments (2)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(3)**.
 
-   ![](./media/4-7-25-l5-16.png)
+   ![](./media/L5T2S6-1211.png)
 
    > **Note:** It might take 3-5 minutes to deploy.
 
