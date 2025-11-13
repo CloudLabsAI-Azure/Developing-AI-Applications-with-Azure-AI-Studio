@@ -20,7 +20,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
 2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
-     ![](./media/dee2.png)
+     ![](./media/L6T1S2-1211.png)
 
 3. On **Moderate image content** select **Run a simple test (1)** tab, and review the options. Note we have three sets of content:  **Safe content**, **self-harm content**, and **AI-generated sexual content**. **(2)**
 
@@ -40,7 +40,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
      ![](./media/dee4.png)
 
-1. Review the image and click on **Run test**.
+1. Scroll down, review the image and click on **Run test**.
 
     ![](./media/image-68.png)
    
@@ -56,7 +56,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
 1. Select **Self harmed content (1)** and click on **Browse for a file (2)**.
 
-    ![](./media/d42.png)
+    ![](./media/L6selfharmS1-1211.png)
 
 1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data\image_sample_dataset` **(1)** then select the **bear-attack-blood.JPG (2)** file and then click on **Open (3)**.
 
@@ -67,6 +67,8 @@ We should also anticipate customers potentially posting harmful image content. T
     ![](./media/selfharm1.png)
 
     >**Note:** Rightfully so, the content is blocked and was rejected by the Violence filter, which has a Severity level of Medium.
+
+1. Review the results. 
 
      ![](./media/selfharm2.png)
 
@@ -172,7 +174,7 @@ We can’t anticipate that all text content from our customers would be free of 
     
     - Review the result.
 
-      ![](./media/4-7-25-l6-2.png)
+      ![](./media/L6videocontresults-1211.png)
 
     - Although the content is allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content; however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
      
@@ -184,7 +186,7 @@ We have a bulk dataset of images provided by customers. The dataset also include
 
 1. Switch to the **Run a bulk test (1)** tab. Select **Browse for a file (2)**.
 
-    ![](./media/d43.png)
+    ![](./media/L6runbulktestS1-1211.png)
 
 1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
