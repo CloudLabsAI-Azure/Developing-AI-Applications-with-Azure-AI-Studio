@@ -68,6 +68,8 @@ We should also anticipate customers potentially posting harmful image content. T
 
     >**Note:** Rightfully so, the content is blocked and was rejected by the Violence filter, which has a Severity level of Medium.
 
+1. Review the results. 
+
      ![](./media/selfharm2.png)
 
 ## Task 1.1: Run a bulk test
@@ -184,7 +186,7 @@ We have a bulk dataset of images provided by customers. The dataset also include
 
 1. Switch to the **Run a bulk test (1)** tab. Select **Browse for a file (2)**.
 
-    ![](./media/L6bulktest-1211.png)
+    ![](./media/L6runbulktestS1-1211.png)
 
 1. Within **file explorer** navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` **(1)** press **Enter**. Select **bulk-text-moderation-dataset.csv (2)** file and **Open (3)**.
    
