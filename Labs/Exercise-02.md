@@ -2,11 +2,12 @@
 
 ### Estimated Duration: 90 Minutes
 
-## Lab Overview
+## Overview
 
 In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI Foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI Foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
 
-## Lab Objectives
+## Objectives
+
 In this lab, you will perform the following:
 
 - Task 1: Initialize a Prompt Flow Project
@@ -31,7 +32,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
       - Enter **Password:** <inject key="AzureAdUserPassword"></inject> and click **Sign in**
 
-        ![](./media/u51.png)
+        ![](./media/password-1211.png)
 
 1. Search for **Azure AI Foundry (1)** in the Azure portal and select **Azure AI Foundry (2)** from the Services list.  
 
@@ -60,7 +61,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
 1. After the deployment has succeeded, click on **Go to resource**.
 
-    ![](./media/4-7-25-l2-6.png)
+    ![](./media/L2T1S6-1211.png)
 
 1. On the **Azure AI hub** page, select **Overview (1)** and click on the **Launch Azure AI Foundry (2)** option visible. This will take you to the Azure AI Foundry portal. 
 
@@ -76,7 +77,7 @@ In this task, you will set up a structured environment to manage and streamline 
 
 1. Once the project creation is completed, you will be navigated to that project. You will be performing further tasks in this project **modelproject-<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](./media/E1-T1-S12.png)
+    ![](./media/L2T1S10-1211.png)
 
     > **Note:** If any pop-up appears, click on **Close**.
 
@@ -99,26 +100,26 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
    ![](./media/deploy-base-model-2.png)
 
-1. On the **Select a model** page, search for **gpt-4o (1)** and select **gpt-4o (2)**, select **Confirm (3)** under the **gpt-4o**.
+1. On the **Select a model** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)**, select **Confirm (3)** under the **gpt-4.1**.
 
-   ![](./media/d2-1.png)
+   ![](./media/L2T2S3-1211.png)
 
-1. On **Deploy model gpt-4o** page, select **Customize**.
+1. On **Deploy model gpt-4.1** page, select **Customize**.
 
-      ![](./media/d3.png)
+      ![](./media/L2T2S4-1211.png)
 
-1. On the **Deploy model gpt-4o** page, follow these instructions to create the deployment:
+1. On the **Deploy model gpt-4.1** page, follow these instructions to create the deployment:
 
-   - Deployment name: **gpt-4o (1)**
+   - Deployment name: **gpt-4.1 (1)**
    - Deployment type:  **Global Standard (2)**
-   - Model version: **2024-11-20 (3)**
+   - Model version: **2025-04-14 (Default) (3)**
    - AI resource: select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/> (4)**
    - Tokens per Minute Rate Limit (thousands): **5 K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 5k.
    - Content filter: **DefaultV2 (6)**
    - Select **Connect and deploy (7)**
 
-     ![](./media/4-7-25-l2-11.png)
+     ![](./media/L2T2S5-1211.png)
 
      >**Note:** If you see an error stating **"Failed to get the connection NotFoundError: Connection Default_AzureOpenAI can't be found in this workspace."** or a similar message, simply ignore it and refresh the page. Your model is already deployed.
 
@@ -157,11 +158,11 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
     ![](./media/4-7-25-l2-13.png)
 
-1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
+1. From the **Graph**, select **joke (1)**. Choose an existing connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4.1 (3)**, in the LLM tool editor.
 
-   ![](./media/4-7-25-l2-14.png)
+   ![](./media/L2T3S3-1211.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice like **Apple (1)** in the **Value** field.
+1. Scroll up to the **Inputs** section enter any fruit name of your choice like **Apple (1)** in the **Value** field for the topic.
 
     ![](./media/apple-1.png)
 
@@ -175,7 +176,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
     
 1. Once the compute session is complete, click the **play** button inside the **joke** node to run the **joke node** first, then run the **echo node**.
 
-    ![](./media/dex8.png)
+    ![](./media/L2T3S6-1211.png)
 
 1. Click on the **echo (1)** node from the graph and click on the **Play (2)** button.
 
@@ -191,7 +192,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. You can view the flow run status and output in the **Outputs** section.
 
-    ![](./media/dex40.png)
+    ![](./media/L2T3S10-1211.png)
 
 1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
@@ -219,7 +220,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/gpt-4-demo16-1.png)
 
-1. In the input section, add the following value, select **Save (2)** and **Run (3)**.
+1. In the **Inputs** section below, add the following value, select **Save (2)** and **Run (3)**.
 
    - user_name: **John (1)** in the **Value** field
 
@@ -231,13 +232,14 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
 1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image shown below.
 
-   ![](./media/output001.png)
+   ![](./media/L2T3S15-1211.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
    ![](./media/output1-2.png)
    
 ## Summary
+
 In this lab, you have completed the following tasks:
 
 - Initialize a Prompt Flow Project

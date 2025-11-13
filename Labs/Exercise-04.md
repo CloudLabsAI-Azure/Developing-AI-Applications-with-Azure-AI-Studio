@@ -2,10 +2,12 @@
 
 ### Estimated Duration: 120 Minutes
 
-## Lab Overview
+## Overview
+
 In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
  
-## Lab Objectives
+## Objectives
+
 In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
@@ -30,9 +32,9 @@ In this task, you will refine model responses by adjusting prompts over successi
 
     - Connection: Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
-    - deployment_name: **gpt-4o (3)**
+    - deployment_name: **gpt-4.1 (3)**
 
-      ![](./media/d15.png)
+      ![](./media/L4T1S4-1211.png)
    
 1. Replace the existing prompt with the following prompt as a baseline prompt in the **classify_with_llm** node.
 
@@ -65,15 +67,15 @@ In this task, you will refine model responses by adjusting prompts over successi
    OUTPUT:
    ```
 
-   ![](./media/dex44.png)   
+   ![](./media/L4T1S5-1211.png)   
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-   ![](./media/4-7-25-p4-2.png)
+   ![](./media/L4T1S6-1211.png)
 
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters with different values on variant_1.
 
-   ![](./media/4-7-25-p4-3.png)
+   ![](./media/L4T1S7-1211.png)
    
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -104,19 +106,19 @@ In this task, you will refine model responses by adjusting prompts over successi
     OUTPUT:
     ```
 
-    ![](./media/d19.png)
+    ![](./media/L4T1S8-1211.png)
      
-1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For the classify_with_llm node, based on variant_0:
+1. Select **Hide variants** to stop adding more variants. All variants are folded. The default variant is shown for the node. For the **classify_with_llm** node, based on variant_0:
 
-     ![](./media/4-7-25-p4-4.1.png)
+     ![](./media/L4T1S9-1211.png)
 
 1. Scroll up to **summarize_text_content (1)** node and select the following: 
 
    - Connection: Select the connection **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (2)**
 
-   - deployment_name: **gpt-4o (3)**
+   - deployment_name: **gpt-4.1 (3)**
 
-     ![](./media/4-7-25-p4-4.png)
+     ![](./media/L4T1S10-1211.png)
 
 1. Replace the existing prompt with the following prompt as a baseline prompt in the **summarize_text_content** node.  
      
@@ -136,15 +138,15 @@ In this task, you will refine model responses by adjusting prompts over successi
    Summary:
    ```
 
-   ![](./media/4-7-25-l4-7.png)
+   ![](./media/L4T1S11-1211.png)
 
 1. Select the **Show variants** button on the top right of the LLM node. The existing LLM node is variant_0 and is the default variant.
 
-    ![](./media/4-7-25-p4-5.png)
+    ![](./media/L4T1S12-1211.png)
    
 1. Select the **Clone** button on **variant_0** to generate variant_1, then we can configure parameters to different values on variant_1.
 
-   ![](./media/4-7-25-p4-6.png)
+   ![](./media/L4T1S13-1211.png)
 
 1. Scroll down, on the **variant_1** replace the existing prompt with the following prompt:
 
@@ -162,7 +164,7 @@ In this task, you will refine model responses by adjusting prompts over successi
    Summary:
    ```
 
-    ![](./media/dex47.png)
+    ![](./media/L4T1S14-1211.png)
 
 1. Scroll to the last node and click on **+ LLM** present in the top left corner to create a new LLM node.
 
@@ -178,11 +180,11 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    - Api: **chat (2)**
 
-   - deployment_name: **gpt-4o (3)**
+   - deployment_name: **gpt-4.1 (3)**
 
    - response_format: **{"type":"json_object"}** **(4)**
 
-     ![](./media/d57.png)
+     ![](./media/L4T1S17-1211.png)
 
 1. Replace the existing prompt with the following **prompt (1)** as a baseline prompt in **PostProcess** node.
 
@@ -199,7 +201,7 @@ In this task, you will refine model responses by adjusting prompts over successi
    {{input}}
    ```
 
-   ![](./media/4-7-25-p4-7.png)
+   ![](./media/L4T1S18-1211.png)
 
 1. Click the **Save (1)** button from the top menu, then select **Start compute session (2)**.
 
@@ -235,7 +237,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
-1. Under **Inputs**, click on **+ Add input (1)**, then add **category** and **text-context** **(2)**. 
+1. Scroll to the top, under **Inputs** section, click on **+ Add input (1)**, then add **category** and **text-context** **(2)**. 
 
     ![](./media/4-7-25-p4-11.png)
 
@@ -299,11 +301,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input (1)** and enter **Text (2)**. 
 
-   ![](./media/4-7-25-l4-10.png)
+   ![](./media/L4T2S17-1211.png)
 
 1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output (1)**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **URL** and set the value as **${inputs.url}** **(2)** and then click on **Save (3)**
 
-   ![](./media/lab4-new-2.png)
+   ![](./media/L4T2S18-1211.png)
 
 1. Select **Evaluate (1)** and then select **Custom Evaluation (2)**.
 
@@ -329,9 +331,9 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/d30.png)
 
-1. Under **Input mapping** for **url** and **Test** select **${data.text} (1)** and click on **Next (2)**.
+1. Under **Input mapping** for **url** and **Text** select **${data.text} (1)** and click on **Next (2)**.
 
-   ![](./media/inputmap.png)
+   ![](./media/L4T2S25-1211.png)
 
 1. On the **Select evaluation** page select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
