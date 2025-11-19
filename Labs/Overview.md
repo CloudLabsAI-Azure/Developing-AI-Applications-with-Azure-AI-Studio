@@ -1,6 +1,6 @@
 # Developing AI Applications with Microsoft Foundry
 
-### Overall Estimated Duration: 8 Hours
+#### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -36,7 +36,7 @@ This architecture flow demonstrates the end-to-end lifecycle of developing AI so
 
 ## Architecture Diagram: 
 
-  ![](./media/archi-dia-ai-found.png)
+  ![](./media/arch-diag-1911.png)
 
 ## Explanation of Components
 

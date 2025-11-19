@@ -1,36 +1,38 @@
 # Lab 06: Ensuring Responsible AI Practices with Content Safety 
 
-### Estimated Duration: 90 Minutes
+#### Estimated Duration: 90 Minutes
 
 ## Overview
-This lab provides hands-on experience in implementing responsible AI practices using Azure AI Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
+
+This lab provides hands-on experience in implementing responsible AI practices using Microsoft Foundry. Participants will gain insights into fairness, transparency, privacy, and security considerations while leveraging Azure’s built-in Responsible AI tools. The lab focuses on detecting and mitigating biases, ensuring model interpretability, applying privacy-preserving techniques, and enforcing security and compliance best practices.
 
 ## Objective
+
 In this lab, you will perform the following:
 
-- Task 1: Image and Text Moderation Using Azure AI Foundry
+- Task 1: Image and Text Moderation Using Microsoft Foundry
 
-## Task 1: Image and Text Moderation Using Azure AI Foundry
+### Task 1: Image and Text Moderation Using Microsoft Foundry
 
-In this task, you will use Azure AI Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
+In this task, you will use Microsoft Foundry to moderate both images and text by detecting inappropriate, harmful, or sensitive content. You will leverage AI models to analyze and filter content according to predefined moderation policies, helping ensure compliance, user safety, and responsible AI use within your application.
 
-1. In the **Azure AI Foundry** portal, click on **Guardrails + controls (1)** under the **Protect and govern** section on the left menu. Then click the **Try it out (2)** tab at the top.
+1. In the **Microsoft Foundry** portal, click on **Guardrails + controls (1)** under the **Protect and govern** section on the left menu. Then click the **Try it out (2)** tab at the top.
 
-     ![](./media/4-7-25-l6-1.png)     
+     ![](./media/L6T1S1-1911.png)     
 
 2. Scroll down, under **Filter image content (1)** option, select **Moderate image content (2)**.
 
-     ![](./media/L6T1S2-1211.png)
+     ![](./media/L6T1S2-1911.png)
 
 3. On **Moderate image content** select **Run a simple test (1)** tab, and review the options. Note we have three sets of content:  **Safe content**, **self-harm content**, and **AI-generated sexual content**. **(2)**
 
-     ![](./media/d40.png)
+     ![](./media/L6T1S3-1911.png)
 
-## Safe content
+### Safe content
 
-1. Before starting, select the below **Azure AI services**, and proceed with the lab using these Azure AI services.
+1. Before starting, select your **Azure AI services** resource, and proceed with the lab using these Azure AI services.
 
-     ![](./media/ex2.png)
+     ![](./media/L6safecon-1.png)
 
 1. Now let's use our image and test, then check the result. On the **Run a simple test** tab, select **Safe content (1)** then click on **Browse for a file (2)**
 
@@ -50,7 +52,7 @@ In this task, you will use Azure AI Foundry to moderate both images and text by 
 
    >**Note:** So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
-## Self-harmed content
+### Self-harmed content
 
 We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
 
@@ -72,7 +74,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
      ![](./media/selfharm2.png)
 
-## Task 1.1: Run a bulk test
+### Task 1.1: Run a bulk test
 
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -94,17 +96,17 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
    ![](./media/selfharm4.png)
 
-## Task 1.2: Text moderation using Moderate text content 
+### Task 1.2: Text moderation using Moderate text content 
 
 We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
-## Safe content
+### Safe content
 
 Let’s first test some positive customer feedback.
 
-1. On the **Azure AI Foundry** portal, under **Protect and govern**, select **Guardrails + controls (1)**. Then, click the **Try it out (2)** tab, and under **Filter text content**, select **Try it out (3)** for **Moderate text content**.
+1. On the **Microsoft Foundry** portal, under **Protect and govern**, select **Guardrails + controls (1)**. Then, click the **Try it out (2)** tab, and under **Filter text content**, select **Try it out (3)** for **Moderate text content**.
 
-   ![](./media/2ndguard-1.png)
+   ![](./media/L6T1.2S1-1911.png)
 
 1. On the **Moderate text content** page, select **Run a simple test (1)** and choose **Safe content (2)** under **Select a sample or type your own** section.
 
@@ -126,7 +128,7 @@ Let’s first test some positive customer feedback.
 
     >**Note:** The content is **Allowed**, and the severity level is Safe across all categories. This was to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
-## Harmful content
+### Harmful content
 
 But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name-calling or degrading statements.
 
@@ -154,7 +156,7 @@ But what would happen if we tested a harmful statement? Let’s test with negati
 
       ![](./media/image-77.png)
 
-## Violent content with misspelling
+### Violent content with misspelling
 
 We can’t anticipate that all text content from our customers would be free of spelling errors. Fortunately, the Moderate text content tool can detect harmful content even if the content has spelling errors. Let’s test this capability on additional customer feedback about an incident with a racon.
 
@@ -178,7 +180,7 @@ We can’t anticipate that all text content from our customers would be free of 
 
     - Although the content is allowed, the Severity level for **Violence should be Low**. You could adjust the Threshold level for Violence to try and block such content; however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill intent in submitting this question, and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK before deciding to adjust the filter and block similar content.
      
-## Run a bulk test
+### Run a bulk test
 
 So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
@@ -216,4 +218,4 @@ In this lab, you have completed the following tasks:
 
 ## You have successfully completed this Hands-on lab.
 
-By completing this lab **Developing AI Applications with Azure AI Foundry**, you gained practical experience in building, evaluating, and deploying AI-driven solutions. You began by exploring the flow development lifecycle, initializing prompt flow projects, and creating customized prompts. You then developed intelligent chat flows using large language models, applied manual and automated evaluation techniques, and performed iterative tuning to optimize performance. Additionally, you integrated Azure AI Content Safety to moderate text and images, ensuring secure and compliant outputs.
+By completing this lab **Developing AI Applications with Microsoft Foundry**, you gained practical experience in building, evaluating, and deploying AI-driven solutions. You began by exploring the flow development lifecycle, initializing prompt flow projects, and creating customized prompts. You then developed intelligent chat flows using large language models, applied manual and automated evaluation techniques, and performed iterative tuning to optimize performance. Additionally, you integrated Azure AI Content Safety to moderate text and images, ensuring secure and compliant outputs.

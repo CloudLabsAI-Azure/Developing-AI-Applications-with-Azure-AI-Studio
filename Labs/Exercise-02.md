@@ -1,6 +1,6 @@
 # Lab 02: Building and Customizing Prompt Flows
 
-### Estimated Duration: 90 Minutes
+#### Estimated Duration: 90 Minutes
 
 ## Overview
 
@@ -14,7 +14,7 @@ In this lab, you will perform the following:
 - Task 2: Create and Customize Prompts
 - Task 3: Develop a Flow with LLM and Prompt Tools
 
-## Task 1: Initialize a Prompt Flow Project
+### Task 1: Initialize a Prompt Flow Project
 
 In this task, you will set up a structured environment to manage and streamline prompt-based AI tasks. This involves creating a project directory, configuring essential files and dependencies, and establishing a workflow for designing, testing, and refining prompts. Organizing prompts, data, and evaluation metrics in one place ensures consistency and efficiency, helping you optimize prompt performance and achieve better results with your AI models.
 
@@ -98,11 +98,11 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
 1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/deploy-base-model-2.png)
+   ![](./media/L2T2S2-1911.png)
 
 1. On the **Select a model** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)**, select **Confirm (3)** under the **gpt-4.1**.
 
-   ![](./media/L2T2S3-1211.png)
+   ![](./media/L2T2S3-1911.png)
 
 1. On **Deploy model gpt-4.1** page, select **Customize**.
 
@@ -125,7 +125,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
 1. From the left navigation pane, select **Prompt flow (1)** under **Build and customize** and click **+ Create (2)** to add the Prompt tool to your flow.
 
-   ![](./media/prompt-flow-1.png)
+   ![](./media/L2T2S6-1911.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter below provided Folder name **(2)**, and click on **Create (3)**
 
@@ -135,7 +135,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
     >**Note**: **Please make sure to follow the note provided in the same step, just below the screenshot, as it addresses an error you may encounter while creating the Prompt Flow**.
 
-     ![](./media/4-7-25-l2-12.png)
+     ![](./media/L2T2S7-1911.png)
 
       >**Note:** If you encounter permission errors like "Cloud Dependency Permission" or see a "Folder name already exists" message, wait for 5 minutes and then try recreating the prompt flow using a unique name. Sometimes the system may not accept the original name, so try a few different variations until it succeeds. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** by selecting the **edit icon (1)** and clicking on **Save (3)**.
 
@@ -162,9 +162,9 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/L2T3S3-1211.png)
 
-1. Scroll up to the **Inputs** section enter any fruit name of your choice like **Apple (1)** in the **Value** field for the topic.
+1. Scroll up to the **Inputs (1)** section enter any fruit name of your choice like **Apple (2)** in the **Value** field for the topic.
 
-    ![](./media/apple-1.png)
+    ![](./media/L2T3S4-1911.png)
 
 1. Select **Save (1)**, and click on **Start compute session (2)**.
 
@@ -186,11 +186,11 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/4-7-25-l2-17.png)
 
-1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image shown below.
+1. Once the flow run is completed, scroll down to the **Outputs** section and select **View full output** to view the flow results. The output will look similar to the image shown below.
 
-     ![](./media/dex39.png)
+     ![](./media/L2T3S9-1911.png)
 
-1. You can view the flow run status and output in the **Outputs** section.
+1. You can view the flow run status and output.
 
     ![](./media/L2T3S10-1211.png)
 
@@ -230,7 +230,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/run-anway.png)
 
-1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image shown below.
+1. Once the flow run is completed, from the **Outputs** section below, select **View full output** to view the flow results. The output will look similar to the image shown below.
 
    ![](./media/L2T3S15-1211.png)
 

@@ -1,10 +1,10 @@
 # Lab 05: Implementing Chat Flow and Tool Integration
 
-### Estimated Duration: 60 Minutes
+#### Estimated Duration: 60 Minutes
 
 ## Overview
 
-In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You will start by creating a basic chat flow using Azure AI Foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
+In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You will start by creating a basic chat flow using Microsoft Foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
 ## Objectives
 
@@ -12,19 +12,19 @@ In this lab, you will perform the following:
 - Task 1: Design and Implement a Chat Flow
 - Task 2: Use LLM and Prompt Tools in Flows
 
-## Task 1: Design and Implement a Chat Flow
+### Task 1: Design and Implement a Chat Flow
 
-In this task, you will design and implement a chat flow using Azure AI Foundry to interact with a deployed language model. You will test its functionality to ensure accurate and relevant responses and prepare the chat flow for deployment in a production environment.
+In this task, you will design and implement a chat flow using Microsoft Foundry to interact with a deployed language model. You will test its functionality to ensure accurate and relevant responses and prepare the chat flow for deployment in a production environment.
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**.
 
 1. On the **Manage deployments of your models and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then select **Deploy base model (3)** from the dropdown.
 
-   ![](./media/L5T1S1-1211.png)
+   ![](./media/L5T1S2-1911.png)
 
 1. On the **Select a model** page, search for **gpt-4.1-mini (1)**, select **gpt-4.1-mini (2)**, select **Confirm (3)** under the **gpt-4.1-mini**.
 
-   ![](./media/L5T1S3-1211.png)
+   ![](./media/L5T1S3-1911.png)
 
 1. On **Deploy model gpt-4.1-mini**, click on **Customize**.
 
@@ -42,9 +42,9 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
      ![](./media/L5T1S5-1211.png)
      
-1. On the Azure AI Foundry, under **My assets**, select **Model + endpoints (1)**. On the **Model deployments** page check the box next to **gpt-4.1-mini (2)**, then click **Open in playground (3)**
+1. Once the deployment is complete, on the **gpt-4.1-mini** page click on **Open in playground**. 
 
-    ![](./media/L5T1S6-1211.png)
+    ![](./media/L5T1S6-1911.png)
 
 1. In the chat window, enter the query **What can you do?**.
 
@@ -87,15 +87,15 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
 1. From the left menu, under the **Build and customize** section, click **Prompt flow (1)**. On the Flows page, click **+ Create (2)** to start building your flow with the Prompt tool.
 
-   ![](./media/4-7-25-l5-6.png)
+   ![](./media/L5T1S11-1911.png)
 
 1. On **Create a new flow** blade, under **Chat flow**, click on **Create (1)**, then enter **Travel-Chat (2)** for Folder name, then click on **Create (3)** 
 
-   ![](./media/4-7-25-l5-7.png)
+   ![](./media/L5T1S12-1911.png)
 
 1. A simple chat flow is created for you. Note there are two inputs (**chat history and the user’s question**) **(1)**, an LLM node that will connect with your deployed language model, and an output to reflect the response in the chat **(2)**.
 
-   ![](./media/4-7-25-l5-8.png)
+   ![](./media/L5T1S13-1911.png)
 
 1. To be able to test your flow, you need compute. Select **Start compute session** from the top bar.
 
@@ -149,15 +149,15 @@ In this task, you will design and implement a chat flow using Azure AI Foundry t
 
      ![](./media/L5T1S17-1211.png)
    
-## Task 2: Use LLM and Prompt Tools in Flows
+### Task 2: Use LLM and Prompt Tools in Flows
 
-In this task, you will use the chat window to test the developed flow by leveraging built-in LLM and prompt tools within Azure AI Foundry. This will help you validate the flow's behavior, experiment with prompt tuning, and ensure the language model responds accurately within the defined interaction patterns.
+In this task, you will use the chat window to test the developed flow by leveraging built-in LLM and prompt tools within Microsoft Foundry. This will help you validate the flow's behavior, experiment with prompt tuning, and ensure the language model responds accurately within the defined interaction patterns.
 
 1. Ensure the compute session is running. Select **Save (1)**. Select **Chat (2)** to test the flow.
 
    ![](./media/4-7-25-l5-new.png)
 
-1. Enter the query: **I have one day in London, what should I do?** and review the output.
+1. In the chat, enter the query: **I have one day in London, what should I do?** and review the output.
 
    ![](./media/L5T2S2-1211.png)
 
@@ -184,17 +184,19 @@ In this task, you will use the chat window to test the developed flow by leverag
 
    >**Note:** Select **Save** if your flow is not saved.
 
-1. In Azure AI Foundry, from the left navigation pane, under **My assets**, select **Model + endpoints (1)**
+1. In Microsoft Foundry, from the left navigation pane, under **My assets**, select **Model + endpoints (1)**
 
 1. Select the **Model deployments (2)** tab to find your deployed flow. It may take some time before the deployment is listed and successfully created. When the deployment has succeeded, select the newly created deployment **(3)**.
 
    ![](./media/L5T2S6-1211.png)
 
-   > **Note:** It might take 3-5 minutes to deploy.
+   > **Note:** It might take 3-5 minutes for the endpoint to show.
 
 1. Wait untill the **Provisioning state** become **Succeeded (1)**, then only you will get the **Test (2)** tab.
 
    ![](./media/4-7-25-l5-17.png)
+
+   > **Note:** It might take 5-10 minutes for the endpoint deployment to succeed.
 
 1. Navigate to the **Test (1)** tab, and enter the prompt **What is there to do in San Francisco? (2)** in the input question (string) section, and review the response **(3)**.
 
@@ -214,12 +216,18 @@ In this task, you will use the chat window to test the developed flow by leverag
 
    ![](./media/4-7-25-l5-20.png)
 
+
+<!--
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
+
+-->
+
 
 ## Summary
 In this lab, you have completed the following tasks:

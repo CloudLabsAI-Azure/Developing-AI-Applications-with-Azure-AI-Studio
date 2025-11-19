@@ -1,6 +1,6 @@
 # Lab 04: Fine-Tuning Prompts for Optimal Performance
 
-### Estimated Duration: 120 Minutes
+#### Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -12,13 +12,13 @@ In this lab, you will perform the following:
 - Task 1: Perform Iterative Prompt Tuning and Variant Comparison
 - Task 2: Optimize Flow Performance for Production
 
-## Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
+### Task 1: Perform Iterative Prompt Tuning and Variant Comparison 
 
 In this task, you will refine model responses by adjusting prompts over successive iterations. This process enables systematic evaluation and comparison of output variants, helping to ensure that each iteration leads to improved performance and more accurate, relevant responses.
 
-1. On the **Azure AI Foundry**, under the **Build and customize** section, select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
+1. On the **Microsoft Foundry**, under the **Build and customize** section, select **Prompt flow (1)**. Select **+ Create (2)** to open the flow creation wizard.
 
-   ![](./media/4-7-25-l4-1.png)
+   ![](./media/L4T1S1-1911.png)
 
 1. In the **Create a new flow** pane, under **Explore gallery**, in the **Web Classification** box, select **Clone**.
 
@@ -233,19 +233,22 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/image-40.png)
   
-## Task 2: Optimize Flow Performance for Production 
+### Task 2: Optimize Flow Performance for Production 
 
 In this task, you will analyze and refine workflow processes to ensure maximum efficiency and minimal downtime. This includes identifying bottlenecks, applying best practices, and leveraging advanced tools and technologies to streamline operations. You will also implement continuous monitoring and iterative improvements to maintain high performance and adapt to evolving production demands, ultimately enhancing productivity and reducing operational costs.
 
-1. Scroll to the top, under **Inputs** section, click on **+ Add input (1)**, then add **category** and **text-context** **(2)**. 
+1. Scroll to the top, under **Inputs** section, click on **+ Add input (1)**, then add **category** and **text-context** **(2)** as inputs. 
 
     ![](./media/4-7-25-p4-11.png)
 
-1. Under **Outputs**, click on **+ Add output (1)**, then add **category** and **evidence** **(2)**. Click on **Save (3)**.
+1. Under **Outputs**, click on **+ Add output (1)**, then add **category** and **evidence** **(2)**. Provide the values as below and click on **Save (3)**.
 
-    ![](./media/lab4-new-1.png)
+   - For category: ${classify_with_llm.output}
+   - For evidence: ${convert_to_dict.output}
 
-     >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
+      ![](./media/lab4-new-1.png)
+
+      >**Note:** In the Output section, if the outputs are already added, please check for the **values** and then select **Save**.
    
 1. Select **Evaluate (1)** -> **Custom Evaluation (2)**.
 
@@ -253,15 +256,15 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On the **Batch run & Evaluate** give **Run display name** as **classify-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under **Variants** select **classify_with_llm (2)**, and click on **Next (3)**.
 
-   ![](./media/batchrun.png)
+   ![](./media/L4T2S4-1911.png)
 
 1. On the **Batch run settings** select **+ Add new data**.
 
-   ![](./media/d22.png)
+   ![](./media/L4T2S5-1911.png)
 
 1. On the **Add new data** window open, enter name  **classify_with_llm_data_set (1)** select **Upload from local file (2)** and click on **Browse (3)**.
 
-   ![](./media/d23.png)
+   ![](./media/L4T2S6-1911.png)
 
 1. Navigate to `C:\LabFiles\Model-Evaluation-and-Model-Tunning\Labs\data` press **Enter** **(1)**, then select **classify.jsonl (2)** file and click on **Open (3)**.
 
@@ -277,7 +280,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
    
 1. On the **Select evaluation** page, select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
-   ![](./media/batchrunclassifiation.png)
+   ![](./media/L4T2S10-1911.png)
 
 1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)** and select **classify_with_llm_data_set (Version 1) (2)**. For the **groundtruth** data source, select **category (3)** under the **Data input**, and for **prediction**, select **category (4)** under the **Flow output**, then select **Next (5)**.
 
@@ -287,21 +290,23 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/dex57.png)
 
-1. Back on the Prompt flow page and from the top, click on the **View run list** link.
+1. Back on the Prompt flow page and from the top, click on the **View run list** link which will open the evaluation runs in a new tab. 
 
    ![](./media/image-43.png)
    
 1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
 
-   ![](./media/d27.png)
+   ![](./media/L4T2S14-1911.png)
 
 1. After you identify which variant is the best by reviewing the Visualize outputs section, comparing predicted outputs from each variant against the ground truth using metrics like accuracy, F1 score, and precision, you can go back to the flow authoring page, open the classify_with_llm node, click Show variants and set the best performing variant as the default for that node.
 
 1. Now will evaluate the variants of the **summarize_text_content** node as well.
 
-1. Back on the **Prompt flow** page, under the **Input** section, remove all inputs except **url**, then click on **+ Add input (1)** and enter **Text (2)**. 
+1. Navigate back to the tab of the Web classification **Prompt flow** page, under the **Input** section, remove all inputs **(1)** except **url**, then click on **+ Add input (2)** and enter **Text (3)**. 
 
-   ![](./media/L4T2S17-1211.png)
+   ![](./media/L4T2S17.1-1911.png)
+
+   ![](./media/L4T2S17.2-1911.png)
 
 1. Under the **Outputs** section, delete the existing outputs, click on **+ Add output (1)**, then add **Summary** and set the value as **${summarize_text_content.output}**. Also, add **URL** and set the value as **${inputs.url}** **(2)** and then click on **Save (3)**
 
@@ -317,7 +322,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On the **Batch run & Evaluate** screen, under the **Batch run settings** section, click on **+ Add new data** to upload your dataset.
 
-   ![](./media/lab4-new-3.png)
+   ![](./media/L4T2S5-1911.png)
 
 1. In the **Add new data** pane,  enter the Name as **summarize_text_content_data_set (1)** and select **Upload from local file (2)** and click on **Browse (3)**.
 
@@ -333,11 +338,11 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Under **Input mapping** for **url** and **Text** select **${data.text} (1)** and click on **Next (2)**.
 
-   ![](./media/L4T2S25-1211.png)
+   ![](./media/L4T2S25-1911.png)
 
 1. On the **Select evaluation** page select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
-   ![](./media/classification.png)
+   ![](./media/L4T2S26-1911.png)
 
 1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)**, select **summarize_text_content_data_set (Version 1) (2)**, and ensure that the **groundtruth** data source is set to **summary (3)** under the **Data input** section. For **prediction**, select **summary (4)** under the **Flow output**, and then click on **Review + submit (5)**.
 
@@ -347,7 +352,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On **Review** page review the settings and click on **Submit**.
 
-    ![](./media/4-7-25-l4-12.png)
+    ![](./media/L4T2S28-1911.png)
 
 1. Back on the Prompt flow page, and from the top, click on the **View run list** link.
 
