@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI Foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI Foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
+In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Microsoft Foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Microsoft Foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
 
 ## Objectives
 
@@ -34,13 +34,13 @@ In this task, you will set up a structured environment to manage and streamline 
 
         ![](./media/password-1211.png)
 
-1. Search for **Azure AI Foundry (1)** in the Azure portal and select **Azure AI Foundry (2)** from the Services list.  
+1. Search for **Microsoft Foundry (1)** in the Azure portal and select **Microsoft Foundry (2)** from the Services list.  
 
-    ![](./media/4-7-25-l2-3.png)
+    ![](./media/L2T1S2-1911.png)
 
-1. Once the **AI Foundry** page opens, select **AI Hubs (1)** under **Use with AI Foundry** from the left panel. Click on **+ Create (2)** and select **Hub (3)** from the drop-down. 
+1. Once the **Microsoft Foundry** page opens, select **AI Hubs (1)** under **Use with Foundry** from the left panel. Click on **+ Create (2)** and select **Hub (3)** from the drop-down. 
 
-    ![](./media/4-7-25-l2-4.png)
+    ![](./media/L2T1S3-1911.png)
 
 1. In the **Basics** tab of **Azure AI hub** page, follow these instructions to fill out the properties:
 
@@ -53,31 +53,31 @@ In this task, you will set up a structured environment to manage and streamline 
    - Select **Save (7)**
    - Review the details filled and click on **Review + create (8)**.
 
-        ![](./media/4-7-25-l2-5.png)
+        ![](./media/L2T1S4-1911.png)
 
 1. Click on **Create** once the validation passes to create the **Hub**. 
 
-    ![](./media/l1.task1.2.png)
+    ![](./media/L2T1S5-1911.png)
 
 1. After the deployment has succeeded, click on **Go to resource**.
 
     ![](./media/L2T1S6-1211.png)
 
-1. On the **Azure AI hub** page, select **Overview (1)** and click on the **Launch Azure AI Foundry (2)** option visible. This will take you to the Azure AI Foundry portal. 
+1. On the **Azure AI hub** page, select **Overview (1)** and click on the **Launch Azure AI Foundry (2)** option visible. This will take you to the Microsoft Foundry portal. 
 
     ![](./media/4-7-25-l2-7.png)
 
-1. On the **Azure AI Foundry** portal, under Hub **Overview (1)**, scroll down and select **+ New project (2)**.
+1. On the **Microsoft Foundry** portal, under Hub **Overview (1)**, scroll down and select **+ New project (2)**.
 
-    ![](./media/4-7-25-l2-8.png)
+    ![](./media/L2T1S8-1911.png)
 
 1. Let the **Current hub (1)** option load, provide the **Project name** as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(2)** and click on **Create (3)**. 
 
-    ![](./media/4-7-25-l2-9.png)
+    ![](./media/L2T1S9-1911.png)
 
 1. Once the project creation is completed, you will be navigated to that project. You will be performing further tasks in this project **modelproject-<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![](./media/L2T1S10-1211.png)
+    ![](./media/L2T1S10-1911.png)
 
     > **Note:** If any pop-up appears, click on **Close**.
 
