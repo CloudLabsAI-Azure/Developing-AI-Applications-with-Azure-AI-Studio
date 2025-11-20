@@ -1,6 +1,6 @@
 # Lab 03: Evaluation Flow Setup
 
-### Estimated Duration: 90 Minutes
+#### Estimated Duration: 90 Minutes
 
 ## Overview
 
@@ -12,13 +12,13 @@ In this lab, you will perform the following:
 - Task 1: Setup Manual Evaluation
 - Task 2: Set up Automated Evaluation with Built-in Evaluation Metrics
 
-## Task 1: Setup Manual Evaluation
+### Task 1: Setup Manual Evaluation
 
 In this task, you will set up a manual evaluation process to assess model performance. This involves defining evaluation criteria, collecting human feedback, and analyzing results to measure accuracy and identify potential biases. 
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select the **Manual evaluations (2)** tab. Select **+ New manual evaluation (3)**.
 
-   ![](./media/lab3-new.png)
+   ![](./media/L3T1S1-1911.png)
 
 1. A new window opens with your **System message (1)** already populated and your deployed **Model (2)** already selected.
 
@@ -50,19 +50,19 @@ In this task, you will set up a manual evaluation process to assess model perfor
 
 1. Select **Save results (1)** from the top bar. Enter **manual_evaluation_results (2)** as the name for the results, and select **Save (3)**.
 
-   ![](./media/gpt-4-demo18-1.png)
+   ![](./media/L3T1S6-1911.png)
    
 1. From the left-hand menu, navigate to **Evaluations (1)** under the **Protect and govern** section. Select the **Manual evaluations (2)** tab to find the manual evaluations you just saved, **manual_evaluation_results (3)**. Note that you can explore your previously created manual evaluations, continue where you left off, and save the updated evaluations.
 
    ![](./media/manual-1.png)
 
-## Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
+### Task 2: Setup Automated Evaluation with Built-in Evaluation Metrics
 
 In this task, you will configure automated evaluation using built-in metrics to measure model performance quickly and accurately.
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**. On the **Assess and compare AI application performance** select **Automated evaluations (2)** tab. Select **Create a new evaluation (3)**.
 
-   ![](./media/4-7-25-l3-4.png)
+   ![](./media/L3T2S1-1911.png)
 
 1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset (1)** and click on **Next (2)**.
 
@@ -90,7 +90,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
       > **Note:** Make sure to select the correct file type. The AI Foundry portal only accepts files in the **JSON Lines** format. If any other file type is selected, the file will not be accepted.
 
-1. Navigate back to **Azure AI Foundry**, where your **creating a new evaluation**.
+1. Navigate back to **Microsoft Foundry**, where your **creating a new evaluation**.
    
     - **Configure test data**: select **Upload new dataset**
   
@@ -106,25 +106,25 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
       ![](./media/4-7-25-l3-new.png)
       
-      ![](./media/4-7-25-l3-7.png)
+      ![](./media/select-eval-1911.png)
       
     - Enter **Coherence (1)** in the Criteria name field, then click on the **Coherence (2)** preset. In the **Query (3)** field, select `{{item.query}}`, and in the **Response (4)** field, select `{{item.response}}`. Finally, click **Add (5)** to save the configuration.  
 
-      ![](./media/4-7-25-l3-6.png)
+      ![](./media/select-eval-coherence1911.png)
 
     - **Configure Evaluators**: Click on **+ Add** and select **Likert-scale evaluator**
 
-      ![](./media/addecallas-1.png)
+      ![](./media/config-eval-1911.png)
       
-      ![](./media/4-7-25-l3-7.png)
+      ![](./media/select-eval-1911.png)
 
     - Enter **Fluency (1)** in the Criteria name field, then click on the **Fluency (2)** preset. In the **Query (3)** field, select `{{item.query}}`, and in the **Response (4)** field, select `{{item.response}}`. Finally, click **Add (5)** to save the configuration.  
 
-      ![](./media/4-7-25-l3-8.png)
+      ![](./media/select-eval-fluency-1911.png)
     
     - Once added, click on **Next**.
 
-      ![](./media/addededddd-1.png)
+      ![](./media/config-eval2-1911.png)
 
    - Now, update model Evaluation name to  **Modelevaluation-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Submit (2)**.
      
@@ -136,7 +136,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
 1. From the left navigation menu, under the **Protect and govern** section, select **Evaluation (1)**, and under **Automated evaluation (2)**, choose the newly created evaluation run **(3)**.
 
-   ![](./media/4-7-25-l3-10.png)
+   ![](./media/L3T2S6-1911.png)
 
 1. Under the **Report** tab, scroll down to explore the **Metric dashboard**.
 
@@ -147,6 +147,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
     ![](./media/4-7-25-l3-12.png)
 
 ## Summary
+
 In this lab, you have completed the following tasks:
 - Set Up Manual Evaluation
 - Set up Automated Evaluation with Built-in Evaluation Metrics
