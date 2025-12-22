@@ -39,7 +39,7 @@ Welcome to your Building and Evaluating Prompt Flows with Microsoft Foundry Work
  
 1. Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-   ![](./media/labguide-1a-1.png)
+   ![](./media/GUIDE.png)
 
  ### Virtual Machine & Lab Guide
  
