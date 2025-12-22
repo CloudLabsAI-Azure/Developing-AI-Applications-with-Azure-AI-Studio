@@ -4,7 +4,7 @@
 
 ## Lab scenario
 
-In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Azure AI foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Azure AI foundry's Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
+In this lab, you will gain hands-on experience in initializing a Prompt Flow project in Microsoft Foundry, setting up the necessary environment to begin developing, testing, and refining AI applications. You will create and customize prompts within Microsoft Foundry Prompt Flow. Starting with the creation of a new flow, you will add and configure the Prompt tool and develop a flow incorporating LLM (Large Language Model) and Prompt tools. By authoring a sample flow and running it with custom inputs, you'll learn how to monitor flow execution and evaluate outputs, thereby understanding the practical steps involved in developing, testing, and refining AI-driven workflows.
 
 ## Lab objectives
 In this lab, you will perform the following:
@@ -17,39 +17,44 @@ In this lab, you will perform the following:
 
 As involves setting up a structured environment to manage and streamline prompt-based AI tasks. This process typically includes creating a project directory, configuring necessary files and dependencies, and establishing a workflow for prompt design, testing, and iteration. By organizing prompts, data, and evaluation metrics in a centralized system, the project ensures consistent and efficient development, making it easier to refine prompts and achieve desired outcomes.
 
-1. On the Azure portal, search for **Azure AI Foundry** (1).
+1. On the Azure portal, search for **Microsoft Foundry (1)** and select **Microsoft Foundry (2)** from the results.
 
-    ![](./media/image0001.png)
-1. On the **Azure AI foundry**, on the home page, select **Use with AI foundry** on the left pane.
-1. Click on **AI Hubs** (1) and then select **+ Create** (2) followed by **Hub** (3).
+    ![](./media/mfndry.png)
 
-    ![](./media/image0002.png)
+1. On the **Microsoft Foundry** home page, expand **Use with Foundry (1)** on the left pane.
+
+1. Click on **AI Hubs (2)** and then select **+ Create (3)** followed by **Hub (4)**.
+
+    ![](./media/hubcr.png)
 
 1. On the **Azure AI hub** page, follow these instructions to fill out the properties:
 
-   - Subscription: Keep it as default (1)
+   - Subscription: **Keep it as default (1)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
-   - Location: **<inject key="Region" enableCopy="false"/>  (3)**
+   - Region: **<inject key="Region" enableCopy="false"/>  (3)**
    - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (4)** 
-   - Friendly name: Keep it as default (5)
-   - Default project resource group: Keep it as default (6 )
-   - Connect AI Services incl. OpenAI: Keep it as default (7)
+   - Friendly name: **Keep it as default (5)**
+   - Default project resource group: **Keep it as default (6)**
+   - Connect AI Services incl. OpenAI: **Keep it as default (7)**
    - Select **Review + create (8)**
 
-       ![](./media/image0003.png)
+       ![](./media/hubrc.png)
 
-1. Once the validation is passed, select **Create** (1).
+1. Once the validation is passed, click **Create**.
 
-    ![](./media/image0004.png)
-1. Click on **Go to resource**, and select **Launch Azure AI Foundry** (1).
+    ![](./media/vpass.png)
 
-    ![](./media/image0005.png)
+1. Once the deployment gets completed click on **Go to resource**, and select **Launch Azure AI Foundry** (1).
 
-1. Select **+ New Project** (1), enter the following name **modelproject-<inject key="DeploymentID" enableCopy="false"/>** and click on **Create**.
+    ![](./media/gtr.png)
 
-    ![](./media/image0006.png)
+    ![](./media/laif.png)
 
-    ![](./media/image0007.png)
+1. Select **+ New Project (1)**, enter the Project name as **modelproject-<inject key="DeploymentID" enableCopy="false"/>** **(2)** and click on **Create (3)**.
+
+    ![](./media/npro.png)
+
+    ![](./media/cnpro.png)
 
     > **Note:** This step takes around 2-3 minutes to complete. Proceed with the following tasks once the process is finished.
      
@@ -65,36 +70,36 @@ Creating and customizing prompts involves designing specific, targeted questions
 
 1. From the left navigation menu, under **My assets**, select **Model + endpoints (1)**. On the **Manage deployments of your models, apps, and services**, under **Model deployments** tab, select **+ Deploy model (2)** and then choose **+ Deploy base model (3)** from the dropdown list.
 
-    ![](./media/oct-build-evaluate-lab1-6.png)
+    ![](./media/dbm.png)
 
-1. On the **Select a model** page, search and select **gpt-4o (1)**, select **Confirm (2)** under the **gpt-4o**.
+1. On the **Select a model** page, search **gpt-4o (1)** and select model **gpt-4o (2)** and click **Confirm (3)**.
 
-    ![](./media/new-develop-issue-2a.png)
+    ![](./media/modslct.png)
 
 1. On **Deploy model gpt-4** page, follow these instructions to create the deployment:
 
     - Deployment name : **gpt-4o (1)**
     - Deployment type :  **Standard (2)**
-    - Model version : **2024-11-20(3)**
+    - Model version : **2024-11-20 (3)**
     - AI resource : Make sure to select which contain your deployment id **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx** **(4)**
     - Tokens per Minute Rate Limit (thousands): **8K (5)**
       > **Note**: Use the &rarr; (right arrow) key on the keyboard to set the Enqueued Tokens (Limit) to 8K.
     - Content filter : **DefaultV2 (6)**
     - Select **Connect and deploy (7)**
 
-        ![](./media/oct-build-evaluate-lab1-1.png)
+        ![](./media/cnd.png)
 
-1. From the left navigation pane, select **Prompt flow (1)** > **+ Create (2)** to add the Prompt tool to your flow.
+1. From the left navigation pane, select **Prompt flow (1)** **>** **+ Create (2)** to add the Prompt tool to your flow.
 
-    ![](./media/oct-build-evaluate-lab1-2.png)
+    ![](./media/pfcr.png)
 
 1. On **Create a new flow** blade, under **Standard flow**, click on **Create (1)**, then enter **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** for Folder name, then click on **Create (3)**.
 
-    ![](./media/E2-T2-S7.png)
+    ![](./media/pfcr2.png)
 
-    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** by selecting the edit icon and click on **Save**.
+    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** **(2)** by selecting the **edit (1)** icon and click on **Save (3)**.
 
-    ![](./media/gpt-4-demo11.png) 
+    ![](./media/rname.png) 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -112,42 +117,39 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
 
 1. From the **Graph**, select **joke (1)**. Choose an existing connection **modelhub<inject key="DeploymentID" enableCopy="false"/>xxxxxxxx_aoai (2)** from the drop-down menu, and for deployment, select the newly created deployment, **gpt-4o (3)**, in the LLM tool editor.
 
-    ![](./media/oct-build-evaluate-lab1-3.png)
+    ![](./media/jokeslct.png)
 
-1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g., 'Apple').
+1. Scroll up, and for **Input**, enter any fruit name of your choice (e.g. **'Apple' (1)** ).
 
-    ![](./media/apple-1.png)
+1. Select **Save (2)**, and select **Start compute session (3)**.
 
-1. Select **Save (1)**, and select **Start compute session (2)**.
-
-    ![](./media/oct-build-evaluate-lab1-4.png)
+    ![](./media/ascs.png)
 
     >**Note:** It might take 10-15 minutes to start the session. Wait till compute session starts.
     
-1. Once the compute session is complete, click the play button to run the joke node first, then run the echo node.
+1. Once the compute session is complete, click the play button to **run** the **joke node** first, then **run** the **echo node**.
 
-    ![](./media/joke.png)
+    ![](./media/jknd.png)
 
-    ![](./media/echo.png)
+    ![](./media/ecnd.png)
   
 1. Once all nodes have successfully executed, select **Run** from the toolbar.
 
-    ![](./media/run-1.png)
+    ![](./media/tbrun.png)
 
-1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
+1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image as shown below.
 
-    ![](./media/image-30.png)
+    ![](./media/vfo.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
-     ![](./media/image-31.png)
+     ![](./media/ops.png)
 
-1. From the top menu, select **+ Prompt** to add the Prompt tool to your flow, give the name of the flow as **modelflow**, and select **Add**.
+1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
-     ![](./media/gpt-4-demo17.png)
-     ![](./media/gpt-4-demo(15).png)
+     ![](./media/mfadd.png)
 
-1. Add this code inside the **modelflow** prompt tool, and select **Validate and parse input**.
+1. Add this **code (1)** inside the **modelflow** prompt tool, and select **Validate and parse input (2)**.
 
     ```jinja
     Welcome to {{ website_name }}!
@@ -163,26 +165,26 @@ Developing a flow with Large Language Models (LLMs) and prompt tools involves de
     4. Contact customer support
     ```
 
-      ![](./media/gpt-4-demo16.png)
+      ![](./media/vnpi.png)
    
-1. In the input section add these following value, select **Save** and **Run**.
+1. In the **Inputs section (1)** add these following value, then select **Save (2)** and **Run (3)**.
 
-    - user_name: Jane
-    - website_name: Microsoft
+    - user_name: **Jane**
+    - website_name: **Microsoft**
 
-       ![](./media/gpt-4-demo14.png)
+       ![](./media/janerun.png)
 
 1. If you encounter any warnings while running, as shown in the screenshot below, click **Run Anyway**.
 
       ![](./media/run-anway.png)
 
-1. Once the flow run is completed, select View outputs to view the flow results. The output will look similar to the image as shown below.
+1. Once the flow run is completed, select **View full output** to view the flow results. The output will look similar to the image as shown below.
 
-     ![](./media/output.png)
+     ![](./media/upjvfo.png)
 
 1. You can view the flow run status and output in the Outputs section.
 
-     ![](./media/output1.png)
+     ![](./media/jops.png)
    
 ## Review
 In this lab you have completed the following tasks:
