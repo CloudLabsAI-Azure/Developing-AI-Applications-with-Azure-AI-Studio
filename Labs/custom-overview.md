@@ -1,6 +1,6 @@
-# Lunch and Learn: Building and Evaluating Prompt Flows with Azure AI Foundry
+# Lunch and Learn: Building and Evaluating Prompt Flows with Microsoft Foundry
 
-## Overall Estimated Duration: 60 minutes
+## Overall Estimated Duration: 60 Minutes
 
 ## Overview 
 
@@ -8,7 +8,7 @@ In this lab, you will gain hands-on experience in developing custom AI models, t
 
 ## Objective 
 
-This lab is designed to provide hands-on experience in model evaluation and fine-tuning using Azure AI Foundry Prompt Flow. By completing this lab, you will learn to:
+This lab is designed to provide hands-on experience in model evaluation and fine-tuning using Microsoft Foundry Prompt Flow. By completing this lab, you will learn to:
 
 - **Create and Train Models**: Creating and training models involves developing a machine learning or statistical model by first defining its structure and then training it using data. This process typically starts with selecting an appropriate algorithm based on the problem, such as regression, classification, or clustering. Once the model is chosen, it is initialized and trained on a dataset by feeding it input features and corresponding target values. During training, the model adjusts its parameters to minimize errors or maximize performance metrics. After training, the model is evaluated using separate validation data to assess its accuracy and generalizability. Fine-tuning and adjustments may be necessary to improve performance before deploying the model for real-world use.
 
@@ -19,24 +19,25 @@ This lab is designed to provide hands-on experience in model evaluation and fine
 Participants should have basic knowledge and understanding of the following
  
  - Azure Portal
- - Azure AI Foundry
+ - Microsoft Foundry
 
 ## Explanation of Components 
 
 - **Understanding the Lifecycle of Model Development**:
    - **Prompt Flow Stages**: Learn the stages of AI application development, including initialization, experimentation, evaluation, refinement, and production.
-   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Azure AI Foundry.
+   - **Flow Types**: Understand different types of flows (Standard, Chat, Evaluation) within Microsoft Foundry.
 
-- **Training the Model**: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Azure AI Foundry.
+- **Training the Model**: Create, configure, and run flows using Prompt and Large Language Model (LLM) tools in Microsoft Foundry.
+
 - **Evaluation Flow Setup**: Set up evaluation flows to automate model performance assessment using metrics like coherence and fluency.
 
 ## Getting Started with the Lab
  
-Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+Welcome to your Building and Evaluating Prompt Flows with Microsoft Foundry Workshop! We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
-1. Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
+1. Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
    ![](./media/labguide-1a-1.png)
 
@@ -48,19 +49,19 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
  
 1. To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](./media/env-1-1a-1.png)
+   ![](./media/ENV.png)
  
 ## Utilizing the Split Window Feature
  
 1. For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](./media/spla-1.png)
+   ![](./media/spl22.png)
  
 ## Managing Your Virtual Machine
 
-1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+1. Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/resa-1.png)
+   ![Manage Your Virtual Machine](./media/uprs.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
@@ -72,7 +73,33 @@ Welcome to your Building and Evaluating Prompt Flows with Azure AI Foundry Works
 
 After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-![](./media/inline-validation-01-1.png)
+![](./media/upinline-validation-01-1.png)
+
+## Let's Get Started with Azure Portal
+ 
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
+ 
+   ![](./media/portal.png)
+
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following **email/username (1)**, and click on **Next (2)**. 
+
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   
+      ![](./media/usr1.png)
+     
+1. Now enter the following **Password (1)** and click on **Sign in (2)**.
+   
+   * **Password:** <inject key="AzureAdUserPassword"></inject>
+   
+      ![](./media/tap.png)
+
+1. If prompted to stay signed in, you can click **No**.
+
+   ![](./media/staysign.png)
+
+1. If a Welcome to Microsoft Azure pop-up window appears, simply click **Maybe Later**.
+
+   ![](./media/starttour.png)
 
 ## Support Contact
 
