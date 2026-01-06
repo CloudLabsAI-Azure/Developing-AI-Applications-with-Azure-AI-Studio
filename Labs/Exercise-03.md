@@ -64,7 +64,7 @@ In this task, you will configure automated evaluation using built-in metrics to 
 
    ![](./media/L3T2S1-1911.png)
 
-1. On the **Create a new evaluation** pane, select **Ecaluate an existing query-response dataset (1)** and click on **Next (2)**.
+1. On the **Create a new evaluation** pane, select **Evaluate an existing query-response dataset (1)** and click on **Next (2)**.
 
    ![](./media/4-7-25-l3-5.png)
 
