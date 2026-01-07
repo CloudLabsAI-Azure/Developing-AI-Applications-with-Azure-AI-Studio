@@ -102,7 +102,7 @@ In this task, you will focus on creating and customizing prompts by designing ta
 
 1. On the **Select a model** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)**, select **Confirm (3)** under the **gpt-4.1**.
 
-   ![](./media/L2T2S3-1911.png)
+   ![](./media/L2T2S3-1911v1.png)
 
 1. On **Deploy model gpt-4.1** page, select **Customize**.
 
