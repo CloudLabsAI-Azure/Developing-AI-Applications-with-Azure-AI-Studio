@@ -24,7 +24,7 @@ In this task, you will design and implement a chat flow using Microsoft Foundry 
 
 1. On the **Select a model** page, search for **gpt-4.1-mini (1)**, select **gpt-4.1-mini (2)**, select **Confirm (3)** under the **gpt-4.1-mini**.
 
-   ![](./media/L5T1S3-1911.png)
+   ![](./media/L5T1S3-1911v1.png)
 
 1. On **Deploy model gpt-4.1-mini**, click on **Customize**.
 
