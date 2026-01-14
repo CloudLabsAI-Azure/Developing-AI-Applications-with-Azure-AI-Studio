@@ -30,13 +30,9 @@ Experimentation: Run the flow against sample data, evaluate the prompt's perform
 
 ### Task 1.1: Understand the types of flows
 
-In this task, you will explore different flow types in Microsoft Foundry
+In this task, you will explore different flow types in Microsoft Foundry:
 
-1. Navigate to Microsoft Foundry using the link below:
-    ```
-    https://ai.azure.com/
-    ```
-1. In Microsoft Foundry, click on `Prompt flow` in the left pane and then select `+ Create`. Here you can start a new flow by selecting a flow type or a template from the gallery.
+1. Here are some examples of flow types:
 
    - **Standard flow:** Designed for general application development, the standard flow allows you to create a flow using a wide range of built-in tools for developing LLM-based applications. It provides flexibility and versatility for developing applications across different domains.
    - **Chat flow:** Tailored for conversational application development, the Chat flow builds upon the capabilities of the standard flow and provides enhanced support for chat inputs/outputs and chat history management. With native conversation mode and built-in features, you can seamlessly develop and debug your applications within a conversational context.
