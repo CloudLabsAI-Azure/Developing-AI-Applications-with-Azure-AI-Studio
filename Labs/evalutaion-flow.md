@@ -94,7 +94,7 @@ It systematically assesses the performance and effectiveness of various processe
 
    - **Configure Evaluators**: Click on **+ Add (1)** and select **Likert-scale evaluator (2)**.
 
-      ![](./media/configeval.png)
+      ![](./media/L2T2S4-2.png)
 
    - Provide the name as **Coherence (1)** for Criteria Name, **Coherence (2)** for presets, scroll down and select **{{item.question}} (3)** for query, select **{{item.answer}} (4)** for Response and click on **Add (5)**.
 
@@ -102,7 +102,7 @@ It systematically assesses the performance and effectiveness of various processe
 
    - Again on **Configure Evaluators**, Click on **+ Add (1)** and select **Likert-scale evaluator (2)**.
 
-      ![](./media/adtc.png)
+      ![](./media/L2T2S4-2.png)
 
    - Provide the name as **Fluency (1)** for Criteria Name, **Fluency (2)** for presets, scroll down and select **{{item.question}} (3)** for query, select **{{item.answer}} (4)** for Response and click on **Add (5)**.
 
