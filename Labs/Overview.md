@@ -102,7 +102,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. Next, provide your password and click on **Sign in**
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
        ![Enter Your Password](./media/password-1211.png)
 
