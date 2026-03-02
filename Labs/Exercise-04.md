@@ -4,7 +4,9 @@
 
 ## Overview
 
-In this hands-on lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI-generated responses. You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
+In this lab, you will explore fine-tuning prompts for optimal performance, learning how to craft precise and effective input queries that maximize the accuracy, relevance, and efficiency of AI generated responses. 
+
+You will experiment with structuring prompts to guide AI behavior, incorporating context, constraints, and desired output formats to achieve more consistent results. By iterating on prompt design and analyzing AI responses, you will develop best practices for refining inputs to suit various use cases, from summarization and data extraction to creative writing and technical problem-solving.
  
 ## Objectives
 
@@ -20,7 +22,9 @@ In this task, you will refine model responses by adjusting prompts over successi
 
    ![](./media/L4T1S1-1911.png)
 
-1. In the **Create a new flow** pane, under **Explore gallery**, in the **Web Classification** box, select **Clone**.
+   >**Note:** If after clicking on Prompt flow, you are navigated to your previous prompt flow project, please click on Prompt flow again from the left-hand menu to access the prompt flow menu.
+
+1. In the **Create a new flow** pane, scroll down and under **Explore gallery**, in the **Web Classification** box, select **Clone**.
 
      ![](./media/4-7-25-p4-1.png)
 
@@ -209,7 +213,7 @@ In this task, you will refine model responses by adjusting prompts over successi
 
      >**Note:** It might take 10-15 minutes to start the session. Wait till the compute session starts.    
 
-1. Click the **Validate and parse input** button **(1)** and For the input value, select **${classify_with_llm.output} (2)** 
+1. Click the **Validate and parse input** button **(1)** and for the input value, select **${classify_with_llm.output} (2)** 
 
    ![](./media/4-7-25-p4-8.png)
 
@@ -276,15 +280,15 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. Select **${data.text-context} (1)** for **text-context** and click on **Next (2)**.
 
-   ![](./media/dex55.png)
+   ![](./media/L4T2S9-0303.png)
    
 1. On the **Select evaluation** page, select **Classification Accuarancy Evaluation (1)** and click on **Next (2)**.
 
-   ![](./media/L4T2S10-1911.png)
+   ![](./media/L4T2S10-0303.png)
 
 1. On the **Configure evaluation** page, expand **Classification Accuracy Evaluation (1)** and select **classify_with_llm_data_set (Version 1) (2)**. For the **groundtruth** data source, select **category (3)** under the **Data input**, and for **prediction**, select **category (4)** under the **Flow output**, then select **Next (5)**.
 
-   ![](./media/dex56.png)
+   ![](./media/L4T2S11-0303.png)
 
 1. On **Review** page review the settings and click on **Submit**.
 
@@ -294,7 +298,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/image-43.png)
    
-1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
+1. Wait for the batch run and evaluation run to be **Completed**. In the run detail page, **multi-select the batch runs for each variant (1)**, then select **Visualize outputs (2)**. You will be able to see the metrics of 2 variants for the classify_with_llm node and LLM, along with predicted outputs for each recorded data.
 
    ![](./media/L4T2S14-1911.png)
 
@@ -318,7 +322,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
 1. On the Batch run & Evaluate give **Run display name** as **summarize_text_content-<inject key="DeploymentID" enableCopy="false"/> (1)**, then under variants select **Use default variants for all nodes (2)**, and select **summarize_text_content (3)** click on **Next (4)**.
 
-   ![](./media/summarizetextcontent.png)
+   ![](./media/L4T2S20-0303.png)
 
 1. On the **Batch run & Evaluate** screen, under the **Batch run settings** section, click on **+ Add new data** to upload your dataset.
 
@@ -358,7 +362,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 
    ![](./media/4-7-25-l4-11.png)
    
-1. After the batch run and evaluation run **complete**, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
+1. After the batch run and evaluation run is **Completed**, in the run detail page, **multi-select (1)** the batch runs for each variant, then select **Visualize outputs (2)**. You will see the metrics of 2 variants for the classify_with_llm node and LLM predicted outputs for each record of data.
 
    ![](./media/d32.png)
 
@@ -367,6 +371,7 @@ In this task, you will analyze and refine workflow processes to ensure maximum e
 1. After you identify which variant is the best by going to the Visualize outputs section, compare the predicted summaries from each variant against the expected summaries using metrics like classification accuracy. Review how closely the AI-generated summaries match the actual ones, and determine which variant performs more consistently. Once the better variant is identified, go back to the flow authoring page, open the summarize_text_content node, click Show variants, and set the best-performing variant as the default for that node.
 
 ## Summary
+
 In this lab, you have completed the following tasks:
 - Performed Iterative Prompt Tuning and Variant Comparison 
 - Optimized Flow Performance for Production

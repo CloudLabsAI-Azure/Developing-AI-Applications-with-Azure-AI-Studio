@@ -4,16 +4,27 @@
 
 ## Overview
 
-In this lab, you will explore the lifecycle of developing AI applications using Microsoft Foundry's Prompt Flow. You will start by understanding the structured process, including initialization, experimentation, evaluation, refinement, and production stages. You will learn about different flow types, such as Standard, Chat, and Evaluation flows, and how they cater to various application needs. You will also delve into the concept of flows and nodes within Prompt Flow, which enables seamless data processing and task execution.
+This is a **read-only lab**, designed to help you understand the concepts and lifecycle of developing AI applications using Microsoft Foundry’s Prompt Flow.
+
+There are no practical tasks to perform in this lab. Instead, you are expected to carefully review the content and understand:
+
+- The Flow Development Lifecycle
+- Different types of flows. 
+- The structure of a flow. 
+- Available tools in Prompt Flow.
+
+This foundational understanding will prepare you for the upcoming hands-on labs.
 
 ## Objective
 
-In this lab, you will perform the following:
+In this lab, you will understand and review the following concepts:
 
-- Task 1: Comprehend the Flow Development Lifecycle
-     - Task 1.1: Understand the types of flows  
-     - Task 1.2: Understand a flow  
-     - Task 1.3: Explore the tools available in prompt flow
+- Comprehend the Flow Development Lifecycle
+- Understand the different types of flows (Standard, Chat, and Evaluation)
+- Explore the structure of a flow (Inputs, Nodes, and Outputs)
+- Review the tools available in Prompt Flow
+
+This lab focuses on building foundational knowledge that will support upcoming hands-on exercises.
   
 ### Task 1: Comprehend the Flow Development Lifecycle
 
@@ -78,8 +89,7 @@ In this task, you will explore the tools available in Prompt Flow within Microso
    
 ## Summary
 
-In this lab, you have completed the following tasks:
-- Comprehended the Flow Development Lifecycle
+In this lab, you reviewed the key concepts of the Flow Development Lifecycle.
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next Lab.
 

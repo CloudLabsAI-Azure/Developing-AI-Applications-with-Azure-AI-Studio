@@ -24,7 +24,7 @@ In this task, you will set up a structured environment to manage and streamline 
     https://portal.azure.com
     ```
 
-    > **Note:** If prompted with a sign-in window, kindly sign in using the provided Azure credentials
+    > **Note:** If not already logged in, use the below credentials in the sign-in window, to sign in using the provided Azure credentials
       
       - Enter your **Email/Username:** <inject key="AzureAdUserEmail"></inject> and click **Next** to continue.
 
@@ -182,7 +182,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
     ![](./media/4-7-25-l2-16.png)
   
-1. Once all nodes have successfully executed, select **Run** from the toolbar.
+1. Once both the nodes have successfully executed, select **Run** from the toolbar.
 
    ![](./media/4-7-25-l2-17.png)
 
@@ -193,6 +193,8 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 1. You can view the flow run status and output.
 
     ![](./media/L2T3S10-1211.png)
+
+    >**Note:** The output may vary as the joke node generates a random joke based on the input topic, which in this case is "Apple". You can experiment with different inputs to see how the output changes.
 
 1. From the top menu, select **+ Prompt (1)** to add the Prompt tool to your flow, give the name of the flow as **modelflow (2)**, and select **Add (3)**.
 
@@ -220,7 +222,7 @@ In this task, you will develop a flow with Large Language Models (LLMs) and prom
 
    ![](./media/gpt-4-demo16-1.png)
 
-1. In the **Inputs** section below, add the following value, select **Save (2)** and **Run (3)**.
+1. In the **Inputs** section of the newly added Prompt, add the following value, select **Save (2)** and **Run (3)**.
 
    - user_name: **John (1)** in the **Value** field
 
