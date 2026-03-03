@@ -4,7 +4,9 @@
 
 ## Overview
 
-In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You will start by creating a basic chat flow using Microsoft Foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
+In this lab, you will be designing and implementing a chat flow to interact with a deployed language model. You will start by creating a basic chat flow using Microsoft Foundry, which includes integrating inputs, an LLM node, and configuring the output to reflect chat responses. You will then test the chat flow, ensure it functions correctly, and deploy it to a production environment. 
+
+The final steps involve verifying the deployment, testing the deployed flow with sample queries, and exploring options for integrating the chat flow into applications as a custom copilot.
 
 ## Objectives
 
@@ -47,13 +49,14 @@ In this task, you will design and implement a chat flow using Microsoft Foundry 
     ![](./media/L5T1S6-1911.png)
 
 1. In the chat window, enter the query **What can you do?**.
-
-   >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
-   > Wait for 2-3 minutes if you get an error while querying.
    
      ![](./media/L5T1S7-1211.png)
 
-   >**Note:** The output will be different; it will not be the same. However, it will look similar to the screenshot.
+   >**Note:** The answer is generic because there are no specific instructions for the assistant. To make it focused on a task, you can change the system prompt.
+   
+   > Wait for 2-3 minutes if you get an error while querying.
+
+   > The output will be different; it may not be the same. However, it will look similar to the screenshot.
 
 1. Update the **Give the model instructions and context (1)** to the following:-
 
@@ -136,11 +139,7 @@ In this task, you will design and implement a chat flow using Microsoft Foundry 
 
    ![](./media/4-7-25-l5-10.png)
 
-1. Select **Save (3)**.
-
-   ![](./media/4-7-25-l5-11.png)
-
-1. You still need to connect the LLM node to your deployed model. At the top of the **LLM node** section, you need to select the connection from the drop-down list and proceed as below.
+1. You need to connect the LLM node to your deployed model. At the top of the **LLM node** section, you need to select the connection from the drop-down list and proceed as below.
 
    - **Connection**: Select **ai-modelhub<inject key="DeploymentID" enableCopy="false"/>_aoai (1)**. 
    - **Api**: Select **chat (2)**.
@@ -224,6 +223,7 @@ In this task, you will use the chat window to test the developed flow by leverag
 <validation step="6fd9456e-0099-45f5-af25-0953d6ef0695" />
 
 ## Summary
+
 In this lab, you have completed the following tasks:
 - Designed and Implemented a Chat Flow
 - Used LLM and Prompt Tools in Flows

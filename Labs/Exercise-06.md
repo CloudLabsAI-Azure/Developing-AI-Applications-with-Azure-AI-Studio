@@ -30,6 +30,8 @@ In this task, you will use Microsoft Foundry to moderate both images and text by
 
 ### Safe content
 
+Here, we will test some images that are safe and appropriate, and we expect the model to allow them.
+
 1. Before starting, select your **Azure AI services** resource, and proceed with the lab using these Azure AI services.
 
      ![](./media/L6safecon-1.png)
@@ -54,7 +56,7 @@ In this task, you will use Microsoft Foundry to moderate both images and text by
 
 ### Self-harmed content
 
-We should also anticipate customers potentially posting harmful image content. To ensure that we account for such a scenario, let’s test the detection of harmful image content.
+Now, let’s test an image that contains self-harm content. We expect the model to block such content and reject it based on the Violence filter.
 
 1. Select **Self harmed content (1)** and click on **Browse for a file (2)**.
 
@@ -76,7 +78,10 @@ We should also anticipate customers potentially posting harmful image content. T
 
 ### Task 1.1: Run a bulk test
 
-So far, we’ve tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+In this task, we will test a bulk dataset of images provided by customers. The dataset also includes sample harmful images to test the model’s ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful. 
+
+Let’s do another test round, but this time with the data set!
+
 
 1. On **Moderate image content** select **Run a bulk test (1)** tab then click on **Browse for a file (2)**.
 
@@ -98,7 +103,7 @@ So far, we’ve tested image content for singular isolated images. However, if w
 
 ### Task 1.2: Text moderation using Moderate text content 
 
-We could leverage an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
+In this task, we will analyze text content for safety, including safe and harmful text, as well as misspellings. We will also perform bulk testing on a dataset of text content.
 
 ### Safe content
 
@@ -130,7 +135,7 @@ Let’s first test some positive customer feedback.
 
 ### Harmful content
 
-But what would happen if we tested a harmful statement? Let’s test with negative customer feedback. While it's OK to dislike a product, we don't want to condone any name-calling or degrading statements.
+Here, we will test some negative customer feedback that contains harmful statements. We expect the model to block such content and reject it based on the Hate filter.
 
 1. In the **Test box**, enter the following:
 
@@ -211,6 +216,7 @@ We have a bulk dataset of images provided by customers. The dataset also include
     ![](./media/image-80.png)
 
 ## Summary
+
 In this lab, you have completed the following tasks:
 - Image Moderation: Tested single and bulk images for safety, self-harm, and AI-generated content.
 - Text Moderation: Analyzed safe and harmful text, including misspellings, with bulk testing.
@@ -218,4 +224,4 @@ In this lab, you have completed the following tasks:
 
 ## You have successfully completed this Hands-on lab.
 
-By completing this lab **Developing AI Applications with Microsoft Foundry**, you gained practical experience in building, evaluating, and deploying AI-driven solutions. You began by exploring the flow development lifecycle, initializing prompt flow projects, and creating customized prompts. You then developed intelligent chat flows using large language models, applied manual and automated evaluation techniques, and performed iterative tuning to optimize performance. Additionally, you integrated Azure AI Content Safety to moderate text and images, ensuring secure and compliant outputs.
+By completing this **Developing AI Applications with Microsoft Foundry** hands-on lab, you have gained hands-on experience in building, evaluating, and fine-tuning AI applications using Microsoft Foundry Prompt Flow. You explored the full development lifecycle, implemented prompt and chat flows, applied evaluation metrics, and optimized model performance. Additionally, you learned how to integrate Responsible AI and content safety practices to ensure secure, reliable, and production-ready AI solutions.

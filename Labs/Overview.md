@@ -4,7 +4,7 @@
 
 ## Overview
 
-This lab is intended for AI developers, data scientists, AI Enthusiasts, Cloud Engineers, and AI Engineers, aiming to enhance their skills in model evaluation and fine-tuning using Microsoft Foundry Prompt Flow. Participants will gain practical experience in developing custom AI models, evaluating their performance, and refining them for better results. The lab also addresses the integration of chat flows and essential tools, ensuring responsible AI practices through content safety measures.
+In this lab, you will learn how to develop AI applications using Microsoft Foundry's Prompt Flow. The lab will cover the entire lifecycle of flow development, including building and customizing prompt flows, evaluating model performance, fine-tuning prompts for optimal results, implementing chat flows with tool integration, and ensuring responsible AI practices with content safety measures. By the end of this lab, you will have hands-on experience in creating and refining AI models using Microsoft Foundry.
 
 ## Objective 
 
@@ -46,17 +46,17 @@ The architecture for this lab involves the following key components:
 - **Prompt Flow:** A visual tool inside Microsoft Foundry that allows you to chain together steps like input nodes, prompt tools, LLM calls, and post-processing using Python.
 - **Python:** Used for writing custom code blocks within prompt flows, for example, data preprocessing, calling external APIs, or transforming LLM outputs.
 - **GPT-based Language Models:** These models are used in LLM nodes within the Prompt Flows to perform tasks such as summarization, classification, or chat completions.
-- **LLM Nodes:** Represent connections to foundation models like GPT-4, GPT-35-turbo. These nodes are used to perform tasks such as summarization, classification, or chat completion.
+- **LLM Nodes:** Represent connections to foundation models like GPT-4, GPT-4.1-mini. These nodes are used to perform tasks such as summarization, classification, or chat completion.
 - **Prompt Tool:** The component that defines the input prompt format passed into an LLM node. Supports prompt variants for A/B testing.
 - **Content Safety & Responsible AI (Azure Shield + Document Icons):** Ensures your flows follow ethical and secure practices. This includes moderation filters, content controls, and transparency safeguards.
   
 ## Getting Started with the Lab
 
-We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. You'll develop custom AI models, automate evaluations, fine-tune performance, and integrate chat flows, all while ensuring responsible AI practices with Content Safety Studio. Let's begin by making the most of this experience:
+We've prepared a seamless environment for you to explore and learn about the connection between creating, evaluating, and fine-tuning AI models using Prompt Flow. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
 
-Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your **Virtual Machine** and **Guide** will be right at your fingertips within your web browser.
 
  ![](./media/guide1-1911.png)
 
@@ -102,7 +102,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. Next, provide your password and click on **Sign in**
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
        ![Enter Your Password](./media/password-1211.png)
 
