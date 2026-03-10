@@ -59,7 +59,7 @@ It systematically assesses the performance and effectiveness of various processe
 
 1. Select **Prompt flow (1)** from left navigation pane and select **promptflow-<inject key="DeploymentID" enableCopy="false"/> (2)** prompt flow you created.
 
-   ![](./media/ppf.png)
+   ![](./media/ppf.jpeg)
 
 1. From the top menu bar select **Evaluate (1)** the from the drop down select **Automated evaluation (2)**.
 
