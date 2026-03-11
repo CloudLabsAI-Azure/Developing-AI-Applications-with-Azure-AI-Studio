@@ -32,7 +32,7 @@ As involves setting up a structured environment to manage and streamline prompt-
    - Subscription: **Keep it as default (1)**
    - Resource group: **ODL-MEMT-<inject key="DeploymentID" enableCopy="false"/>  (2)**  
    - Region: **<inject key="Region" enableCopy="false"/>  (3)**
-   - Name: **modelhub<inject key="DeploymentID" enableCopy="false"/>  (4)** 
+   - Name: **modelhub-<inject key="DeploymentID" enableCopy="false"/>  (4)** 
    - Friendly name: **Keep it as default (5)**
    - Default project resource group: **Keep it as default (6)**
    - Connect AI Services incl. OpenAI: **Keep it as default (7)**
@@ -97,7 +97,7 @@ Creating and customizing prompts involves designing specific, targeted questions
 
     ![](./media/pfcr2.png)
 
-    >**Note:** If you encounter any permission errors, wait for 5 minutes and recreate the prompt flow with a unique name when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** **(2)** by selecting the **edit (1)** icon and click on **Save (3)**.
+    >**Note:** If you encounter any permission errors, wait for 7-10 minutes and recreate the prompt flow with a **unique name** when you see the Folder name already exists error. Once the flow is created, rename it to **promptflow-<inject key="DeploymentID" enableCopy="false"/>** **(2)** by selecting the **edit (1)** icon and click on **Save (3)**.
 
     ![](./media/rname.png) 
 
